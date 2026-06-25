@@ -1,0 +1,112 @@
+WORDS OF THE DEAD — Improvement Suggestions
+===========================================
+Items marked [DONE] are already implemented. Others are proposed but not yet built.
+
+The single biggest learning lever was that words used to be picked at random with no
+memory of what the player struggled with; the spaced-repetition system (A1-A3) changes
+the app from a "vocab arcade" into a "vocab trainer".
+
+
+A. LEARNING EFFECTIVENESS
+-------------------------
+[DONE] 1. Per-word mastery tracking + spaced repetition (Leitner).
+          Each word has a Leitner box (0-5) with a due date, persisted across launches
+          to ~/Library/Application Support/WordsOfTheDead/learning_profile.json.
+          The scheduler resurfaces overdue/missed words and rests mastered ones, mixing
+          in new words so the player keeps learning.
+
+[DONE] 2. Prioritize missed words within a session.
+          A wrong guess or a timeout re-queues the word to reappear 2-3 spawns later in
+          the same session for immediate reinforcement.
+
+[DONE] 3. Mastery levels per word (new -> learning -> known).
+          Stage is derived from the Leitner box: New (0 attempts), Learning (boxes 1-3),
+          Known (box >= 4). Reaching "Known" requires 4 correct answers that are
+          necessarily spaced apart (the box-3 review interval is a full day). Shown as a
+          badge on the reveal card and as a "Mastered: N / total" HUD counter.
+
+4. Mix question types per word.
+   Alternate modes for the SAME word (definition->word, word->definition, cloze,
+   synonym) so the player recognizes it from multiple angles. Currently the mode is
+   fixed by level parity (odd = definition, even = fill-in-the-blank).
+
+5. Reverse direction.  (Implemented as a third rotating level type — see [DONE] note.)
+[DONE] 5b. Reverse-direction level type.
+   Levels now rotate through THREE kinds: (1) word shown, pick the definition;
+   (2) fill-in-the-blank; (3) definition shown on the zombie, pick the WORD from four
+   rotating candidates (press SPACE). This is the "reverse direction" variation.
+
+
+B. ENGAGEMENT / COMPULSION LOOPS
+--------------------------------
+6. Persistent progress dashboard.
+   Accuracy, best streak, and a full mastery bar. (A partial version exists: the HUD
+   shows "Mastered: N / total", but there is no dedicated dashboard screen.)
+
+7. Daily goal / streak calendar.
+[DONE] 7. Daily goal / streak calendar.
+   "Practice 20 words a day" with a consecutive-day streak counter and a 7-day activity
+   calendar shown on the start and game-over screens. Practice counts (per day) persist to
+   ~/Library/Application Support/WordsOfTheDead/daily_goal.json.
+
+8. Combo / multiplier scoring.
+[DONE] 8. Combo / multiplier scoring.
+   Each kill scores base points + a speed bonus (more for killing a zombie higher up),
+   multiplied by a combo that grows with the current streak (up to x5) and resets on a
+   miss. Score and live combo multiplier are shown in the HUD.
+
+9. End-of-run summary.
+[DONE] 9. End-of-run summary.
+   Game-over screen shows final score, zombies killed, accuracy, best streak, newly
+   mastered words, and words to review.
+
+
+C. GAMEPLAY FEEL & DIFFICULTY
+-----------------------------
+10. Smarter distractors.
+    Use semantically close (or previously-confused) wrong answers instead of random
+    same-part-of-speech entries, for better discrimination learning.
+
+11. Difficulty tiers by word frequency.
+[DONE] 11. Difficulty tiers (length/syllable proxy — no frequency corpus is bundled).
+    Each word gets a difficulty tier (0 easiest … 3 hardest) from its length + estimated
+    syllables. New words are introduced easiest-first, and harder tiers unlock as the
+    player levels up (tier 0 at L1-2, then one more tier every two levels).
+
+12. Adjustable / adaptive speed.
+[DONE] 12. Adaptive speed (rubber-banding).
+    Fall speed is nudged up or down by recent accuracy (last 8 outcomes) on top of the
+    per-level curve, keeping difficulty near the player's ability.
+
+13. "Boss" review rounds.
+[DONE] 13. Boss review rounds.
+    Every 4th level (once the player has words worth reviewing) is a faster "BOSS REVIEW"
+    drawn only from struggling/missed words.
+
+
+D. FEEDBACK & REINFORCEMENT
+---------------------------
+14. Show WHY you were wrong.
+    On a miss, briefly flash the correct definition/word (a "miss reveal" to match the
+    existing correct reveal). High-value quick win.
+
+15. Audio / haptic cues.
+    Distinct sounds for correct / wrong / streak / level-up.
+
+16. Hint mechanic.
+    A key to dim one wrong definition (odd levels) at the cost of score/speed.
+
+
+E. QUALITY-OF-LIFE
+------------------
+17. Pause / resume.
+
+18. Word journal / review screen.
+    Browse learned words and their fun definitions outside of gameplay.
+
+19. Settings.
+    Toggle question modes, starting level, speed, and a colorblind-safe palette.
+
+
+RECOMMENDED NEXT PICKS (impact per effort): #14 (miss reveal), #9 (end-of-run summary),
+and #10 (smarter distractors).

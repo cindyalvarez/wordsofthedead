@@ -1,0 +1,3956 @@
+{
+  "definitions": [
+    {
+      "word": "abase",
+      "funDefinition": "Bart tried to abase Milhouse by calling him El Barto's sidekick, making him feel tiny and embarrassed."
+    },
+    {
+      "word": "abate",
+      "funDefinition": "Only when Hagrid-sized waves finally abated did the penguins waddle back onto the ice to belly-slide again."
+    },
+    {
+      "word": "abdicate",
+      "funDefinition": "Rather than face the velociraptors in the kitchen, the cowardly guide abdicated all responsibility and bolted from the Jurassic Park visitor center."
+    },
+    {
+      "word": "abduct",
+      "funDefinition": "The tourist tried to abduct a sea lion from Pier 39, only to find that the enormous marine creature wouldn’t fit in their rental car."
+    },
+    {
+      "word": "aberration",
+      "funDefinition": "Mr. Burns smiling kindly at an employee was such an aberration that the entire Springfield Nuclear Plant fell silent."
+    },
+    {
+      "word": "abet",
+      "funDefinition": "Johnny Lawrence abetted Miguel's comeback by cheering every kick like it could restart Cobra Kai."
+    },
+    {
+      "word": "abhor",
+      "funDefinition": "Daniel LaRusso came to abhor the Cobra Kai motto 'No Mercy,' insisting that balance mattered more than cruelty."
+    },
+    {
+      "word": "abide",
+      "funDefinition": "Paul Hollywood could barely abide a soggy bottom, but he endured it long enough to raise one eyebrow."
+    },
+    {
+      "word": "abject",
+      "funDefinition": "Marvin stood in abject gloom, convinced even the doors on the Heart of Gold were happier than he was."
+    },
+    {
+      "word": "abjure",
+      "funDefinition": "Lisa abjured Krusty Burgers, solemnly rejecting them after one too many greasy lunches."
+    },
+    {
+      "word": "abnegation",
+      "funDefinition": "Haaland could’ve scored easily, but he abnegated the goal opportunity with a pass to his teammate."
+    },
+    {
+      "word": "abort",
+      "funDefinition": "Nedry aborted his escape plan when the Jurassic Park mud swallowed his jeep and his nerve."
+    },
+    {
+      "word": "abridge",
+      "funDefinition": "Klopp abridged his halftime speech to one sharp sentence: press harder and stop gifting Salah's runs away."
+    },
+    {
+      "word": "abrogate",
+      "funDefinition": "Mr. Burns abrogated casual Friday by decree, abolishing Hawaiian shirts with one icy finger point."
+    },
+    {
+      "word": "abscond",
+      "funDefinition": "A penguin absconded with the zoo keeper's keys and waddled behind the fish freezer to hide."
+    },
+    {
+      "word": "absolution",
+      "funDefinition": "Homer sought absolution from Marge after eating the last donut and blaming the dog."
+    },
+    {
+      "word": "abstain",
+      "funDefinition": "Prue abstained from the glittery cupcake, choosing not to taste what looked like edible disco gravel."
+    },
+    {
+      "word": "abstruse",
+      "funDefinition": "Zaphod's directions were so abstruse that Arthur understood only the part about panic."
+    },
+    {
+      "word": "accede",
+      "funDefinition": "Daniel LaRusso finally acceded to Sam's plan, agreeing that Miyagi-Do needed a beach workout."
+    },
+    {
+      "word": "accentuate",
+      "funDefinition": "The Golden Gate fog accentuated the bridge's red towers, making them glow like movie props."
+    },
+    {
+      "word": "accessible",
+      "funDefinition": "A foil on the low rack was accessible to the shortest fencer, reachable without a dramatic lunge."
+    },
+    {
+      "word": "acclaim",
+      "funDefinition": "Lisa earned acclaim when her sax solo made even Moe clap like he had discovered feelings."
+    },
+    {
+      "word": "accolade",
+      "funDefinition": "Paul Hollywood's coveted handshake is the highest accolade a baker can earn in the Great British Bake-Off tent."
+    },
+    {
+      "word": "accommodating",
+      "funDefinition": "Paul was surprisingly accommodating, moving his judging plate so a nervous baker could set down a tower."
+    },
+    {
+      "word": "accord",
+      "funDefinition": "Miguel and Robby reached an accord, agreeing not to turn every hallway into a dojo."
+    },
+    {
+      "word": "accost",
+      "funDefinition": "A cable car conductor accosted the dawdling tourists, loudly asking if they planned to board or grow roots."
+    },
+    {
+      "word": "accretion",
+      "funDefinition": "A seal's snack pile grew by accretion, one stolen fish at a time until it became a slippery mountain."
+    },
+    {
+      "word": "acerbic",
+      "funDefinition": "Marvin the Paranoid Android offered an acerbic remark about the universe's pointlessness before sulking back into the spaceship."
+    },
+    {
+      "word": "acquiesce",
+      "funDefinition": "Bart acquiesced to Lisa's rules, agreeing without protest after she threatened to hide his slingshot."
+    },
+    {
+      "word": "acrimony",
+      "funDefinition": "Sensei Kreese filled the dojo with acrimony, turning every disagreement bitter as old sweat."
+    },
+    {
+      "word": "acumen",
+      "funDefinition": "Erling Haaland's goal-scoring acumen lets him sense exactly where a Premier League defense will break down."
+    },
+    {
+      "word": "acute",
+      "funDefinition": "Saka felt an acute sting when the ball smacked his shin guard like a tiny thunderclap."
+    },
+    {
+      "word": "adamant",
+      "funDefinition": "Paul Hollywood was adamant that the bread was underproofed, unmoved by tears or extra butter."
+    },
+    {
+      "word": "adept",
+      "funDefinition": "A cat was adept at opening cabinets, flicking the latch with the skill of a tiny burglar."
+    },
+    {
+      "word": "adhere",
+      "funDefinition": "The sticky donut frosting adhered Lisa’s homework papers together."
+    },
+    {
+      "word": "admonish",
+      "funDefinition": "Roz the robot gently admonished the gosling for wandering too close to the cliff's edge in The Wild Robot."
+    },
+    {
+      "word": "adorn",
+      "funDefinition": "San Francisco's Painted Ladies adorn the hill like fancy cupcakes lined up for a photo."
+    },
+    {
+      "word": "adroit",
+      "funDefinition": "The foil champion was adroit, slipping past a parry with wristwork too quick to follow."
+    },
+    {
+      "word": "adulation",
+      "funDefinition": "Haaland received adulation after another hat trick, with fans praising him like a goal-scoring robot."
+    },
+    {
+      "word": "adumbrate",
+      "funDefinition": "Dr. Malcolm adumbrated disaster for Jurassic Park, with vague warnings about chaos theory and ‘nature finding a way’."
+    },
+    {
+      "word": "adverse",
+      "funDefinition": "The tent had adverse conditions when wind flapped the canvas and threatened every meringue."
+    },
+    {
+      "word": "advocate",
+      "funDefinition": "Lisa advocated for vegetarian chili, arguing passionately while Homer guarded the meat pot."
+    },
+    {
+      "word": "aerial",
+      "funDefinition": "A penguin's aerial leap off the ice was brief, majestic, and immediately followed by a belly flop."
+    },
+    {
+      "word": "aesthetic",
+      "funDefinition": "The pastel aesthetic of the Painted Ladies makes that row of Victorian houses the most photographed view in San Francisco."
+    },
+    {
+      "word": "affable",
+      "funDefinition": "So affable was Ned Flanders that he greeted even a grumbling Homer with a cheerful 'Okily-dokily, neighborino!'"
+    },
+    {
+      "word": "affinity",
+      "funDefinition": "Roz felt an affinity for the goslings, a natural closeness that made her metal heart seem warm."
+    },
+    {
+      "word": "affluent",
+      "funDefinition": "Mr. Burns looked affluent enough to buy every donut in Springfield and still complain about the bill."
+    },
+    {
+      "word": "affront",
+      "funDefinition": "Calling Johnny's headband silly was an affront he treated like a personal attack on karate itself."
+    },
+    {
+      "word": "aggrandize",
+      "funDefinition": "Sensei Kreese tried to aggrandize the Cobra Kai dojo by plastering trophies across every wall."
+    },
+    {
+      "word": "aggregate",
+      "funDefinition": "Guardiola studied the aggregate number of shots on goal, considering his plan for the next game."
+    },
+    {
+      "word": "aggrieved",
+      "funDefinition": "Sideshow Bob looked aggrieved when another rake wronged him by smacking his face."
+    },
+    {
+      "word": "agile",
+      "funDefinition": "A cat stayed agile, springing from counter to curtain rod before anyone could say, 'Get down!'"
+    },
+    {
+      "word": "agnostic",
+      "funDefinition": "After years of attending church, she decided she was agnostic - unsure if anyone could really know if there was a god or gods."
+    },
+    {
+      "word": "agriculture",
+      "funDefinition": "Almanzo learned agriculture by planting, harvesting, and discovering that farming starts before sunrise."
+    },
+    {
+      "word": "aisle",
+      "funDefinition": "Bart skateboarded down the church aisle, the passageway between pews becoming his forbidden ramp."
+    },
+    {
+      "word": "alacrity",
+      "funDefinition": "The harbor seals leapt off the rocks with such alacrity that tourists barely had time to raise their cameras."
+    },
+    {
+      "word": "alias",
+      "funDefinition": "Sideshow Bob used an alias at the hotel, but the fake name could not disguise the giant hair."
+    },
+    {
+      "word": "allay",
+      "funDefinition": "Mr. Miyagi allayed Daniel's panic by calmly turning chores into karate lessons."
+    },
+    {
+      "word": "allege",
+      "funDefinition": "Paul alleged the cake was raw in the middle, though the baker protested with a trembling fork."
+    },
+    {
+      "word": "alleviate",
+      "funDefinition": "A purring cat alleviated the student's stress, making the homework feel slightly less monstrous."
+    },
+    {
+      "word": "allocate",
+      "funDefinition": "Klopp allocated extra drills to defenders, setting aside practice time for stopping Son's sprints."
+    },
+    {
+      "word": "aloof",
+      "funDefinition": "The fog over Twin Peaks seemed aloof, hovering distant and cool above the noisy city."
+    },
+    {
+      "word": "altercation",
+      "funDefinition": "Johnny and Daniel's parking-lot altercation became a shouting fight before anyone even bowed."
+    },
+    {
+      "word": "amalgamate",
+      "funDefinition": "Prue amalgamated citrus, spice, and cream, uniting the flavors into one dazzling tart."
+    },
+    {
+      "word": "ambiguous",
+      "funDefinition": "Zaphod's wink was ambiguous, possibly meaning genius plan or possibly meaning he had forgotten the plan."
+    },
+    {
+      "word": "ambivalent",
+      "funDefinition": "Johnny Lawrence felt ambivalent about reopening Cobra Kai, torn between his glory days and the trouble it had caused."
+    },
+    {
+      "word": "ameliorate",
+      "funDefinition": "Lisa ameliorated Homer's apology by adding flowers, improving it from terrible to merely clumsy."
+    },
+    {
+      "word": "amenable",
+      "funDefinition": "Miguel was amenable to extra practice, willing to run drills if it meant cleaner kicks."
+    },
+    {
+      "word": "amenity",
+      "funDefinition": "A warm blanket was the cat cafe's best amenity, adding comfort for both visitors and loafing cats."
+    },
+    {
+      "word": "amiable",
+      "funDefinition": "Prue Leith's amiable smile puts even the most nervous baker at ease during judging in the Bake-Off tent."
+    },
+    {
+      "word": "amicable",
+      "funDefinition": "Saka and Salah shared an amicable handshake, friendly even after chasing the same loose ball."
+    },
+    {
+      "word": "amorous",
+      "funDefinition": "Homer grew amorous when Marge baked pork chops, gazing at her with cartoon heart eyes."
+    },
+    {
+      "word": "amorphous",
+      "funDefinition": "The sourdough starter looked amorphous, a shapeless blob bubbling like it had no final form."
+    },
+    {
+      "word": "anachronistic",
+      "funDefinition": "Arthur's bathrobe looked anachronistic on a spaceship, wildly out of time among the blinking panels."
+    },
+    {
+      "word": "analgesic",
+      "funDefinition": "After a hard lunge, the fencer wanted an analgesic to reduce the ache in his sword arm."
+    },
+    {
+      "word": "analogous",
+      "funDefinition": "Roz found a beaver dam analogous to a robot shelter, similar because both kept the weather out."
+    },
+    {
+      "word": "anarchist",
+      "funDefinition": "Bart played anarchist in class, dreaming of eliminating every rule except recess."
+    },
+    {
+      "word": "anathema",
+      "funDefinition": "A soggy bottom was anathema to Paul Hollywood, a detested curse beneath innocent pastry."
+    },
+    {
+      "word": "anecdote",
+      "funDefinition": "Almanzo told an anecdote about a runaway calf, a short funny story that made supper lively."
+    },
+    {
+      "word": "anesthesia",
+      "funDefinition": "The cat entered anesthesia at the vet, losing feeling and dignity in one sleepy flop."
+    },
+    {
+      "word": "anguish",
+      "funDefinition": "Ralph's anguish was extreme when his ice cream fell, a tragedy he announced to all Springfield."
+    },
+    {
+      "word": "animated",
+      "funDefinition": "The Pier 39 sea lions grew animated at feeding time, barking and wriggling with lively excitement."
+    },
+    {
+      "word": "annex",
+      "funDefinition": "Mr. Burns tried to annex the break room, incorporating it into his office empire."
+    },
+    {
+      "word": "annul",
+      "funDefinition": "Bakeoff’s first “Sour Gummy Week” was such a disaster that Paul and Prue wanted to annul it - ignore it as if it had never happened."
+    },
+    {
+      "word": "anomaly",
+      "funDefinition": "A flightless bird that swims better than it walks, the penguin is a delightful anomaly among seabirds."
+    },
+    {
+      "word": "anonymous",
+      "funDefinition": "An anonymous cable car bell-ringer delighted tourists, unknown but loudly appreciated on Powell Street."
+    },
+    {
+      "word": "antagonism",
+      "funDefinition": "Kreese's antagonism toward Miyagi-Do was pure hostility, sharpened like a black-belt glare."
+    },
+    {
+      "word": "antecedent",
+      "funDefinition": "Before Bart's detention, the antecedent was always some prank that came first and explained everything."
+    },
+    {
+      "word": "antediluvian",
+      "funDefinition": "The dinosaur fence controls looked antediluvian, ancient enough to make Jurassic Park seem doomed."
+    },
+    {
+      "word": "anthology",
+      "funDefinition": "Lisa made an anthology of jazz solos, a selected collection for anyone with ears and patience."
+    },
+    {
+      "word": "antipathy",
+      "funDefinition": "A cat showed antipathy toward the vacuum, hating it with every puffed-up whisker."
+    },
+    {
+      "word": "antiquated",
+      "funDefinition": "Johnny's training cassette felt antiquated, old enough to deserve its own museum shelf."
+    },
+    {
+      "word": "antiseptic",
+      "funDefinition": "The kitchen smelled antiseptic, clean and sterile after every surface had been cleansed with bleach."
+    },
+    {
+      "word": "antithesis",
+      "funDefinition": "Marvin was the antithesis of cheerful, the absolute opposite of every happy spaceship door."
+    },
+    {
+      "word": "anxiety",
+      "funDefinition": "Homer felt anxiety when the donut box was empty, an intense uneasiness no salad could fix."
+    },
+    {
+      "word": "apathetic",
+      "funDefinition": "A penguin stayed apathetic during applause, lacking concern as it stared at a bucket of fish."
+    },
+    {
+      "word": "apocryphal",
+      "funDefinition": "Grandpa Simpson's apocryphal war story sounded false, especially the part with the talking cannon."
+    },
+    {
+      "word": "appalling",
+      "funDefinition": "Paul found the collapsed showstopper appalling, shocking enough to freeze his handshake midair."
+    },
+    {
+      "word": "appease",
+      "funDefinition": "Daniel tried to appease Amanda with flowers, hoping to calm her after another dojo disaster."
+    },
+    {
+      "word": "appraise",
+      "funDefinition": "A sea lion appraised the fish bucket, assessing its value with a serious whiskered squint."
+    },
+    {
+      "word": "apprehend",
+      "funDefinition": "Chief Wiggum finally apprehended Snake, seizing him after a chase slower than lunch."
+    },
+    {
+      "word": "approbation",
+      "funDefinition": "Prue's approbation arrived as a bright smile, praise sweeter than the jam in the sponge."
+    },
+    {
+      "word": "appropriate",
+      "funDefinition": "A cat appropriated the laundry basket, taking it for personal use despite the warm socks inside."
+    },
+    {
+      "word": "aquatic",
+      "funDefinition": "The seals performed aquatic somersaults, clearly at home in their watery playground."
+    },
+    {
+      "word": "arable",
+      "funDefinition": "Almanzo chose arable soil, land suitable for crops instead of rocks pretending to be a field."
+    },
+    {
+      "word": "arbiter",
+      "funDefinition": "The referee became the arbiter of the touch, deciding which fencer scored first."
+    },
+    {
+      "word": "arbitrary",
+      "funDefinition": "Homer's diet rules were arbitrary, randomly allowing donuts on days ending in y."
+    },
+    {
+      "word": "arbitration",
+      "funDefinition": "Guardiola and Klopp needed arbitration when even the fourth official could not settle the touchline dispute."
+    },
+    {
+      "word": "arboreal",
+      "funDefinition": "Roz watched arboreal squirrels leap through trees like tiny forest acrobats."
+    },
+    {
+      "word": "arcane",
+      "funDefinition": "Ford Prefect knew arcane towel lore, obscure secrets understood by only seasoned hitchhikers."
+    },
+    {
+      "word": "archaic",
+      "funDefinition": "The cable car's brass controls looked archaic, old-fashioned but still charmingly useful."
+    },
+    {
+      "word": "archetypal",
+      "funDefinition": "Haaland was the archetypal striker, the classic example of power, timing, and terrifying finishing."
+    },
+    {
+      "word": "ardor",
+      "funDefinition": "Lisa practiced saxophone with ardor, pouring fierce enthusiasm into every squeaky note."
+    },
+    {
+      "word": "arid",
+      "funDefinition": "The Jurassic Park control room felt arid after the air conditioning failed, dry as desert popcorn."
+    },
+    {
+      "word": "arrogate",
+      "funDefinition": "Mr. Burns arrogated the last slice of cake, taking it without any right except greed."
+    },
+    {
+      "word": "artifact",
+      "funDefinition": "Dr. Malcolm held a fossil artifact, a remaining piece of a vanished prehistoric world."
+    },
+    {
+      "word": "artisan",
+      "funDefinition": "Prue praised the artisan who shaped sugar roses like a true craftsman of dessert."
+    },
+    {
+      "word": "ascertain",
+      "funDefinition": "Bart tried to ascertain where Skinner hid the confiscated slingshots, learning clues from every drawer."
+    },
+    {
+      "word": "ascetic",
+      "funDefinition": "Mr. Miyagi's ascetic cabin was bare and disciplined, with no luxury beyond calm and bonsai."
+    },
+    {
+      "word": "ascribe",
+      "funDefinition": "Guardiola ascribed the win to patience, crediting every pass before the final goal."
+    },
+    {
+      "word": "aspersion",
+      "funDefinition": "Sideshow Bob cast an aspersion on Bart's manners, muttering a curse worthy of theater villains."
+    },
+    {
+      "word": "aspire",
+      "funDefinition": "Miguel aspired to win the tournament, aiming toward the trophy with every painful kick."
+    },
+    {
+      "word": "assail",
+      "funDefinition": "A penguin assailed the fish tray, attacking it with flippers, beak, and zero shame."
+    },
+    {
+      "word": "assess",
+      "funDefinition": "Paul assessed the loaf, evaluating crust, crumb, and whether hope had survived the bake."
+    },
+    {
+      "word": "assiduous",
+      "funDefinition": "Lisa was assiduous with homework, diligently checking every answer while Bart checked the fridge."
+    },
+    {
+      "word": "assuage",
+      "funDefinition": "A cat's slow blink assuaged its owner's worry, easing the room into quiet."
+    },
+    {
+      "word": "astute",
+      "funDefinition": "Dr. Malcolm was astute enough to spot the flaw before the dinosaurs demonstrated it loudly."
+    },
+    {
+      "word": "asylum",
+      "funDefinition": "The Golden Gate Park garden became an asylum for stressed walkers, a green refuge from traffic."
+    },
+    {
+      "word": "atone",
+      "funDefinition": "Homer tried to atone for eating Marge's pie by buying her flowers."
+    },
+    {
+      "word": "atrophy",
+      "funDefinition": "Johnny warned that unused karate skills would atrophy, withering like an old headband in a drawer."
+    },
+    {
+      "word": "attain",
+      "funDefinition": "Salah attained his milestone goal, achieving it with a curl that froze the keeper."
+    },
+    {
+      "word": "attribute",
+      "funDefinition": "Prue attributed the tart's brightness to lemon zest, crediting the tiny yellow flecks."
+    },
+    {
+      "word": "atypical",
+      "funDefinition": "A cat choosing the bath over the box was atypical, so unusual the household went silent."
+    },
+    {
+      "word": "audacious",
+      "funDefinition": "Ford Prefect's audacious plan to hitch a ride on a passing Vogon ship saved Arthur Dent from the demolished Earth."
+    },
+    {
+      "word": "audible",
+      "funDefinition": "The cable car bell was audible over the foggy street, clearly heard before the car appeared."
+    },
+    {
+      "word": "augment",
+      "funDefinition": "Roz augmented her shelter with driftwood, adding pieces until it could withstand the storm."
+    },
+    {
+      "word": "auspicious",
+      "funDefinition": "A handshake from Paul felt auspicious, a favorable sign that the loaf had won the day."
+    },
+    {
+      "word": "austere",
+      "funDefinition": "Marvin's room was austere, so bare and bleak that even a chair seemed emotionally exhausted."
+    },
+    {
+      "word": "avarice",
+      "funDefinition": "Mr. Burns's avarice showed when he wanted every coin in Springfield stacked in his office."
+    },
+    {
+      "word": "avenge",
+      "funDefinition": "Daniel vowed to avenge the cheap shot, seeking revenge with one clean Miyagi-Do counter."
+    },
+    {
+      "word": "aversion",
+      "funDefinition": "A seal had an aversion to broccoli, showing a particular dislike by flinging it off the dock."
+    },
+    {
+      "word": "balk",
+      "funDefinition": "Haaland balked at the bad pass, stopping abruptly before the offside flag could mock him."
+    },
+    {
+      "word": "ballad",
+      "funDefinition": "Lisa played a ballad on her sax, a love song smooth enough to soften even Nelson's laugh."
+    },
+    {
+      "word": "banal",
+      "funDefinition": "Homer's safety speech was banal, dull and commonplace until the donut chart caught fire."
+    },
+    {
+      "word": "bane",
+      "funDefinition": "A soggy bottom was the baker's bane, a burden haunting every glance at the oven door."
+    },
+    {
+      "word": "bard",
+      "funDefinition": "Ford Prefect became a bard in the pub, singing poetic warnings about Vogon paperwork."
+    },
+    {
+      "word": "bashful",
+      "funDefinition": "Ralph was bashful at the talent show, shyly hiding behind his crayon drawing."
+    },
+    {
+      "word": "beguile",
+      "funDefinition": "A cat beguiled the dog with a sweet purr, tricking him away from the sunny pillow."
+    },
+    {
+      "word": "behemoth",
+      "funDefinition": "The T. rex was a behemoth, a tremendous wall of teeth, thunder, and very poor manners."
+    },
+    {
+      "word": "benevolent",
+      "funDefinition": "Despite being built for combat, Roz proved benevolent, nurturing an orphaned gosling as her own in The Wild Robot."
+    },
+    {
+      "word": "benign",
+      "funDefinition": "Ned Flanders offered a benign smile, mild and harmless enough to calm half of Springfield."
+    },
+    {
+      "word": "bequeath",
+      "funDefinition": "Almanzo's father would bequeath farm wisdom, passing on lessons with every chore."
+    },
+    {
+      "word": "berate",
+      "funDefinition": "Johnny berated the class for sloppy kicks, scolding them like mercy was a broken vending machine."
+    },
+    {
+      "word": "bereft",
+      "funDefinition": "Homer was bereft of donuts, utterly without comfort as the empty box stared back."
+    },
+    {
+      "word": "beseech",
+      "funDefinition": "A penguin beseeched the keeper for fish, begging with flipper waves and tragic little hops."
+    },
+    {
+      "word": "bias",
+      "funDefinition": "The referee's bias showed when every close touch somehow favored his own fencing club."
+    },
+    {
+      "word": "bilk",
+      "funDefinition": "Snake tried to bilk Moe, cheating him with a fake coupon for unlimited pretzels."
+    },
+    {
+      "word": "blandish",
+      "funDefinition": "A cat blandished its owner with purrs, coaxing extra dinner through shameless flattery."
+    },
+    {
+      "word": "blemish",
+      "funDefinition": "Prue spotted one tiny blemish on the glaze, a flaw shining under the tent lights."
+    },
+    {
+      "word": "blight",
+      "funDefinition": "A crop blight worried Almanzo, a disease that could ruin the fields before harvest."
+    },
+    {
+      "word": "boisterous",
+      "funDefinition": "The boisterous crowd at Anfield roared so loudly that Liverpool's players could feel the stands trembling."
+    },
+    {
+      "word": "bombastic",
+      "funDefinition": "Zaphod gave a bombastic speech, pompous enough to need its own backup ego."
+    },
+    {
+      "word": "boon",
+      "funDefinition": "A fresh sourdough loaf was a boon on a foggy San Francisco morning, a warm blessing with crust."
+    },
+    {
+      "word": "bourgeois",
+      "funDefinition": "Mr. Burns called everyone bourgeois, as if middle-class comfort were a personal insult to his mansion."
+    },
+    {
+      "word": "brazen",
+      "funDefinition": "Bart Simpson was brazen enough to prank-call Moe's Tavern asking for 'Hugh Jass' in front of the whole bar."
+    },
+    {
+      "word": "brusque",
+      "funDefinition": "Paul's brusque verdict was short and abrupt: 'Dry,' and the whole tent winced."
+    },
+    {
+      "word": "buffet",
+      "funDefinition": "The Golden Gate wind buffeted tourists, striking them with force until selfies became survival poses."
+    },
+    {
+      "word": "burnish",
+      "funDefinition": "A fencer burnished the épée guard, polishing it until it flashed under the piste lights."
+    },
+    {
+      "word": "buttress",
+      "funDefinition": "The Painted Ladies' supports buttress the old houses, holding them steady on the steep hill."
+    },
+    {
+      "word": "cacophony",
+      "funDefinition": "When all twelve ovens timers buzzed at once, the Bake-Off tent dissolved into a cacophony of beeping and panic."
+    },
+    {
+      "word": "cadence",
+      "funDefinition": "Bart tapped a mischievous cadence on the chalkboard, a rhythm Skinner could hear before the prank began."
+    },
+    {
+      "word": "cajole",
+      "funDefinition": "Johnny Lawrence tried to cajole Miguel into one more push-up by calling it eagle-fang destiny."
+    },
+    {
+      "word": "calamity",
+      "funDefinition": "When Haaland's shot smashed the mascot's pie stand, the stadium treated it as a true calamity."
+    },
+    {
+      "word": "calibrate",
+      "funDefinition": "Paul Hollywood calibrated his stare before judging the sponge, setting it to maximum tent tension."
+    },
+    {
+      "word": "callous",
+      "funDefinition": "A callous fog rolled over the Golden Gate Bridge, ignoring every shivering tourist in shorts."
+    },
+    {
+      "word": "calumny",
+      "funDefinition": "The cat spread calumny by yowling that the dog stole the tuna, though whiskers proved otherwise."
+    },
+    {
+      "word": "camaraderie",
+      "funDefinition": "At the foil strip, the fencers showed camaraderie by saluting warmly before trying to poke each other."
+    },
+    {
+      "word": "candor",
+      "funDefinition": "With surprising candor, Gretchen Underwood admitted in Jurassic Park that the dinosaurs had been bred without a fail-safe."
+    },
+    {
+      "word": "canny",
+      "funDefinition": "In Jurassic Park, a canny raptor tested the fence before inviting trouble to dinner."
+    },
+    {
+      "word": "canvas",
+      "funDefinition": "Lisa painted a saxophone sunset on her canvas while Homer asked if the cloth came in donut flavor."
+    },
+    {
+      "word": "capacious",
+      "funDefinition": "The Bake-Off tent looked capacious enough to hold every showstopper, plus Noel hiding in a cake box."
+    },
+    {
+      "word": "capitulate",
+      "funDefinition": "After three perfect parries, the tired épée fencer had to capitulate and concede the final touch."
+    },
+    {
+      "word": "capricious",
+      "funDefinition": "Fog in San Francisco is famously capricious, smothering the Golden Gate Bridge one minute and vanishing the next."
+    },
+    {
+      "word": "captivate",
+      "funDefinition": "Roz's glowing eyes captivated the goslings, holding their attention like a moonlit story circle."
+    },
+    {
+      "word": "carouse",
+      "funDefinition": "After a win, Salah and his teammates caroused through the locker room with songs and flying socks."
+    },
+    {
+      "word": "carp",
+      "funDefinition": "Marge tried not to carp at Homer, but his donut crumbs on the sofa demanded constant pestering."
+    },
+    {
+      "word": "catalog",
+      "funDefinition": "Arthur Dent began to catalog every towel use, listing emergency blanket before interstellar picnic mat."
+    },
+    {
+      "word": "catalyze",
+      "funDefinition": "A single lunge from the coach catalyzed the whole fencing class into sudden, energetic practice."
+    },
+    {
+      "word": "caucus",
+      "funDefinition": "Mr. Burns held a sinister caucus of hounds, all working toward the same goal: chasing Homer."
+    },
+    {
+      "word": "caustic",
+      "funDefinition": "Prue's caustic remark about the pudding was so biting it nearly curdled the custard."
+    },
+    {
+      "word": "cavort",
+      "funDefinition": "Penguins cavort across the ice, leaping about like tiny tuxedoed dancers late for a fish gala."
+    },
+    {
+      "word": "censure",
+      "funDefinition": "Sensei Kreese's censure hit hard when a sloppy kick earned harsh criticism instead of mercy."
+    },
+    {
+      "word": "cerebral",
+      "funDefinition": "Lisa's cerebral plan solved the mystery with intellect while Bart was still blaming the hamster."
+    },
+    {
+      "word": "chaos",
+      "funDefinition": "Pier 39 became chaos when the sea lions barked, tourists shuffled, and one sandwich vanished."
+    },
+    {
+      "word": "chastise",
+      "funDefinition": "Paul Hollywood would chastise a raw loaf so severely even the yeast would apologize."
+    },
+    {
+      "word": "cherish",
+      "funDefinition": "Almanzo cherished his favorite calf, showing affection with careful brushing and extra kind words."
+    },
+    {
+      "word": "chide",
+      "funDefinition": "Mr. Miyagi would chide Daniel gently for rushing the kata before reminding him to breathe."
+    },
+    {
+      "word": "choreography",
+      "funDefinition": "Saka's corner routine had choreography, with every run arranged like a dance toward goal."
+    },
+    {
+      "word": "chronicle",
+      "funDefinition": "Piggy's imagined chronicle of the island would record every fire, argument, and missing pair of specs."
+    },
+    {
+      "word": "chronological",
+      "funDefinition": "Marvin filed disasters in chronological order, from first sigh to most recent cosmic inconvenience."
+    },
+    {
+      "word": "circuitous",
+      "funDefinition": "The cable car took a circuitous route, winding roundabout through hills before reaching the wharf."
+    },
+    {
+      "word": "circumlocution",
+      "funDefinition": "Homer used circumlocution, saying 'the round breakfast moon' instead of just saying ‘donut’."
+    },
+    {
+      "word": "circumscribed",
+      "funDefinition": "A fencer's piste is circumscribed by clear lines, so wild lunges must stay inside the bounded strip."
+    },
+    {
+      "word": "circumspect",
+      "funDefinition": "A circumspect cat inspected the cucumber from three angles before deciding whether panic was necessary."
+    },
+    {
+      "word": "circumvent",
+      "funDefinition": "Nedry tried to circumvent Jurassic Park security, getting around rules with one greedy keystroke."
+    },
+    {
+      "word": "clairvoyant",
+      "funDefinition": "Lisa seemed clairvoyant when she predicted Homer's next sentence would be about donuts."
+    },
+    {
+      "word": "clamor",
+      "funDefinition": "The Bake-Off tent filled with clamor as mixers roared and bakers shouted about missing ganache."
+    },
+    {
+      "word": "clandestine",
+      "funDefinition": "The boys held a clandestine meeting away from the signal fire, plotting against Ralph in Lord of the Flies."
+    },
+    {
+      "word": "cleave",
+      "funDefinition": "With one clean parry-riposte, the coach seemed to cleave the class into experts and beginners."
+    },
+    {
+      "word": "clemency",
+      "funDefinition": "Daniel asked for clemency after a missed block, hoping Johnny would show mercy instead of more burpees."
+    },
+    {
+      "word": "clergy",
+      "funDefinition": "The Springfield clergy gathered Reverend Lovejoy and others to discuss Homer's latest pew-snoring scandal."
+    },
+    {
+      "word": "cloying",
+      "funDefinition": "A cloying frosting in the tent was so sickeningly sweet that Prue needed heroic amounts of tea."
+    },
+    {
+      "word": "coagulate",
+      "funDefinition": "The seal watched spilled fish sauce coagulate, thickening into a wobbling snack it deeply mistrusted."
+    },
+    {
+      "word": "coalesce",
+      "funDefinition": "The fog and evening lights coalesced over Twin Peaks, fusing into one glowing San Francisco blanket."
+    },
+    {
+      "word": "cobbler",
+      "funDefinition": "Almanzo visited the cobbler, who repaired his boots before another muddy day on the farm."
+    },
+    {
+      "word": "coerce",
+      "funDefinition": "Sensei Kreese tried to coerce Miguel into fighting dirty, hissing that mercy was for the weak."
+    },
+    {
+      "word": "cogent",
+      "funDefinition": "Dr. Ian Malcolm made a cogent argument that the chaos of nature would inevitably doom Jurassic Park."
+    },
+    {
+      "word": "cognizant",
+      "funDefinition": "A canny raptor stayed cognizant of Dr. Malcolm's flare, fully aware dinner might run away."
+    },
+    {
+      "word": "coherent",
+      "funDefinition": "Lisa's coherent explanation made perfect sense, unlike Homer's theory that donuts are vegetables."
+    },
+    {
+      "word": "collateral",
+      "funDefinition": "Klopp worried the broken corner flag was collateral damage, secondary to the wild goal celebration."
+    },
+    {
+      "word": "colloquial",
+      "funDefinition": "Johnny's colloquial advice was simple dojo talk: 'Kick first, think after lunch.'"
+    },
+    {
+      "word": "collusion",
+      "funDefinition": "Sideshow Bob suspected collusion when Bart and Lisa made a secret agreement to swap alibis."
+    },
+    {
+      "word": "colossus",
+      "funDefinition": "The Golden Gate Bridge rose like a red colossus, a gigantic landmark towering through the fog."
+    },
+    {
+      "word": "combustion",
+      "funDefinition": "In Jurassic Park, combustion roared when a jeep engine burned fuel and fled a very interested T. rex."
+    },
+    {
+      "word": "commendation",
+      "funDefinition": "Paul Hollywood's handshake was a commendation, public approval that made the baker levitate."
+    },
+    {
+      "word": "commensurate",
+      "funDefinition": "Haaland expected cheers commensurate with his hat trick, equal in size to three thunderclaps."
+    },
+    {
+      "word": "commodious",
+      "funDefinition": "The Painted Ladies looked commodious inside, roomy enough for tourists, postcards, and one smug cat."
+    },
+    {
+      "word": "compelling",
+      "funDefinition": "Ford Prefect's warning was compelling: leave Earth now, because the bulldozers are not kidding."
+    },
+    {
+      "word": "compensate",
+      "funDefinition": "Mr. Burns offered to compensate Homer for danger with one coupon and a suspicious pat."
+    },
+    {
+      "word": "complacency",
+      "funDefinition": "A cat's complacency vanished when the vacuum appeared, exposing its self-satisfied ignorance of danger."
+    },
+    {
+      "word": "complement",
+      "funDefinition": "Prue's tart lemon curd complemented the meringue, completing the showstopper perfectly."
+    },
+    {
+      "word": "compliant",
+      "funDefinition": "Miguel stayed compliant during drills, ready to adapt whenever Johnny shouted a new impossible demand."
+    },
+    {
+      "word": "complicit",
+      "funDefinition": "Bart looked complicit when Milhouse's slingshot vanished and both boys avoided eye contact."
+    },
+    {
+      "word": "compliment",
+      "funDefinition": "Guardiola's compliment about Saka's touch was an expression of approval worth framing."
+    },
+    {
+      "word": "compound",
+      "funDefinition": "Marvin compounded his misery by combining boredom, rain, and a door that sighed back."
+    },
+    {
+      "word": "comprehensive",
+      "funDefinition": "Lisa made a comprehensive study guide including every fact, warning, and possible trick question."
+    },
+    {
+      "word": "compress",
+      "funDefinition": "A seal tried to compress itself into a bucket, squeezing blubber into an impossible cylinder."
+    },
+    {
+      "word": "compunction",
+      "funDefinition": "Nedry felt no compunction stealing embryos, showing zero guilty distress until the jungle blinked."
+    },
+    {
+      "word": "concede",
+      "funDefinition": "After VAR confirmed the goal, Klopp had to concede that the referee's call was valid."
+    },
+    {
+      "word": "conciliatory",
+      "funDefinition": "Daniel offered a conciliatory bow, friendly enough to cool the dojo after a heated spar."
+    },
+    {
+      "word": "concise",
+      "funDefinition": "Paul's critique was concise: 'Raw middle,' brief and direct enough to silence the tent."
+    },
+    {
+      "word": "concoct",
+      "funDefinition": "Homer tried to concoct an excuse about a donut burglar, fabricating crumbs into evidence."
+    },
+    {
+      "word": "concomitant",
+      "funDefinition": "The cable car's bell came with a concomitant grin from every tourist riding the hill."
+    },
+    {
+      "word": "concord",
+      "funDefinition": "Roz achieved concord among the animals, a harmonious agreement to share the island meadow."
+    },
+    {
+      "word": "condolence",
+      "funDefinition": "Lisa offered Bart a condolence after his skateboard broke, a sympathetic pat and one sad sax note."
+    },
+    {
+      "word": "condone",
+      "funDefinition": "Mr. Miyagi would not condone dirty fighting, refusing to pardon a cheap shot in the tournament."
+    },
+    {
+      "word": "conduit",
+      "funDefinition": "A sourdough starter became a conduit for flavor, a bubbling channel from old bakery to new loaf."
+    },
+    {
+      "word": "confection",
+      "funDefinition": "Prue admired the confection, a sweet tower of spun sugar that looked ready to attend a ball."
+    },
+    {
+      "word": "confidant",
+      "funDefinition": "Bart's confidant Milhouse guarded the prank secret with the seriousness of a tiny blue-haired vault."
+    },
+    {
+      "word": "conflagration",
+      "funDefinition": "The island signal fire became a conflagration, a great blaze that frightened even Jack's hunters."
+    },
+    {
+      "word": "confluence",
+      "funDefinition": "At Ferry Building, a confluence of foodies gathered where coffee, sourdough, and gossip met."
+    },
+    {
+      "word": "conformist",
+      "funDefinition": "A conformist penguin waddled exactly like the colony, even when it secretly wanted to moonwalk."
+    },
+    {
+      "word": "confound",
+      "funDefinition": "Zaphod's two heads could confound any waiter trying to decide who ordered the tea."
+    },
+    {
+      "word": "congeal",
+      "funDefinition": "Left on the Bake-Off bench, the caramel began to congeal into a glossy, stubborn lump."
+    },
+    {
+      "word": "congenial",
+      "funDefinition": "Ned Flanders was so congenial that even his complaint about noise sounded pleasantly agreeable."
+    },
+    {
+      "word": "congregation",
+      "funDefinition": "Reverend Lovejoy's congregation gathered in Springfield church, united by hymnals and discreet yawns."
+    },
+    {
+      "word": "congruity",
+      "funDefinition": "The fencer's mask and jacket had perfect congruity, matching in agreement like a tidy duel uniform."
+    },
+    {
+      "word": "connive",
+      "funDefinition": "Sideshow Bob began to connive, plotting a rake-free path to revenge with theatrical sneers."
+    },
+    {
+      "word": "consecrate",
+      "funDefinition": "In the tent, a baker seemed to consecrate the cooling rack, dedicating it to holy biscuits."
+    },
+    {
+      "word": "consensus",
+      "funDefinition": "Guardiola's squad reached consensus that the winning tactic was pass, move, and don't annoy Erling."
+    },
+    {
+      "word": "consign",
+      "funDefinition": "Arthur consigned his soggy towel to Ford's care, trusting him with the galaxy's most useful cloth."
+    },
+    {
+      "word": "consolation",
+      "funDefinition": "After losing the bout, the fencer found consolation in a coach's kind nod and spare chocolate."
+    },
+    {
+      "word": "consonant",
+      "funDefinition": "Roz's gentle beeps were consonant with the forest, in harmony with wind, waves, and goslings."
+    },
+    {
+      "word": "constituent",
+      "funDefinition": "Flour was a key constituent of the showstopper, an essential part Prue refused to let anyone forget."
+    },
+    {
+      "word": "constrain",
+      "funDefinition": "The foil rules constrain wild attacks, forcibly restricting hits to the valid target area."
+    },
+    {
+      "word": "construe",
+      "funDefinition": "Dr. Malcolm could construe a shaking water cup as a clear sign that a dinosaur had escaped."
+    },
+    {
+      "word": "consummate",
+      "funDefinition": "Mr. Burns tried to consummate the deal by completing it with a handshake and ominous chuckle."
+    },
+    {
+      "word": "consumption",
+      "funDefinition": "Homer's consumption of donuts was the act of eating so complete the box needed a memorial."
+    },
+    {
+      "word": "contemporaneous",
+      "funDefinition": "Almanzo's chores and breakfast were contemporaneous only in his dreams; both seemed to happen at dawn."
+    },
+    {
+      "word": "contentious",
+      "funDefinition": "Johnny and Daniel grew contentious, ready to dispute even the correct way to wax a car."
+    },
+    {
+      "word": "contravene",
+      "funDefinition": "A cable car rider contravened the rules by dangling off the side despite the conductor's glare."
+    },
+    {
+      "word": "contrite",
+      "funDefinition": "Bart looked contrite after the prank, penitent enough to polish Skinner's nameplate twice."
+    },
+    {
+      "word": "contusion",
+      "funDefinition": "Miguel earned a contusion in sparring, a purple bruise shaped suspiciously like a lesson."
+    },
+    {
+      "word": "conundrum",
+      "funDefinition": "The ultimate conundrum in The Hitchhiker's Guide is that the answer to life is 42, but nobody knows the question."
+    },
+    {
+      "word": "convene",
+      "funDefinition": "Paul convened the bakers at the gingham altar, calling them together for the judging."
+    },
+    {
+      "word": "convention",
+      "funDefinition": "A Premier League convention of managers would be an assembly of tactics, scarves, and complaints."
+    },
+    {
+      "word": "convivial",
+      "funDefinition": "The seals held a convivial fish feast, full of merry barks, splashes, and terrible table manners."
+    },
+    {
+      "word": "convoluted",
+      "funDefinition": "Zaphod's explanation was so convoluted that even Marvin found the complicated mess depressing."
+    },
+    {
+      "word": "copious",
+      "funDefinition": "Almanzo ate copious helpings of pie, doughnuts, and apple turnovers at the family table in Farmer Boy."
+    },
+    {
+      "word": "cordial",
+      "funDefinition": "Even mid-rivalry, Pep Guardiola and Jurgen Klopp shared a cordial handshake before their Premier League clash."
+    },
+    {
+      "word": "coronation",
+      "funDefinition": "Bart staged a coronation for Snowball II, crowning the cat queen of the laundry basket."
+    },
+    {
+      "word": "corpulence",
+      "funDefinition": "Homer's corpulence made the sofa sigh, his extreme roundness claiming every cushion in Springfield. (noun)"
+    },
+    {
+      "word": "corroborate",
+      "funDefinition": "Footprints the size of dinner plates corroborated the ranger's claim that a T. rex had escaped its paddock in Jurassic Park."
+    },
+    {
+      "word": "corrosive",
+      "funDefinition": "Prue's corrosive glare seemed able to eat away a baker's confidence faster than lemon on sugar."
+    },
+    {
+      "word": "cosmopolitan",
+      "funDefinition": "A cosmopolitan San Franciscan knew dim sum, sourdough, cable cars, and which fog had attitude."
+    },
+    {
+      "word": "counteract",
+      "funDefinition": "Mr. Miyagi used balance drills to counteract Daniel's panic, neutralizing fear with steady breathing."
+    },
+    {
+      "word": "coup",
+      "funDefinition": "Salah's backheel winner was a coup, a brilliant unexpected act that stunned the keeper."
+    },
+    {
+      "word": "covert",
+      "funDefinition": "A covert cat mission unfolded under the couch, secretly targeting one forbidden sock."
+    },
+    {
+      "word": "covet",
+      "funDefinition": "Milhouse began to covet Bart's slingshot, desiring it with wide, envious eyes."
+    },
+    {
+      "word": "credulity",
+      "funDefinition": "Arthur's credulity showed when he was ready to believe every absurd thing Ford said about towels."
+    },
+    {
+      "word": "crescendo",
+      "funDefinition": "The Anfield chant rose in a crescendo, steadily increasing until Salah sprinted toward goal."
+    },
+    {
+      "word": "criteria",
+      "funDefinition": "Paul's criteria for judging bread were clear standards: crust, crumb, flavor, and zero soggy bottom."
+    },
+    {
+      "word": "culmination",
+      "funDefinition": "The T. rex roar was the culmination of Jurassic Park's bad day, the terrifying climax of every warning."
+    },
+    {
+      "word": "culpable",
+      "funDefinition": "Nedry was culpable for the chaos, deserving blame and probably a very stern employee review."
+    },
+    {
+      "word": "cultivate",
+      "funDefinition": "Roz learned to cultivate trust, nurturing friendships with patient help and careful listening."
+    },
+    {
+      "word": "cumulative",
+      "funDefinition": "Homer's excuses were cumulative, each lie building upon the last until even Marge needed a chart."
+    },
+    {
+      "word": "cunning",
+      "funDefinition": "A cunning penguin distracted the zookeeper with a bow tie while stealing the bucket of fish."
+    },
+    {
+      "word": "cupidity",
+      "funDefinition": "Mr. Burns's cupidity flared as greed made him covet every coin in Springfield."
+    },
+    {
+      "word": "cursory",
+      "funDefinition": "Guardiola gave the pitch a cursory glance, so brief it missed one suspiciously heroic divot."
+    },
+    {
+      "word": "curt",
+      "funDefinition": "Johnny's curt lesson was abruptly short: 'Strike first. Hydrate later.'"
+    },
+    {
+      "word": "curtail",
+      "funDefinition": "The fog curtailed the picnic at Crissy Field, reducing it to three bites and a retreat."
+    },
+    {
+      "word": "daunting",
+      "funDefinition": "Facing a showstopper of fifty identical macarons was a daunting task for every contestant in the Bake-Off tent."
+    },
+    {
+      "word": "dearth",
+      "funDefinition": "A dearth of fish made the seals at Pier 39 bark like disappointed opera singers."
+    },
+    {
+      "word": "debacle",
+      "funDefinition": "The Monorail project turned into a complete debacle, leaving Springfield with a runaway train and an empty treasury."
+    },
+    {
+      "word": "debase",
+      "funDefinition": "Sideshow Bob said stepping on rakes would debase his dignity, lowering him to cartoon slapstick."
+    },
+    {
+      "word": "debauch",
+      "funDefinition": "Homer feared the all-you-can-eat buffet would debauch his diet, corrupting it with sensual gravy."
+    },
+    {
+      "word": "debunk",
+      "funDefinition": "Lisa used facts to debunk Bart's ghost story, exposing every spooky noise as plumbing."
+    },
+    {
+      "word": "decorous",
+      "funDefinition": "In the Bake-Off tent, a decorous baker bowed politely before secretly panicking over pastry."
+    },
+    {
+      "word": "decry",
+      "funDefinition": "Klopp would decry the missed call openly, criticizing it with windmill arms and disbelief."
+    },
+    {
+      "word": "deface",
+      "funDefinition": "A pigeon tried to deface Coit Tower's sign, ruining its appearance with artistic disrespect."
+    },
+    {
+      "word": "defamatory",
+      "funDefinition": "Bart's defamatory chalkboard rumor harmed Skinner's reputation until Lisa demanded evidence."
+    },
+    {
+      "word": "defer",
+      "funDefinition": "Daniel chose to defer to Mr. Miyagi's wisdom, postponing his flashy kick for quiet practice."
+    },
+    {
+      "word": "deferential",
+      "funDefinition": "A deferential fencer saluted the referee with respectful stillness before exploding into a lunge."
+    },
+    {
+      "word": "defile",
+      "funDefinition": "A cat tried to defile the clean laundry, making it impure with one triumphant muddy paw."
+    },
+    {
+      "word": "deft",
+      "funDefinition": "Saka's deft first touch was so skillful the ball seemed to obey politely."
+    },
+    {
+      "word": "defunct",
+      "funDefinition": "Marvin called the defunct spaceship door useless, since it no longer opened or sighed properly."
+    },
+    {
+      "word": "delegate",
+      "funDefinition": "Mr. Burns delegated the hard work to Smithers, handing over responsibility with regal laziness."
+    },
+    {
+      "word": "deleterious",
+      "funDefinition": "Too much Hollywood handshake hype proved deleterious, harmful to a baker's already wobbling sponge."
+    },
+    {
+      "word": "deliberate",
+      "funDefinition": "Roz made a deliberate choice to help the fox, intentional and carefully considered."
+    },
+    {
+      "word": "delineate",
+      "funDefinition": "Piggy tried to delineate the rules, outlining each one before the conch meeting collapsed."
+    },
+    {
+      "word": "demagogue",
+      "funDefinition": "Kreese acted like a demagogue, stirring the dojo's fears until mercy sounded like weakness."
+    },
+    {
+      "word": "demarcation",
+      "funDefinition": "The piste line was a demarcation, marking where the fencer's daring footwork had to stop."
+    },
+    {
+      "word": "demean",
+      "funDefinition": "Mr. Burns tried to demean Homer, mocking him that he’d be stuck working at the power plant forever."
+    },
+    {
+      "word": "demure",
+      "funDefinition": "A demure penguin stood quiet and modest while its friends belly-slid into total chaos."
+    },
+    {
+      "word": "denigrate",
+      "funDefinition": "Nelson tried to denigrate Bart's skateboard trick, belittling it with a perfectly timed 'ha-ha.'"
+    },
+    {
+      "word": "denounce",
+      "funDefinition": "Dr. Malcolm would denounce the park publicly, criticizing dinosaurs-plus-tourism as very bad math."
+    },
+    {
+      "word": "deplore",
+      "funDefinition": "Prue deplored the collapsed cake, expressing sorrow and disapproval over its tragic middle."
+    },
+    {
+      "word": "depravity",
+      "funDefinition": "Jack's depravity showed when island games turned wicked and the painted faces stopped playing."
+    },
+    {
+      "word": "deprecate",
+      "funDefinition": "Arthur deprecated his own plan, belittling it before the universe could do the job."
+    },
+    {
+      "word": "derelict",
+      "funDefinition": "A derelict cable car sat abandoned in the yard, run-down but still dreaming of hills."
+    },
+    {
+      "word": "deride",
+      "funDefinition": "Nelson Muntz loved to deride classmates with his signature 'Ha-ha!' whenever they tripped at Springfield Elementary."
+    },
+    {
+      "word": "derivative",
+      "funDefinition": "Lisa called Bart's prank derivative, unoriginal because it was taken straight from Krusty."
+    },
+    {
+      "word": "desecrate",
+      "funDefinition": "Bart would desecrate Springfield Elementary's statue by crowning it with a burrito."
+    },
+    {
+      "word": "desiccated",
+      "funDefinition": "Left out of the bag, the forgotten sourdough loaf still became desiccated and dry."
+    },
+    {
+      "word": "desolate",
+      "funDefinition": "On Lord of the Flies' island, the empty beach felt desolate after the signal fire died."
+    },
+    {
+      "word": "despondent",
+      "funDefinition": "Marvin sounded despondent when the spaceship door cheered up before he did."
+    },
+    {
+      "word": "despot",
+      "funDefinition": "Jack ruled the island like a despot, painting his face and demanding total obedience in Lord of the Flies."
+    },
+    {
+      "word": "destitute",
+      "funDefinition": "A penguin with no pebbles looked destitute, staring sadly at everyone else's nests."
+    },
+    {
+      "word": "deter",
+      "funDefinition": "Sensei Kreese's glare could deter even Miguel from cracking a joke during drills."
+    },
+    {
+      "word": "devious",
+      "funDefinition": "Sideshow Bob's devious rake maze looked friendly until every step smacked his face."
+    },
+    {
+      "word": "dialect",
+      "funDefinition": "Almanzo learned the farmhands' dialect when they called every stubborn horse a rascal."
+    },
+    {
+      "word": "diaphanous",
+      "funDefinition": "In the Bake Off tent, Prue's diaphanous sugar veil was so airy it nearly floated away."
+    },
+    {
+      "word": "didactic",
+      "funDefinition": "Lisa's didactic jazz lecture taught Homer three facts before his donut nap."
+    },
+    {
+      "word": "diffident",
+      "funDefinition": "A diffident seal raised one shy flipper before asking for the spotlight."
+    },
+    {
+      "word": "diffuse",
+      "funDefinition": "The San Francisco fog began to diffuse until Coit Tower peeked through like a lighthouse."
+    },
+    {
+      "word": "dilatory",
+      "funDefinition": "Zaphod's dilatory packing delayed departure while he chose sunglasses for both heads."
+    },
+    {
+      "word": "diligent",
+      "funDefinition": "Diligent as ever, Almanzo rose before dawn to feed the horses every morning in Farmer Boy."
+    },
+    {
+      "word": "diminutive",
+      "funDefinition": "A diminutive penguin chick waddled behind the parade like a fuzzy comma."
+    },
+    {
+      "word": "dirge",
+      "funDefinition": "At Jurassic Park, the jeep's busted horn wheezed a dirge for Nedry's dignity."
+    },
+    {
+      "word": "disaffected",
+      "funDefinition": "Disaffected Cobra Kai students rolled their eyes whenever Kreese preached mercy-free karate."
+    },
+    {
+      "word": "disavow",
+      "funDefinition": "Mr. Burns tried to disavow the three-eyed fish as having nothing to do with his power plant radioactive waste."
+    },
+    {
+      "word": "discern",
+      "funDefinition": "From Pier 39, tourists could discern one sea lion snoring louder than the rest."
+    },
+    {
+      "word": "disclose",
+      "funDefinition": "Paul Hollywood refused to disclose whose soggy bottom made him stare into the middle distance."
+    },
+    {
+      "word": "discomfit",
+      "funDefinition": "A sudden foil feint can discomfit a fencer who expected a simple lunge."
+    },
+    {
+      "word": "discordant",
+      "funDefinition": "Homer's saxophone solo sounded discordant beside Lisa's smooth jazz."
+    },
+    {
+      "word": "discrepancy",
+      "funDefinition": "Guardiola spotted a discrepancy: Haaland had scored twice, but the scoreboard showed one."
+    },
+    {
+      "word": "discretion",
+      "funDefinition": "Mr. Miyagi used discretion, trimming the bonsai quietly instead of mocking Daniel's stance."
+    },
+    {
+      "word": "discursive",
+      "funDefinition": "Ford Prefect's discursive travel advice rambled from towels to poetry to sandwich safety."
+    },
+    {
+      "word": "disdain",
+      "funDefinition": "Prue showed disdain for the cake by calling its frosting ambitious with dangerous politeness."
+    },
+    {
+      "word": "disgruntled",
+      "funDefinition": "A disgruntled cat shoved the expensive bed aside and slept in the box."
+    },
+    {
+      "word": "disheartened",
+      "funDefinition": "Daniel felt disheartened when every crane kick attempt ended in a backyard tumble."
+    },
+    {
+      "word": "disparage",
+      "funDefinition": "Roy Keane never hesitates to disparage a lazy defender during his fiery Premier League punditry."
+    },
+    {
+      "word": "disparate",
+      "funDefinition": "In San Francisco, disparate sights like cable cars and sea lions somehow share one postcard."
+    },
+    {
+      "word": "dispatch",
+      "funDefinition": "Klopp would dispatch Salah down the wing like a red rocket with cleats."
+    },
+    {
+      "word": "dispel",
+      "funDefinition": "Roz used a warm beep to dispel the goslings' fear of the strange metal giant."
+    },
+    {
+      "word": "disperse",
+      "funDefinition": "When Bart released a stink bomb, the Springfield crowd began to disperse in record time."
+    },
+    {
+      "word": "disrepute",
+      "funDefinition": "One collapsed showstopper could bring a baker's pastry skills into comic disrepute."
+    },
+    {
+      "word": "dissemble",
+      "funDefinition": "A cat will dissemble innocence while sitting beside the shattered vase."
+    },
+    {
+      "word": "disseminate",
+      "funDefinition": "Lisa used the school radio to disseminate recycling tips across Springfield."
+    },
+    {
+      "word": "dissent",
+      "funDefinition": "Johnny would dissent loudly if Daniel claimed bonsai trimming was better than karate."
+    },
+    {
+      "word": "dissipate",
+      "funDefinition": "The Golden Gate fog began to dissipate, revealing red towers like magic."
+    },
+    {
+      "word": "dissonance",
+      "funDefinition": "Ralph's happy humming created dissonance during Springfield's very serious fire drill."
+    },
+    {
+      "word": "dissuade",
+      "funDefinition": "Dr. Malcolm tried to dissuade everyone from opening a park full of predators with no known control."
+    },
+    {
+      "word": "distend",
+      "funDefinition": "A seal's belly can distend after it steals every fish from the bucket."
+    },
+    {
+      "word": "dither",
+      "funDefinition": "Arthur Dent would dither between saving his house and finding a decent cup of tea."
+    },
+    {
+      "word": "divine",
+      "funDefinition": "Prue called the lemon tart divine, as if the Bake Off tent had briefly become heaven."
+    },
+    {
+      "word": "divisive",
+      "funDefinition": "Bart's plan for pajama uniforms was divisive, thrilling students and horrifying Principal Skinner."
+    },
+    {
+      "word": "divulge",
+      "funDefinition": "Miguel refused to divulge Johnny's secret training playlist before the tournament."
+    },
+    {
+      "word": "docile",
+      "funDefinition": "Roz found the gosling docile once it trusted her gentle metal hands."
+    },
+    {
+      "word": "dogmatic",
+      "funDefinition": "Kreese sounded dogmatic when he insisted there was exactly one right way to strike first."
+    },
+    {
+      "word": "dormant",
+      "funDefinition": "The Jurassic Park raptor alarm stayed dormant until someone made a terrible decision."
+    },
+    {
+      "word": "dour",
+      "funDefinition": "Marvin gave a dour sigh while explaining that even victory was probably disappointing."
+    },
+    {
+      "word": "dubious",
+      "funDefinition": "Lisa Simpson was deeply dubious of the snake-oil cure Grampa peddled door to door around Springfield."
+    },
+    {
+      "word": "duplicity",
+      "funDefinition": "Sideshow Bob's duplicity showed when his friendly smile hid a rake-filled revenge plot."
+    },
+    {
+      "word": "duress",
+      "funDefinition": "Under duress from a circling gull, the penguin surrendered its shiny pebble."
+    },
+    {
+      "word": "dynamic",
+      "funDefinition": "Saka's dynamic run changed direction so fast defenders seemed to reboot."
+    },
+    {
+      "word": "ebullient",
+      "funDefinition": "The sea lions of Pier 39 are so ebullient that they bark and flop over one another all day long."
+    },
+    {
+      "word": "eclectic",
+      "funDefinition": "In Haight-Ashbury, an eclectic shop sold tie-dye, sourdough earrings, and fog-themed socks."
+    },
+    {
+      "word": "ecstatic",
+      "funDefinition": "Homer was ecstatic when the donut truck parked outside the nuclear plant."
+    },
+    {
+      "word": "edict",
+      "funDefinition": "Paul Hollywood's handshake felt like an edict declaring the bread officially magnificent."
+    },
+    {
+      "word": "efface",
+      "funDefinition": "A cat tried to efface the evidence by licking cupcake frosting off its whiskers."
+    },
+    {
+      "word": "effervescent",
+      "funDefinition": "Effervescent and giggly, the otter-like seals chased bubbles across the bay near the San Francisco waterfront."
+    },
+    {
+      "word": "efficacious",
+      "funDefinition": "Mr. Miyagi's wax-on lesson proved efficacious when Daniel finally blocked a punch."
+    },
+    {
+      "word": "effrontery",
+      "funDefinition": "Nelson had the effrontery to laugh at Principal Skinner while asking for extra pudding."
+    },
+    {
+      "word": "effulgent",
+      "funDefinition": "The Golden Gate Bridge looked effulgent when sunset made it glow like polished copper."
+    },
+    {
+      "word": "egregious",
+      "funDefinition": "Leaving the raptor paddock unlocked was an egregious oversight that doomed the staff of Jurassic Park."
+    },
+    {
+      "word": "elaborate",
+      "funDefinition": "Zaphod built an elaborate excuse involving time travel, missing socks, and galactic diplomacy."
+    },
+    {
+      "word": "elated",
+      "funDefinition": "A penguin looked elated after sliding perfectly into the fish bucket."
+    },
+    {
+      "word": "elegy",
+      "funDefinition": "Lisa played an elegy for Bleeding Gums Murphy that made Springfield go quiet."
+    },
+    {
+      "word": "elicit",
+      "funDefinition": "Prue's raised eyebrow could elicit a confession about every underbaked sponge."
+    },
+    {
+      "word": "eloquent",
+      "funDefinition": "Even covered in flour, Nadiya gave such an eloquent speech of thanks that she won over the whole Bake-Off tent."
+    },
+    {
+      "word": "elucidate",
+      "funDefinition": "Dr. Malcolm tried to elucidate chaos theory using water drops on a dashboard."
+    },
+    {
+      "word": "elude",
+      "funDefinition": "A nimble épée fencer can elude a touch with one tiny sidestep."
+    },
+    {
+      "word": "emaciated",
+      "funDefinition": "The shipwrecked boys in Lord of the Flies looked emaciated after too many missed meals."
+    },
+    {
+      "word": "embellish",
+      "funDefinition": "A cat will embellish a simple nap with dramatic stretches and royal yawns."
+    },
+    {
+      "word": "embezzle",
+      "funDefinition": "Mr. Burns might embezzle the snack fund and call it an excellent business lesson."
+    },
+    {
+      "word": "emend",
+      "funDefinition": "Lisa had to emend Bart's book report before it claimed Hamlet was a skateboarder."
+    },
+    {
+      "word": "eminent",
+      "funDefinition": "Guardiola is an eminent manager, famous for turning passing triangles into trophies."
+    },
+    {
+      "word": "emollient",
+      "funDefinition": "Roz's emollient voice soothed the frightened gosling like warm oil on gears."
+    },
+    {
+      "word": "emote",
+      "funDefinition": "Homer can emote heartbreak with one wobbling lip when the last donut disappears."
+    },
+    {
+      "word": "empathy",
+      "funDefinition": "Miguel showed empathy when he helped a nervous opponent stand after a fall."
+    },
+    {
+      "word": "empirical",
+      "funDefinition": "Dr. Malcolm wanted empirical proof, not cheerful guesses, before trusting dinosaur fences."
+    },
+    {
+      "word": "emulate",
+      "funDefinition": "Young players across England try to emulate Bukayo Saka's quick feet on the Premier League wing."
+    },
+    {
+      "word": "enamor",
+      "funDefinition": "A perfect churro can enamor Johnny Lawrence faster than any motivational speech."
+    },
+    {
+      "word": "encore",
+      "funDefinition": "The Pier 39 sea lions barked for an encore after one performed a belly-flop."
+    },
+    {
+      "word": "encumber",
+      "funDefinition": "Arthur Dent's bathrobe began to encumber him during a panicked run through space."
+    },
+    {
+      "word": "enervate",
+      "funDefinition": "The relentless tropical heat began to enervate the boys, sapping their will to keep the fire burning in Lord of the Flies."
+    },
+    {
+      "word": "enfranchise",
+      "funDefinition": "Lisa campaigned to enfranchise Springfield's kids so recess policy needed their votes."
+    },
+    {
+      "word": "engender",
+      "funDefinition": "A surprise technical challenge can engender panic across the entire Bake Off tent."
+    },
+    {
+      "word": "enigmatic",
+      "funDefinition": "Mr. Miyagi's enigmatic smile made Daniel wonder whether sanding floors was secretly karate."
+    },
+    {
+      "word": "enmity",
+      "funDefinition": "Sideshow Bob's enmity for Bart survived rakes, prison, and humiliating musical numbers."
+    },
+    {
+      "word": "ennui",
+      "funDefinition": "A bored cat's ennui ended only when a cardboard box appeared."
+    },
+    {
+      "word": "entail",
+      "funDefinition": "A Jurassic Park tour would entail seat belts, screaming, and absolutely no snacks near raptors."
+    },
+    {
+      "word": "enthrall",
+      "funDefinition": "Salah's curling goal can enthrall Anfield before the ball even hits the net."
+    },
+    {
+      "word": "ephemeral",
+      "funDefinition": "A perfect soufflé is ephemeral, collapsing within seconds of leaving the oven in the Bake-Off tent."
+    },
+    {
+      "word": "epistolary",
+      "funDefinition": "Farmer Boy feels briefly epistolary when Almanzo treasures letters from home."
+    },
+    {
+      "word": "epitome",
+      "funDefinition": "Lily the seal, sunbathing belly-up without a care, was the epitome of a lazy afternoon at the marina."
+    },
+    {
+      "word": "equanimity",
+      "funDefinition": "Paul kept equanimity while judging a cake that leaned like a tired tower."
+    },
+    {
+      "word": "equivocal",
+      "funDefinition": "Ford's equivocal directions meant left, unless the planet exploded, in which case right."
+    },
+    {
+      "word": "erudite",
+      "funDefinition": "The erudite Slartibartfast proudly explained how he had designed the award-winning fjords of Norway in The Hitchhiker's Guide."
+    },
+    {
+      "word": "eschew",
+      "funDefinition": "Mr. Miyagi would eschew flashy trash talk and simply bow before the match."
+    },
+    {
+      "word": "esoteric",
+      "funDefinition": "Lisa's esoteric saxophone theory confused everyone except one very intense jazz fan."
+    },
+    {
+      "word": "espouse",
+      "funDefinition": "Roz began to espouse kindness after learning the forest worked better with help."
+    },
+    {
+      "word": "ethereal",
+      "funDefinition": "San Francisco fog made the Painted Ladies look ethereal, like dollhouses in a cloud."
+    },
+    {
+      "word": "etymology",
+      "funDefinition": "Lisa loved etymology, tracing words back like detective footprints through language history."
+    },
+    {
+      "word": "euphoric",
+      "funDefinition": "Son looked euphoric after a last-minute goal sent the crowd bouncing."
+    },
+    {
+      "word": "evanescent",
+      "funDefinition": "A cat's interest in the new toy was evanescent, gone before the receipt cooled."
+    },
+    {
+      "word": "evince",
+      "funDefinition": "Daniel's steady stance began to evince the confidence Mr. Miyagi had taught him."
+    },
+    {
+      "word": "exacerbate",
+      "funDefinition": "Throwing a punch only exacerbated the feud between Cobra Kai and Miyagi-Do."
+    },
+    {
+      "word": "exalt",
+      "funDefinition": "Springfield would exalt Homer as a hero if he saved the donut supply."
+    },
+    {
+      "word": "exasperate",
+      "funDefinition": "A seal can exasperate its trainer by clapping only after stealing the whistle."
+    },
+    {
+      "word": "excavate",
+      "funDefinition": "Dr. Grant had to excavate fossils carefully, brushing away dirt like treasure dust."
+    },
+    {
+      "word": "exculpate",
+      "funDefinition": "Bart hoped the security tape would exculpate him and blame the cafeteria meatloaf."
+    },
+    {
+      "word": "excursion",
+      "funDefinition": "A cable-car excursion up Nob Hill turns every hill into a ringing adventure."
+    },
+    {
+      "word": "execrable",
+      "funDefinition": "Marvin called the spaceship coffee execrable, then gloomily drank it anyway."
+    },
+    {
+      "word": "exhort",
+      "funDefinition": "Kreese would exhort his students to strike first until the walls seemed to chant it."
+    },
+    {
+      "word": "exigent",
+      "funDefinition": "In the Bake Off tent, a collapsing mousse created an exigent frosting emergency."
+    },
+    {
+      "word": "exonerate",
+      "funDefinition": "Security footage finally exonerated Bart, proving it was actually Milhouse who had glued the principal's hat."
+    },
+    {
+      "word": "exorbitant",
+      "funDefinition": "Haaland's transfer rumor sounded exorbitant, like paying a dragon in golden boots."
+    },
+    {
+      "word": "expedient",
+      "funDefinition": "Zaphod chose the expedient escape pod, mostly because it was closest and shiny."
+    },
+    {
+      "word": "expiate",
+      "funDefinition": "Johnny tried to expiate his mistakes by training Miguel with real care."
+    },
+    {
+      "word": "expunge",
+      "funDefinition": "Principal Skinner wished he could expunge Bart's prank record from every filing cabinet."
+    },
+    {
+      "word": "expurgate",
+      "funDefinition": "Prue would expurgate the recipe notes by removing every rude comment about raisins."
+    },
+    {
+      "word": "extant",
+      "funDefinition": "In Jurassic Park, extant dinosaur DNA was the miracle and the massive problem."
+    },
+    {
+      "word": "extol",
+      "funDefinition": "Klopp would extol Salah's work rate with a grin wide enough for Merseyside."
+    },
+    {
+      "word": "extraneous",
+      "funDefinition": "Lisa cut every extraneous slide before her climate talk swallowed the assembly."
+    },
+    {
+      "word": "extricate",
+      "funDefinition": "A fencer had to extricate her foil from the scoring wire before saluting."
+    },
+    {
+      "word": "exult",
+      "funDefinition": "A penguin will exult after belly-sliding farther than the whole colony."
+    },
+    {
+      "word": "fabricate",
+      "funDefinition": "Bart tried to fabricate an alibi involving aliens, homework, and a heroic hamster."
+    },
+    {
+      "word": "facile",
+      "funDefinition": "For Saka, the finish looked facile, as easy as tapping a doorbell."
+    },
+    {
+      "word": "fallacious",
+      "funDefinition": "Dr. Malcolm warned that safe dinosaur park was a fallacious phrase - couldn’t possibly exist."
+    },
+    {
+      "word": "fastidious",
+      "funDefinition": "So fastidious was the baker that she measured each gram of sugar twice before the Bake-Off clock even started."
+    },
+    {
+      "word": "fathom",
+      "funDefinition": "Arthur Dent could not fathom why the answer was 42 but the question was missing."
+    },
+    {
+      "word": "fatuous",
+      "funDefinition": "Homer's fatuous plan to diet by eating only donut holes fooled nobody."
+    },
+    {
+      "word": "fecund",
+      "funDefinition": "Almanzo's fecund fields produced pumpkins, potatoes, and enough chores to fill a year."
+    },
+    {
+      "word": "felicitous",
+      "funDefinition": "Paul's felicitous handshake arrived at exactly the right moment for the nervous baker."
+    },
+    {
+      "word": "feral",
+      "funDefinition": "A feral cat at the alley banquet guarded a sardine like a tiny tiger."
+    },
+    {
+      "word": "fervent",
+      "funDefinition": "A fervent crowd at the Emirates chanted Saka's name without pause for the full ninety minutes."
+    },
+    {
+      "word": "fetid",
+      "funDefinition": "The Jurassic Park jeep grew fetid after Nedry spilled old snacks during the storm."
+    },
+    {
+      "word": "fetter",
+      "funDefinition": "A penalty box can fetter a reckless player, trapping him away from the action."
+    },
+    {
+      "word": "fickle",
+      "funDefinition": "San Francisco weather is fickle: sunshine at Dolores Park, fog at the bridge."
+    },
+    {
+      "word": "fidelity",
+      "funDefinition": "Mr. Miyagi showed fidelity to his quiet teachings, even when tournaments got loud."
+    },
+    {
+      "word": "figurative",
+      "funDefinition": "When Lisa called Bart a tornado, she meant figurative chaos, not actual weather."
+    },
+    {
+      "word": "flabbergasted",
+      "funDefinition": "Prue looked flabbergasted when the biscuit tower survived the wobble test."
+    },
+    {
+      "word": "flaccid",
+      "funDefinition": "A seal's flaccid pool noodle sword drooped before the duel even began."
+    },
+    {
+      "word": "flagrant",
+      "funDefinition": "Kreese's flagrant cheating was so obvious even the trophy seemed embarrassed."
+    },
+    {
+      "word": "florid",
+      "funDefinition": "Sideshow Bob's florid speech about vengeance bloomed with fancy words and theatrical sighs."
+    },
+    {
+      "word": "flout",
+      "funDefinition": "Bart would flout the rules by skateboarding past three freshly painted warning signs."
+    },
+    {
+      "word": "foil",
+      "funDefinition": "A sharp parry can foil an opponent's lunge before the point lands."
+    },
+    {
+      "word": "forage",
+      "funDefinition": "A penguin will forage under every icy ledge for fish like a tuxedoed treasure hunter."
+    },
+    {
+      "word": "forbearance",
+      "funDefinition": "Mr. Miyagi showed forbearance when Daniel complained through yet another fence-painting lesson."
+    },
+    {
+      "word": "forestall",
+      "funDefinition": "Lisa tried to forestall Homer's donut binge by hiding the pink box."
+    },
+    {
+      "word": "forlorn",
+      "funDefinition": "Marvin looked forlorn beside the airlock, certain even space was disappointed in him."
+    },
+    {
+      "word": "forsake",
+      "funDefinition": "Daniel would not forsake Miyagi-Do just because Cobra Kai shouted louder."
+    },
+    {
+      "word": "fortitude",
+      "funDefinition": "Roz showed fortitude, standing through storms to protect her tiny animal friends."
+    },
+    {
+      "word": "fortuitous",
+      "funDefinition": "A fortuitous bounce sent Salah's shot past the keeper and into legend."
+    },
+    {
+      "word": "forum",
+      "funDefinition": "Springfield's town hall became a forum where everyone yelled about one monorail."
+    },
+    {
+      "word": "foster",
+      "funDefinition": "Almanzo's family chores helped foster discipline, appetite, and impressive arm muscles."
+    },
+    {
+      "word": "fractious",
+      "funDefinition": "A fractious cat refused the salmon, the tuna, and the apology."
+    },
+    {
+      "word": "frenetic",
+      "funDefinition": "The Bake Off tent turned frenetic when every baker had thirty seconds to glaze."
+    },
+    {
+      "word": "frivolous",
+      "funDefinition": "Zaphod considered the spaceship's warning lights frivolous unless they matched his outfit."
+    },
+    {
+      "word": "frugal",
+      "funDefinition": "A frugal penguin reused one perfect pebble for nest decor and doorstop duty."
+    },
+    {
+      "word": "furtive",
+      "funDefinition": "Nelson made a furtive dash for the cafeteria brownies before lunch officially began."
+    },
+    {
+      "word": "garish",
+      "funDefinition": "The Painted Ladies would look garish if someone painted one neon pickle green."
+    },
+    {
+      "word": "garrulous",
+      "funDefinition": "The garrulous penguin colony never stopped squawking, gossiping across the ice from dawn to dusk."
+    },
+    {
+      "word": "genial",
+      "funDefinition": "Ned Flanders stayed genial even while lending Homer his lawnmower for the fifth time."
+    },
+    {
+      "word": "gluttony",
+      "funDefinition": "Homer's gluttony peaked when he called a twelve-donut box a light snack."
+    },
+    {
+      "word": "goad",
+      "funDefinition": "Johnny tried to goad Miguel into one more push-up with a terrible rock anthem."
+    },
+    {
+      "word": "gourmand",
+      "funDefinition": "Paul Hollywood becomes a gourmand when a bread basket appears within judging distance."
+    },
+    {
+      "word": "grandiloquence",
+      "funDefinition": "Sideshow Bob's grandiloquence turned I am mad at Bart into a five-minute aria."
+    },
+    {
+      "word": "grandiose",
+      "funDefinition": "Mr. Burns unveiled a grandiose plan to block the sun, complete with charts, spotlights, and evil chuckles."
+    },
+    {
+      "word": "gratuitous",
+      "funDefinition": "Johnny Lawrence added a gratuitous roundhouse to the lesson, totally unneeded but very Cobra Kai."
+    },
+    {
+      "word": "gregarious",
+      "funDefinition": "Gregarious by nature, the sea lions piled together on the docks of Pier 39, never wanting to be alone."
+    },
+    {
+      "word": "grievous",
+      "funDefinition": "A grievous own goal by Saka left the keeper flat on the grass and the whole stadium groaning."
+    },
+    {
+      "word": "guile",
+      "funDefinition": "A cat used guile to stare at the empty bowl until everyone believed dinner had never happened."
+    },
+    {
+      "word": "hackneyed",
+      "funDefinition": "Sideshow Bob complained that the villain's monologue had become a hackneyed cliché on Springfield television."
+    },
+    {
+      "word": "hallowed",
+      "funDefinition": "In the Bake-Off tent, Paul treated the handshake spot as hallowed ground no soggy bottom could profane."
+    },
+    {
+      "word": "hapless",
+      "funDefinition": "Hapless Arthur Dent lost his house, his planet, and somehow still misplaced his towel."
+    },
+    {
+      "word": "harangue",
+      "funDefinition": "Sensei Kreese launched into a long harangue about weakness before every Cobra Kai practice."
+    },
+    {
+      "word": "hardy",
+      "funDefinition": "A hardy penguin waddled through sleet, slipped twice, and still arrived first at the fish bucket."
+    },
+    {
+      "word": "harrowing",
+      "funDefinition": "The velociraptor kitchen chase was so harrowing that even Dr. Malcolm stopped making jokes."
+    },
+    {
+      "word": "haughty",
+      "funDefinition": "Lisa sounded haughty when she corrected Springfield's band on jazz theory with one raised eyebrow."
+    },
+    {
+      "word": "hedonist",
+      "funDefinition": "Homer was a hedonist at the donut counter, pursuing pleasure one pink-frosted circle at a time."
+    },
+    {
+      "word": "hegemony",
+      "funDefinition": "Guardiola's hegemony made every rival manager feel Manchester City's shadow before kickoff."
+    },
+    {
+      "word": "heinous",
+      "funDefinition": "Sideshow Bob called Bart's rake trap heinous, though the repeated face-smacks were mostly his own fault."
+    },
+    {
+      "word": "heterogeneous",
+      "funDefinition": "A heterogeneous lineup of seals barked, balanced balls, and wore one stolen captain's hat."
+    },
+    {
+      "word": "hiatus",
+      "funDefinition": "The Bake-Off tent took a hiatus after the custard disaster, giving everyone time to fear desserts again."
+    },
+    {
+      "word": "hierarchy",
+      "funDefinition": "On the island, Jack built a hierarchy where hunters ranked above littluns and the conch kept losing power."
+    },
+    {
+      "word": "hypocrisy",
+      "funDefinition": "Ned Flanders saw hypocrisy when Homer preached dieting while hiding three donuts in his Bible cover."
+    },
+    {
+      "word": "hypothetical",
+      "funDefinition": "Dr. Malcolm's hypothetical dinosaur escape became less theoretical when the fence started sparking."
+    },
+    {
+      "word": "iconoclast",
+      "funDefinition": "An iconoclast in the kitchen, that baker dared to serve a savory dessert and shocked the Bake-Off judges."
+    },
+    {
+      "word": "idiosyncratic",
+      "funDefinition": "Marvin's idiosyncratic sigh made every spaceship door sound personally disappointed in existence."
+    },
+    {
+      "word": "idolatrous",
+      "funDefinition": "Bart's idolatrous worship of Krusty turned a cereal box autograph into a sacred relic."
+    },
+    {
+      "word": "ignominious",
+      "funDefinition": "A fencer's ignominious defeat came when the foil slipped and scored a touch on the snack table."
+    },
+    {
+      "word": "illicit",
+      "funDefinition": "Daniel found Johnny's illicit midnight dojo practice happening under a flickering strip-mall sign."
+    },
+    {
+      "word": "immerse",
+      "funDefinition": "Roz learned to immerse herself in the forest until every birdcall became part of her robot routine."
+    },
+    {
+      "word": "immutable",
+      "funDefinition": "The Golden Gate Bridge seemed immutable, standing firm while fog tried to edit the skyline."
+    },
+    {
+      "word": "impassive",
+      "funDefinition": "Prue stayed impassive while tasting a cake so salty the bakers looked ready to flee the tent."
+    },
+    {
+      "word": "impeccable",
+      "funDefinition": "Thierry Henry's impeccable first touch made controlling the ball look effortless in the Premier League."
+    },
+    {
+      "word": "impecunious",
+      "funDefinition": "Impecunious Bart tried to pay for a Squishee with lint, a marble, and suspicious confidence."
+    },
+    {
+      "word": "imperative",
+      "funDefinition": "For Salah, it was imperative to shoot before the defender closed the gap at Anfield."
+    },
+    {
+      "word": "imperious",
+      "funDefinition": "Mr. Burns gave an imperious finger point, and Smithers moved before the order was fully spoken."
+    },
+    {
+      "word": "impertinent",
+      "funDefinition": "Miguel's impertinent grin after questioning Johnny's playlist earned him ten extra push-ups."
+    },
+    {
+      "word": "impervious",
+      "funDefinition": "A seal looked impervious to embarrassment after sliding off the dock and pretending it meant to."
+    },
+    {
+      "word": "impetuous",
+      "funDefinition": "Impetuous as always, Bart skateboarded off the roof before thinking about how he would land."
+    },
+    {
+      "word": "impinge",
+      "funDefinition": "Karl the fog began to impinge on the Painted Ladies, smudging every postcard-perfect color."
+    },
+    {
+      "word": "implacable",
+      "funDefinition": "Sensei Kreese was implacable, refusing to forgive weakness even after the class begged for water."
+    },
+    {
+      "word": "implement",
+      "funDefinition": "Almanzo treated the butter churn as the finest implement on the farm when dessert depended on it."
+    },
+    {
+      "word": "implicate",
+      "funDefinition": "Nedry's shaving-cream can seemed to implicate him before the dinosaurs even found his jeep."
+    },
+    {
+      "word": "implicit",
+      "funDefinition": "Paul's raised eyebrow carried an implicit warning that the pastry was one minute from disaster."
+    },
+    {
+      "word": "impregnable",
+      "funDefinition": "A cat declared the laundry basket impregnable, swatting every hand that dared breach the fortress."
+    },
+    {
+      "word": "impudent",
+      "funDefinition": "Bart's impudent chalkboard salute made Principal Skinner's eye twitch before detention even began."
+    },
+    {
+      "word": "impute",
+      "funDefinition": "Johnny tried to impute every broken board to bad wood, not his students' wobbly kicks."
+    },
+    {
+      "word": "inane",
+      "funDefinition": "Zaphod's inane plan involved stealing a spaceship because the buttons looked fun to press."
+    },
+    {
+      "word": "inarticulate",
+      "funDefinition": "After Saka's volley, the commentator went inarticulate and produced only joyful squeaks."
+    },
+    {
+      "word": "incarnate",
+      "funDefinition": "Homer called the giant donut temptation incarnate, as if desire itself wore pink frosting."
+    },
+    {
+      "word": "incendiary",
+      "funDefinition": "Jack became an incendiary, rousing the boys with wild chants until the island felt ready to burn."
+    },
+    {
+      "word": "incessant",
+      "funDefinition": "The incessant cry of gulls over Fisherman's Wharf is the constant soundtrack of San Francisco's waterfront."
+    },
+    {
+      "word": "inchoate",
+      "funDefinition": "Roz's inchoate first nest was just twigs, guesses, and a robot trying very hard to understand birds."
+    },
+    {
+      "word": "incisive",
+      "funDefinition": "Dr. Malcolm gave an incisive warning: a park built on chaos would not stay on schedule."
+    },
+    {
+      "word": "inclination",
+      "funDefinition": "A penguin showed an inclination toward drama by bowing before every belly-slide."
+    },
+    {
+      "word": "incontrovertible",
+      "funDefinition": "The bite marks made it incontrovertible that a dinosaur, not bad luck, had visited the tour car."
+    },
+    {
+      "word": "incorrigible",
+      "funDefinition": "Incorrigible Bart promised to behave, then immediately skateboarded through the cafeteria."
+    },
+    {
+      "word": "increment",
+      "funDefinition": "Haaland celebrated each goal as another increment towards a Golden Boot award."
+    },
+    {
+      "word": "incumbent",
+      "funDefinition": "The incumbent mayor of Springfield waved from a parade float as if reelection were automatic."
+    },
+    {
+      "word": "indefatigable",
+      "funDefinition": "Indefatigable Johnny kept shouting drills long after the class was puddled on the mat."
+    },
+    {
+      "word": "indigenous",
+      "funDefinition": "At Pier 39, the indigenous sea lions acted like they had owned those docks forever."
+    },
+    {
+      "word": "indigent",
+      "funDefinition": "An indigent cat stared at the empty treat jar as if poverty had struck the whole household."
+    },
+    {
+      "word": "indignation",
+      "funDefinition": "Lisa's indignation flared when the school cut music class but bought a mascot cannon."
+    },
+    {
+      "word": "indolent",
+      "funDefinition": "An indolent seal refused to clap unless the fish landed within whisker distance."
+    },
+    {
+      "word": "indomitable",
+      "funDefinition": "Roz's indomitable patience survived storms, bears, and one very confused gosling."
+    },
+    {
+      "word": "induce",
+      "funDefinition": "Prue's praise could induce happy tears faster than a perfectly risen sponge in the Bake-Off tent."
+    },
+    {
+      "word": "ineffable",
+      "funDefinition": "Standing fog-wrapped beneath the Golden Gate Bridge, the tourists felt an ineffable sense of awe they couldn't put into words."
+    },
+    {
+      "word": "inept",
+      "funDefinition": "An inept fencer lunged backward, bowed to the wrong judge, and parried a coat rack."
+    },
+    {
+      "word": "inexorable",
+      "funDefinition": "The fog's inexorable roll over Twin Peaks ignored every tourist begging for one clear photo."
+    },
+    {
+      "word": "inextricable",
+      "funDefinition": "Arthur's headphones became inextricable from his towel after one panicked galactic hitchhike."
+    },
+    {
+      "word": "infamy",
+      "funDefinition": "Nedry earned infamy at Jurassic Park by making one snack run into a prehistoric catastrophe."
+    },
+    {
+      "word": "infusion",
+      "funDefinition": "A sourdough loaf got an infusion of garlic so strong that everyone needed to brush their teeth after eating it."
+    },
+    {
+      "word": "ingenious",
+      "funDefinition": "Lisa's ingenious science fair volcano sorted recyclables while erupting non-toxic glitter."
+    },
+    {
+      "word": "ingenuous",
+      "funDefinition": "Miguel's ingenuous question about whether mercy was optional made Johnny blink twice."
+    },
+    {
+      "word": "inhibit",
+      "funDefinition": "A cat's cone of shame did not inhibit its plan to knock every pencil off the desk."
+    },
+    {
+      "word": "inimical",
+      "funDefinition": "To a penguin, the slick rock was inimical, plotting every wobble like a tiny icy villain."
+    },
+    {
+      "word": "iniquity",
+      "funDefinition": "Sideshow Bob called Bart's whoopee cushion iniquity, a wickedness worthy of opera."
+    },
+    {
+      "word": "injunction",
+      "funDefinition": "A judge's injunction ordered Cobra Kai to stop using the community pool as a sparring arena."
+    },
+    {
+      "word": "innate",
+      "funDefinition": "Haaland's innate sense of the field made every loose ball seem magnetized to his boots."
+    },
+    {
+      "word": "innocuous",
+      "funDefinition": "The harmless-looking cable car bell seemed innocuous until it startled a whole line of tourists."
+    },
+    {
+      "word": "innovate",
+      "funDefinition": "In the tent, one baker tried to innovate by turning a showstopper into edible stained glass."
+    },
+    {
+      "word": "innuendo",
+      "funDefinition": "Smithers' innuendo about Mr. Burns' 'special project' made the boardroom suddenly silent."
+    },
+    {
+      "word": "inoculate",
+      "funDefinition": "Dr. Malcolm wished someone could inoculate Jurassic Park against corporate overconfidence."
+    },
+    {
+      "word": "inquisitor",
+      "funDefinition": "Paul became an inquisitor, asking exactly why the custard was sweating under the meringue."
+    },
+    {
+      "word": "insatiable",
+      "funDefinition": "Homer's insatiable craving for donuts survived breakfast, lunch, and a near-religious nap."
+    },
+    {
+      "word": "insidious",
+      "funDefinition": "The velociraptors' insidious hunting tactic was to distract their prey from the front while another struck from the side in Jurassic Park."
+    },
+    {
+      "word": "insinuate",
+      "funDefinition": "A seal tried to insinuate that the missing fish had vanished mysteriously, not into its mouth."
+    },
+    {
+      "word": "insipid",
+      "funDefinition": "Prue called the beige sponge insipid, so dull it made vanilla seem like fireworks."
+    },
+    {
+      "word": "insolent",
+      "funDefinition": "Bart's insolent answer to homework was a paper airplane labeled 'do it yourself.'"
+    },
+    {
+      "word": "instigate",
+      "funDefinition": "Sensei Kreese tried to instigate a hallway feud with one cold stare and a whispered command."
+    },
+    {
+      "word": "insular",
+      "funDefinition": "The island boys grew insular, trusting only their own tribe and ignoring the world beyond the reef."
+    },
+    {
+      "word": "insurgent",
+      "funDefinition": "A tiny penguin insurgent rebelled against the marching line and waddled straight to the fish cart."
+    },
+    {
+      "word": "integral",
+      "funDefinition": "The parry was integral to the fencer's defense; without it, every lunge became a disaster."
+    },
+    {
+      "word": "interject",
+      "funDefinition": "Ford Prefect would interject, 'Don't panic,' right as Arthur began panicking beautifully."
+    },
+    {
+      "word": "interlocutor",
+      "funDefinition": "Marvin was Arthur's gloomiest interlocutor, turning every conversation into a complaint about life."
+    },
+    {
+      "word": "interminable",
+      "funDefinition": "The wait for the F train felt interminable while fog swallowed the Muni platform sign."
+    },
+    {
+      "word": "intimation",
+      "funDefinition": "Paul's tiny frown was an intimation that the the beautiful-looking showstopper was actually a taste disaster."
+    },
+    {
+      "word": "intractable",
+      "funDefinition": "Ralph Wiggum found solving the Rubix Cube to be an intractable problem, until he peeled off the stickers and ate them."
+    },
+    {
+      "word": "intransigent",
+      "funDefinition": "Johnny stayed intransigent about eighties rock, refusing every playlist Miguel suggested."
+    },
+    {
+      "word": "intrepid",
+      "funDefinition": "The intrepid little penguin was first to dive off the ice shelf, even with orcas lurking below."
+    },
+    {
+      "word": "inundate",
+      "funDefinition": "Pier 39 sea lions began to inundate the dock until every plank seemed to bark."
+    },
+    {
+      "word": "inure",
+      "funDefinition": "Daily drills in Cobra Kai inured Miguel to bruises, lectures, and Johnny's terrible life advice."
+    },
+    {
+      "word": "invective",
+      "funDefinition": "Sideshow Bob unleashed invective at Bart, a furious speech with more venom than a rake had splinters."
+    },
+    {
+      "word": "inveterate",
+      "funDefinition": "Homer was an inveterate snacker, reaching for chips before his brain finished waking up."
+    },
+    {
+      "word": "inviolable",
+      "funDefinition": "For a fencer, the mask felt inviolable, a guarded little fortress against every touch."
+    },
+    {
+      "word": "irascible",
+      "funDefinition": "Mr. Burns grew irascible when the hounds napped instead of menacing trespassers."
+    },
+    {
+      "word": "iridescent",
+      "funDefinition": "A seal's iridescent bubble shimmered rainbow colors before popping on its smug whiskers."
+    },
+    {
+      "word": "irreverence",
+      "funDefinition": "Bart's irreverence showed when he doodled sunglasses on Jebediah Springfield's portrait."
+    },
+    {
+      "word": "irrevocable",
+      "funDefinition": "The Vogon’s decision to bulldoze the earth irrevocably changed Arthur Dent’s future."
+    },
+    {
+      "word": "jubilant",
+      "funDefinition": "Leicester City's fans were jubilant when their underdog club shocked everyone by winning the Premier League title."
+    },
+    {
+      "word": "judicious",
+      "funDefinition": "Prue made a judicious choice, praising the lemon tart but warning that it looked a bit ‘rough and ready’."
+    },
+    {
+      "word": "juxtaposition",
+      "funDefinition": "The juxtaposition of a tiny cat beside a giant dog bed made the stolen nap look even bolder."
+    },
+    {
+      "word": "knell",
+      "funDefinition": "The distant knell of a bell on the island made the littluns whisper as the fire died."
+    },
+    {
+      "word": "kudos",
+      "funDefinition": "Kudos went to Son for the curving shot that made the keeper applaud against his will."
+    },
+    {
+      "word": "laceration",
+      "funDefinition": "A fencer checked the glove laceration after the foil nicked fabric instead of scoring cleanly."
+    },
+    {
+      "word": "laconic",
+      "funDefinition": "Mr. Miyagi was famously laconic, summarizing entire life lessons in just 'wax on, wax off.'"
+    },
+    {
+      "word": "languid",
+      "funDefinition": "A languid seal rolled one flipper lazily, applauding only because the fish bucket appeared."
+    },
+    {
+      "word": "larceny",
+      "funDefinition": "A cat committed larceny by stealing tuna from the counter and leaving only paw-print evidence."
+    },
+    {
+      "word": "largess",
+      "funDefinition": "Almanzo saw true largess when the table filled with pies, preserves, and hams."
+    },
+    {
+      "word": "latent",
+      "funDefinition": "Lisa's latent drumming talent emerged the moment she found two pencils and a cafeteria tray."
+    },
+    {
+      "word": "laudatory",
+      "funDefinition": "Paul's laudatory handshake said the bread was brilliant before he spoke a single word."
+    },
+    {
+      "word": "lavish",
+      "funDefinition": "The Painted Ladies got a lavish sunset, all gold windows and fog posing like a curtain."
+    },
+    {
+      "word": "legerdemain",
+      "funDefinition": "Shin Lim’s legerdemain made the cards disappear, poker chips reappear, and astonished the audience."
+    },
+    {
+      "word": "lenient",
+      "funDefinition": "Daniel was lenient with a beginner's crooked kick, correcting it gently instead of barking."
+    },
+    {
+      "word": "lethargic",
+      "funDefinition": "Stuffed with pie and pancakes, Almanzo grew lethargic by the warm stove on a snowy evening in Farmer Boy."
+    },
+    {
+      "word": "liability",
+      "funDefinition": "Nedry became a liability the moment his greed mattered more than keeping Jurassic Park online."
+    },
+    {
+      "word": "libertarian",
+      "funDefinition": "The libertarian believed in personal choice and responsibility, refusing to borrow books from a library or pay for health insurance."
+    },
+    {
+      "word": "licentious",
+      "funDefinition": "In Moe's Tavern, Homer's licentious bachelor-party ideas ignored rules, dignity, and common sense."
+    },
+    {
+      "word": "limpid",
+      "funDefinition": "The limpid water by the Golden Gate was so clear a crab seemed to wave at tourists."
+    },
+    {
+      "word": "linchpin",
+      "funDefinition": "The foil's tiny tip was the linchpin of the bout; without it, no touch could count."
+    },
+    {
+      "word": "lithe",
+      "funDefinition": "Salah looked lithe as he slipped between defenders like a ribbon wearing football boots."
+    },
+    {
+      "word": "litigant",
+      "funDefinition": "Lionel Hutz treated every Springfield litigant like a future billable hour in a cheap suit."
+    },
+    {
+      "word": "lucid",
+      "funDefinition": "Lisa Simpson gave such a lucid explanation of climate science that even Homer almost understood it."
+    },
+    {
+      "word": "luminous",
+      "funDefinition": "Roz's luminous eyes glowed softly in the forest, guiding goslings through the dark."
+    },
+    {
+      "word": "lurid",
+      "funDefinition": "The lurid headline about Bart's prank made Springfield Elementary sound like a pirate war."
+    },
+    {
+      "word": "maelstrom",
+      "funDefinition": "The Bake-Off tent became a maelstrom of flour, panic, and collapsing towers before judging."
+    },
+    {
+      "word": "magnanimous",
+      "funDefinition": "In a magnanimous gesture, Daniel LaRusso offered to train his old rival's students at Miyagi-Do."
+    },
+    {
+      "word": "malediction",
+      "funDefinition": "Sideshow Bob hissed a malediction at the rakes, cursing every wooden handle in Springfield."
+    },
+    {
+      "word": "malevolent",
+      "funDefinition": "Sideshow Bob's malevolent grin promised that his next scheme against Bart would be his cruelest yet."
+    },
+    {
+      "word": "malleable",
+      "funDefinition": "Prue praised the malleable dough because it bent into braids without tearing or sulking."
+    },
+    {
+      "word": "mandate",
+      "funDefinition": "Sensei Kreese issued a mandate: strike first, no excuses, and absolutely no whining."
+    },
+    {
+      "word": "manifest",
+      "funDefinition": "It was manifest to every tourist that the sea lions, not the shops, ruled Pier 39."
+    },
+    {
+      "word": "manifold",
+      "funDefinition": "Zaphod's manifold excuses for being late ranged from space pirates to his second head oversleeping."
+    },
+    {
+      "word": "maudlin",
+      "funDefinition": "Homer grew maudlin over a dropped donut, composing a teary goodbye beside the trash can."
+    },
+    {
+      "word": "maverick",
+      "funDefinition": "A maverick penguin skipped the colony march and belly-slid down the hill wearing seaweed."
+    },
+    {
+      "word": "mawkish",
+      "funDefinition": "The mawkish cake inscription in the tent was so syrupy that even Prue winced."
+    },
+    {
+      "word": "maxim",
+      "funDefinition": "Mr. Miyagi's maxim, 'balance first,' turned chores into wisdom Daniel could actually use."
+    },
+    {
+      "word": "meager",
+      "funDefinition": "An indigent-looking cat accepted the meager kibble portion with a stare that demanded reparations."
+    },
+    {
+      "word": "medley",
+      "funDefinition": "The cable car bell played a medley of clangs, squeaks, and tourist cheers down Powell Street."
+    },
+    {
+      "word": "mendacious",
+      "funDefinition": "Nedry's mendacious smile said 'all systems fine' while his screen screamed otherwise."
+    },
+    {
+      "word": "mercurial",
+      "funDefinition": "Klopp's mercurial touchline mood leapt from thundercloud to grin after one late Liverpool goal."
+    },
+    {
+      "word": "meritorious",
+      "funDefinition": "Lisa's meritorious essay on saxophone history deserved more than a gold star and cafeteria pudding."
+    },
+    {
+      "word": "metamorphosis",
+      "funDefinition": "A penguin's metamorphosis from awkward waddle to sleek swimmer happened the instant it hit water."
+    },
+    {
+      "word": "meticulous",
+      "funDefinition": "A meticulous fencer studies an opponent's smallest twitch before launching a single precise lunge."
+    },
+    {
+      "word": "mitigate",
+      "funDefinition": "Roz tried to mitigate the harsh winter by building a warm shelter for the island's animals in The Wild Robot."
+    },
+    {
+      "word": "moderate",
+      "funDefinition": "Daniel chose a moderate lesson pace, tough enough to grow but not enough to break Miguel."
+    },
+    {
+      "word": "modicum",
+      "funDefinition": "Homer showed a modicum of restraint by eating only eleven donuts before noon."
+    },
+    {
+      "word": "modulate",
+      "funDefinition": "Prue asked the baker to modulate the lemon flavor from trumpet blast to pleasant zing."
+    },
+    {
+      "word": "mollify",
+      "funDefinition": "A fresh fish could mollify the seal, softening its angry barks into satisfied snorts."
+    },
+    {
+      "word": "morass",
+      "funDefinition": "Arthur sank into a morass of galactic paperwork so confusing even the forms needed forms."
+    },
+    {
+      "word": "mores",
+      "funDefinition": "The island's mores shifted fast, from conch meetings to face paint and spear dances."
+    },
+    {
+      "word": "morose",
+      "funDefinition": "Marvin stayed morose even when the spaceship doors opened with cheerful little sighs."
+    },
+    {
+      "word": "multifarious",
+      "funDefinition": "The Bake-Off table held multifarious treats: buns, biscuits, towers, tarts, and one nervous jelly."
+    },
+    {
+      "word": "mundane",
+      "funDefinition": "For Roz, even a mundane chore like stacking sticks became a lesson in forest life."
+    },
+    {
+      "word": "munificence",
+      "funDefinition": "Almanzo admired his family's munificence when supper arrived in generous, steaming heaps."
+    },
+    {
+      "word": "mutable",
+      "funDefinition": "The San Francisco fog was mutable, turning from ghost blanket to silver ribbon in minutes."
+    },
+    {
+      "word": "myriad",
+      "funDefinition": "A myriad of stars spilled across the sky as Arthur Dent gazed out from the Heart of Gold in The Hitchhiker's Guide."
+    },
+    {
+      "word": "nadir",
+      "funDefinition": "Bart's nadir came when even Milhouse refused to help with the prank cleanup."
+    },
+    {
+      "word": "nascent",
+      "funDefinition": "A nascent loaf in the Bake-Off tent rose slowly, like a tiny doughy dream waking up."
+    },
+    {
+      "word": "nebulous",
+      "funDefinition": "Zaphod's nebulous plan had cloudy details, but somehow involved swagger and a stolen cruiser."
+    },
+    {
+      "word": "nefarious",
+      "funDefinition": "Mr. Burns hatched a nefarious plan to block out the sun and force Springfield to buy his electricity."
+    },
+    {
+      "word": "negligent",
+      "funDefinition": "A negligent cat babysitter let the kitten nap inside the mixing bowl and blamed gravity."
+    },
+    {
+      "word": "neophyte",
+      "funDefinition": "The neophyte fencer saluted the referee, then accidentally saluted the exit sign."
+    },
+    {
+      "word": "nocturnal",
+      "funDefinition": "A nocturnal seal raided the moonlit dock, barking softly like a sneaky rubber trumpet."
+    },
+    {
+      "word": "noisome",
+      "funDefinition": "Homer fled the noisome cloud rising from the fridge, where last month's donut had become a villain."
+    },
+    {
+      "word": "nomadic",
+      "funDefinition": "A nomadic cat wandered from sunbeam to laundry basket to keyboard, claiming each kingdom before lunch."
+    },
+    {
+      "word": "nominal",
+      "funDefinition": "For a nominal fee of one high-five, Johnny Lawrence agreed to call Miguel's kick almost badass."
+    },
+    {
+      "word": "nonchalant",
+      "funDefinition": "The sea lion stayed utterly nonchalant as a tour boat passed, not even bothering to lift its whiskered head."
+    },
+    {
+      "word": "nondescript",
+      "funDefinition": "The nondescript tent sponge looked so plain that even Paul Hollywood forgot whether he'd judged it."
+    },
+    {
+      "word": "notorious",
+      "funDefinition": "Nedry became notorious in Jurassic Park for making one tiny snack run into a dinosaur disaster."
+    },
+    {
+      "word": "novice",
+      "funDefinition": "The novice fencer saluted with the foil, then asked which end was supposed to poke."
+    },
+    {
+      "word": "noxious",
+      "funDefinition": "The noxious fog over Springfield from the burning tire pit gave Maggie a headache."
+    },
+    {
+      "word": "nuance",
+      "funDefinition": "Lisa heard every nuance in Bleeding Gums Murphy's sax, from sleepy blue notes to jubilant squeaks."
+    },
+    {
+      "word": "nurture",
+      "funDefinition": "Roz nurtured the gosling by sheltering him, teaching him, and learning motherhood one beep at a time."
+    },
+    {
+      "word": "obdurate",
+      "funDefinition": "Sensei Kreese stayed obdurate, refusing mercy even when every Cobra Kai student begged him to chill."
+    },
+    {
+      "word": "obfuscate",
+      "funDefinition": "Zaphod tried to obfuscate the plan with swagger until Arthur couldn't tell danger from lunch."
+    },
+    {
+      "word": "oblique",
+      "funDefinition": "Salah's oblique run sliced diagonally behind the defense instead of charging straight at goal."
+    },
+    {
+      "word": "oblivious",
+      "funDefinition": "The penguin was oblivious to the fish on its head and bowed like it had invented fashion."
+    },
+    {
+      "word": "obscure",
+      "funDefinition": "The Golden Gate Bridge looked obscure when the fog hid half of it like a magician's scarf."
+    },
+    {
+      "word": "obsequious",
+      "funDefinition": "Smithers gave Mr. Burns an obsequious bow so deep he nearly polished the floor with his nose."
+    },
+    {
+      "word": "obsolete",
+      "funDefinition": "The parent showed their kid the obsolete items they grew up with - phones connected to the wall, TVs where you had to get up and turn a dial to change the channel."
+    },
+    {
+      "word": "obstinate",
+      "funDefinition": "Obstinate to the end, Jack refused to share the conch or listen to Ralph's pleas in Lord of the Flies."
+    },
+    {
+      "word": "obstreperous",
+      "funDefinition": "In the Bake Off tent, an obstreperous mixer rattled so loudly Prue could hear it over panic."
+    },
+    {
+      "word": "obtuse",
+      "funDefinition": "Ralph was obtuse enough to think a fire drill meant the school wanted him to hug flames."
+    },
+    {
+      "word": "odious",
+      "funDefinition": "The odious scent of a seal's stolen bucket of squid made every other seal scoot away dramatically."
+    },
+    {
+      "word": "officious",
+      "funDefinition": "An officious cable car bell ringer kept advising tourists how to stand, smile, and admire Nob Hill."
+    },
+    {
+      "word": "ominous",
+      "funDefinition": "In Jurassic Park, the ominous ripple in the water cup warned that something huge was stomping closer."
+    },
+    {
+      "word": "onerous",
+      "funDefinition": "Almanzo found hauling water before breakfast an onerous chore, especially when pancakes were already calling."
+    },
+    {
+      "word": "opulent",
+      "funDefinition": "Mr. Burns served an opulent dinner with gold plates, tiny quail, and a chandelier for each guest."
+    },
+    {
+      "word": "oration",
+      "funDefinition": "Daniel's oration about balance made the dojo stand straighter, even before anyone waxed a car."
+    },
+    {
+      "word": "ornate",
+      "funDefinition": "The ornate showstopper had so many sugar roses that Paul needed a map to find the cake."
+    },
+    {
+      "word": "orthodox",
+      "funDefinition": "The orthodox fencer kept perfect stance and saluted properly before every neat, rule-following lunge."
+    },
+    {
+      "word": "oscillate",
+      "funDefinition": "A cat's tail began to oscillate left and right when the red dot refused to surrender."
+    },
+    {
+      "word": "ostensible",
+      "funDefinition": "Ford's ostensible reason for visiting Earth was research, though the pubs seemed suspiciously important."
+    },
+    {
+      "word": "ostentatious",
+      "funDefinition": "Zaphod Beeblebrox's ostentatious spaceship was painted gold and announced itself with a fanfare wherever it landed."
+    },
+    {
+      "word": "ostracism",
+      "funDefinition": "Bart faced ostracism at recess after trading everyone's lunches for one spectacularly illegal slingshot."
+    },
+    {
+      "word": "pacific",
+      "funDefinition": "The pacific purr of the cat soothed the room until even the vacuum seemed less terrifying."
+    },
+    {
+      "word": "palatable",
+      "funDefinition": "Prue made the burnt biscuits palatable by finding one corner that tasted mostly like butter."
+    },
+    {
+      "word": "palette",
+      "funDefinition": "The Painted Ladies offered a pastel palette of colors, like San Francisco had arranged its crayons."
+    },
+    {
+      "word": "palliate",
+      "funDefinition": "Mr. Miyagi used calm advice to palliate Daniel's panic before the tournament bruises even arrived."
+    },
+    {
+      "word": "pallid",
+      "funDefinition": "Arthur Dent looked pallid when the spaceship menu suggested tea but delivered something green and bubbling."
+    },
+    {
+      "word": "panacea",
+      "funDefinition": "Homer believed donuts were a panacea, curing sadness, hunger, and the terror of Monday meetings."
+    },
+    {
+      "word": "paradigm",
+      "funDefinition": "Guardiola's passing triangles became a paradigm of tidy soccer, a perfect model other teams copied."
+    },
+    {
+      "word": "paradox",
+      "funDefinition": "Marvin was a paradox: a genius robot who could solve galaxies yet complained about doors."
+    },
+    {
+      "word": "paragon",
+      "funDefinition": "Lisa considered herself a paragon of study habits until one jazz solo replaced her homework."
+    },
+    {
+      "word": "paramount",
+      "funDefinition": "For a fencer, footwork is paramount; even the fastest blade is useless without balanced feet beneath it."
+    },
+    {
+      "word": "pariah",
+      "funDefinition": "The seal became a pariah after flopping onto the best rock and sneezing fish breath at everyone."
+    },
+    {
+      "word": "parody",
+      "funDefinition": "Bart's parody of Principal Skinner sounded so exact that detention practically wrote itself."
+    },
+    {
+      "word": "parsimony",
+      "funDefinition": "Almanzo's father showed parsimony by saving every nail and reusing it."
+    },
+    {
+      "word": "partisan",
+      "funDefinition": "A partisan of Cobra Kai, Hawk cheered every strike as if mercy were a boring rumor."
+    },
+    {
+      "word": "patent",
+      "funDefinition": "It was patent to every penguin that the slippery belly-slide was faster than dignified waddling."
+    },
+    {
+      "word": "pathology",
+      "funDefinition": "Dr. Malcolm saw Jurassic Park's pathology in its belief that bigger teeth meant better planning."
+    },
+    {
+      "word": "pathos",
+      "funDefinition": "Milhouse added pathos to his love note by drawing one lonely tear beside Lisa's name."
+    },
+    {
+      "word": "paucity",
+      "funDefinition": "There was a paucity of sprinkles in the Bake Off pantry, causing three bakers to gasp."
+    },
+    {
+      "word": "pejorative",
+      "funDefinition": "Johnny used pejorative nicknames for fancy kicks until Miguel proved the spinny one actually worked."
+    },
+    {
+      "word": "pellucid",
+      "funDefinition": "Roz gave a pellucid explanation of migration, so clear even the smallest gosling stopped chirping questions."
+    },
+    {
+      "word": "penchant",
+      "funDefinition": "Saka has a penchant for cutting inside and curling shots like the ball owes him applause."
+    },
+    {
+      "word": "penitent",
+      "funDefinition": "A penitent cat returned the stolen sock with ears low and absolutely no promise to reform."
+    },
+    {
+      "word": "penultimate",
+      "funDefinition": "On the penultimate challenge, the Bake Off bakers iced biscuits while pretending finals panic was decorative."
+    },
+    {
+      "word": "penurious",
+      "funDefinition": "Mr. Burns was so penurious he charged Smithers rent for the shadow beside his desk."
+    },
+    {
+      "word": "perfidious",
+      "funDefinition": "Dennis Nedry's perfidious betrayal shut down the park's fences and unleashed the dinosaurs in Jurassic Park."
+    },
+    {
+      "word": "perfunctory",
+      "funDefinition": "The fencer gave a perfunctory salute, barely lifting the foil before lunging like manners were optional."
+    },
+    {
+      "word": "permeate",
+      "funDefinition": "The smell of fresh sourdough began to permeate Fisherman's Wharf, making everyone hungry."
+    },
+    {
+      "word": "pernicious",
+      "funDefinition": "Kreese's pernicious lessons spread through Cobra Kai, turning confidence into cruelty one slogan at a time."
+    },
+    {
+      "word": "perplex",
+      "funDefinition": "The Infinite Improbability Drive continued to perplex Arthur by turning danger into flowers and whales."
+    },
+    {
+      "word": "perspicacity",
+      "funDefinition": "Lisa's perspicacity let her spot the fake substitute teacher before Bart finished his first prank."
+    },
+    {
+      "word": "pert",
+      "funDefinition": "A pert penguin chirped back at the zookeeper, bold as if it owned the fish freezer."
+    },
+    {
+      "word": "pertinacious",
+      "funDefinition": "Daniel was pertinacious, practicing the crane kick long after his leg voted to quit."
+    },
+    {
+      "word": "perusal",
+      "funDefinition": "Paul's perusal of the showstopper was so careful he noticed one raisin facing the wrong way."
+    },
+    {
+      "word": "pervasive",
+      "funDefinition": "By kickoff, Klopp's energy was pervasive, spreading through Anfield like every seat had joined the press."
+    },
+    {
+      "word": "petulance",
+      "funDefinition": "Bart's petulance showed when he stomped upstairs because Lisa solved the mystery before his skateboard did."
+    },
+    {
+      "word": "philanthropic",
+      "funDefinition": "A philanthropic seal shared its fish pile, though it kept the biggest herring for emotional support."
+    },
+    {
+      "word": "phlegmatic",
+      "funDefinition": "Marvin stayed phlegmatic as alarms blared, sighing that explosions were merely another disappointing Tuesday."
+    },
+    {
+      "word": "pillage",
+      "funDefinition": "The Lord of the Flies boys tried to pillage snacks from the littluns like tiny pirates."
+    },
+    {
+      "word": "pinnacle",
+      "funDefinition": "For Haaland, the pinnacle of a match is rising above defenders and heading in thunder."
+    },
+    {
+      "word": "pithy",
+      "funDefinition": "Mr. Miyagi's pithy advice, 'wax on,' said more about discipline than Daniel expected."
+    },
+    {
+      "word": "pittance",
+      "funDefinition": "Homer accepted a pittance for guarding donuts, then ate enough evidence to bankrupt the job."
+    },
+    {
+      "word": "placate",
+      "funDefinition": "Marge tried to placate a furious Homer with a fresh plate of pork chops at the Springfield dinner table."
+    },
+    {
+      "word": "placid",
+      "funDefinition": "The placid bay below the Golden Gate Bridge looked calm enough to tuck in with fog."
+    },
+    {
+      "word": "platitude",
+      "funDefinition": "Prue rejected the platitude 'just bake with love' when the tart still had a soggy bottom."
+    },
+    {
+      "word": "plaudits",
+      "funDefinition": "Salah earned plaudits after a dazzling goal sent defenders spinning like dropped training cones."
+    },
+    {
+      "word": "plausible",
+      "funDefinition": "Bart's excuse that Santa's Little Helper ate the homework sounded plausible until the dog burped crayons."
+    },
+    {
+      "word": "plenitude",
+      "funDefinition": "Pier 39 had a plenitude of barking sea lions, enough to make the docks sound applauded."
+    },
+    {
+      "word": "plethora",
+      "funDefinition": "The Bake Off tent held a plethora of pastries, so many that one éclair needed crowd control."
+    },
+    {
+      "word": "pliable",
+      "funDefinition": "The cat found the cardboard box pliable, bending it into a throne shaped mostly like chaos."
+    },
+    {
+      "word": "poignant",
+      "funDefinition": "Roz's goodbye to Brightbill was poignant, making even the forest seem to hold its breath."
+    },
+    {
+      "word": "polemic",
+      "funDefinition": "Johnny delivered a polemic against participation trophies, complaining that they make kids weak and uncompetitive."
+    },
+    {
+      "word": "portent",
+      "funDefinition": "In Jurassic Park, a goat's sudden silence was a portent that dinner had found a larger diner."
+    },
+    {
+      "word": "potable",
+      "funDefinition": "Arthur asked whether the liquid was potable before trusting anything a spaceship called almost tea."
+    },
+    {
+      "word": "potentate",
+      "funDefinition": "Mr. Burns acted like a potentate, ruling Springfield Power Plant with a bony finger and ominous buttons."
+    },
+    {
+      "word": "pragmatic",
+      "funDefinition": "Ralph took a pragmatic approach, insisting the boys keep a signal fire burning so a ship might rescue them in Lord of the Flies."
+    },
+    {
+      "word": "precipice",
+      "funDefinition": "A seal paused at the icy precipice, then belly-flopped off the edge with royal confidence."
+    },
+    {
+      "word": "preclude",
+      "funDefinition": "A quick parry can preclude an opponent's touch, stopping the attack before the point lands."
+    },
+    {
+      "word": "precocious",
+      "funDefinition": "The precocious gosling learned to fly weeks early under Roz's patient guidance in The Wild Robot."
+    },
+    {
+      "word": "predilection",
+      "funDefinition": "Son's predilection for smiling before scoring made defenders nervous and fans instantly happier."
+    },
+    {
+      "word": "preponderance",
+      "funDefinition": "A preponderance of frosting on the cupcake made Paul suspect cake had become the minority ingredient."
+    },
+    {
+      "word": "prepossessing",
+      "funDefinition": "The Golden Gate Bridge was so prepossessing that tourists forgot their coffee and stared into the fog."
+    },
+    {
+      "word": "presage",
+      "funDefinition": "Marvin's gloomy forecast was a presage of trouble, mostly because he said everything would be awful."
+    },
+    {
+      "word": "prescient",
+      "funDefinition": "Lisa seemed prescient when she predicted Bart's prank before the chalk dust even exploded."
+    },
+    {
+      "word": "prescribe",
+      "funDefinition": "Sensei Kreese would prescribe fifty push-ups for blinking, because mercy never made his lesson plan."
+    },
+    {
+      "word": "presumptuous",
+      "funDefinition": "A presumptuous cat sat on the laptop and assumed every meeting now required tail input."
+    },
+    {
+      "word": "pretense",
+      "funDefinition": "Zaphod's pretense of confidence fooled nobody when the spaceship started asking him for directions."
+    },
+    {
+      "word": "primeval",
+      "funDefinition": "The primeval roar of the T. rex made Jurassic Park feel older than every tourist brochure."
+    },
+    {
+      "word": "privation",
+      "funDefinition": "On the island, privation left the Lord of the Flies boys hungry, filthy, and dreaming of snacks."
+    },
+    {
+      "word": "probity",
+      "funDefinition": "Mr. Miyagi's probity showed when he taught Daniel to win with honor, not cheap shots."
+    },
+    {
+      "word": "proclivity",
+      "funDefinition": "Homer's proclivity for donuts made every diet last until the first pink frosting sighting."
+    },
+    {
+      "word": "procure",
+      "funDefinition": "Almanzo tried to procure maple sugar from the pantry before anyone noticed his suspiciously sticky grin."
+    },
+    {
+      "word": "profane",
+      "funDefinition": "Bart's profane chalkboard sentence was erased before the class could learn any new vocabulary."
+    },
+    {
+      "word": "profligate",
+      "funDefinition": "Mr. Burns called Homer's profligate use of sprinkles a financial crisis in donut form."
+    },
+    {
+      "word": "profuse",
+      "funDefinition": "The cat offered profuse apologies by blinking twice and knocking over only one more mug."
+    },
+    {
+      "word": "promulgate",
+      "funDefinition": "Mayor Quimby used the press conference to promulgate that donuts were now banned in Springfield."
+    },
+    {
+      "word": "propagate",
+      "funDefinition": "A rumor about a handshake from Paul began to propagate through the Bake Off tent instantly."
+    },
+    {
+      "word": "propensity",
+      "funDefinition": "A penguin's propensity for belly-sliding made every snowy hill look like a personal highway."
+    },
+    {
+      "word": "propitious",
+      "funDefinition": "The clear morning was propitious for crossing the Golden Gate Bridge before the fog clocked in."
+    },
+    {
+      "word": "propriety",
+      "funDefinition": "Prue insisted on propriety, so no baker could lick ganache directly from the judging spoon."
+    },
+    {
+      "word": "prosaic",
+      "funDefinition": "After the spectacular showstoppers, a plain sponge cake seemed prosaic to the Bake-Off judges."
+    },
+    {
+      "word": "proscribe",
+      "funDefinition": "The fencing coach proscribed wild windmill attacks, outlawing anything that looked like angry gardening."
+    },
+    {
+      "word": "protean",
+      "funDefinition": "Roz proved protean, changing from helper to mother to protector as the island needed her."
+    },
+    {
+      "word": "prowess",
+      "funDefinition": "Haaland's scoring prowess made goalkeepers look like they were guarding a mouse hole from a cannon."
+    },
+    {
+      "word": "prudence",
+      "funDefinition": "A seal showed prudence by not stealing the shark's fish, despite the tempting sparkle of scales."
+    },
+    {
+      "word": "prurient",
+      "funDefinition": "Zaphod's prurient winks made Arthur hide behind the Guide and wish for a normal Tuesday."
+    },
+    {
+      "word": "puerile",
+      "funDefinition": "Bart's puerile prank replaced the teacher's apple with a whoopee cushion and called it science."
+    },
+    {
+      "word": "pugnacious",
+      "funDefinition": "Johnny was pugnacious at the tournament, ready to argue with the scoreboard if it blinked wrong."
+    },
+    {
+      "word": "pulchritude",
+      "funDefinition": "The Painted Ladies' pulchritude made postcards jealous, all pastel beauty lined up beside Alamo Square."
+    },
+    {
+      "word": "punctilious",
+      "funDefinition": "A punctilious fencer checked mask, glove, jacket, and salute before daring to lunge."
+    },
+    {
+      "word": "pungent",
+      "funDefinition": "Pier 39's pungent sea lion aroma hit tourists before the barking chorus even began."
+    },
+    {
+      "word": "punitive",
+      "funDefinition": "Kreese assigned punitive laps for mercy, making the dojo floor feel longer every minute."
+    },
+    {
+      "word": "putrid",
+      "funDefinition": "Homer opened a putrid lunchbox and discovered a sandwich old enough to vote for mayor."
+    },
+    {
+      "word": "quagmire",
+      "funDefinition": "Nedry's shortcut became a quagmire when rain, mud, and dinosaurs turned escape into slapstick."
+    },
+    {
+      "word": "quaint",
+      "funDefinition": "The cable car looked quaint climbing Nob Hill, charmingly old-fashioned and proudly clanging at buses."
+    },
+    {
+      "word": "quandary",
+      "funDefinition": "Arthur faced a quandary: drink the spaceship tea or admit the brown sludge had won."
+    },
+    {
+      "word": "quell",
+      "funDefinition": "Mr. Miyagi could quell a brewing fight with nothing more than a calm look and a steady breath."
+    },
+    {
+      "word": "querulous",
+      "funDefinition": "A querulous cat complained at the closed door, then complained louder when the door opened."
+    },
+    {
+      "word": "quixotic",
+      "funDefinition": "Lisa's quixotic campaign to make Springfield recycle every donut box was noble and wildly doomed."
+    },
+    {
+      "word": "quotidian",
+      "funDefinition": "For Almanzo, quotidian chores meant feeding calves, hauling wood, and smelling pancakes he couldn't yet eat."
+    },
+    {
+      "word": "rail",
+      "funDefinition": "Johnny began to rail against yoga, calling every stretch a secret plot against karate."
+    },
+    {
+      "word": "rancid",
+      "funDefinition": "The rancid fish made the penguin gag, then politely slide it toward a less picky friend."
+    },
+    {
+      "word": "rancor",
+      "funDefinition": "Years of rancor between Daniel and Johnny finally boiled over in the Cobra Kai dojo parking lot."
+    },
+    {
+      "word": "rapport",
+      "funDefinition": "Daniel and Mr. Miyagi built rapport through sanding floors, catching flies, and trusting quiet lessons."
+    },
+    {
+      "word": "rash",
+      "funDefinition": "A rash lunge left the fencer overextended, wobbling like a flamingo with a sword."
+    },
+    {
+      "word": "raucous",
+      "funDefinition": "The raucous sea lions at Pier 39 barked like a stadium arguing with lunch."
+    },
+    {
+      "word": "raze",
+      "funDefinition": "The T. rex could raze a snack stand flat with one annoyed swing of its tail."
+    },
+    {
+      "word": "rebuke",
+      "funDefinition": "Paul rebuked the baker for a raw center with one eyebrow and the word underproved."
+    },
+    {
+      "word": "recalcitrant",
+      "funDefinition": "The recalcitrant cat refused the new bed and slept triumphantly in the delivery box."
+    },
+    {
+      "word": "recapitulate",
+      "funDefinition": "Ford tried to recapitulate the escape plan, but Zaphod interrupted at every crucial verb."
+    },
+    {
+      "word": "reciprocate",
+      "funDefinition": "Saka passed to Ødegaard, who reciprocated with a return ball so smooth it deserved music."
+    },
+    {
+      "word": "reclusive",
+      "funDefinition": "The reclusive harbor seal hauled out alone on a distant rock, far from the noisy colony at the wharf."
+    },
+    {
+      "word": "reconcile",
+      "funDefinition": "Daniel and Johnny tried to reconcile after realizing their feud had outlasted several haircuts."
+    },
+    {
+      "word": "rectitude",
+      "funDefinition": "Lisa's rectitude made her return the extra change, even while Bart called honesty bad business."
+    },
+    {
+      "word": "redoubtable",
+      "funDefinition": "Salah was redoubtable on the wing, formidable enough to make defenders request backup."
+    },
+    {
+      "word": "refract",
+      "funDefinition": "The San Francisco fog seemed to refract the streetlights, bending their glow into ghostly ribbons."
+    },
+    {
+      "word": "refurbish",
+      "funDefinition": "Johnny tried to refurbish the old dojo, mostly by sweeping dust and glaring at wallpaper."
+    },
+    {
+      "word": "refute",
+      "funDefinition": "Dr. Malcolm refuted the park's safety claims by pointing at the escaped dinosaur with exhausted elegance."
+    },
+    {
+      "word": "regurgitate",
+      "funDefinition": "The penguin tried to regurgitate dinner for its chick, missing the chick and alarming a rock."
+    },
+    {
+      "word": "relegate",
+      "funDefinition": "Guardiola would relegate a sloppy pass to the training reel labeled please never again."
+    },
+    {
+      "word": "relish",
+      "funDefinition": "Homer relished the last donut slowly, as if frosting were a sacred Springfield sunrise."
+    },
+    {
+      "word": "remedial",
+      "funDefinition": "Miguel took remedial balance lessons after discovering that confidence could not replace standing up."
+    },
+    {
+      "word": "remiss",
+      "funDefinition": "The baker was remiss in setting a timer, so the biscuits became tiny charcoal frisbees."
+    },
+    {
+      "word": "renovate",
+      "funDefinition": "San Francisco crews renovate old cable cars until each one clangs like history with fresh paint."
+    },
+    {
+      "word": "renown",
+      "funDefinition": "Haaland's renown grew with every goal, until defenders recognized him with a sigh."
+    },
+    {
+      "word": "renunciation",
+      "funDefinition": "Arthur's renunciation of panic lasted five seconds before the universe did something else unreasonable."
+    },
+    {
+      "word": "repentant",
+      "funDefinition": "A repentant seal returned the stolen fish bucket, though one suspicious herring was missing."
+    },
+    {
+      "word": "replete",
+      "funDefinition": "The Bake Off table was replete with pies, tarts, and one cake wearing too much glitter."
+    },
+    {
+      "word": "repose",
+      "funDefinition": "After chasing the red dot, the cat chose to repose on the warmest forbidden laptop."
+    },
+    {
+      "word": "reprehensible",
+      "funDefinition": "Mr. Burns found Homer's donut theft reprehensible, mainly because Burns had wanted the donut first."
+    },
+    {
+      "word": "reprieve",
+      "funDefinition": "Daniel got a reprieve when the referee paused the match, giving his aching leg one blessed minute."
+    },
+    {
+      "word": "reproach",
+      "funDefinition": "Lisa reproached Homer for calling a donut pyramid a balanced breakfast."
+    },
+    {
+      "word": "reprobate",
+      "funDefinition": "Sideshow Bob's reprobate scheme was so evil even his rake collection looked nervous."
+    },
+    {
+      "word": "reprove",
+      "funDefinition": "Johnny Lawrence reproved Miguel for texting when he should have been sweeping the dojo."
+    },
+    {
+      "word": "repudiate",
+      "funDefinition": "Paul Hollywood repudiated the raw showstopper, refusing to call it bread at all."
+    },
+    {
+      "word": "repulse",
+      "funDefinition": "A cat was repulsed by the cheap kibble and buried it like a tiny scandal."
+    },
+    {
+      "word": "reputable",
+      "funDefinition": "In San Francisco, a reputable sourdough bakery can make a foggy line stretch around the block."
+    },
+    {
+      "word": "requisition",
+      "funDefinition": "Mr. Burns issued a requisition for one thousand hounds and a softer office chair."
+    },
+    {
+      "word": "rescind",
+      "funDefinition": "Guardiola rescinded the day off after training cones defended better than his back line."
+    },
+    {
+      "word": "reservoir",
+      "funDefinition": "Roz kept a reservoir of spare kindness, enough to help every animal on the island."
+    },
+    {
+      "word": "resilient",
+      "funDefinition": "Roz proved remarkably resilient, rebuilding herself again and again to survive the island in The Wild Robot."
+    },
+    {
+      "word": "resolute",
+      "funDefinition": "Daniel LaRusso stayed resolute, waxing on and off until darkness fell."
+    },
+    {
+      "word": "resolve",
+      "funDefinition": "Lisa resolved the mystery by proving Maggie's pacifier squeaks matched the culprit's rhythm."
+    },
+    {
+      "word": "respite",
+      "funDefinition": "A penguin found respite from waddling by sliding belly-first like royalty on ice."
+    },
+    {
+      "word": "resplendent",
+      "funDefinition": "The Golden Gate Bridge looked resplendent at sunset, glowing like the fog's fancy necklace."
+    },
+    {
+      "word": "restitution",
+      "funDefinition": "Bart made restitution by returning Principal Skinner's stolen steamed-ham recipe card."
+    },
+    {
+      "word": "restive",
+      "funDefinition": "In the Bake-Off tent, the restive dough kept puffing up as if it wanted a trailer."
+    },
+    {
+      "word": "retract",
+      "funDefinition": "Dr. Malcolm retracted his confident prediction when the velociraptor opened the door."
+    },
+    {
+      "word": "revel",
+      "funDefinition": "Haaland reveled in goals the way a dragon might revel in a mountain of soccer balls."
+    },
+    {
+      "word": "revere",
+      "funDefinition": "Miguel revered Mr. Miyagi's lessons, treating wax-on like sacred dojo wisdom."
+    },
+    {
+      "word": "revoke",
+      "funDefinition": "Mr. Burns revoked Homer's snack privileges after the vending machine filed a complaint."
+    },
+    {
+      "word": "rhapsodize",
+      "funDefinition": "Prue rhapsodized about the tart until even the raspberries seemed embarrassed by the praise."
+    },
+    {
+      "word": "ribald",
+      "funDefinition": "The Pier 39 sea lions answered tourists with ribald barks that sounded like dockside jokes."
+    },
+    {
+      "word": "rife",
+      "funDefinition": "Springfield was rife with rumors after Bart painted Principal Skinner's car hot pink."
+    },
+    {
+      "word": "ruminate",
+      "funDefinition": "Almanzo ruminated over whether one more pancake was bravery or farm-boy foolishness."
+    },
+    {
+      "word": "ruse",
+      "funDefinition": "A seal's fake nap was a ruse to steal the trainer's fish bucket."
+    },
+    {
+      "word": "saccharine",
+      "funDefinition": "“Oh, you’re so cuuuuuuuute!” cooed the old lady in saccharine tones."
+    },
+    {
+      "word": "sacrosanct",
+      "funDefinition": "For Ned Flanders, his left-handed store was sacrosanct, never to be mocked."
+    },
+    {
+      "word": "sagacity",
+      "funDefinition": "Mr. Miyagi's sagacity turned a fence-painting chore into a karate lesson."
+    },
+    {
+      "word": "salient",
+      "funDefinition": "The salient detail in Nedry's plan was the can of embryos, not his terrible shirt."
+    },
+    {
+      "word": "salutation",
+      "funDefinition": "A cat's salutation was one elegant meow and a tail flick like a royal memo."
+    },
+    {
+      "word": "salve",
+      "funDefinition": "Prue's kind words were a salve for the baker whose sponge collapsed like a sad pillow."
+    },
+    {
+      "word": "sanctimonious",
+      "funDefinition": "Lovejoy sounded sanctimonious while scolding Homer with donut glaze still on his collar."
+    },
+    {
+      "word": "sanguine",
+      "funDefinition": "Saka stayed sanguine after a missed shot, smiling as if the next goal had RSVP'd."
+    },
+    {
+      "word": "satiate",
+      "funDefinition": "Almanzo tried to satiate his hunger with pie, then remembered dinner had five more courses."
+    },
+    {
+      "word": "scathing",
+      "funDefinition": "Paul Hollywood gave a scathing stare that made the underbaked loaf apologize silently."
+    },
+    {
+      "word": "scintillating",
+      "funDefinition": "A fencer's scintillating foil flashed so brightly the referee blinked before calling touch."
+    },
+    {
+      "word": "scrupulous",
+      "funDefinition": "Lisa was scrupulous, checking every note before the school band murdered another march."
+    },
+    {
+      "word": "scurrilous",
+      "funDefinition": "Bart's scurrilous chalkboard joke was so rude even the erasers looked offended."
+    },
+    {
+      "word": "sedentary",
+      "funDefinition": "A sedentary cat treated the couch as a kingdom and exercise as enemy propaganda."
+    },
+    {
+      "word": "semaphore",
+      "funDefinition": "From a cable car, the conductor's arm became a semaphore - telling tourists when to stop, go, or get on board."
+    },
+    {
+      "word": "seminal",
+      "funDefinition": "Jurassic Park was a seminal disaster, proving dinosaur theme parks needed better door locks."
+    },
+    {
+      "word": "sensual",
+      "funDefinition": "Paul called the chocolate ganache sensual because its shine, scent, and silkiness stole the show."
+    },
+    {
+      "word": "sensuous",
+      "funDefinition": "San Francisco sourdough was sensuous, all crackly crust, warm steam, and tangy perfume."
+    },
+    {
+      "word": "serendipity",
+      "funDefinition": "Arthur Dent found serendipity when his lost towel led him to a decent cup of tea."
+    },
+    {
+      "word": "serene",
+      "funDefinition": "Roz stood serene in the storm, calm while leaves and squirrels panicked around her."
+    },
+    {
+      "word": "servile",
+      "funDefinition": "Smithers looked servile, praising Mr. Burns's sneezes as visionary leadership."
+    },
+    {
+      "word": "sinuous",
+      "funDefinition": "The Lombard Street cable car followed a sinuous path, curving like a snake with brakes."
+    },
+    {
+      "word": "sobriety",
+      "funDefinition": "After the soggy-bottom fiasco, the tent fell into sobriety, with no giggles near Paul."
+    },
+    {
+      "word": "solicitous",
+      "funDefinition": "Miguel was solicitous, bringing Johnny ice packs before the sensei admitted he was sore."
+    },
+    {
+      "word": "solipsistic",
+      "funDefinition": "Zaphod's solipsistic speech made it sound as if only Zaphod existed in the galaxy."
+    },
+    {
+      "word": "soluble",
+      "funDefinition": "A penguin discovered the fish-flavored snow cone was soluble, vanishing into slush."
+    },
+    {
+      "word": "solvent",
+      "funDefinition": "In the Bake-Off tent, lemon juice acted as a solvent, loosening stubborn caramel from the pan."
+    },
+    {
+      "word": "somnolent",
+      "funDefinition": "Homer grew somnolent after lunch, drifting toward sleep like a couch-seeking balloon."
+    },
+    {
+      "word": "sophomoric",
+      "funDefinition": "Bart's sophomoric prank involved whoopee cushions, fake diplomas, and zero actual wit."
+    },
+    {
+      "word": "sovereign",
+      "funDefinition": "On the island, Ralph tried to act sovereign, but the conch was his only crown."
+    },
+    {
+      "word": "speculative",
+      "funDefinition": "Dr. Malcolm called the park's safety plan speculative, which meant mostly hopeful guessing."
+    },
+    {
+      "word": "spurious",
+      "funDefinition": "Bart forged a spurious doctor's note, but Principal Skinner spotted the crayon signature instantly."
+    },
+    {
+      "word": "stagnate",
+      "funDefinition": "A seal's training would stagnate if every lesson ended with napping on the target hoop."
+    },
+    {
+      "word": "staid",
+      "funDefinition": "Ned Flanders wore a staid sweater to a riot, looking calm enough to file taxes."
+    },
+    {
+      "word": "stingy",
+      "funDefinition": "Mr. Burns was so stingy he charged the hounds rent for barking on company property."
+    },
+    {
+      "word": "stoic",
+      "funDefinition": "Marvin stayed stoic while the spaceship exploded, sighing as if chaos were scheduled."
+    },
+    {
+      "word": "stolid",
+      "funDefinition": "Paul Hollywood remained stolid before a perfect pie, revealing approval with only one eyebrow."
+    },
+    {
+      "word": "strenuous",
+      "funDefinition": "Daniel found the crane kick strenuous, especially with every muscle begging for retirement."
+    },
+    {
+      "word": "strident",
+      "funDefinition": "Klopp's strident sideline shout cut through Anfield like a whistle with a beard."
+    },
+    {
+      "word": "stupefy",
+      "funDefinition": "A cat's sudden backflip stupefied the room, leaving everyone frozen with snack bowls midair."
+    },
+    {
+      "word": "subjugate",
+      "funDefinition": "Sensei Kreese tried to subjugate the dojo, making every student obey his brutal rules."
+    },
+    {
+      "word": "sublime",
+      "funDefinition": "The fog over the Golden Gate Bridge looked sublime, grand enough to hush the traffic."
+    },
+    {
+      "word": "submissive",
+      "funDefinition": "Milhouse looked submissive, handing Bart his lunch money before Bart even invented a reason."
+    },
+    {
+      "word": "succinct",
+      "funDefinition": "Prue's succinct verdict was three words: brilliant, buttery, beautiful."
+    },
+    {
+      "word": "superfluous",
+      "funDefinition": "A penguin's tiny bow tie was superfluous, but it improved the formal fish dinner."
+    },
+    {
+      "word": "surfeit",
+      "funDefinition": "Homer faced a surfeit of donuts and called the mountain a manageable breakfast."
+    },
+    {
+      "word": "surmise",
+      "funDefinition": "Roz could surmise from the pawprints that the missing berries had waddled away inside a bear."
+    },
+    {
+      "word": "surreptitious",
+      "funDefinition": "With a surreptitious flick of the wrist, the foil fencer scored a touch before the opponent even registered the attack."
+    },
+    {
+      "word": "surrogate",
+      "funDefinition": "Miguel treated Johnny as a surrogate father when karate advice came with greasy diner fries."
+    },
+    {
+      "word": "swarthy",
+      "funDefinition": "After a summer on the farm, Almanzo looked swarthy from sun, chores, and endless hayfields."
+    },
+    {
+      "word": "sycophant",
+      "funDefinition": "Smithers was a sycophant, applauding when Mr. Burns accidentally stapled his own sleeve."
+    },
+    {
+      "word": "tacit",
+      "funDefinition": "A fencer's raised eyebrow was a tacit warning that the next lunge would be fast."
+    },
+    {
+      "word": "taciturn",
+      "funDefinition": "A taciturn cat answered every question by blinking once and returning to its box."
+    },
+    {
+      "word": "tangential",
+      "funDefinition": "Ford Prefect's advice about towels was tangential to Earth's destruction, but oddly useful."
+    },
+    {
+      "word": "tantamount",
+      "funDefinition": "For Paul Hollywood, serving raw dough was tantamount to declaring war on bread itself."
+    },
+    {
+      "word": "tedious",
+      "funDefinition": "Painting Mr. Miyagi's fence felt tedious until Daniel realized every stroke was training."
+    },
+    {
+      "word": "temerity",
+      "funDefinition": "Bart had the temerity to sell Principal Skinner a hall pass printed in crayon."
+    },
+    {
+      "word": "temperance",
+      "funDefinition": "Prue praised temperance when the baker used just enough glitter, not a disco avalanche."
+    },
+    {
+      "word": "tenable",
+      "funDefinition": "Dr. Malcolm said the argument for raptor-proof pens was not tenable after the computer system failed."
+    },
+    {
+      "word": "tenuous",
+      "funDefinition": "Homer's excuse for missing work was tenuous: his pants had achieved independence."
+    },
+    {
+      "word": "terrestrial",
+      "funDefinition": "A terrestrial penguin waddled proudly on land, though the ocean kept offering faster travel."
+    },
+    {
+      "word": "timorous",
+      "funDefinition": "Piggy sounded timorous when the jungle cracked, clutching the conch like a life preserver."
+    },
+    {
+      "word": "tirade",
+      "funDefinition": "Johnny launched a tirade at the broken vending machine for disrespecting his nachos."
+    },
+    {
+      "word": "toady",
+      "funDefinition": "A Burns toady laughed at every joke, even the one about reducing employee oxygen."
+    },
+    {
+      "word": "tome",
+      "funDefinition": "Lisa carried a tome on Springfield history so huge that it didn’t fit in her backpack."
+    },
+    {
+      "word": "torpid",
+      "funDefinition": "A torpid seal sprawled on the dock, too lazy to blink at passing fish."
+    },
+    {
+      "word": "torrid",
+      "funDefinition": "The Bake-Off tent turned torrid, melting butter, tempers, and one ambitious chocolate tower."
+    },
+    {
+      "word": "tortuous",
+      "funDefinition": "Lombard Street's tortuous turns made tourists cheer and rental cars question their life choices."
+    },
+    {
+      "word": "tractable",
+      "funDefinition": "Miguel was tractable in training, following Johnny's commands even when they sounded insane."
+    },
+    {
+      "word": "tranquil",
+      "funDefinition": "Roz found the forest tranquil at dawn, with only birdsong and gentle robot footsteps."
+    },
+    {
+      "word": "transgress",
+      "funDefinition": "A fencer transgressed by stepping off the strip before the referee called halt."
+    },
+    {
+      "word": "transient",
+      "funDefinition": "San Francisco fog is transient, rolling in like a ghost and vanishing before lunch."
+    },
+    {
+      "word": "transmute",
+      "funDefinition": "Prue watched sugar transmute into caramel, changing from plain crystals to golden magic."
+    },
+    {
+      "word": "travesty",
+      "funDefinition": "Homer's salad was a travesty: lettuce hidden under donuts and sprayed with cheese."
+    },
+    {
+      "word": "tremulous",
+      "funDefinition": "A tremulous penguin approached the diving board, flippers shaking like tiny flags."
+    },
+    {
+      "word": "trenchant",
+      "funDefinition": "Lisa's trenchant critique sliced through the school play's plot holes like a razor."
+    },
+    {
+      "word": "trepidation",
+      "funDefinition": "It was with great trepidation that the contestant opened the oven, fearing her showstopper had collapsed in the Bake-Off tent."
+    },
+    {
+      "word": "trite",
+      "funDefinition": "Paul called another chocolate volcano trite, as predictable as a soggy bottom joke."
+    },
+    {
+      "word": "truculent",
+      "funDefinition": "Sensei Kreese looked truculent, ready to fight a parking meter for standing in his way."
+    },
+    {
+      "word": "truncate",
+      "funDefinition": "Bart truncated his apology by stopping right before the part where he admitted anything."
+    },
+    {
+      "word": "turgid",
+      "funDefinition": "Zaphod's turgid speech was so swollen with fancy phrases that Marvin powered down."
+    },
+    {
+      "word": "turpitude",
+      "funDefinition": "Nedry's turpitude showed when he sold out the park for cash and a snack run."
+    },
+    {
+      "word": "ubiquitous",
+      "funDefinition": "Sourdough is so ubiquitous in San Francisco that its tangy smell drifts from nearly every bakery in the city."
+    },
+    {
+      "word": "umbrage",
+      "funDefinition": "Mr. Burns took umbrage when Homer called his priceless portrait a spooky rectangle."
+    },
+    {
+      "word": "uncanny",
+      "funDefinition": "A cat's uncanny ability to appear at tuna time seemed almost supernatural."
+    },
+    {
+      "word": "unctuous",
+      "funDefinition": "Smithers gave an unctuous compliment, slick enough to slide under Mr. Burns's office door."
+    },
+    {
+      "word": "undulate",
+      "funDefinition": "The Bay fog seemed to undulate over the hills, rolling in soft gray waves."
+    },
+    {
+      "word": "upbraid",
+      "funDefinition": "Prue upbraided the baker for hiding store-bought biscuits beneath heroic frosting."
+    },
+    {
+      "word": "usurp",
+      "funDefinition": "Bart tried to usurp Skinner's authority by declaring himself principal during recess."
+    },
+    {
+      "word": "utilitarian",
+      "funDefinition": "Arthur Dent loved his towel because it was utilitarian: blanket, signal, pillow, and panic shield."
+    },
+    {
+      "word": "utopia",
+      "funDefinition": "For a cat, utopia was a sunbeam, an empty box, and a bowl that refilled itself."
+    },
+    {
+      "word": "vacillate",
+      "funDefinition": "Salah vacillated between shooting and passing, then scored before doubt caught up."
+    },
+    {
+      "word": "vacuous",
+      "funDefinition": "Milhouse gave a vacuous campaign speech that promised more recess and explained nothing else."
+    },
+    {
+      "word": "validate",
+      "funDefinition": "Mr. Miyagi validated Daniel's effort with a nod that meant more than a trophy."
+    },
+    {
+      "word": "vapid",
+      "funDefinition": "The Bake-Off sponge looked pretty but tasted vapid, like air wearing frosting."
+    },
+    {
+      "word": "variegated",
+      "funDefinition": "The Painted Ladies looked variegated, each house striped and shaded like candy architecture."
+    },
+    {
+      "word": "vehemently",
+      "funDefinition": "Johnny vehemently denied crying during the movie, while karate-chopping the tissue box."
+    },
+    {
+      "word": "veneer",
+      "funDefinition": "Mr. Burns wore a friendly veneer, but the smile peeled off when profits dipped."
+    },
+    {
+      "word": "venerable",
+      "funDefinition": "The venerable cable car climbed Nob Hill with old bells and stubborn dignity."
+    },
+    {
+      "word": "venerate",
+      "funDefinition": "Cobra Kai students were taught to venerate Sensei Kreese as though his every word were law."
+    },
+    {
+      "word": "veracity",
+      "funDefinition": "Lisa tested the veracity of Bart's alibi by checking chalk dust on his sneakers."
+    },
+    {
+      "word": "verbose",
+      "funDefinition": "Zaphod was verbose, needing twelve sentences to say he looked amazing."
+    },
+    {
+      "word": "verdant",
+      "funDefinition": "Golden Gate Park turned verdant after rain, glowing green beneath the drifting fog."
+    },
+    {
+      "word": "vestige",
+      "funDefinition": "A vestige of Homer's donut remained as pink frosting on his guilty fingers."
+    },
+    {
+      "word": "vex",
+      "funDefinition": "Nothing vexed Homer more than discovering the Springfield doughnut box was already empty."
+    },
+    {
+      "word": "vicarious",
+      "funDefinition": "A benchwarmer felt vicarious glory when Haaland scored, celebrating as if his own boot did it."
+    },
+    {
+      "word": "vicissitude",
+      "funDefinition": "In Jurassic Park, every vicissitude seemed to involve rain, raptors, or a failed fence."
+    },
+    {
+      "word": "vigilant",
+      "funDefinition": "A vigilant seal watched the fish bucket like a tiny, whiskered security guard."
+    },
+    {
+      "word": "vilify",
+      "funDefinition": "Springfield tried to vilify Bart, but he framed his detention slips like awards."
+    },
+    {
+      "word": "vindicate",
+      "funDefinition": "Leicester City's miracle title run vindicated every fan who had been mocked for believing in the underdogs."
+    },
+    {
+      "word": "vindictive",
+      "funDefinition": "Sideshow Bob was vindictive enough to plan revenge with charts, songs, and backup rakes."
+    },
+    {
+      "word": "virtuoso",
+      "funDefinition": "A fencing virtuoso parried, lunged, and scored touches as if conducting silver lightning."
+    },
+    {
+      "word": "viscous",
+      "funDefinition": "Prue's caramel was so viscous it crawled from the spoon like golden lava."
+    },
+    {
+      "word": "vitriolic",
+      "funDefinition": "Kreese delivered a vitriolic pep talk that could corrode confidence and probably floor mats."
+    },
+    {
+      "word": "vituperate",
+      "funDefinition": "Paul began to vituperate when the showstopper collapsed before anyone found the jam."
+    },
+    {
+      "word": "vivacious",
+      "funDefinition": "A vivacious penguin tap-danced across the ice, bowing after every accidental slide."
+    },
+    {
+      "word": "vocation",
+      "funDefinition": "Almanzo was offered to apprentice as a wheelwright, but farming was his chosen vocation."
+    },
+    {
+      "word": "vociferous",
+      "funDefinition": "Klopp grew vociferous on the touchline, shouting until the players upped their game."
+    },
+    {
+      "word": "wallow",
+      "funDefinition": "A seal chose to wallow in the kiddie pool, sighing like royalty in a spa."
+    },
+    {
+      "word": "wane",
+      "funDefinition": "Homer's enthusiasm began to wane when he learned the buffet had only salad."
+    },
+    {
+      "word": "wanton",
+      "funDefinition": "Bart's wanton disregard for rules turned one slingshot into a schoolwide weather event."
+    },
+    {
+      "word": "whimsical",
+      "funDefinition": "A whimsical cat wore a paper crown and declared the laundry basket a submarine."
+    },
+    {
+      "word": "wily",
+      "funDefinition": "The wily raptor tested the fence, the door, and everyone's optimism in Jurassic Park."
+    },
+    {
+      "word": "winsome",
+      "funDefinition": "Saka's winsome grin after scoring made even rival fans hide their smiles."
+    },
+    {
+      "word": "wistful",
+      "funDefinition": "Arthur Dent grew wistful for Earth whenever tea tasted like boiled confusion."
+    },
+    {
+      "word": "wizened",
+      "funDefinition": "The wizened old sea lion at Pier 39 barked like a retired dock mayor."
+    },
+    {
+      "word": "wrath",
+      "funDefinition": "Mr. Burns's wrath fell on Homer after the nuclear plant became Bring Your Donut Day."
+    },
+    {
+      "word": "yoke",
+      "funDefinition": "Almanzo helped yoke the oxen, linking them for a long, muddy pull."
+    },
+    {
+      "word": "zealous",
+      "funDefinition": "So zealous was the young fencer that she practiced lunges in the hallway between every single class."
+    },
+    {
+      "word": "zenith",
+      "funDefinition": "Haaland reached his zenith with a hat trick, standing at the summit of striker glory."
+    },
+    {
+      "word": "zephyr",
+      "funDefinition": "A zephyr nudged the Golden Gate fog aside, gentle as a whispered cable-car bell."
+    }
+  ]
+}
