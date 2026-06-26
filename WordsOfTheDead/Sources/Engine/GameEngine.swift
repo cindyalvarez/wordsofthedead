@@ -130,12 +130,24 @@ final class GameEngine: ObservableObject {
     private let revealDuration = 3.0
     private let levelIntroDuration = 1.8
     private let standardWordsPerLevel = 10
-    private let twoZombieLevel = 3
-    private let secondZombieTrigger = 0.75
-    /// From level 4 onwards, the second zombie starts falling 3% earlier each level
-    /// (75% at L3, 72% at L4, 69% at L5, ...), down to a sensible floor.
+    
+    // Zombie spawning tiers: zombies are added at each milestone level
+    private let twoZombieLevel = 1
+    private let threeZombieLevel = 3
+    private let fourZombieLevel = 5
+    
+    // Second zombie spawn point: starts at 70% on level 1, then 3% earlier each level
+    private let secondZombieTrigger = 0.70
     private let secondZombieEarlierPerLevel = 0.03
     private let secondZombieTriggerFloor = 0.2
+    
+    // Third zombie spawn point: 70% on level 3, then 3% earlier each level
+    private let thirdZombieTrigger = 0.70
+    private let thirdZombieTriggerFloor = 0.2
+    
+    // Fourth zombie spawn point: 70% on level 5, then 3% earlier each level
+    private let fourthZombieTrigger = 0.70
+    private let fourthZombieTriggerFloor = 0.2
 
     // Scoring (#8).
     private let basePoints = 100
@@ -413,14 +425,33 @@ final class GameEngine: ObservableObject {
     }
 
     private var maxConcurrentZombies: Int {
-        level >= twoZombieLevel ? 2 : 1
+        if level >= fourZombieLevel { return 4 }
+        if level >= threeZombieLevel { return 3 }
+        if level >= twoZombieLevel { return 2 }
+        return 1
     }
 
-    /// Progress at which the second zombie spawns: 80% on level 5, then 3% earlier per
-    /// level (77%, 74%, ...), floored so it never spawns at the very top.
+    /// Progress at which the second zombie spawns: 70% on level 1, then 3% earlier per
+    /// level (67% at L2, 64% at L3, ...), floored so it never spawns at the very top.
     private var secondZombieTriggerForLevel: Double {
         let earlier = Double(max(0, level - twoZombieLevel)) * secondZombieEarlierPerLevel
         return max(secondZombieTriggerFloor, secondZombieTrigger - earlier)
+    }
+    
+    /// Progress at which the third zombie spawns: 70% on level 3, then 3% earlier per
+    /// level (67% at L4, 64% at L5, ...), floored so it never spawns at the very top.
+    private var thirdZombieTriggerForLevel: Double {
+        guard level >= threeZombieLevel else { return Double.infinity }
+        let earlier = Double(max(0, level - threeZombieLevel)) * secondZombieEarlierPerLevel
+        return max(thirdZombieTriggerFloor, thirdZombieTrigger - earlier)
+    }
+    
+    /// Progress at which the fourth zombie spawns: 70% on level 5, then 3% earlier per
+    /// level (67% at L6, 64% at L7, ...), floored so it never spawns at the very top.
+    private var fourthZombieTriggerForLevel: Double {
+        guard level >= fourZombieLevel else { return Double.infinity }
+        let earlier = Double(max(0, level - fourZombieLevel)) * secondZombieEarlierPerLevel
+        return max(fourthZombieTriggerFloor, fourthZombieTrigger - earlier)
     }
 
     private func beginLevelIntro() {
@@ -590,11 +621,17 @@ final class GameEngine: ObservableObject {
             return
         }
 
-        // From level 5, a second zombie joins once the lead is far enough down; the
-        // trigger point moves 3% earlier each level beyond 5.
+        // Spawn new zombies when the lead zombie reaches the trigger point for each tier.
+        // The trigger point moves 3% earlier each level within that tier.
         if zombies.count < maxConcurrentZombies,
-           let lead = leadZombie, lead.progress >= secondZombieTriggerForLevel {
-            spawnZombie()
+           let lead = leadZombie {
+            if zombies.count == 1 && lead.progress >= secondZombieTriggerForLevel {
+                spawnZombie()
+            } else if zombies.count == 2 && lead.progress >= thirdZombieTriggerForLevel {
+                spawnZombie()
+            } else if zombies.count == 3 && lead.progress >= fourthZombieTriggerForLevel {
+                spawnZombie()
+            }
         }
 
         // Auto-rotation disabled: definitions now only change when player presses J (advanceCurrentChoice)

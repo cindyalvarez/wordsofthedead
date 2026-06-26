@@ -89,9 +89,16 @@ The fall speed of the zombies should stay consistent during each level.
 Each level is 10 words - once the user has gone through 10 words, the entire screen should be replaced briefly with 
 Level [number] and then resume
 Each time the player advances to the next level, zombie fall speed should increase by 1%.
-On level 3, a second zombie should appear and start falling once the first zombie is 75% of the way down the screen.
-In subsequent levels, the second zombie should appear and start falling 3% earlier 
-(i.e. when the first zombie is at 72% down the screen, then 69% down the screen, etc.)
+When the first level begins, zombie 1 starts at the top and begins to fall.
+When zombie 1 is 70% of the way down the screen, zombie 2 should appear at the top and start falling.
+In subsequent levels, zombie 2 should appear and start falling 3% earlier (i.e. when zombie 1 is 67% of the way down the screen,
+then 64%, then 61%, etc.)
+Gradually new zombies should spawn so that eventually there are 3 zombies falling at once, then 4, etc...
+
+When there are two or more zombies on screen before the user submits an answer, they should maintain their position when the
+next word is up. For example, if zombie 1 is 80% of the way down the screen and zombie 2 is 5% of the way down the screen, on the
+next word zombie 2 should START 5% of the way down the screen NOT at the very top.
+
 When a second (or later) zombie appears, it shows the vocabulary word / sentence / definition that naturally comes next
 (the next item in the queue), not a duplicate of the current zombie.  If a level ends (after 10 words) while such a
 preview zombie is still on screen, the word it was showing is carried over and played first in the next level, so the
