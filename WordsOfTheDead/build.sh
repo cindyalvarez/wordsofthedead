@@ -73,6 +73,16 @@ if [ "${SIGN_FOR_DISTRIBUTION:-}" = "1" ]; then
         echo "✓ Signing complete"
         # Verify signing
         codesign -dv "$APP/Contents/MacOS/WordsOfTheDead" | grep -i "authority" || true
+        
+        # Preserve notarization ticket from deploy folder if it exists
+        DEPLOY_APP="$ROOT/deploy/beta-1.0.0/WordsOfTheDead.app"
+        if [ -d "$DEPLOY_APP/Contents/_CodeSignature" ]; then
+            echo "==> Preserving notarization ticket"
+            cp -r "$DEPLOY_APP/Contents/_CodeSignature" "$APP/Contents/" 2>/dev/null || true
+            if codesign -dvvv "$APP" 2>&1 | grep -q "Notarization"; then
+                echo "✓ Notarization ticket restored"
+            fi
+        fi
     else
         echo "⚠️  No Developer ID certificate found"
         echo "    For distribution, follow Phase 2 in BETA_DEPLOYMENT_GUIDE.md"
