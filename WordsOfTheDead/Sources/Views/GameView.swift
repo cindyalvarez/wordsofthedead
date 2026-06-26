@@ -281,7 +281,7 @@ private struct GameOverView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            Text("☠️ You Were Overrun")
+            Text("☠️ You were eaten by zombies!")
                 .font(.system(size: 42, weight: .heavy, design: .rounded))
                 .foregroundStyle(.red)
 
