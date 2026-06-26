@@ -68,7 +68,8 @@ if [ "${SIGN_FOR_DISTRIBUTION:-}" = "1" ]; then
     CERT_ID=$(security find-identity -v -p codesigning | grep "Developer ID" | head -1 | awk '{print $2}')
     if [ -n "$CERT_ID" ]; then
         echo "    Signing with certificate: $CERT_ID"
-        codesign --deep --force --verify --verbose --sign "$CERT_ID" "$APP"
+        codesign --deep --force --verify --verbose --sign "$CERT_ID" \
+            --options runtime --timestamp "$APP"
         echo "✓ Signing complete"
         # Verify signing
         codesign -dv "$APP/Contents/MacOS/WordsOfTheDead" | grep -i "authority" || true

@@ -582,6 +582,9 @@ final class GameEngine: ObservableObject {
         for i in zombies.indices {
             zombies[i].progress += zombies[i].speed
         }
+        // Explicitly notify observers of changes to zombie positions
+        objectWillChange.send()
+        
         if let hit = zombies.firstIndex(where: { $0.progress >= 1 }) {
             zombieReachedBottom(at: hit)
             return
