@@ -544,9 +544,9 @@ final class GameEngine: ObservableObject {
             return carryOverWords.removeFirst()
         }
         if isBossLevel {
-            return scheduler.reviewWord() ?? scheduler.nextWord()
+            return scheduler.reviewWord(forLevel: level) ?? scheduler.nextWord(forLevel: level)
         }
-        return scheduler.nextWord()
+        return scheduler.nextWord(forLevel: level)
     }
 
     /// Builds the round for a word using the current level's challenge type.

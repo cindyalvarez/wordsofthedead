@@ -1,0 +1,2502 @@
+[
+  {
+    "word": "ability",
+    "pos": "n",
+    "shortDefinition": "the power or skill to do something"
+  },
+  {
+    "word": "accident",
+    "pos": "n",
+    "shortDefinition": "something bad that happens unexpectedly"
+  },
+  {
+    "word": "action",
+    "pos": "n",
+    "shortDefinition": "something done on purpose"
+  },
+  {
+    "word": "adventure",
+    "pos": "n",
+    "shortDefinition": "an exciting or unusual experience"
+  },
+  {
+    "word": "accept",
+    "pos": "v",
+    "shortDefinition": "to say yes to or receive"
+  },
+  {
+    "word": "achieve",
+    "pos": "v",
+    "shortDefinition": "to reach a goal"
+  },
+  {
+    "word": "act",
+    "pos": "v",
+    "shortDefinition": "to do something or perform"
+  },
+  {
+    "word": "active",
+    "pos": "adj",
+    "shortDefinition": "full of energy or movement"
+  },
+  {
+    "word": "amazed",
+    "pos": "adj",
+    "shortDefinition": "very surprised"
+  },
+  {
+    "word": "almost",
+    "pos": "adv",
+    "shortDefinition": "not quite"
+  },
+  {
+    "word": "advice",
+    "pos": "n",
+    "shortDefinition": "helpful ideas about what to do"
+  },
+  {
+    "word": "age",
+    "pos": "n",
+    "shortDefinition": "the number of years someone has lived"
+  },
+  {
+    "word": "air",
+    "pos": "n",
+    "shortDefinition": "the mixture of gases we breathe"
+  },
+  {
+    "word": "answer",
+    "pos": "n",
+    "shortDefinition": "a reply to a question"
+  },
+  {
+    "word": "adapt",
+    "pos": "v",
+    "shortDefinition": "to change to fit new conditions"
+  },
+  {
+    "word": "add",
+    "pos": "v",
+    "shortDefinition": "to put something more in"
+  },
+  {
+    "word": "admire",
+    "pos": "v",
+    "shortDefinition": "to respect or enjoy looking at"
+  },
+  {
+    "word": "ancient",
+    "pos": "adj",
+    "shortDefinition": "very old"
+  },
+  {
+    "word": "angry",
+    "pos": "adj",
+    "shortDefinition": "feeling mad"
+  },
+  {
+    "word": "always",
+    "pos": "adv",
+    "shortDefinition": "at all times"
+  },
+  {
+    "word": "area",
+    "pos": "n",
+    "shortDefinition": "a particular place or region"
+  },
+  {
+    "word": "art",
+    "pos": "n",
+    "shortDefinition": "creative work such as drawing or music"
+  },
+  {
+    "word": "athlete",
+    "pos": "n",
+    "shortDefinition": "a person skilled in sports"
+  },
+  {
+    "word": "attention",
+    "pos": "n",
+    "shortDefinition": "careful focus on something"
+  },
+  {
+    "word": "advise",
+    "pos": "v",
+    "shortDefinition": "to give helpful guidance"
+  },
+  {
+    "word": "allow",
+    "pos": "v",
+    "shortDefinition": "to let something happen"
+  },
+  {
+    "word": "appear",
+    "pos": "v",
+    "shortDefinition": "to come into view"
+  },
+  {
+    "word": "brave",
+    "pos": "adj",
+    "shortDefinition": "ready to face fear"
+  },
+  {
+    "word": "bright",
+    "pos": "adj",
+    "shortDefinition": "full of light or intelligence"
+  },
+  {
+    "word": "bravely",
+    "pos": "adv",
+    "shortDefinition": "in a courageous way"
+  },
+  {
+    "word": "balance",
+    "pos": "n",
+    "shortDefinition": "a steady position or fair mix"
+  },
+  {
+    "word": "beach",
+    "pos": "n",
+    "shortDefinition": "sandy or rocky land by water"
+  },
+  {
+    "word": "beauty",
+    "pos": "n",
+    "shortDefinition": "the quality of being pleasing to see"
+  },
+  {
+    "word": "beginning",
+    "pos": "n",
+    "shortDefinition": "the start of something"
+  },
+  {
+    "word": "apply",
+    "pos": "v",
+    "shortDefinition": "to put to use or request something"
+  },
+  {
+    "word": "argue",
+    "pos": "v",
+    "shortDefinition": "to speak with disagreement"
+  },
+  {
+    "word": "arrange",
+    "pos": "v",
+    "shortDefinition": "to put in order or plan"
+  },
+  {
+    "word": "busy",
+    "pos": "adj",
+    "shortDefinition": "full of activity"
+  },
+  {
+    "word": "calm",
+    "pos": "adj",
+    "shortDefinition": "peaceful and not upset"
+  },
+  {
+    "word": "carefully",
+    "pos": "adv",
+    "shortDefinition": "with caution and attention"
+  },
+  {
+    "word": "belief",
+    "pos": "n",
+    "shortDefinition": "an idea accepted as true"
+  },
+  {
+    "word": "book",
+    "pos": "n",
+    "shortDefinition": "pages bound together for reading"
+  },
+  {
+    "word": "bridge",
+    "pos": "n",
+    "shortDefinition": "a structure that crosses over something"
+  },
+  {
+    "word": "buddy",
+    "pos": "n",
+    "shortDefinition": "a close friend"
+  },
+  {
+    "word": "ask",
+    "pos": "v",
+    "shortDefinition": "to say something to get an answer"
+  },
+  {
+    "word": "avoid",
+    "pos": "v",
+    "shortDefinition": "to stay away from"
+  },
+  {
+    "word": "believe",
+    "pos": "v",
+    "shortDefinition": "to think something is true"
+  },
+  {
+    "word": "careful",
+    "pos": "adj",
+    "shortDefinition": "paying close attention to avoid mistakes"
+  },
+  {
+    "word": "certain",
+    "pos": "adj",
+    "shortDefinition": "sure and without doubt"
+  },
+  {
+    "word": "certainly",
+    "pos": "adv",
+    "shortDefinition": "without doubt"
+  },
+  {
+    "word": "camp",
+    "pos": "n",
+    "shortDefinition": "a place where people stay outdoors"
+  },
+  {
+    "word": "care",
+    "pos": "n",
+    "shortDefinition": "serious concern or helpful attention"
+  },
+  {
+    "word": "chance",
+    "pos": "n",
+    "shortDefinition": "an opportunity or possibility"
+  },
+  {
+    "word": "challenge",
+    "pos": "n",
+    "shortDefinition": "a difficult task to overcome"
+  },
+  {
+    "word": "belong",
+    "pos": "v",
+    "shortDefinition": "to be a proper part of something"
+  },
+  {
+    "word": "build",
+    "pos": "v",
+    "shortDefinition": "to make by putting parts together"
+  },
+  {
+    "word": "calculate",
+    "pos": "v",
+    "shortDefinition": "to work out an amount or answer"
+  },
+  {
+    "word": "cheerful",
+    "pos": "adj",
+    "shortDefinition": "happy and positive"
+  },
+  {
+    "word": "clever",
+    "pos": "adj",
+    "shortDefinition": "quick to learn or understand"
+  },
+  {
+    "word": "clearly",
+    "pos": "adv",
+    "shortDefinition": "in an easy-to-understand way"
+  },
+  {
+    "word": "character",
+    "pos": "n",
+    "shortDefinition": "a person in a story or a person's nature"
+  },
+  {
+    "word": "choice",
+    "pos": "n",
+    "shortDefinition": "the act of choosing or the option picked"
+  },
+  {
+    "word": "city",
+    "pos": "n",
+    "shortDefinition": "a large town where many people live"
+  },
+  {
+    "word": "class",
+    "pos": "n",
+    "shortDefinition": "a group lesson or school period"
+  },
+  {
+    "word": "call",
+    "pos": "v",
+    "shortDefinition": "to speak or phone to someone"
+  },
+  {
+    "word": "celebrate",
+    "pos": "v",
+    "shortDefinition": "to honor with joy"
+  },
+  {
+    "word": "change",
+    "pos": "v",
+    "shortDefinition": "to make or become different"
+  },
+  {
+    "word": "cloudy",
+    "pos": "adj",
+    "shortDefinition": "filled with clouds or unclear"
+  },
+  {
+    "word": "comfortable",
+    "pos": "adj",
+    "shortDefinition": "relaxed and at ease"
+  },
+  {
+    "word": "closely",
+    "pos": "adv",
+    "shortDefinition": "in a near or careful way"
+  },
+  {
+    "word": "climate",
+    "pos": "n",
+    "shortDefinition": "the usual weather of a place"
+  },
+  {
+    "word": "cloud",
+    "pos": "n",
+    "shortDefinition": "a mass of tiny water drops in the sky"
+  },
+  {
+    "word": "coach",
+    "pos": "n",
+    "shortDefinition": "a person who trains a team or player"
+  },
+  {
+    "word": "color",
+    "pos": "n",
+    "shortDefinition": "the appearance of something like red or blue"
+  },
+  {
+    "word": "choose",
+    "pos": "v",
+    "shortDefinition": "to pick from options"
+  },
+  {
+    "word": "collect",
+    "pos": "v",
+    "shortDefinition": "to gather together"
+  },
+  {
+    "word": "compare",
+    "pos": "v",
+    "shortDefinition": "to look for similarities and differences"
+  },
+  {
+    "word": "common",
+    "pos": "adj",
+    "shortDefinition": "found often; not unusual"
+  },
+  {
+    "word": "confident",
+    "pos": "adj",
+    "shortDefinition": "sure of yourself"
+  },
+  {
+    "word": "brightly",
+    "pos": "adv",
+    "shortDefinition": "with strong light or cheer"
+  },
+  {
+    "word": "comfort",
+    "pos": "n",
+    "shortDefinition": "a feeling of ease and relaxation"
+  },
+  {
+    "word": "community",
+    "pos": "n",
+    "shortDefinition": "a group of people living or working together"
+  },
+  {
+    "word": "contest",
+    "pos": "n",
+    "shortDefinition": "a competition to see who does best"
+  },
+  {
+    "word": "courage",
+    "pos": "n",
+    "shortDefinition": "the strength to face fear"
+  },
+  {
+    "word": "compete",
+    "pos": "v",
+    "shortDefinition": "to try to win against others"
+  },
+  {
+    "word": "complete",
+    "pos": "v",
+    "shortDefinition": "to finish fully"
+  },
+  {
+    "word": "connect",
+    "pos": "v",
+    "shortDefinition": "to join together"
+  },
+  {
+    "word": "curious",
+    "pos": "adj",
+    "shortDefinition": "eager to know more"
+  },
+  {
+    "word": "daily",
+    "pos": "adj",
+    "shortDefinition": "happening every day"
+  },
+  {
+    "word": "eagerly",
+    "pos": "adv",
+    "shortDefinition": "with excitement and interest"
+  },
+  {
+    "word": "course",
+    "pos": "n",
+    "shortDefinition": "a set path or series of lessons"
+  },
+  {
+    "word": "crowd",
+    "pos": "n",
+    "shortDefinition": "a large group of people"
+  },
+  {
+    "word": "culture",
+    "pos": "n",
+    "shortDefinition": "the shared beliefs, arts, and customs of a group"
+  },
+  {
+    "word": "danger",
+    "pos": "n",
+    "shortDefinition": "the possibility of harm"
+  },
+  {
+    "word": "consider",
+    "pos": "v",
+    "shortDefinition": "to think carefully about"
+  },
+  {
+    "word": "continue",
+    "pos": "v",
+    "shortDefinition": "to keep going"
+  },
+  {
+    "word": "create",
+    "pos": "v",
+    "shortDefinition": "to make something new"
+  },
+  {
+    "word": "dark",
+    "pos": "adj",
+    "shortDefinition": "having little light"
+  },
+  {
+    "word": "different",
+    "pos": "adj",
+    "shortDefinition": "not the same"
+  },
+  {
+    "word": "easily",
+    "pos": "adv",
+    "shortDefinition": "without much trouble"
+  },
+  {
+    "word": "day",
+    "pos": "n",
+    "shortDefinition": "a period of twenty-four hours"
+  },
+  {
+    "word": "decision",
+    "pos": "n",
+    "shortDefinition": "a choice made after thinking"
+  },
+  {
+    "word": "demand",
+    "pos": "n",
+    "shortDefinition": "a strong need or request"
+  },
+  {
+    "word": "design",
+    "pos": "n",
+    "shortDefinition": "a plan or pattern for making something"
+  },
+  {
+    "word": "decide",
+    "pos": "v",
+    "shortDefinition": "to choose after thinking"
+  },
+  {
+    "word": "defend",
+    "pos": "v",
+    "shortDefinition": "to protect against attack or criticism"
+  },
+  {
+    "word": "deliver",
+    "pos": "v",
+    "shortDefinition": "to bring something to a place or person"
+  },
+  {
+    "word": "difficult",
+    "pos": "adj",
+    "shortDefinition": "hard to do or understand"
+  },
+  {
+    "word": "direct",
+    "pos": "adj",
+    "shortDefinition": "straight and clear"
+  },
+  {
+    "word": "evenly",
+    "pos": "adv",
+    "shortDefinition": "in a smooth and equal way"
+  },
+  {
+    "word": "detail",
+    "pos": "n",
+    "shortDefinition": "a small but important part"
+  },
+  {
+    "word": "difference",
+    "pos": "n",
+    "shortDefinition": "the way things are not the same"
+  },
+  {
+    "word": "direction",
+    "pos": "n",
+    "shortDefinition": "the way something points or moves"
+  },
+  {
+    "word": "discovery",
+    "pos": "n",
+    "shortDefinition": "the act of finding something new"
+  },
+  {
+    "word": "describe",
+    "pos": "v",
+    "shortDefinition": "to tell what something is like"
+  },
+  {
+    "word": "develop",
+    "pos": "v",
+    "shortDefinition": "to grow or cause to grow"
+  },
+  {
+    "word": "discover",
+    "pos": "v",
+    "shortDefinition": "to find or learn something new"
+  },
+  {
+    "word": "distant",
+    "pos": "adj",
+    "shortDefinition": "far away in space or time"
+  },
+  {
+    "word": "eager",
+    "pos": "adj",
+    "shortDefinition": "excited and ready"
+  },
+  {
+    "word": "finally",
+    "pos": "adv",
+    "shortDefinition": "at the end"
+  },
+  {
+    "word": "discussion",
+    "pos": "n",
+    "shortDefinition": "a talk where people share ideas"
+  },
+  {
+    "word": "distance",
+    "pos": "n",
+    "shortDefinition": "the amount of space between things"
+  },
+  {
+    "word": "dream",
+    "pos": "n",
+    "shortDefinition": "thoughts and images during sleep or a big hope"
+  },
+  {
+    "word": "effort",
+    "pos": "n",
+    "shortDefinition": "hard work put into something"
+  },
+  {
+    "word": "discuss",
+    "pos": "v",
+    "shortDefinition": "to talk about"
+  },
+  {
+    "word": "divide",
+    "pos": "v",
+    "shortDefinition": "to separate into parts"
+  },
+  {
+    "word": "doubt",
+    "pos": "v",
+    "shortDefinition": "to feel unsure about"
+  },
+  {
+    "word": "easy",
+    "pos": "adj",
+    "shortDefinition": "not hard"
+  },
+  {
+    "word": "fair",
+    "pos": "adj",
+    "shortDefinition": "honest and reasonable"
+  },
+  {
+    "word": "gently",
+    "pos": "adv",
+    "shortDefinition": "in a soft and careful way"
+  },
+  {
+    "word": "energy",
+    "pos": "n",
+    "shortDefinition": "the power to move or do work"
+  },
+  {
+    "word": "error",
+    "pos": "n",
+    "shortDefinition": "a mistake"
+  },
+  {
+    "word": "event",
+    "pos": "n",
+    "shortDefinition": "something that happens, especially planned"
+  },
+  {
+    "word": "example",
+    "pos": "n",
+    "shortDefinition": "something that shows what another thing is like"
+  },
+  {
+    "word": "edit",
+    "pos": "v",
+    "shortDefinition": "to change writing or media to improve it"
+  },
+  {
+    "word": "encourage",
+    "pos": "v",
+    "shortDefinition": "to give hope or support"
+  },
+  {
+    "word": "enjoy",
+    "pos": "v",
+    "shortDefinition": "to take pleasure in"
+  },
+  {
+    "word": "famous",
+    "pos": "adj",
+    "shortDefinition": "known by many people"
+  },
+  {
+    "word": "fast",
+    "pos": "adj",
+    "shortDefinition": "moving quickly"
+  },
+  {
+    "word": "gladly",
+    "pos": "adv",
+    "shortDefinition": "with pleasure"
+  },
+  {
+    "word": "fact",
+    "pos": "n",
+    "shortDefinition": "something known to be true"
+  },
+  {
+    "word": "family",
+    "pos": "n",
+    "shortDefinition": "people related to each other or living together"
+  },
+  {
+    "word": "feature",
+    "pos": "n",
+    "shortDefinition": "an important part of something"
+  },
+  {
+    "word": "feeling",
+    "pos": "n",
+    "shortDefinition": "an emotion or sense inside you"
+  },
+  {
+    "word": "escape",
+    "pos": "v",
+    "shortDefinition": "to get away from"
+  },
+  {
+    "word": "examine",
+    "pos": "v",
+    "shortDefinition": "to look at carefully"
+  },
+  {
+    "word": "exist",
+    "pos": "v",
+    "shortDefinition": "to be real or present"
+  },
+  {
+    "word": "favorite",
+    "pos": "adj",
+    "shortDefinition": "liked more than others"
+  },
+  {
+    "word": "fearless",
+    "pos": "adj",
+    "shortDefinition": "not afraid"
+  },
+  {
+    "word": "happily",
+    "pos": "adv",
+    "shortDefinition": "in a joyful way"
+  },
+  {
+    "word": "field",
+    "pos": "n",
+    "shortDefinition": "open land or an area of study or play"
+  },
+  {
+    "word": "focus",
+    "pos": "n",
+    "shortDefinition": "special attention on one thing"
+  },
+  {
+    "word": "force",
+    "pos": "n",
+    "shortDefinition": "power used to move or control something"
+  },
+  {
+    "word": "forest",
+    "pos": "n",
+    "shortDefinition": "a large area filled with trees"
+  },
+  {
+    "word": "expand",
+    "pos": "v",
+    "shortDefinition": "to become larger"
+  },
+  {
+    "word": "explain",
+    "pos": "v",
+    "shortDefinition": "to make clear"
+  },
+  {
+    "word": "explore",
+    "pos": "v",
+    "shortDefinition": "to travel or study to learn more"
+  },
+  {
+    "word": "final",
+    "pos": "adj",
+    "shortDefinition": "last in order"
+  },
+  {
+    "word": "flexible",
+    "pos": "adj",
+    "shortDefinition": "able to bend or change easily"
+  },
+  {
+    "word": "honestly",
+    "pos": "adv",
+    "shortDefinition": "truthfully"
+  },
+  {
+    "word": "freedom",
+    "pos": "n",
+    "shortDefinition": "the power to act or choose without control"
+  },
+  {
+    "word": "friend",
+    "pos": "n",
+    "shortDefinition": "a person you like and trust"
+  },
+  {
+    "word": "game",
+    "pos": "n",
+    "shortDefinition": "an activity with rules for fun or competition"
+  },
+  {
+    "word": "garden",
+    "pos": "n",
+    "shortDefinition": "a place where plants are grown"
+  },
+  {
+    "word": "face",
+    "pos": "v",
+    "shortDefinition": "to deal with directly"
+  },
+  {
+    "word": "fail",
+    "pos": "v",
+    "shortDefinition": "to not succeed"
+  },
+  {
+    "word": "figure",
+    "pos": "v",
+    "shortDefinition": "to understand or solve"
+  },
+  {
+    "word": "friendly",
+    "pos": "adj",
+    "shortDefinition": "kind and easy to like"
+  },
+  {
+    "word": "gentle",
+    "pos": "adj",
+    "shortDefinition": "calm, soft, and not rough"
+  },
+  {
+    "word": "kindly",
+    "pos": "adv",
+    "shortDefinition": "in a caring way"
+  },
+  {
+    "word": "goal",
+    "pos": "n",
+    "shortDefinition": "something you try to reach or achieve"
+  },
+  {
+    "word": "habit",
+    "pos": "n",
+    "shortDefinition": "something done regularly"
+  },
+  {
+    "word": "health",
+    "pos": "n",
+    "shortDefinition": "the condition of body and mind"
+  },
+  {
+    "word": "heart",
+    "pos": "n",
+    "shortDefinition": "the organ that pumps blood or the center of feelings"
+  },
+  {
+    "word": "find",
+    "pos": "v",
+    "shortDefinition": "to locate or discover"
+  },
+  {
+    "word": "finish",
+    "pos": "v",
+    "shortDefinition": "to complete the end of"
+  },
+  {
+    "word": "follow",
+    "pos": "v",
+    "shortDefinition": "to go after or obey"
+  },
+  {
+    "word": "glad",
+    "pos": "adj",
+    "shortDefinition": "pleased or happy"
+  },
+  {
+    "word": "golden",
+    "pos": "adj",
+    "shortDefinition": "made of gold or glowing warm yellow"
+  },
+  {
+    "word": "loudly",
+    "pos": "adv",
+    "shortDefinition": "with a lot of sound"
+  },
+  {
+    "word": "hero",
+    "pos": "n",
+    "shortDefinition": "a person admired for courage or action"
+  },
+  {
+    "word": "history",
+    "pos": "n",
+    "shortDefinition": "the study or story of the past"
+  },
+  {
+    "word": "hope",
+    "pos": "n",
+    "shortDefinition": "a feeling of wanting something good to happen"
+  },
+  {
+    "word": "idea",
+    "pos": "n",
+    "shortDefinition": "a thought or plan"
+  },
+  {
+    "word": "forgive",
+    "pos": "v",
+    "shortDefinition": "to stop being angry about a wrong"
+  },
+  {
+    "word": "gather",
+    "pos": "v",
+    "shortDefinition": "to bring together"
+  },
+  {
+    "word": "grow",
+    "pos": "v",
+    "shortDefinition": "to become larger or older"
+  },
+  {
+    "word": "grateful",
+    "pos": "adj",
+    "shortDefinition": "thankful"
+  },
+  {
+    "word": "great",
+    "pos": "adj",
+    "shortDefinition": "very good or important"
+  },
+  {
+    "word": "mostly",
+    "pos": "adv",
+    "shortDefinition": "for the biggest part"
+  },
+  {
+    "word": "image",
+    "pos": "n",
+    "shortDefinition": "a picture or mental impression"
+  },
+  {
+    "word": "importance",
+    "pos": "n",
+    "shortDefinition": "the quality of being meaningful or valuable"
+  },
+  {
+    "word": "improvement",
+    "pos": "n",
+    "shortDefinition": "a change that makes something better"
+  },
+  {
+    "word": "interest",
+    "pos": "n",
+    "shortDefinition": "a feeling of wanting to learn more"
+  },
+  {
+    "word": "guard",
+    "pos": "v",
+    "shortDefinition": "to watch and protect"
+  },
+  {
+    "word": "guess",
+    "pos": "v",
+    "shortDefinition": "to give an answer without being sure"
+  },
+  {
+    "word": "happen",
+    "pos": "v",
+    "shortDefinition": "to take place"
+  },
+  {
+    "word": "happy",
+    "pos": "adj",
+    "shortDefinition": "feeling joy"
+  },
+  {
+    "word": "healthy",
+    "pos": "adj",
+    "shortDefinition": "strong and well"
+  },
+  {
+    "word": "nearly",
+    "pos": "adv",
+    "shortDefinition": "almost but not completely"
+  },
+  {
+    "word": "island",
+    "pos": "n",
+    "shortDefinition": "land surrounded by water"
+  },
+  {
+    "word": "job",
+    "pos": "n",
+    "shortDefinition": "work done for pay or a task"
+  },
+  {
+    "word": "journey",
+    "pos": "n",
+    "shortDefinition": "the act of traveling from one place to another"
+  },
+  {
+    "word": "help",
+    "pos": "v",
+    "shortDefinition": "to make something easier"
+  },
+  {
+    "word": "hide",
+    "pos": "v",
+    "shortDefinition": "to keep out of sight"
+  },
+  {
+    "word": "imagine",
+    "pos": "v",
+    "shortDefinition": "to form a picture in the mind"
+  },
+  {
+    "word": "helpful",
+    "pos": "adj",
+    "shortDefinition": "willing to help"
+  },
+  {
+    "word": "honest",
+    "pos": "adj",
+    "shortDefinition": "truthful and fair"
+  },
+  {
+    "word": "huge",
+    "pos": "adj",
+    "shortDefinition": "very large"
+  },
+  {
+    "word": "neatly",
+    "pos": "adv",
+    "shortDefinition": "in a clean and orderly way"
+  },
+  {
+    "word": "joy",
+    "pos": "n",
+    "shortDefinition": "great happiness"
+  },
+  {
+    "word": "judgment",
+    "pos": "n",
+    "shortDefinition": "an opinion formed after thinking"
+  },
+  {
+    "word": "knowledge",
+    "pos": "n",
+    "shortDefinition": "facts and understanding learned over time"
+  },
+  {
+    "word": "improve",
+    "pos": "v",
+    "shortDefinition": "to make better"
+  },
+  {
+    "word": "include",
+    "pos": "v",
+    "shortDefinition": "to contain as a part"
+  },
+  {
+    "word": "increase",
+    "pos": "v",
+    "shortDefinition": "to make or become greater"
+  },
+  {
+    "word": "important",
+    "pos": "adj",
+    "shortDefinition": "valuable or significant"
+  },
+  {
+    "word": "independent",
+    "pos": "adj",
+    "shortDefinition": "able to act on your own"
+  },
+  {
+    "word": "interesting",
+    "pos": "adj",
+    "shortDefinition": "holding attention"
+  },
+  {
+    "word": "never",
+    "pos": "adv",
+    "shortDefinition": "at no time"
+  },
+  {
+    "word": "language",
+    "pos": "n",
+    "shortDefinition": "a system of words used to communicate"
+  },
+  {
+    "word": "leader",
+    "pos": "n",
+    "shortDefinition": "a person who guides others"
+  },
+  {
+    "word": "lesson",
+    "pos": "n",
+    "shortDefinition": "something learned or a period of teaching"
+  },
+  {
+    "word": "influence",
+    "pos": "v",
+    "shortDefinition": "to affect how someone thinks or acts"
+  },
+  {
+    "word": "inform",
+    "pos": "v",
+    "shortDefinition": "to give knowledge or facts"
+  },
+  {
+    "word": "inspire",
+    "pos": "v",
+    "shortDefinition": "to fill with ideas or courage"
+  },
+  {
+    "word": "kind",
+    "pos": "adj",
+    "shortDefinition": "caring and helpful"
+  },
+  {
+    "word": "large",
+    "pos": "adj",
+    "shortDefinition": "big in size"
+  },
+  {
+    "word": "late",
+    "pos": "adj",
+    "shortDefinition": "happening after the expected time"
+  },
+  {
+    "word": "often",
+    "pos": "adv",
+    "shortDefinition": "many times"
+  },
+  {
+    "word": "library",
+    "pos": "n",
+    "shortDefinition": "a place where books and media are shared"
+  },
+  {
+    "word": "life",
+    "pos": "n",
+    "shortDefinition": "the state of being alive"
+  },
+  {
+    "word": "light",
+    "pos": "n",
+    "shortDefinition": "brightness that lets us see"
+  },
+  {
+    "word": "invite",
+    "pos": "v",
+    "shortDefinition": "to ask someone to join or come"
+  },
+  {
+    "word": "join",
+    "pos": "v",
+    "shortDefinition": "to become part of something"
+  },
+  {
+    "word": "judge",
+    "pos": "v",
+    "shortDefinition": "to form an opinion or decide fairly"
+  },
+  {
+    "word": "lively",
+    "pos": "adj",
+    "shortDefinition": "full of energy and spirit"
+  },
+  {
+    "word": "local",
+    "pos": "adj",
+    "shortDefinition": "nearby or from the area"
+  },
+  {
+    "word": "lonely",
+    "pos": "adj",
+    "shortDefinition": "feeling alone and sad"
+  },
+  {
+    "word": "patiently",
+    "pos": "adv",
+    "shortDefinition": "in a calm waiting way"
+  },
+  {
+    "word": "limit",
+    "pos": "n",
+    "shortDefinition": "the farthest point allowed"
+  },
+  {
+    "word": "location",
+    "pos": "n",
+    "shortDefinition": "the place where something is"
+  },
+  {
+    "word": "luck",
+    "pos": "n",
+    "shortDefinition": "success that seems to happen by chance"
+  },
+  {
+    "word": "jump",
+    "pos": "v",
+    "shortDefinition": "to push off the ground"
+  },
+  {
+    "word": "keep",
+    "pos": "v",
+    "shortDefinition": "to hold on to or continue"
+  },
+  {
+    "word": "know",
+    "pos": "v",
+    "shortDefinition": "to understand or be aware of"
+  },
+  {
+    "word": "loud",
+    "pos": "adj",
+    "shortDefinition": "making a strong sound"
+  },
+  {
+    "word": "lucky",
+    "pos": "adj",
+    "shortDefinition": "having good fortune"
+  },
+  {
+    "word": "modern",
+    "pos": "adj",
+    "shortDefinition": "relating to recent times"
+  },
+  {
+    "word": "proudly",
+    "pos": "adv",
+    "shortDefinition": "with pride"
+  },
+  {
+    "word": "map",
+    "pos": "n",
+    "shortDefinition": "a drawing that shows places"
+  },
+  {
+    "word": "memory",
+    "pos": "n",
+    "shortDefinition": "something remembered or the ability to remember"
+  },
+  {
+    "word": "message",
+    "pos": "n",
+    "shortDefinition": "information sent from one person to another"
+  },
+  {
+    "word": "laugh",
+    "pos": "v",
+    "shortDefinition": "to make sounds of amusement"
+  },
+  {
+    "word": "lead",
+    "pos": "v",
+    "shortDefinition": "to guide or go first"
+  },
+  {
+    "word": "learn",
+    "pos": "v",
+    "shortDefinition": "to gain knowledge or skill"
+  },
+  {
+    "word": "natural",
+    "pos": "adj",
+    "shortDefinition": "found in nature; not made by people"
+  },
+  {
+    "word": "neat",
+    "pos": "adj",
+    "shortDefinition": "clean and well organized"
+  },
+  {
+    "word": "nervous",
+    "pos": "adj",
+    "shortDefinition": "worried or uneasy"
+  },
+  {
+    "word": "quickly",
+    "pos": "adv",
+    "shortDefinition": "at high speed"
+  },
+  {
+    "word": "method",
+    "pos": "n",
+    "shortDefinition": "a way of doing something"
+  },
+  {
+    "word": "middle",
+    "pos": "n",
+    "shortDefinition": "the center part of something"
+  },
+  {
+    "word": "minute",
+    "pos": "n",
+    "shortDefinition": "a unit of time equal to sixty seconds"
+  },
+  {
+    "word": "listen",
+    "pos": "v",
+    "shortDefinition": "to pay attention to sound"
+  },
+  {
+    "word": "live",
+    "pos": "v",
+    "shortDefinition": "to be alive or stay somewhere"
+  },
+  {
+    "word": "look",
+    "pos": "v",
+    "shortDefinition": "to use the eyes to see"
+  },
+  {
+    "word": "normal",
+    "pos": "adj",
+    "shortDefinition": "usual or expected"
+  },
+  {
+    "word": "patient",
+    "pos": "adj",
+    "shortDefinition": "able to wait calmly"
+  },
+  {
+    "word": "peaceful",
+    "pos": "adj",
+    "shortDefinition": "calm and quiet"
+  },
+  {
+    "word": "quietly",
+    "pos": "adv",
+    "shortDefinition": "with little sound"
+  },
+  {
+    "word": "mistake",
+    "pos": "n",
+    "shortDefinition": "something done incorrectly"
+  },
+  {
+    "word": "moment",
+    "pos": "n",
+    "shortDefinition": "a very short period of time"
+  },
+  {
+    "word": "mystery",
+    "pos": "n",
+    "shortDefinition": "something hard to explain or understand"
+  },
+  {
+    "word": "love",
+    "pos": "v",
+    "shortDefinition": "to care deeply about"
+  },
+  {
+    "word": "manage",
+    "pos": "v",
+    "shortDefinition": "to handle successfully"
+  },
+  {
+    "word": "measure",
+    "pos": "v",
+    "shortDefinition": "to find size, amount, or length"
+  },
+  {
+    "word": "playful",
+    "pos": "adj",
+    "shortDefinition": "full of fun and energy"
+  },
+  {
+    "word": "polite",
+    "pos": "adj",
+    "shortDefinition": "showing good manners"
+  },
+  {
+    "word": "popular",
+    "pos": "adj",
+    "shortDefinition": "liked by many people"
+  },
+  {
+    "word": "really",
+    "pos": "adv",
+    "shortDefinition": "truly or very much"
+  },
+  {
+    "word": "nation",
+    "pos": "n",
+    "shortDefinition": "a country with its own government"
+  },
+  {
+    "word": "nature",
+    "pos": "n",
+    "shortDefinition": "the living world and outdoor environment"
+  },
+  {
+    "word": "need",
+    "pos": "n",
+    "shortDefinition": "something required or necessary"
+  },
+  {
+    "word": "meet",
+    "pos": "v",
+    "shortDefinition": "to come together"
+  },
+  {
+    "word": "miss",
+    "pos": "v",
+    "shortDefinition": "to fail to catch or be without"
+  },
+  {
+    "word": "move",
+    "pos": "v",
+    "shortDefinition": "to change place or position"
+  },
+  {
+    "word": "positive",
+    "pos": "adj",
+    "shortDefinition": "hopeful or certain"
+  },
+  {
+    "word": "powerful",
+    "pos": "adj",
+    "shortDefinition": "having great strength or influence"
+  },
+  {
+    "word": "proud",
+    "pos": "adj",
+    "shortDefinition": "pleased with something done well"
+  },
+  {
+    "word": "safely",
+    "pos": "adv",
+    "shortDefinition": "without danger"
+  },
+  {
+    "word": "neighbor",
+    "pos": "n",
+    "shortDefinition": "a person living nearby"
+  },
+  {
+    "word": "noise",
+    "pos": "n",
+    "shortDefinition": "a sound, especially a loud unwanted one"
+  },
+  {
+    "word": "notice",
+    "pos": "n",
+    "shortDefinition": "a sign or short written message"
+  },
+  {
+    "word": "observe",
+    "pos": "v",
+    "shortDefinition": "to watch carefully"
+  },
+  {
+    "word": "occur",
+    "pos": "v",
+    "shortDefinition": "to happen"
+  },
+  {
+    "word": "open",
+    "pos": "v",
+    "shortDefinition": "to make not closed"
+  },
+  {
+    "word": "quick",
+    "pos": "adj",
+    "shortDefinition": "fast in action or thought"
+  },
+  {
+    "word": "quiet",
+    "pos": "adj",
+    "shortDefinition": "making little noise"
+  },
+  {
+    "word": "ready",
+    "pos": "adj",
+    "shortDefinition": "prepared for action"
+  },
+  {
+    "word": "seriously",
+    "pos": "adv",
+    "shortDefinition": "in an important or careful way"
+  },
+  {
+    "word": "number",
+    "pos": "n",
+    "shortDefinition": "a count or amount shown with digits"
+  },
+  {
+    "word": "object",
+    "pos": "n",
+    "shortDefinition": "a thing that can be seen or touched"
+  },
+  {
+    "word": "ocean",
+    "pos": "n",
+    "shortDefinition": "the large saltwater covering most of Earth"
+  },
+  {
+    "word": "organize",
+    "pos": "v",
+    "shortDefinition": "to arrange neatly or plan"
+  },
+  {
+    "word": "overcome",
+    "pos": "v",
+    "shortDefinition": "to succeed against a problem"
+  },
+  {
+    "word": "participate",
+    "pos": "v",
+    "shortDefinition": "to take part"
+  },
+  {
+    "word": "real",
+    "pos": "adj",
+    "shortDefinition": "true; not imagined"
+  },
+  {
+    "word": "reliable",
+    "pos": "adj",
+    "shortDefinition": "able to be trusted"
+  },
+  {
+    "word": "safe",
+    "pos": "adj",
+    "shortDefinition": "free from danger"
+  },
+  {
+    "word": "simply",
+    "pos": "adv",
+    "shortDefinition": "in an easy and plain way"
+  },
+  {
+    "word": "offer",
+    "pos": "n",
+    "shortDefinition": "a chance or proposal to give something"
+  },
+  {
+    "word": "opinion",
+    "pos": "n",
+    "shortDefinition": "a belief or view that may differ"
+  },
+  {
+    "word": "order",
+    "pos": "n",
+    "shortDefinition": "the arrangement of things or a command"
+  },
+  {
+    "word": "pass",
+    "pos": "v",
+    "shortDefinition": "to move by or give to another"
+  },
+  {
+    "word": "perform",
+    "pos": "v",
+    "shortDefinition": "to do, present, or carry out"
+  },
+  {
+    "word": "play",
+    "pos": "v",
+    "shortDefinition": "to take part for fun or sport"
+  },
+  {
+    "word": "serious",
+    "pos": "adj",
+    "shortDefinition": "thoughtful, important, or not joking"
+  },
+  {
+    "word": "sharp",
+    "pos": "adj",
+    "shortDefinition": "having a fine edge or quick mind"
+  },
+  {
+    "word": "shiny",
+    "pos": "adj",
+    "shortDefinition": "reflecting light"
+  },
+  {
+    "word": "slowly",
+    "pos": "adv",
+    "shortDefinition": "at low speed"
+  },
+  {
+    "word": "parent",
+    "pos": "n",
+    "shortDefinition": "a mother or father"
+  },
+  {
+    "word": "park",
+    "pos": "n",
+    "shortDefinition": "a public outdoor place for people to enjoy"
+  },
+  {
+    "word": "partner",
+    "pos": "n",
+    "shortDefinition": "a person who works or acts with another"
+  },
+  {
+    "word": "prepare",
+    "pos": "v",
+    "shortDefinition": "to get ready"
+  },
+  {
+    "word": "protect",
+    "pos": "v",
+    "shortDefinition": "to keep safe from harm"
+  },
+  {
+    "word": "prove",
+    "pos": "v",
+    "shortDefinition": "to show that something is true"
+  },
+  {
+    "word": "simple",
+    "pos": "adj",
+    "shortDefinition": "easy to understand or not fancy"
+  },
+  {
+    "word": "skillful",
+    "pos": "adj",
+    "shortDefinition": "good at doing something"
+  },
+  {
+    "word": "slow",
+    "pos": "adj",
+    "shortDefinition": "moving without speed"
+  },
+  {
+    "word": "smoothly",
+    "pos": "adv",
+    "shortDefinition": "without problems or bumps"
+  },
+  {
+    "word": "party",
+    "pos": "n",
+    "shortDefinition": "a social gathering or group in a contest"
+  },
+  {
+    "word": "pattern",
+    "pos": "n",
+    "shortDefinition": "a repeated design or way things happen"
+  },
+  {
+    "word": "peace",
+    "pos": "n",
+    "shortDefinition": "a calm state without fighting"
+  },
+  {
+    "word": "push",
+    "pos": "v",
+    "shortDefinition": "to press or move away"
+  },
+  {
+    "word": "reach",
+    "pos": "v",
+    "shortDefinition": "to get to or touch"
+  },
+  {
+    "word": "read",
+    "pos": "v",
+    "shortDefinition": "to look at words and understand them"
+  },
+  {
+    "word": "smart",
+    "pos": "adj",
+    "shortDefinition": "clever or neat in style"
+  },
+  {
+    "word": "smooth",
+    "pos": "adj",
+    "shortDefinition": "even and without bumps"
+  },
+  {
+    "word": "social",
+    "pos": "adj",
+    "shortDefinition": "relating well with other people"
+  },
+  {
+    "word": "sometimes",
+    "pos": "adv",
+    "shortDefinition": "at certain times but not always"
+  },
+  {
+    "word": "people",
+    "pos": "n",
+    "shortDefinition": "human beings in general"
+  },
+  {
+    "word": "plan",
+    "pos": "n",
+    "shortDefinition": "a set of steps for doing something"
+  },
+  {
+    "word": "player",
+    "pos": "n",
+    "shortDefinition": "a person who takes part in a game"
+  },
+  {
+    "word": "realize",
+    "pos": "v",
+    "shortDefinition": "to understand clearly"
+  },
+  {
+    "word": "receive",
+    "pos": "v",
+    "shortDefinition": "to get something given or sent"
+  },
+  {
+    "word": "reduce",
+    "pos": "v",
+    "shortDefinition": "to make smaller or less"
+  },
+  {
+    "word": "special",
+    "pos": "adj",
+    "shortDefinition": "different in a meaningful way"
+  },
+  {
+    "word": "strong",
+    "pos": "adj",
+    "shortDefinition": "having power or firmness"
+  },
+  {
+    "word": "sudden",
+    "pos": "adj",
+    "shortDefinition": "happening quickly and unexpectedly"
+  },
+  {
+    "word": "soon",
+    "pos": "adv",
+    "shortDefinition": "in a short time"
+  },
+  {
+    "word": "point",
+    "pos": "n",
+    "shortDefinition": "a sharp end, a main idea, or a score mark"
+  },
+  {
+    "word": "power",
+    "pos": "n",
+    "shortDefinition": "strength or control"
+  },
+  {
+    "word": "practice",
+    "pos": "n",
+    "shortDefinition": "repeated work to improve a skill"
+  },
+  {
+    "word": "reflect",
+    "pos": "v",
+    "shortDefinition": "to think deeply or show an image back"
+  },
+  {
+    "word": "relax",
+    "pos": "v",
+    "shortDefinition": "to become less tense"
+  },
+  {
+    "word": "remember",
+    "pos": "v",
+    "shortDefinition": "to keep in mind or bring back to mind"
+  },
+  {
+    "word": "sunny",
+    "pos": "adj",
+    "shortDefinition": "full of sunlight or cheer"
+  },
+  {
+    "word": "sure",
+    "pos": "adj",
+    "shortDefinition": "certain"
+  },
+  {
+    "word": "surprised",
+    "pos": "adj",
+    "shortDefinition": "feeling unexpected wonder"
+  },
+  {
+    "word": "suddenly",
+    "pos": "adv",
+    "shortDefinition": "quickly and unexpectedly"
+  },
+  {
+    "word": "problem",
+    "pos": "n",
+    "shortDefinition": "a difficulty that needs a solution"
+  },
+  {
+    "word": "progress",
+    "pos": "n",
+    "shortDefinition": "movement forward or improvement over time"
+  },
+  {
+    "word": "project",
+    "pos": "n",
+    "shortDefinition": "a planned piece of work"
+  },
+  {
+    "word": "repeat",
+    "pos": "v",
+    "shortDefinition": "to say or do again"
+  },
+  {
+    "word": "reply",
+    "pos": "v",
+    "shortDefinition": "to answer with words"
+  },
+  {
+    "word": "report",
+    "pos": "v",
+    "shortDefinition": "to tell information in an organized way"
+  },
+  {
+    "word": "sweet",
+    "pos": "adj",
+    "shortDefinition": "tasting like sugar or being very kind"
+  },
+  {
+    "word": "talented",
+    "pos": "adj",
+    "shortDefinition": "having a natural skill"
+  },
+  {
+    "word": "thankful",
+    "pos": "adj",
+    "shortDefinition": "feeling grateful"
+  },
+  {
+    "word": "surely",
+    "pos": "adv",
+    "shortDefinition": "certainly"
+  },
+  {
+    "word": "purpose",
+    "pos": "n",
+    "shortDefinition": "the reason something is done"
+  },
+  {
+    "word": "question",
+    "pos": "n",
+    "shortDefinition": "words used to ask for information"
+  },
+  {
+    "word": "reason",
+    "pos": "n",
+    "shortDefinition": "a cause or explanation"
+  },
+  {
+    "word": "rescue",
+    "pos": "v",
+    "shortDefinition": "to save from danger"
+  },
+  {
+    "word": "respect",
+    "pos": "v",
+    "shortDefinition": "to treat with honor and care"
+  },
+  {
+    "word": "rest",
+    "pos": "v",
+    "shortDefinition": "to relax or stop working"
+  },
+  {
+    "word": "thoughtful",
+    "pos": "adj",
+    "shortDefinition": "showing careful thinking or kindness"
+  },
+  {
+    "word": "tidy",
+    "pos": "adj",
+    "shortDefinition": "clean and in order"
+  },
+  {
+    "word": "tiny",
+    "pos": "adj",
+    "shortDefinition": "very small"
+  },
+  {
+    "word": "thoughtfully",
+    "pos": "adv",
+    "shortDefinition": "in a careful or kind way"
+  },
+  {
+    "word": "record",
+    "pos": "n",
+    "shortDefinition": "stored information or the best result so far"
+  },
+  {
+    "word": "relationship",
+    "pos": "n",
+    "shortDefinition": "the way people or things are connected"
+  },
+  {
+    "word": "resource",
+    "pos": "n",
+    "shortDefinition": "something useful that can help"
+  },
+  {
+    "word": "return",
+    "pos": "v",
+    "shortDefinition": "to go back"
+  },
+  {
+    "word": "review",
+    "pos": "v",
+    "shortDefinition": "to look over again"
+  },
+  {
+    "word": "rise",
+    "pos": "v",
+    "shortDefinition": "to move upward"
+  },
+  {
+    "word": "tough",
+    "pos": "adj",
+    "shortDefinition": "strong and hard to break or defeat"
+  },
+  {
+    "word": "true",
+    "pos": "adj",
+    "shortDefinition": "correct and honest"
+  },
+  {
+    "word": "unusual",
+    "pos": "adj",
+    "shortDefinition": "not common"
+  },
+  {
+    "word": "together",
+    "pos": "adv",
+    "shortDefinition": "with each other"
+  },
+  {
+    "word": "result",
+    "pos": "n",
+    "shortDefinition": "the final effect or outcome"
+  },
+  {
+    "word": "river",
+    "pos": "n",
+    "shortDefinition": "a large stream of flowing water"
+  },
+  {
+    "word": "rule",
+    "pos": "n",
+    "shortDefinition": "an official direction about what is allowed"
+  },
+  {
+    "word": "save",
+    "pos": "v",
+    "shortDefinition": "to keep, protect, or rescue"
+  },
+  {
+    "word": "search",
+    "pos": "v",
+    "shortDefinition": "to look carefully for"
+  },
+  {
+    "word": "seem",
+    "pos": "v",
+    "shortDefinition": "to appear to be"
+  },
+  {
+    "word": "valuable",
+    "pos": "adj",
+    "shortDefinition": "worth a lot or very useful"
+  },
+  {
+    "word": "warm",
+    "pos": "adj",
+    "shortDefinition": "giving comfortable heat"
+  },
+  {
+    "word": "weak",
+    "pos": "adj",
+    "shortDefinition": "lacking strength"
+  },
+  {
+    "word": "truly",
+    "pos": "adv",
+    "shortDefinition": "honestly or really"
+  },
+  {
+    "word": "safety",
+    "pos": "n",
+    "shortDefinition": "freedom from danger or harm"
+  },
+  {
+    "word": "school",
+    "pos": "n",
+    "shortDefinition": "a place where people learn"
+  },
+  {
+    "word": "season",
+    "pos": "n",
+    "shortDefinition": "one of the four parts of the year"
+  },
+  {
+    "word": "select",
+    "pos": "v",
+    "shortDefinition": "to choose carefully"
+  },
+  {
+    "word": "share",
+    "pos": "v",
+    "shortDefinition": "to use or give jointly"
+  },
+  {
+    "word": "shine",
+    "pos": "v",
+    "shortDefinition": "to give off light or brightness"
+  },
+  {
+    "word": "show",
+    "pos": "v",
+    "shortDefinition": "to let be seen"
+  },
+  {
+    "word": "wild",
+    "pos": "adj",
+    "shortDefinition": "living freely or hard to control"
+  },
+  {
+    "word": "willing",
+    "pos": "adj",
+    "shortDefinition": "ready to do something"
+  },
+  {
+    "word": "usually",
+    "pos": "adv",
+    "shortDefinition": "most of the time"
+  },
+  {
+    "word": "secret",
+    "pos": "n",
+    "shortDefinition": "something kept hidden"
+  },
+  {
+    "word": "sense",
+    "pos": "n",
+    "shortDefinition": "good judgment or one of the body's ways of noticing"
+  },
+  {
+    "word": "shape",
+    "pos": "n",
+    "shortDefinition": "the form of something"
+  },
+  {
+    "word": "solve",
+    "pos": "v",
+    "shortDefinition": "to find an answer"
+  },
+  {
+    "word": "speak",
+    "pos": "v",
+    "shortDefinition": "to say words"
+  },
+  {
+    "word": "spend",
+    "pos": "v",
+    "shortDefinition": "to use time or money"
+  },
+  {
+    "word": "stand",
+    "pos": "v",
+    "shortDefinition": "to be upright on feet"
+  },
+  {
+    "word": "wise",
+    "pos": "adj",
+    "shortDefinition": "showing good judgment"
+  },
+  {
+    "word": "wonderful",
+    "pos": "adj",
+    "shortDefinition": "extremely good"
+  },
+  {
+    "word": "warmly",
+    "pos": "adv",
+    "shortDefinition": "in a friendly or warm way"
+  },
+  {
+    "word": "shelter",
+    "pos": "n",
+    "shortDefinition": "a place that protects from danger or weather"
+  },
+  {
+    "word": "sign",
+    "pos": "n",
+    "shortDefinition": "a mark or object that gives information"
+  },
+  {
+    "word": "skill",
+    "pos": "n",
+    "shortDefinition": "the ability to do something well"
+  },
+  {
+    "word": "start",
+    "pos": "v",
+    "shortDefinition": "to begin"
+  },
+  {
+    "word": "stay",
+    "pos": "v",
+    "shortDefinition": "to remain in one place or condition"
+  },
+  {
+    "word": "study",
+    "pos": "v",
+    "shortDefinition": "to learn with focused effort"
+  },
+  {
+    "word": "succeed",
+    "pos": "v",
+    "shortDefinition": "to do what you set out to do"
+  },
+  {
+    "word": "young",
+    "pos": "adj",
+    "shortDefinition": "not old"
+  },
+  {
+    "word": "adorable",
+    "pos": "adj",
+    "shortDefinition": "very cute and lovable"
+  },
+  {
+    "word": "widely",
+    "pos": "adv",
+    "shortDefinition": "over a large area or by many people"
+  },
+  {
+    "word": "solution",
+    "pos": "n",
+    "shortDefinition": "an answer to a problem"
+  },
+  {
+    "word": "spirit",
+    "pos": "n",
+    "shortDefinition": "energy, attitude, or the nonphysical part of a person"
+  },
+  {
+    "word": "sport",
+    "pos": "n",
+    "shortDefinition": "a physical game or activity"
+  },
+  {
+    "word": "suggest",
+    "pos": "v",
+    "shortDefinition": "to offer an idea"
+  },
+  {
+    "word": "support",
+    "pos": "v",
+    "shortDefinition": "to hold up or help"
+  },
+  {
+    "word": "swim",
+    "pos": "v",
+    "shortDefinition": "to move through water"
+  },
+  {
+    "word": "teach",
+    "pos": "v",
+    "shortDefinition": "to help someone learn"
+  },
+  {
+    "word": "alert",
+    "pos": "adj",
+    "shortDefinition": "quick to notice things"
+  },
+  {
+    "word": "alive",
+    "pos": "adj",
+    "shortDefinition": "living; not dead"
+  },
+  {
+    "word": "wisely",
+    "pos": "adv",
+    "shortDefinition": "with good judgment"
+  },
+  {
+    "word": "star",
+    "pos": "n",
+    "shortDefinition": "a giant ball of burning gas or a famous person"
+  },
+  {
+    "word": "story",
+    "pos": "n",
+    "shortDefinition": "a tale about events or people"
+  },
+  {
+    "word": "strength",
+    "pos": "n",
+    "shortDefinition": "the power to stay strong or keep going"
+  },
+  {
+    "word": "thank",
+    "pos": "v",
+    "shortDefinition": "to tell someone you are grateful"
+  },
+  {
+    "word": "think",
+    "pos": "v",
+    "shortDefinition": "to use the mind"
+  },
+  {
+    "word": "travel",
+    "pos": "v",
+    "shortDefinition": "to go from place to place"
+  },
+  {
+    "word": "trust",
+    "pos": "v",
+    "shortDefinition": "to believe someone is honest or safe"
+  },
+  {
+    "word": "bold",
+    "pos": "adj",
+    "shortDefinition": "brave and confident"
+  },
+  {
+    "word": "bumpy",
+    "pos": "adj",
+    "shortDefinition": "not smooth; full of bumps"
+  },
+  {
+    "word": "actually",
+    "pos": "adv",
+    "shortDefinition": "in fact"
+  },
+  {
+    "word": "style",
+    "pos": "n",
+    "shortDefinition": "a special way something is done or looks"
+  },
+  {
+    "word": "success",
+    "pos": "n",
+    "shortDefinition": "the achievement of a goal"
+  },
+  {
+    "word": "surprise",
+    "pos": "n",
+    "shortDefinition": "something unexpected"
+  },
+  {
+    "word": "try",
+    "pos": "v",
+    "shortDefinition": "to make an effort"
+  },
+  {
+    "word": "understand",
+    "pos": "v",
+    "shortDefinition": "to know what something means"
+  },
+  {
+    "word": "unite",
+    "pos": "v",
+    "shortDefinition": "to join together"
+  },
+  {
+    "word": "use",
+    "pos": "v",
+    "shortDefinition": "to put into action"
+  },
+  {
+    "word": "chilly",
+    "pos": "adj",
+    "shortDefinition": "slightly cold"
+  },
+  {
+    "word": "creative",
+    "pos": "adj",
+    "shortDefinition": "able to make new ideas"
+  },
+  {
+    "word": "already",
+    "pos": "adv",
+    "shortDefinition": "before now or earlier than expected"
+  },
+  {
+    "word": "task",
+    "pos": "n",
+    "shortDefinition": "a piece of work to finish"
+  },
+  {
+    "word": "team",
+    "pos": "n",
+    "shortDefinition": "a group working together"
+  },
+  {
+    "word": "temperature",
+    "pos": "n",
+    "shortDefinition": "a measure of how hot or cold something is"
+  },
+  {
+    "word": "visit",
+    "pos": "v",
+    "shortDefinition": "to go see a place or person"
+  },
+  {
+    "word": "wait",
+    "pos": "v",
+    "shortDefinition": "to stay until something happens"
+  },
+  {
+    "word": "walk",
+    "pos": "v",
+    "shortDefinition": "to move on foot"
+  },
+  {
+    "word": "want",
+    "pos": "v",
+    "shortDefinition": "to wish for or desire"
+  },
+  {
+    "word": "dusty",
+    "pos": "adj",
+    "shortDefinition": "covered with dust"
+  },
+  {
+    "word": "empty",
+    "pos": "adj",
+    "shortDefinition": "containing nothing"
+  },
+  {
+    "word": "fully",
+    "pos": "adv",
+    "shortDefinition": "completely"
+  },
+  {
+    "word": "theater",
+    "pos": "n",
+    "shortDefinition": "a place for plays or movies"
+  },
+  {
+    "word": "thought",
+    "pos": "n",
+    "shortDefinition": "an idea formed in the mind"
+  },
+  {
+    "word": "time",
+    "pos": "n",
+    "shortDefinition": "the ongoing flow of moments"
+  },
+  {
+    "word": "watch",
+    "pos": "v",
+    "shortDefinition": "to look at for a time"
+  },
+  {
+    "word": "win",
+    "pos": "v",
+    "shortDefinition": "to come out first or succeed"
+  },
+  {
+    "word": "wonder",
+    "pos": "v",
+    "shortDefinition": "to think about with curiosity"
+  },
+  {
+    "word": "work",
+    "pos": "v",
+    "shortDefinition": "to do a job or effort"
+  },
+  {
+    "word": "fancy",
+    "pos": "adj",
+    "shortDefinition": "special, decorative, or expensive-looking"
+  },
+  {
+    "word": "fresh",
+    "pos": "adj",
+    "shortDefinition": "new, clean, or just made"
+  },
+  {
+    "word": "likely",
+    "pos": "adv",
+    "shortDefinition": "probably"
+  },
+  {
+    "word": "tool",
+    "pos": "n",
+    "shortDefinition": "an object used to do a job"
+  },
+  {
+    "word": "tradition",
+    "pos": "n",
+    "shortDefinition": "a custom followed over time"
+  },
+  {
+    "word": "trouble",
+    "pos": "n",
+    "shortDefinition": "difficulty or problems"
+  },
+  {
+    "word": "worry",
+    "pos": "v",
+    "shortDefinition": "to feel uneasy about"
+  },
+  {
+    "word": "write",
+    "pos": "v",
+    "shortDefinition": "to put words on a page or screen"
+  },
+  {
+    "word": "whisper",
+    "pos": "v",
+    "shortDefinition": "to speak very softly"
+  },
+  {
+    "word": "yell",
+    "pos": "v",
+    "shortDefinition": "to shout loudly"
+  },
+  {
+    "word": "gigantic",
+    "pos": "adj",
+    "shortDefinition": "extremely large"
+  },
+  {
+    "word": "humble",
+    "pos": "adj",
+    "shortDefinition": "modest and not bragging"
+  },
+  {
+    "word": "softly",
+    "pos": "adv",
+    "shortDefinition": "in a quiet or gentle way"
+  },
+  {
+    "word": "truth",
+    "pos": "n",
+    "shortDefinition": "what is real or correct"
+  },
+  {
+    "word": "value",
+    "pos": "n",
+    "shortDefinition": "how useful, important, or costly something is"
+  },
+  {
+    "word": "victory",
+    "pos": "n",
+    "shortDefinition": "success in a contest or struggle"
+  },
+  {
+    "word": "zoom",
+    "pos": "v",
+    "shortDefinition": "to move very fast"
+  },
+  {
+    "word": "borrow",
+    "pos": "v",
+    "shortDefinition": "to take for a short time and return"
+  },
+  {
+    "word": "carry",
+    "pos": "v",
+    "shortDefinition": "to hold and move something"
+  },
+  {
+    "word": "fix",
+    "pos": "v",
+    "shortDefinition": "to repair or make right"
+  },
+  {
+    "word": "itchy",
+    "pos": "adj",
+    "shortDefinition": "causing a need to scratch"
+  },
+  {
+    "word": "messy",
+    "pos": "adj",
+    "shortDefinition": "untidy and disorganized"
+  },
+  {
+    "word": "openly",
+    "pos": "adv",
+    "shortDefinition": "in a way that is honest and public"
+  }
+]

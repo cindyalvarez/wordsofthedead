@@ -7,6 +7,10 @@ struct VocabWord: Identifiable, Hashable {
     let pos: String
     let shortDefinition: String
     let funDefinition: String?
+    /// Minimum level at which this word can appear (for level-gated vocabulary tiers).
+    let minLevel: Int
+    /// Bundled tier from the data (if available); overrides computed tier.
+    let bundledTier: Int?
 
     /// Stable key for persistence/scheduling (the UUID is regenerated on each load).
     var key: String { word.lowercased() }
@@ -30,7 +34,13 @@ struct VocabWord: Identifiable, Hashable {
     }
 
     /// Difficulty tier 0 (easiest) … 3 (hardest), used to gate which new words appear.
+    /// Uses bundled tier if available, otherwise computes from word properties.
     var tier: Int {
+        bundledTier ?? computedTier
+    }
+
+    /// Computed tier based on word difficulty (used when bundledTier is nil).
+    private var computedTier: Int {
         switch difficulty {
         case ..<10: return 0
         case ..<14: return 1

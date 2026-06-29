@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Parse vocablist.txt into a clean structured vocab.json.
+"""Parse vocablist.txt into a clean structured vocab.json, with 8th-grade words merged in.
 
 The source file is a reflowed two-column PDF dump: each vocabulary entry begins a
 line in the form
@@ -17,6 +17,9 @@ Some entries have numbered senses, e.g.
 
 We keep the first sense's part of speech / definition as the primary definition and
 record any additional senses too.
+
+If vocab_8th_grade.json exists, we also merge in the 8th-grade vocabulary with
+minLevel set to 1-50, and set minLevel to 51+ for the original words.
 """
 
 import json
@@ -27,12 +30,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "vocablist.txt"
 OUT = ROOT / "data" / "vocab.json"
+VOCAB_8TH_GRADE = ROOT / "data" / "vocab_8th_grade.json"
 
 POS = r"(?:n|v|adj|adv)"
 
 # An entry line starts at column 0 with a headword, then either `(pos.)` directly
 # or a numbered sense `1. (pos.)`.
-ENTRY_RE = re.compile(rf"^([A-Za-z][A-Za-z'’\-]*)\s+(?:\d+\.\s+)?\({POS}\.\)")
+ENTRY_RE = re.compile(rf"^([A-Za-z][A-Za-z''\-]*)\s+(?:\d+\.\s+)?\({POS}\.\)")
 
 # Matches each sense marker within the line so we can split multi-sense entries.
 SENSE_RE = re.compile(rf"(?:(\d+)\.\s+)?\(({POS})\.\)")
@@ -81,6 +85,23 @@ def main():
 
     entries = []
     seen = set()
+    
+    # First, load 8th-grade vocabulary if it exists (these get priority)
+    if VOCAB_8TH_GRADE.exists():
+        try:
+            vocab_8th = json.loads(VOCAB_8TH_GRADE.read_text(encoding="utf-8"))
+            for entry in vocab_8th:
+                key = entry["word"].lower()
+                if key not in seen:
+                    # Keep the minLevel from the 8th-grade vocab (should be 1)
+                    if "minLevel" not in entry:
+                        entry["minLevel"] = 1
+                    entries.append(entry)
+                    seen.add(key)
+        except Exception as e:
+            print(f"Warning: Could not load 8th-grade vocabulary: {e}", file=sys.stderr)
+
+    # Then, parse original vocablist.txt (only add if not already in 8th-grade)
     for raw in SRC.read_text(encoding="utf-8", errors="replace").splitlines():
         line = raw.rstrip()
         if not line:
@@ -92,6 +113,8 @@ def main():
         if key in seen:
             continue
         seen.add(key)
+        # Original words start at level 51+
+        entry["minLevel"] = 51
         entries.append(entry)
 
     entries.sort(key=lambda e: e["word"].lower())
@@ -101,3 +124,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

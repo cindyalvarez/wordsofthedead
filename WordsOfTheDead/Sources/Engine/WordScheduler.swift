@@ -36,27 +36,28 @@ final class WordScheduler {
 
     // MARK: - Selection
 
-    func nextWord() -> VocabWord? {
+    func nextWord(forLevel level: Int) -> VocabWord? {
         guard !words.isEmpty else { return nil }
 
         // Age the in-session re-queue; serve any word whose countdown has elapsed.
         for i in requeue.indices { requeue[i].countdown -= 1 }
         if let readyIdx = requeue.firstIndex(where: { $0.countdown <= 0 }) {
             let id = requeue.remove(at: readyIdx).id
-            if let word = byID[id] {
+            if let word = byID[id], word.minLevel <= level {
                 lastServedID = id
                 return word
             }
         }
 
         let now = Date()
+        // Filter words by: tier gating, unseen/due status, AND level gating (minLevel <= current level)
         let unseen = words.filter {
-            profile[$0.key] == nil && $0.key != lastServedID && $0.tier <= unlockedTier
+            profile[$0.key] == nil && $0.key != lastServedID && $0.tier <= unlockedTier && $0.minLevel <= level
         }
         let due = words
             .filter { w in
                 guard let p = profile[w.key] else { return false }
-                return p.dueAt <= now && w.key != lastServedID
+                return p.dueAt <= now && w.key != lastServedID && w.minLevel <= level
             }
             .sorted { (profile[$0.key]?.dueAt ?? now) < (profile[$1.key]?.dueAt ?? now) }
 
@@ -68,11 +69,11 @@ final class WordScheduler {
         } else if let fresh = easiestUnseen(from: unseen) {
             chosen = fresh
         } else if let soonest = words
-            .filter({ $0.key != lastServedID })
+            .filter({ $0.key != lastServedID && $0.minLevel <= level })
             .min(by: { progress(for: $0).dueAt < progress(for: $1).dueAt }) {
             chosen = soonest
         } else {
-            chosen = words.randomElement()!
+            chosen = words.filter({ $0.minLevel <= level }).randomElement()!
         }
 
         lastServedID = chosen.key
@@ -89,11 +90,11 @@ final class WordScheduler {
     /// A word the player has struggled with — used to build "boss review" rounds.
     /// Prefers words answered wrong / not yet known, most overdue first. Returns nil only
     /// if the player has no review history yet.
-    func reviewWord() -> VocabWord? {
+    func reviewWord(forLevel level: Int) -> VocabWord? {
         let now = Date()
         let pool = words.filter { w in
             guard let p = profile[w.key], w.key != lastServedID else { return false }
-            return p.stage != .known || p.wrong > 0
+            return (p.stage != .known || p.wrong > 0) && w.minLevel <= level
         }
         guard !pool.isEmpty else { return nil }
         let sorted = pool.sorted { (profile[$0.key]?.dueAt ?? now) < (profile[$1.key]?.dueAt ?? now) }

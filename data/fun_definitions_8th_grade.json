@@ -1,0 +1,2004 @@
+{
+  "definitions": [
+    {
+      "word": "ability",
+      "funDefinition": "At the prep bench, Bart learned that ability means the power or skill to do something when a scratched bookmark slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "accident",
+      "funDefinition": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that accident is something bad that happens unexpectedly just as a white glove became the next clue."
+    },
+    {
+      "word": "action",
+      "funDefinition": "During a wild night at the harbor rocks, Bruno Fernandes saw that action means something done on purpose after a feather bundle showed up and the barricade started to shake."
+    },
+    {
+      "word": "adventure",
+      "funDefinition": "At the finals piste, the pastry chef treated adventure as an exciting or unusual experience before grabbing a gold pen and heading for safety."
+    },
+    {
+      "word": "accept",
+      "funDefinition": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to accept—to say yes to or receive—before a black headband vanished."
+    },
+    {
+      "word": "achieve",
+      "funDefinition": "A cat chose to achieve, meaning to reach a goal, while racing through the TV studio and protecting a match ball."
+    },
+    {
+      "word": "act",
+      "funDefinition": "At his Reseda apartment, a sabre sprinter tried to act—to do something or perform—as the rooftop ladder slipped and a showstopper loaf bounced across the floor."
+    },
+    {
+      "word": "active",
+      "funDefinition": "With a camera strap tucked under one arm, Almanzo seemed active at the goalmouth, meaning full of energy or movement."
+    },
+    {
+      "word": "amazed",
+      "funDefinition": "Sideshow Bob looked amazed—very surprised—at pastry week while holding a salty bark and listening for zombies."
+    },
+    {
+      "word": "almost",
+      "funDefinition": "At Pier 39, Sam answered almost, meaning not quite, before passing over a scoring cord."
+    },
+    {
+      "word": "advice",
+      "funDefinition": "During a wild night at the rooftop, Son saw that advice means helpful ideas about what to do after his cracked specs showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "age",
+      "funDefinition": "At the strip edge, a nervous baker treated age as the number of years someone has lived before grabbing a red pacifier and heading for safety."
+    },
+    {
+      "word": "air",
+      "funDefinition": "At the school roof, a drummer learned that air means the mixture of gases we breathe when a tournament medal slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "answer",
+      "funDefinition": "While zombies groaned near the Springfield band room, a rescue cat remembered that answer is a reply to a question just as a strategy board became the next clue."
+    },
+    {
+      "word": "adapt",
+      "funDefinition": "At the batting cage, an epee captain tried to adapt—to change to fit new conditions—as an alarm bell started ringing and a stack of macarons bounced across the floor."
+    },
+    {
+      "word": "add",
+      "funDefinition": "With zombies closing in at the Anfield touchline, Dr. Grant would add if it meant to put something more in and saving a ferry pass."
+    },
+    {
+      "word": "admire",
+      "funDefinition": "When the graveyard gate rattled by the cake stand, Krusty had to admire—to respect or enjoy looking at—before a wet flipper vanished."
+    },
+    {
+      "word": "ancient",
+      "funDefinition": "At Twin Peaks, everyone called Miguel ancient because very old fit the moment and even a silver mask seemed impressed."
+    },
+    {
+      "word": "angry",
+      "funDefinition": "While crossing the blanket fort, Saka stayed angry—feeling mad—as the old truck coughed back to life and a flashlight wobbled dangerously."
+    },
+    {
+      "word": "always",
+      "funDefinition": "A star baker handled an oversized comic book always—at all times—while escaping near the warm-up line."
+    },
+    {
+      "word": "area",
+      "funDefinition": "At the forest clearing, a runner learned that area means a particular place or region when bonsai clippers slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "art",
+      "funDefinition": "While zombies groaned near the arcade, a harbor seal remembered that art is creative work such as drawing or music just as a pair of muddy boots became the next clue."
+    },
+    {
+      "word": "athlete",
+      "funDefinition": "During a wild night at the old dojo office, a foil fencer saw that athlete means a person skilled in sports after a piping bag showed up and the barricade started to shake."
+    },
+    {
+      "word": "attention",
+      "funDefinition": "At the Old Trafford tunnel, Ralph treated attention as careful focus on something before grabbing a board sticker and heading for safety."
+    },
+    {
+      "word": "advise",
+      "funDefinition": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to advise—to give helpful guidance—before a fish bucket vanished."
+    },
+    {
+      "word": "allow",
+      "funDefinition": "Kreese chose to allow, meaning to let something happen, while racing through the Chinatown gate and protecting a score sheet."
+    },
+    {
+      "word": "appear",
+      "funDefinition": "At the icy ledge, Salah tried to appear—to come into view—as the rooftop ladder slipped and a fake hall pass bounced across the floor."
+    },
+    {
+      "word": "brave",
+      "funDefinition": "With a blue grocery bag tucked under one arm, Alison Hammond seemed brave at the training hall, meaning ready to face fear."
+    },
+    {
+      "word": "bright",
+      "funDefinition": "A vendor looked bright—full of light or intelligence—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies."
+    },
+    {
+      "word": "bravely",
+      "funDefinition": "At the Leftorium, a penguin chick answered bravely, meaning in a courageous way, before passing over a black-and-white scarf."
+    },
+    {
+      "word": "balance",
+      "funDefinition": "During a wild night at the All Valley arena, a bout judge saw that balance means a steady position or fair mix after a loaf tin showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "beach",
+      "funDefinition": "At the St James' Park gate, Roz treated beach as sandy or rocky land by water before grabbing a sourdough loaf and heading for safety."
+    },
+    {
+      "word": "beauty",
+      "funDefinition": "At the bunting-lined counter, Mr. Burns learned that beauty means the quality of being pleasing to see when a tiny bell slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "beginning",
+      "funDefinition": "While zombies groaned near Lombard Street, Chozen remembered that beginning is the start of something just as a lame jacket became the next clue."
+    },
+    {
+      "word": "apply",
+      "funDefinition": "At the bookshelf, Haaland tried to apply—to put to use or request something—as an alarm bell started ringing and the Guide bounced across the floor."
+    },
+    {
+      "word": "argue",
+      "funDefinition": "With zombies closing in at the practice piste, Noel Fielding would argue if it meant to speak with disagreement and saving a pink donut box."
+    },
+    {
+      "word": "arrange",
+      "funDefinition": "When the graveyard gate rattled by the spaceship corridor, a photographer had to arrange—to put in order or plan—before a cobra poster vanished."
+    },
+    {
+      "word": "busy",
+      "funDefinition": "At the Kwik-E-Mart roof, everyone called a tuxedo cat busy because full of activity fit the moment and even a blue water bottle seemed impressed."
+    },
+    {
+      "word": "calm",
+      "funDefinition": "While crossing the school hallway, a parry expert stayed calm—peaceful and not upset—as the old truck coughed back to life and a bright apron wobbled dangerously."
+    },
+    {
+      "word": "carefully",
+      "funDefinition": "Arthur Dent handled a cable car ticket carefully—with caution and attention—while escaping near the Etihad tunnel."
+    },
+    {
+      "word": "belief",
+      "funDefinition": "At the chocolate table, Maggie learned that belief means an idea accepted as true when a ball of yarn slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "book",
+      "funDefinition": "While zombies groaned near the Alcatraz dock, Demetri remembered that book is pages bound together for reading just as a foil tip became the next clue."
+    },
+    {
+      "word": "bridge",
+      "funDefinition": "During a wild night at the tide pool, Pep Guardiola saw that bridge means a structure that crosses over something after a lunch pail showed up and the barricade started to shake."
+    },
+    {
+      "word": "buddy",
+      "funDefinition": "At the scoring table, Prue Leith treated buddy as a close friend before grabbing a saxophone case and heading for safety."
+    },
+    {
+      "word": "ask",
+      "funDefinition": "When the graveyard gate rattled by the fire hill, a ranger had to ask—to say something to get an answer—before a wooden practice drum vanished."
+    },
+    {
+      "word": "avoid",
+      "funDefinition": "A tabby chose to avoid, meaning to stay away from, while racing through the Simpson kitchen and protecting goalkeeper gloves."
+    },
+    {
+      "word": "believe",
+      "funDefinition": "At the training deck, a left-handed fencer tried to believe—to think something is true—as the rooftop ladder slipped and a tray of scones bounced across the floor."
+    },
+    {
+      "word": "careful",
+      "funDefinition": "With a foggy map tucked under one arm, a Wild Robot gosling seemed careful at the Tottenham stadium steps, meaning paying close attention to avoid mistakes."
+    },
+    {
+      "word": "certain",
+      "funDefinition": "Milhouse looked certain—sure and without doubt—at the judging table while holding a soft paw and listening for zombies."
+    },
+    {
+      "word": "certainly",
+      "funDefinition": "At Crissy Field, Hawk answered certainly, meaning without doubt, before passing over a stopwatch."
+    },
+    {
+      "word": "camp",
+      "funDefinition": "During a wild night at the couch cushion, Alisson saw that camp means a place where people stay outdoors after a fossil brush showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "care",
+      "funDefinition": "At the lesson strip, Paul Hollywood treated care as serious concern or helpful attention before grabbing a skateboard and heading for safety."
+    },
+    {
+      "word": "chance",
+      "funDefinition": "At the island cliff, a skater learned that chance means an opportunity or possibility when an open laptop slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "challenge",
+      "funDefinition": "While zombies groaned near the nuclear plant hallway, a sea lion remembered that challenge is a difficult task to overcome just as a referee whistle became the next clue."
+    },
+    {
+      "word": "belong",
+      "funDefinition": "At the Miyagi-Do yard, a coach tried to belong—to be a proper part of something—as an alarm bell started ringing and a pastel cake stand bounced across the floor."
+    },
+    {
+      "word": "build",
+      "funDefinition": "With zombies closing in at the Stamford Bridge bench, Piggy would build if it meant to make by putting parts together and saving a Victorian postcard."
+    },
+    {
+      "word": "calculate",
+      "funDefinition": "When the graveyard gate rattled by the proving drawer station, Marge had to calculate—to work out an amount or answer—before a shiny shell vanished."
+    },
+    {
+      "word": "cheerful",
+      "funDefinition": "At the Lands End trail, everyone called Tory cheerful because happy and positive fit the moment and even a tournament ribbon seemed impressed."
+    },
+    {
+      "word": "clever",
+      "funDefinition": "While crossing the Pier 39 float, Isak stayed clever—quick to learn or understand—as the old truck coughed back to life and a conch shell wobbled dangerously."
+    },
+    {
+      "word": "clearly",
+      "funDefinition": "The showstopper champion handled a suspicious rake clearly—in an easy-to-understand way—while escaping near the gym bleachers."
+    },
+    {
+      "word": "character",
+      "funDefinition": "At the Farmer Boy wagon, a tourist guide learned that character means a person in a story or a person's nature when blue hair spray slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "choice",
+      "funDefinition": "While zombies groaned near the theater stage, a seal remembered that choice is the act of choosing or the option picked just as a corner flag became the next clue."
+    },
+    {
+      "word": "city",
+      "funDefinition": "During a wild night at the LaRusso Auto showroom, the team captain saw that city means a large town where many people live after a rolling pin showed up and the barricade started to shake."
+    },
+    {
+      "word": "class",
+      "funDefinition": "At the sideline, Lex Murphy treated class as a group lesson or school period before grabbing a red lantern and heading for safety."
+    },
+    {
+      "word": "call",
+      "funDefinition": "When the graveyard gate rattled by the cooling rack, Homer had to call—to speak or phone to someone—before a pebble vanished."
+    },
+    {
+      "word": "celebrate",
+      "funDefinition": "Daniel LaRusso chose to celebrate, meaning to honor with joy, while racing through Dolores Park and protecting a weapon bag."
+    },
+    {
+      "word": "change",
+      "funDefinition": "At the snow bank, Cole Palmer tried to change—to make or become different—as the rooftop ladder slipped and a repair kit bounced across the floor."
+    },
+    {
+      "word": "cloudy",
+      "funDefinition": "With a cream pie tucked under one arm, the biscuit artist seemed cloudy at the club locker, meaning filled with clouds or unclear."
+    },
+    {
+      "word": "comfortable",
+      "funDefinition": "A cable car conductor looked comfortable—relaxed and at ease—at the visitor center while holding a trophy-case key and listening for zombies."
+    },
+    {
+      "word": "closely",
+      "funDefinition": "At Moe's parking lot, a penguin answered closely, meaning in a near or careful way, before passing over a captain's armband."
+    },
+    {
+      "word": "climate",
+      "funDefinition": "During a wild night at the cafeteria, a beginner fencer saw that climate means the usual weather of a place after a wobbling meringue tower showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "cloud",
+      "funDefinition": "At the Emirates training ground, a Gordon Korman hero treated cloud as a mass of tiny water drops in the sky before grabbing a windbreaker and heading for safety."
+    },
+    {
+      "word": "coach",
+      "funDefinition": "At the Bake Off tent, Lisa learned that coach means a person who trains a team or player when a glow-in-the-dark collar slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "color",
+      "funDefinition": "While zombies groaned near the Ferry Building, Johnny Lawrence remembered that color is the appearance of something like red or blue just as a red card became the next clue."
+    },
+    {
+      "word": "choose",
+      "funDefinition": "At the windowsill, Virgil van Dijk tried to choose—to pick from options—as an alarm bell started ringing and a blue towel bounced across the floor."
+    },
+    {
+      "word": "collect",
+      "funDefinition": "With zombies closing in at the medal stand, the bread week winner would collect if it meant to gather together and saving a left-handed mug."
+    },
+    {
+      "word": "compare",
+      "funDefinition": "When the graveyard gate rattled by the Heart of Gold, a hiker had to compare—to look for similarities and differences—before car keys vanished."
+    },
+    {
+      "word": "common",
+      "funDefinition": "At the living room, everyone called a kitten common because found often; not unusual fit the moment and even a red scarf seemed impressed."
+    },
+    {
+      "word": "confident",
+      "funDefinition": "While crossing the Cobra Kai dojo, the referee stayed confident—sure of yourself—as the old truck coughed back to life and a biscuit dragon wobbled dangerously."
+    },
+    {
+      "word": "brightly",
+      "funDefinition": "Ford Prefect handled a market tote brightly—with strong light or cheer—while escaping near the penalty box."
+    },
+    {
+      "word": "comfort",
+      "funDefinition": "At the prep bench, Bart learned that comfort means a feeling of ease and relaxation when a scratched bookmark slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "community",
+      "funDefinition": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that community is a group of people living or working together just as a white glove became the next clue."
+    },
+    {
+      "word": "contest",
+      "funDefinition": "During a wild night at the harbor rocks, Bruno Fernandes saw that contest means a competition to see who does best after a feather bundle showed up and the barricade started to shake."
+    },
+    {
+      "word": "courage",
+      "funDefinition": "At the finals piste, the pastry chef treated courage as the strength to face fear before grabbing a gold pen and heading for safety."
+    },
+    {
+      "word": "compete",
+      "funDefinition": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to compete—to try to win against others—before a black headband vanished."
+    },
+    {
+      "word": "complete",
+      "funDefinition": "A cat chose to complete, meaning to finish fully, while racing through the TV studio and protecting a match ball."
+    },
+    {
+      "word": "connect",
+      "funDefinition": "At his Reseda apartment, a sabre sprinter tried to connect—to join together—as the rooftop ladder slipped and a showstopper loaf bounced across the floor."
+    },
+    {
+      "word": "curious",
+      "funDefinition": "With a camera strap tucked under one arm, Almanzo seemed curious at the goalmouth, meaning eager to know more."
+    },
+    {
+      "word": "daily",
+      "funDefinition": "Sideshow Bob looked daily—happening every day—at pastry week while holding a salty bark and listening for zombies."
+    },
+    {
+      "word": "eagerly",
+      "funDefinition": "At Pier 39, Sam answered eagerly, meaning with excitement and interest, before passing over a scoring cord."
+    },
+    {
+      "word": "course",
+      "funDefinition": "During a wild night at the rooftop, Son saw that course means a set path or series of lessons after his cracked specs showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "crowd",
+      "funDefinition": "At the strip edge, a nervous baker treated crowd as a large group of people before grabbing a red pacifier and heading for safety."
+    },
+    {
+      "word": "culture",
+      "funDefinition": "At the school roof, a drummer learned that culture means the shared beliefs, arts, and customs of a group when a tournament medal slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "danger",
+      "funDefinition": "While zombies groaned near the Springfield band room, a rescue cat remembered that danger is the possibility of harm just as a strategy board became the next clue."
+    },
+    {
+      "word": "consider",
+      "funDefinition": "At the batting cage, an epee captain tried to consider—to think carefully about—as an alarm bell started ringing and a stack of macarons bounced across the floor."
+    },
+    {
+      "word": "continue",
+      "funDefinition": "With zombies closing in at the Anfield touchline, Dr. Grant would continue if it meant to keep going and saving a ferry pass."
+    },
+    {
+      "word": "create",
+      "funDefinition": "When the graveyard gate rattled by the cake stand, Krusty had to create—to make something new—before a wet flipper vanished."
+    },
+    {
+      "word": "dark",
+      "funDefinition": "At Twin Peaks, everyone called Miguel dark because having little light fit the moment and even a silver mask seemed impressed."
+    },
+    {
+      "word": "different",
+      "funDefinition": "While crossing the blanket fort, Saka stayed different—not the same—as the old truck coughed back to life and a flashlight wobbled dangerously."
+    },
+    {
+      "word": "easily",
+      "funDefinition": "A star baker handled an oversized comic book easily—without much trouble—while escaping near the warm-up line."
+    },
+    {
+      "word": "day",
+      "funDefinition": "At the forest clearing, a runner learned that day means a period of twenty-four hours when bonsai clippers slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "decision",
+      "funDefinition": "While zombies groaned near the arcade, a harbor seal remembered that decision is a choice made after thinking just as a pair of muddy boots became the next clue."
+    },
+    {
+      "word": "demand",
+      "funDefinition": "During a wild night at the old dojo office, a foil fencer saw that demand means a strong need or request after a piping bag showed up and the barricade started to shake."
+    },
+    {
+      "word": "design",
+      "funDefinition": "At the Old Trafford tunnel, Ralph treated design as a plan or pattern for making something before grabbing a board sticker and heading for safety."
+    },
+    {
+      "word": "decide",
+      "funDefinition": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to decide—to choose after thinking—before a fish bucket vanished."
+    },
+    {
+      "word": "defend",
+      "funDefinition": "Kreese chose to defend, meaning to protect against attack or criticism, while racing through the Chinatown gate and protecting a score sheet."
+    },
+    {
+      "word": "deliver",
+      "funDefinition": "At the icy ledge, Salah tried to deliver—to bring something to a place or person—as the rooftop ladder slipped and a fake hall pass bounced across the floor."
+    },
+    {
+      "word": "difficult",
+      "funDefinition": "With a blue grocery bag tucked under one arm, Alison Hammond seemed difficult at the training hall, meaning hard to do or understand."
+    },
+    {
+      "word": "direct",
+      "funDefinition": "A vendor looked direct—straight and clear—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies."
+    },
+    {
+      "word": "evenly",
+      "funDefinition": "At the Leftorium, a penguin chick answered evenly, meaning in a smooth and equal way, before passing over a black-and-white scarf."
+    },
+    {
+      "word": "detail",
+      "funDefinition": "During a wild night at the All Valley arena, a bout judge saw that detail means a small but important part after a loaf tin showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "difference",
+      "funDefinition": "At the St James' Park gate, Roz treated difference as the way things are not the same before grabbing a sourdough loaf and heading for safety."
+    },
+    {
+      "word": "direction",
+      "funDefinition": "At the bunting-lined counter, Mr. Burns learned that direction means the way something points or moves when a tiny bell slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "discovery",
+      "funDefinition": "While zombies groaned near Lombard Street, Chozen remembered that discovery is the act of finding something new just as a lame jacket became the next clue."
+    },
+    {
+      "word": "describe",
+      "funDefinition": "At the bookshelf, Haaland tried to describe—to tell what something is like—as an alarm bell started ringing and the Guide bounced across the floor."
+    },
+    {
+      "word": "develop",
+      "funDefinition": "With zombies closing in at the practice piste, Noel Fielding would develop if it meant to grow or cause to grow and saving a pink donut box."
+    },
+    {
+      "word": "discover",
+      "funDefinition": "When the graveyard gate rattled by the spaceship corridor, a photographer had to discover—to find or learn something new—before a cobra poster vanished."
+    },
+    {
+      "word": "distant",
+      "funDefinition": "At the Kwik-E-Mart roof, everyone called a tuxedo cat distant because far away in space or time fit the moment and even a blue water bottle seemed impressed."
+    },
+    {
+      "word": "eager",
+      "funDefinition": "While crossing the school hallway, a parry expert stayed eager—excited and ready—as the old truck coughed back to life and a bright apron wobbled dangerously."
+    },
+    {
+      "word": "finally",
+      "funDefinition": "Arthur Dent handled a cable car ticket finally—at the end—while escaping near the Etihad tunnel."
+    },
+    {
+      "word": "discussion",
+      "funDefinition": "At the chocolate table, Maggie learned that discussion means a talk where people share ideas when a ball of yarn slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "distance",
+      "funDefinition": "While zombies groaned near the Alcatraz dock, Demetri remembered that distance is the amount of space between things just as a foil tip became the next clue."
+    },
+    {
+      "word": "dream",
+      "funDefinition": "During a wild night at the tide pool, Pep Guardiola saw that dream means thoughts and images during sleep or a big hope after a lunch pail showed up and the barricade started to shake."
+    },
+    {
+      "word": "effort",
+      "funDefinition": "At the scoring table, Prue Leith treated effort as hard work put into something before grabbing a saxophone case and heading for safety."
+    },
+    {
+      "word": "discuss",
+      "funDefinition": "When the graveyard gate rattled by the fire hill, a ranger had to discuss—to talk about—before a wooden practice drum vanished."
+    },
+    {
+      "word": "divide",
+      "funDefinition": "A tabby chose to divide, meaning to separate into parts, while racing through the Simpson kitchen and protecting goalkeeper gloves."
+    },
+    {
+      "word": "doubt",
+      "funDefinition": "At the training deck, a left-handed fencer tried to doubt—to feel unsure about—as the rooftop ladder slipped and a tray of scones bounced across the floor."
+    },
+    {
+      "word": "easy",
+      "funDefinition": "With a foggy map tucked under one arm, a Wild Robot gosling seemed easy at the Tottenham stadium steps, meaning not hard."
+    },
+    {
+      "word": "fair",
+      "funDefinition": "Milhouse looked fair—honest and reasonable—at the judging table while holding a soft paw and listening for zombies."
+    },
+    {
+      "word": "gently",
+      "funDefinition": "At Crissy Field, Hawk answered gently, meaning in a soft and careful way, before passing over a stopwatch."
+    },
+    {
+      "word": "energy",
+      "funDefinition": "During a wild night at the couch cushion, Alisson saw that energy means the power to move or do work after a fossil brush showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "error",
+      "funDefinition": "At the lesson strip, Paul Hollywood treated error as a mistake before grabbing a skateboard and heading for safety."
+    },
+    {
+      "word": "event",
+      "funDefinition": "At the island cliff, a skater learned that event means something that happens, especially planned when an open laptop slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "example",
+      "funDefinition": "While zombies groaned near the nuclear plant hallway, a sea lion remembered that example is something that shows what another thing is like just as a referee whistle became the next clue."
+    },
+    {
+      "word": "edit",
+      "funDefinition": "At the Miyagi-Do yard, a coach tried to edit—to change writing or media to improve it—as an alarm bell started ringing and a pastel cake stand bounced across the floor."
+    },
+    {
+      "word": "encourage",
+      "funDefinition": "With zombies closing in at the Stamford Bridge bench, Piggy would encourage if it meant to give hope or support and saving a Victorian postcard."
+    },
+    {
+      "word": "enjoy",
+      "funDefinition": "When the graveyard gate rattled by the proving drawer station, Marge had to enjoy—to take pleasure in—before a shiny shell vanished."
+    },
+    {
+      "word": "famous",
+      "funDefinition": "At the Lands End trail, everyone called Tory famous because known by many people fit the moment and even a tournament ribbon seemed impressed."
+    },
+    {
+      "word": "fast",
+      "funDefinition": "While crossing the Pier 39 float, Isak stayed fast—moving quickly—as the old truck coughed back to life and a conch shell wobbled dangerously."
+    },
+    {
+      "word": "gladly",
+      "funDefinition": "The showstopper champion handled a suspicious rake gladly—with pleasure—while escaping near the gym bleachers."
+    },
+    {
+      "word": "fact",
+      "funDefinition": "At the Farmer Boy wagon, a tourist guide learned that fact means something known to be true when blue hair spray slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "family",
+      "funDefinition": "While zombies groaned near the theater stage, a seal remembered that family is people related to each other or living together just as a corner flag became the next clue."
+    },
+    {
+      "word": "feature",
+      "funDefinition": "During a wild night at the LaRusso Auto showroom, the team captain saw that feature means an important part of something after a rolling pin showed up and the barricade started to shake."
+    },
+    {
+      "word": "feeling",
+      "funDefinition": "At the sideline, Lex Murphy treated feeling as an emotion or sense inside you before grabbing a red lantern and heading for safety."
+    },
+    {
+      "word": "escape",
+      "funDefinition": "When the graveyard gate rattled by the cooling rack, Homer had to escape—to get away from—before a pebble vanished."
+    },
+    {
+      "word": "examine",
+      "funDefinition": "Daniel LaRusso chose to examine, meaning to look at carefully, while racing through Dolores Park and protecting a weapon bag."
+    },
+    {
+      "word": "exist",
+      "funDefinition": "At the snow bank, Cole Palmer tried to exist—to be real or present—as the rooftop ladder slipped and a repair kit bounced across the floor."
+    },
+    {
+      "word": "favorite",
+      "funDefinition": "With a cream pie tucked under one arm, the biscuit artist seemed favorite at the club locker, meaning liked more than others."
+    },
+    {
+      "word": "fearless",
+      "funDefinition": "A cable car conductor looked fearless—not afraid—at the visitor center while holding a trophy-case key and listening for zombies."
+    },
+    {
+      "word": "happily",
+      "funDefinition": "At Moe's parking lot, a penguin answered happily, meaning in a joyful way, before passing over a captain's armband."
+    },
+    {
+      "word": "field",
+      "funDefinition": "During a wild night at the cafeteria, a beginner fencer saw that field means open land or an area of study or play after a wobbling meringue tower showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "focus",
+      "funDefinition": "At the Emirates training ground, a Gordon Korman hero treated focus as special attention on one thing before grabbing a windbreaker and heading for safety."
+    },
+    {
+      "word": "force",
+      "funDefinition": "At the Bake Off tent, Lisa learned that force means power used to move or control something when a glow-in-the-dark collar slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "forest",
+      "funDefinition": "While zombies groaned near the Ferry Building, Johnny Lawrence remembered that forest is a large area filled with trees just as a red card became the next clue."
+    },
+    {
+      "word": "expand",
+      "funDefinition": "At the windowsill, Virgil van Dijk tried to expand—to become larger—as an alarm bell started ringing and a blue towel bounced across the floor."
+    },
+    {
+      "word": "explain",
+      "funDefinition": "With zombies closing in at the medal stand, the bread week winner would explain if it meant to make clear and saving a left-handed mug."
+    },
+    {
+      "word": "explore",
+      "funDefinition": "When the graveyard gate rattled by the Heart of Gold, a hiker had to explore—to travel or study to learn more—before car keys vanished."
+    },
+    {
+      "word": "final",
+      "funDefinition": "At the living room, everyone called a kitten final because last in order fit the moment and even a red scarf seemed impressed."
+    },
+    {
+      "word": "flexible",
+      "funDefinition": "While crossing the Cobra Kai dojo, the referee stayed flexible—able to bend or change easily—as the old truck coughed back to life and a biscuit dragon wobbled dangerously."
+    },
+    {
+      "word": "honestly",
+      "funDefinition": "Ford Prefect handled a market tote honestly—truthfully—while escaping near the penalty box."
+    },
+    {
+      "word": "freedom",
+      "funDefinition": "At the prep bench, Bart learned that freedom means the power to act or choose without control when a scratched bookmark slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "friend",
+      "funDefinition": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that friend is a person you like and trust just as a white glove became the next clue."
+    },
+    {
+      "word": "game",
+      "funDefinition": "During a wild night at the harbor rocks, Bruno Fernandes saw that game means an activity with rules for fun or competition after a feather bundle showed up and the barricade started to shake."
+    },
+    {
+      "word": "garden",
+      "funDefinition": "At the finals piste, the pastry chef treated garden as a place where plants are grown before grabbing a gold pen and heading for safety."
+    },
+    {
+      "word": "face",
+      "funDefinition": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to face—to deal with directly—before a black headband vanished."
+    },
+    {
+      "word": "fail",
+      "funDefinition": "A cat chose to fail, meaning to not succeed, while racing through the TV studio and protecting a match ball."
+    },
+    {
+      "word": "figure",
+      "funDefinition": "At his Reseda apartment, a sabre sprinter tried to figure—to understand or solve—as the rooftop ladder slipped and a showstopper loaf bounced across the floor."
+    },
+    {
+      "word": "friendly",
+      "funDefinition": "With a camera strap tucked under one arm, Almanzo seemed friendly at the goalmouth, meaning kind and easy to like."
+    },
+    {
+      "word": "gentle",
+      "funDefinition": "Sideshow Bob looked gentle—calm, soft, and not rough—at pastry week while holding a salty bark and listening for zombies."
+    },
+    {
+      "word": "kindly",
+      "funDefinition": "At Pier 39, Sam answered kindly, meaning in a caring way, before passing over a scoring cord."
+    },
+    {
+      "word": "goal",
+      "funDefinition": "During a wild night at the rooftop, Son saw that goal means something you try to reach or achieve after his cracked specs showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "habit",
+      "funDefinition": "At the strip edge, a nervous baker treated habit as something done regularly before grabbing a red pacifier and heading for safety."
+    },
+    {
+      "word": "health",
+      "funDefinition": "At the school roof, a drummer learned that health means the condition of body and mind when a tournament medal slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "heart",
+      "funDefinition": "While zombies groaned near the Springfield band room, a rescue cat remembered that heart is the organ that pumps blood or the center of feelings just as a strategy board became the next clue."
+    },
+    {
+      "word": "find",
+      "funDefinition": "At the batting cage, an epee captain tried to find—to locate or discover—as an alarm bell started ringing and a stack of macarons bounced across the floor."
+    },
+    {
+      "word": "finish",
+      "funDefinition": "With zombies closing in at the Anfield touchline, Dr. Grant would finish if it meant to complete the end of and saving a ferry pass."
+    },
+    {
+      "word": "follow",
+      "funDefinition": "When the graveyard gate rattled by the cake stand, Krusty had to follow—to go after or obey—before a wet flipper vanished."
+    },
+    {
+      "word": "glad",
+      "funDefinition": "At Twin Peaks, everyone called Miguel glad because pleased or happy fit the moment and even a silver mask seemed impressed."
+    },
+    {
+      "word": "golden",
+      "funDefinition": "While crossing the blanket fort, Saka stayed golden—made of gold or glowing warm yellow—as the old truck coughed back to life and a flashlight wobbled dangerously."
+    },
+    {
+      "word": "loudly",
+      "funDefinition": "A star baker handled an oversized comic book loudly—with a lot of sound—while escaping near the warm-up line."
+    },
+    {
+      "word": "hero",
+      "funDefinition": "At the forest clearing, a runner learned that hero means a person admired for courage or action when bonsai clippers slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "history",
+      "funDefinition": "While zombies groaned near the arcade, a harbor seal remembered that history is the study or story of the past just as a pair of muddy boots became the next clue."
+    },
+    {
+      "word": "hope",
+      "funDefinition": "During a wild night at the old dojo office, a foil fencer saw that hope means a feeling of wanting something good to happen after a piping bag showed up and the barricade started to shake."
+    },
+    {
+      "word": "idea",
+      "funDefinition": "At the Old Trafford tunnel, Ralph treated idea as a thought or plan before grabbing a board sticker and heading for safety."
+    },
+    {
+      "word": "forgive",
+      "funDefinition": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to forgive—to stop being angry about a wrong—before a fish bucket vanished."
+    },
+    {
+      "word": "gather",
+      "funDefinition": "Kreese chose to gather, meaning to bring together, while racing through the Chinatown gate and protecting a score sheet."
+    },
+    {
+      "word": "grow",
+      "funDefinition": "At the icy ledge, Salah tried to grow—to become larger or older—as the rooftop ladder slipped and a fake hall pass bounced across the floor."
+    },
+    {
+      "word": "grateful",
+      "funDefinition": "With a blue grocery bag tucked under one arm, Alison Hammond seemed grateful at the training hall, meaning thankful."
+    },
+    {
+      "word": "great",
+      "funDefinition": "A vendor looked great—very good or important—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies."
+    },
+    {
+      "word": "mostly",
+      "funDefinition": "At the Leftorium, a penguin chick answered mostly, meaning for the biggest part, before passing over a black-and-white scarf."
+    },
+    {
+      "word": "image",
+      "funDefinition": "During a wild night at the All Valley arena, a bout judge saw that image means a picture or mental impression after a loaf tin showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "importance",
+      "funDefinition": "At the St James' Park gate, Roz treated importance as the quality of being meaningful or valuable before grabbing a sourdough loaf and heading for safety."
+    },
+    {
+      "word": "improvement",
+      "funDefinition": "At the bunting-lined counter, Mr. Burns learned that improvement means a change that makes something better when a tiny bell slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "interest",
+      "funDefinition": "While zombies groaned near Lombard Street, Chozen remembered that interest is a feeling of wanting to learn more just as a lame jacket became the next clue."
+    },
+    {
+      "word": "guard",
+      "funDefinition": "At the bookshelf, Haaland tried to guard—to watch and protect—as an alarm bell started ringing and the Guide bounced across the floor."
+    },
+    {
+      "word": "guess",
+      "funDefinition": "With zombies closing in at the practice piste, Noel Fielding would guess if it meant to give an answer without being sure and saving a pink donut box."
+    },
+    {
+      "word": "happen",
+      "funDefinition": "When the graveyard gate rattled by the spaceship corridor, a photographer had to happen—to take place—before a cobra poster vanished."
+    },
+    {
+      "word": "happy",
+      "funDefinition": "At the Kwik-E-Mart roof, everyone called a tuxedo cat happy because feeling joy fit the moment and even a blue water bottle seemed impressed."
+    },
+    {
+      "word": "healthy",
+      "funDefinition": "While crossing the school hallway, a parry expert stayed healthy—strong and well—as the old truck coughed back to life and a bright apron wobbled dangerously."
+    },
+    {
+      "word": "nearly",
+      "funDefinition": "Arthur Dent handled a cable car ticket nearly—almost but not completely—while escaping near the Etihad tunnel."
+    },
+    {
+      "word": "island",
+      "funDefinition": "At the chocolate table, Maggie learned that island means land surrounded by water when a ball of yarn slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "job",
+      "funDefinition": "While zombies groaned near the Alcatraz dock, Demetri remembered that job is work done for pay or a task just as a foil tip became the next clue."
+    },
+    {
+      "word": "journey",
+      "funDefinition": "During a wild night at the tide pool, Pep Guardiola saw that journey means the act of traveling from one place to another after a lunch pail showed up and the barricade started to shake."
+    },
+    {
+      "word": "help",
+      "funDefinition": "With zombies closing in at the scoring table, Prue Leith would help if it meant to make something easier and saving a saxophone case."
+    },
+    {
+      "word": "hide",
+      "funDefinition": "When the graveyard gate rattled by the fire hill, a ranger had to hide—to keep out of sight—before a wooden practice drum vanished."
+    },
+    {
+      "word": "imagine",
+      "funDefinition": "A tabby chose to imagine, meaning to form a picture in the mind, while racing through the Simpson kitchen and protecting goalkeeper gloves."
+    },
+    {
+      "word": "helpful",
+      "funDefinition": "While crossing the training deck, a left-handed fencer stayed helpful—willing to help—as the rooftop ladder slipped and a tray of scones wobbled dangerously."
+    },
+    {
+      "word": "honest",
+      "funDefinition": "With a foggy map tucked under one arm, a Wild Robot gosling seemed honest at the Tottenham stadium steps, meaning truthful and fair."
+    },
+    {
+      "word": "huge",
+      "funDefinition": "Milhouse looked huge—very large—at the judging table while holding a soft paw and listening for zombies."
+    },
+    {
+      "word": "neatly",
+      "funDefinition": "At Crissy Field, Hawk answered neatly, meaning in a clean and orderly way, before passing over a stopwatch."
+    },
+    {
+      "word": "joy",
+      "funDefinition": "During a wild night at the couch cushion, Alisson saw that joy means great happiness after a fossil brush showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "judgment",
+      "funDefinition": "At the lesson strip, Paul Hollywood treated judgment as an opinion formed after thinking before grabbing a skateboard and heading for safety."
+    },
+    {
+      "word": "knowledge",
+      "funDefinition": "At the island cliff, a skater learned that knowledge means facts and understanding learned over time when an open laptop slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "improve",
+      "funDefinition": "A sea lion chose to improve, meaning to make better, while racing through the nuclear plant hallway and protecting a referee whistle."
+    },
+    {
+      "word": "include",
+      "funDefinition": "At the Miyagi-Do yard, a coach tried to include—to contain as a part—as an alarm bell started ringing and a pastel cake stand bounced across the floor."
+    },
+    {
+      "word": "increase",
+      "funDefinition": "With zombies closing in at the Stamford Bridge bench, Piggy would increase if it meant to make or become greater and saving a Victorian postcard."
+    },
+    {
+      "word": "important",
+      "funDefinition": "Marge looked important—valuable or significant—at the proving drawer station while holding a shiny shell and listening for zombies."
+    },
+    {
+      "word": "independent",
+      "funDefinition": "At the Lands End trail, everyone called Tory independent because able to act on your own fit the moment and even a tournament ribbon seemed impressed."
+    },
+    {
+      "word": "interesting",
+      "funDefinition": "While crossing the Pier 39 float, Isak stayed interesting—holding attention—as the old truck coughed back to life and a conch shell wobbled dangerously."
+    },
+    {
+      "word": "never",
+      "funDefinition": "The showstopper champion handled a suspicious rake never—at no time—while escaping near the gym bleachers."
+    },
+    {
+      "word": "language",
+      "funDefinition": "At the Farmer Boy wagon, a tourist guide learned that language means a system of words used to communicate when blue hair spray slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "leader",
+      "funDefinition": "While zombies groaned near the theater stage, a seal remembered that leader is a person who guides others just as a corner flag became the next clue."
+    },
+    {
+      "word": "lesson",
+      "funDefinition": "During a wild night at the LaRusso Auto showroom, the team captain saw that lesson means something learned or a period of teaching after a rolling pin showed up and the barricade started to shake."
+    },
+    {
+      "word": "influence",
+      "funDefinition": "With zombies closing in at the sideline, Lex Murphy would influence if it meant to affect how someone thinks or acts and saving a red lantern."
+    },
+    {
+      "word": "inform",
+      "funDefinition": "When the graveyard gate rattled by the cooling rack, Homer had to inform—to give knowledge or facts—before a pebble vanished."
+    },
+    {
+      "word": "inspire",
+      "funDefinition": "Daniel LaRusso chose to inspire, meaning to fill with ideas or courage, while racing through Dolores Park and protecting a weapon bag."
+    },
+    {
+      "word": "kind",
+      "funDefinition": "While crossing the snow bank, Cole Palmer stayed kind—caring and helpful—as the rooftop ladder slipped and a repair kit wobbled dangerously."
+    },
+    {
+      "word": "large",
+      "funDefinition": "With a cream pie tucked under one arm, the biscuit artist seemed large at the club locker, meaning big in size."
+    },
+    {
+      "word": "late",
+      "funDefinition": "A cable car conductor looked late—happening after the expected time—at the visitor center while holding a trophy-case key and listening for zombies."
+    },
+    {
+      "word": "often",
+      "funDefinition": "At Moe's parking lot, a penguin answered often, meaning many times, before passing over a captain's armband."
+    },
+    {
+      "word": "library",
+      "funDefinition": "During a wild night at the cafeteria, a beginner fencer saw that library means a place where books and media are shared after a wobbling meringue tower showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "life",
+      "funDefinition": "At the Emirates training ground, a Gordon Korman hero treated life as the state of being alive before grabbing a windbreaker and heading for safety."
+    },
+    {
+      "word": "light",
+      "funDefinition": "At the Bake Off tent, Lisa learned that light means brightness that lets us see when a glow-in-the-dark collar slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "invite",
+      "funDefinition": "Johnny Lawrence chose to invite, meaning to ask someone to join or come, while racing through the Ferry Building and protecting a red card."
+    },
+    {
+      "word": "join",
+      "funDefinition": "At the windowsill, Virgil van Dijk tried to join—to become part of something—as an alarm bell started ringing and a blue towel bounced across the floor."
+    },
+    {
+      "word": "judge",
+      "funDefinition": "With zombies closing in at the medal stand, the bread week winner would judge if it meant to form an opinion or decide fairly and saving a left-handed mug."
+    },
+    {
+      "word": "lively",
+      "funDefinition": "A hiker looked lively—full of energy and spirit—at the Heart of Gold while holding car keys and listening for zombies."
+    },
+    {
+      "word": "local",
+      "funDefinition": "At the living room, everyone called a kitten local because nearby or from the area fit the moment and even a red scarf seemed impressed."
+    },
+    {
+      "word": "lonely",
+      "funDefinition": "While crossing the Cobra Kai dojo, the referee stayed lonely—feeling alone and sad—as the old truck coughed back to life and a biscuit dragon wobbled dangerously."
+    },
+    {
+      "word": "patiently",
+      "funDefinition": "Ford Prefect handled a market tote patiently—in a calm waiting way—while escaping near the penalty box."
+    },
+    {
+      "word": "limit",
+      "funDefinition": "At the prep bench, Bart learned that limit means the farthest point allowed when a scratched bookmark slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "location",
+      "funDefinition": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that location is the place where something is just as a white glove became the next clue."
+    },
+    {
+      "word": "luck",
+      "funDefinition": "During a wild night at the harbor rocks, Bruno Fernandes saw that luck means success that seems to happen by chance after a feather bundle showed up and the barricade started to shake."
+    },
+    {
+      "word": "jump",
+      "funDefinition": "With zombies closing in at the finals piste, the pastry chef would jump if it meant to push off the ground and saving a gold pen."
+    },
+    {
+      "word": "keep",
+      "funDefinition": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to keep—to hold on to or continue—before a black headband vanished."
+    },
+    {
+      "word": "know",
+      "funDefinition": "A cat chose to know, meaning to understand or be aware of, while racing through the TV studio and protecting a match ball."
+    },
+    {
+      "word": "loud",
+      "funDefinition": "While crossing his Reseda apartment, a sabre sprinter stayed loud—making a strong sound—as the rooftop ladder slipped and a showstopper loaf wobbled dangerously."
+    },
+    {
+      "word": "lucky",
+      "funDefinition": "With a camera strap tucked under one arm, Almanzo seemed lucky at the goalmouth, meaning having good fortune."
+    },
+    {
+      "word": "modern",
+      "funDefinition": "Sideshow Bob looked modern—relating to recent times—at pastry week while holding a salty bark and listening for zombies."
+    },
+    {
+      "word": "proudly",
+      "funDefinition": "At Pier 39, Sam answered proudly, meaning with pride, before passing over a scoring cord."
+    },
+    {
+      "word": "map",
+      "funDefinition": "During a wild night at the rooftop, Son saw that map means a drawing that shows places after his cracked specs showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "memory",
+      "funDefinition": "At the strip edge, a nervous baker treated memory as something remembered or the ability to remember before grabbing a red pacifier and heading for safety."
+    },
+    {
+      "word": "message",
+      "funDefinition": "At the school roof, a drummer learned that message means information sent from one person to another when a tournament medal slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "laugh",
+      "funDefinition": "A rescue cat chose to laugh, meaning to make sounds of amusement, while racing through the Springfield band room and protecting a strategy board."
+    },
+    {
+      "word": "lead",
+      "funDefinition": "At the batting cage, an epee captain tried to lead—to guide or go first—as an alarm bell started ringing and a stack of macarons bounced across the floor."
+    },
+    {
+      "word": "learn",
+      "funDefinition": "With zombies closing in at the Anfield touchline, Dr. Grant would learn if it meant to gain knowledge or skill and saving a ferry pass."
+    },
+    {
+      "word": "natural",
+      "funDefinition": "Krusty looked natural—found in nature; not made by people—at the cake stand while holding a wet flipper and listening for zombies."
+    },
+    {
+      "word": "neat",
+      "funDefinition": "At Twin Peaks, everyone called Miguel neat because clean and well organized fit the moment and even a silver mask seemed impressed."
+    },
+    {
+      "word": "nervous",
+      "funDefinition": "While crossing the blanket fort, Saka stayed nervous—worried or uneasy—as the old truck coughed back to life and a flashlight wobbled dangerously."
+    },
+    {
+      "word": "quickly",
+      "funDefinition": "A star baker handled an oversized comic book quickly—at high speed—while escaping near the warm-up line."
+    },
+    {
+      "word": "method",
+      "funDefinition": "At the forest clearing, a runner learned that method means a way of doing something when bonsai clippers slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "middle",
+      "funDefinition": "While zombies groaned near the arcade, a harbor seal remembered that middle is the center part of something just as a pair of muddy boots became the next clue."
+    },
+    {
+      "word": "minute",
+      "funDefinition": "During a wild night at the old dojo office, a foil fencer saw that minute means a unit of time equal to sixty seconds after a piping bag showed up and the barricade started to shake."
+    },
+    {
+      "word": "listen",
+      "funDefinition": "With zombies closing in at the Old Trafford tunnel, Ralph would listen if it meant to pay attention to sound and saving a board sticker."
+    },
+    {
+      "word": "live",
+      "funDefinition": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to live—to be alive or stay somewhere—before a fish bucket vanished."
+    },
+    {
+      "word": "look",
+      "funDefinition": "Kreese chose to look, meaning to use the eyes to see, while racing through the Chinatown gate and protecting a score sheet."
+    },
+    {
+      "word": "normal",
+      "funDefinition": "While crossing the icy ledge, Salah stayed normal—usual or expected—as the rooftop ladder slipped and a fake hall pass wobbled dangerously."
+    },
+    {
+      "word": "patient",
+      "funDefinition": "With a blue grocery bag tucked under one arm, Alison Hammond seemed patient at the training hall, meaning able to wait calmly."
+    },
+    {
+      "word": "peaceful",
+      "funDefinition": "A vendor looked peaceful—calm and quiet—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies."
+    },
+    {
+      "word": "quietly",
+      "funDefinition": "At the Leftorium, a penguin chick answered quietly, meaning with little sound, before passing over a black-and-white scarf."
+    },
+    {
+      "word": "mistake",
+      "funDefinition": "During a wild night at the All Valley arena, a bout judge saw that mistake means something done incorrectly after a loaf tin showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "moment",
+      "funDefinition": "At the St James' Park gate, Roz treated moment as a very short period of time before grabbing a sourdough loaf and heading for safety."
+    },
+    {
+      "word": "mystery",
+      "funDefinition": "At the bunting-lined counter, Mr. Burns learned that mystery means something hard to explain or understand when a tiny bell slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "love",
+      "funDefinition": "Chozen chose to love, meaning to care deeply about, while racing through Lombard Street and protecting a lame jacket."
+    },
+    {
+      "word": "manage",
+      "funDefinition": "At the bookshelf, Haaland tried to manage—to handle successfully—as an alarm bell started ringing and the Guide bounced across the floor."
+    },
+    {
+      "word": "measure",
+      "funDefinition": "With zombies closing in at the practice piste, Noel Fielding would measure if it meant to find size, amount, or length and saving a pink donut box."
+    },
+    {
+      "word": "playful",
+      "funDefinition": "A photographer looked playful—full of fun and energy—at the spaceship corridor while holding a cobra poster and listening for zombies."
+    },
+    {
+      "word": "polite",
+      "funDefinition": "At the Kwik-E-Mart roof, everyone called a tuxedo cat polite because showing good manners fit the moment and even a blue water bottle seemed impressed."
+    },
+    {
+      "word": "popular",
+      "funDefinition": "While crossing the school hallway, a parry expert stayed popular—liked by many people—as the old truck coughed back to life and a bright apron wobbled dangerously."
+    },
+    {
+      "word": "really",
+      "funDefinition": "Arthur Dent handled a cable car ticket really—truly or very much—while escaping near the Etihad tunnel."
+    },
+    {
+      "word": "nation",
+      "funDefinition": "At the chocolate table, Maggie learned that nation means a country with its own government when a ball of yarn slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "nature",
+      "funDefinition": "While zombies groaned near the Alcatraz dock, Demetri remembered that nature is the living world and outdoor environment just as a foil tip became the next clue."
+    },
+    {
+      "word": "need",
+      "funDefinition": "During a wild night at the tide pool, Pep Guardiola saw that need means something required or necessary after a lunch pail showed up and the barricade started to shake."
+    },
+    {
+      "word": "meet",
+      "funDefinition": "With zombies closing in at the scoring table, Prue Leith would meet if it meant to come together and saving a saxophone case."
+    },
+    {
+      "word": "miss",
+      "funDefinition": "When the graveyard gate rattled by the fire hill, a ranger had to miss—to fail to catch or be without—before a wooden practice drum vanished."
+    },
+    {
+      "word": "move",
+      "funDefinition": "A tabby chose to move, meaning to change place or position, while racing through the Simpson kitchen and protecting goalkeeper gloves."
+    },
+    {
+      "word": "positive",
+      "funDefinition": "While crossing the training deck, a left-handed fencer stayed positive—hopeful or certain—as the rooftop ladder slipped and a tray of scones wobbled dangerously."
+    },
+    {
+      "word": "powerful",
+      "funDefinition": "With a foggy map tucked under one arm, a Wild Robot gosling seemed powerful at the Tottenham stadium steps, meaning having great strength or influence."
+    },
+    {
+      "word": "proud",
+      "funDefinition": "Milhouse looked proud—pleased with something done well—at the judging table while holding a soft paw and listening for zombies."
+    },
+    {
+      "word": "safely",
+      "funDefinition": "At Crissy Field, Hawk answered safely, meaning without danger, before passing over a stopwatch."
+    },
+    {
+      "word": "neighbor",
+      "funDefinition": "During a wild night at the couch cushion, Alisson saw that neighbor means a person living nearby after a fossil brush showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "noise",
+      "funDefinition": "At the lesson strip, Paul Hollywood treated noise as a sound, especially a loud unwanted one before grabbing a skateboard and heading for safety."
+    },
+    {
+      "word": "notice",
+      "funDefinition": "At the island cliff, a skater learned that notice means a sign or short written message when an open laptop slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "observe",
+      "funDefinition": "A sea lion chose to observe, meaning to watch carefully, while racing through the nuclear plant hallway and protecting a referee whistle."
+    },
+    {
+      "word": "occur",
+      "funDefinition": "At the Miyagi-Do yard, a coach tried to occur—to happen—as an alarm bell started ringing and a pastel cake stand bounced across the floor."
+    },
+    {
+      "word": "open",
+      "funDefinition": "With zombies closing in at the Stamford Bridge bench, Piggy would open if it meant to make not closed and saving a Victorian postcard."
+    },
+    {
+      "word": "quick",
+      "funDefinition": "Marge looked quick—fast in action or thought—at the proving drawer station while holding a shiny shell and listening for zombies."
+    },
+    {
+      "word": "quiet",
+      "funDefinition": "At the Lands End trail, everyone called Tory quiet because making little noise fit the moment and even a tournament ribbon seemed impressed."
+    },
+    {
+      "word": "ready",
+      "funDefinition": "While crossing the Pier 39 float, Isak stayed ready—prepared for action—as the old truck coughed back to life and a conch shell wobbled dangerously."
+    },
+    {
+      "word": "seriously",
+      "funDefinition": "The showstopper champion handled a suspicious rake seriously—in an important or careful way—while escaping near the gym bleachers."
+    },
+    {
+      "word": "number",
+      "funDefinition": "At the Farmer Boy wagon, a tourist guide learned that number means a count or amount shown with digits when blue hair spray slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "object",
+      "funDefinition": "While zombies groaned near the theater stage, a seal remembered that object is a thing that can be seen or touched just as a corner flag became the next clue."
+    },
+    {
+      "word": "ocean",
+      "funDefinition": "During a wild night at the LaRusso Auto showroom, the team captain saw that ocean means the large saltwater covering most of Earth after a rolling pin showed up and the barricade started to shake."
+    },
+    {
+      "word": "organize",
+      "funDefinition": "With zombies closing in at the sideline, Lex Murphy would organize if it meant to arrange neatly or plan and saving a red lantern."
+    },
+    {
+      "word": "overcome",
+      "funDefinition": "When the graveyard gate rattled by the cooling rack, Homer had to overcome—to succeed against a problem—before a pebble vanished."
+    },
+    {
+      "word": "participate",
+      "funDefinition": "Daniel LaRusso chose to participate, meaning to take part, while racing through Dolores Park and protecting a weapon bag."
+    },
+    {
+      "word": "real",
+      "funDefinition": "While crossing the snow bank, Cole Palmer stayed real—true; not imagined—as the rooftop ladder slipped and a repair kit wobbled dangerously."
+    },
+    {
+      "word": "reliable",
+      "funDefinition": "With a cream pie tucked under one arm, the biscuit artist seemed reliable at the club locker, meaning able to be trusted."
+    },
+    {
+      "word": "safe",
+      "funDefinition": "A cable car conductor looked safe—free from danger—at the visitor center while holding a trophy-case key and listening for zombies."
+    },
+    {
+      "word": "simply",
+      "funDefinition": "At Moe's parking lot, a penguin answered simply, meaning in an easy and plain way, before passing over a captain's armband."
+    },
+    {
+      "word": "offer",
+      "funDefinition": "During a wild night at the cafeteria, a beginner fencer saw that offer means a chance or proposal to give something after a wobbling meringue tower showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "opinion",
+      "funDefinition": "At the Emirates training ground, a Gordon Korman hero treated opinion as a belief or view that may differ before grabbing a windbreaker and heading for safety."
+    },
+    {
+      "word": "order",
+      "funDefinition": "At the Bake Off tent, Lisa learned that order means the arrangement of things or a command when a glow-in-the-dark collar slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "pass",
+      "funDefinition": "Johnny Lawrence chose to pass, meaning to move by or give to another, while racing through the Ferry Building and protecting a red card."
+    },
+    {
+      "word": "perform",
+      "funDefinition": "At the windowsill, Virgil van Dijk tried to perform—to do, present, or carry out—as an alarm bell started ringing and a blue towel bounced across the floor."
+    },
+    {
+      "word": "play",
+      "funDefinition": "With zombies closing in at the medal stand, the bread week winner would play if it meant to take part for fun or sport and saving a left-handed mug."
+    },
+    {
+      "word": "serious",
+      "funDefinition": "A hiker looked serious—thoughtful, important, or not joking—at the Heart of Gold while holding car keys and listening for zombies."
+    },
+    {
+      "word": "sharp",
+      "funDefinition": "At the living room, everyone called a kitten sharp because having a fine edge or quick mind fit the moment and even a red scarf seemed impressed."
+    },
+    {
+      "word": "shiny",
+      "funDefinition": "While crossing the Cobra Kai dojo, the referee stayed shiny—reflecting light—as the old truck coughed back to life and a biscuit dragon wobbled dangerously."
+    },
+    {
+      "word": "slowly",
+      "funDefinition": "Ford Prefect handled a market tote slowly—at low speed—while escaping near the penalty box."
+    },
+    {
+      "word": "parent",
+      "funDefinition": "At the prep bench, Bart learned that parent means a mother or father when a scratched bookmark slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "park",
+      "funDefinition": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that park is a public outdoor place for people to enjoy just as a white glove became the next clue."
+    },
+    {
+      "word": "partner",
+      "funDefinition": "During a wild night at the harbor rocks, Bruno Fernandes saw that partner means a person who works or acts with another after a feather bundle showed up and the barricade started to shake."
+    },
+    {
+      "word": "prepare",
+      "funDefinition": "With zombies closing in at the finals piste, the pastry chef would prepare if it meant to get ready and saving a gold pen."
+    },
+    {
+      "word": "protect",
+      "funDefinition": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to protect—to keep safe from harm—before a black headband vanished."
+    },
+    {
+      "word": "prove",
+      "funDefinition": "A cat chose to prove, meaning to show that something is true, while racing through the TV studio and protecting a match ball."
+    },
+    {
+      "word": "simple",
+      "funDefinition": "While crossing his Reseda apartment, a sabre sprinter stayed simple—easy to understand or not fancy—as the rooftop ladder slipped and a showstopper loaf wobbled dangerously."
+    },
+    {
+      "word": "skillful",
+      "funDefinition": "With a camera strap tucked under one arm, Almanzo seemed skillful at the goalmouth, meaning good at doing something."
+    },
+    {
+      "word": "slow",
+      "funDefinition": "Sideshow Bob looked slow—moving without speed—at pastry week while holding a salty bark and listening for zombies."
+    },
+    {
+      "word": "smoothly",
+      "funDefinition": "At Pier 39, Sam answered smoothly, meaning without problems or bumps, before passing over a scoring cord."
+    },
+    {
+      "word": "party",
+      "funDefinition": "During a wild night at the rooftop, Son saw that party means a social gathering or group in a contest after his cracked specs showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "pattern",
+      "funDefinition": "At the strip edge, a nervous baker treated pattern as a repeated design or way things happen before grabbing a red pacifier and heading for safety."
+    },
+    {
+      "word": "peace",
+      "funDefinition": "At the school roof, a drummer learned that peace means a calm state without fighting when a tournament medal slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "push",
+      "funDefinition": "A rescue cat chose to push, meaning to press or move away, while racing through the Springfield band room and protecting a strategy board."
+    },
+    {
+      "word": "reach",
+      "funDefinition": "At the batting cage, an epee captain tried to reach—to get to or touch—as an alarm bell started ringing and a stack of macarons bounced across the floor."
+    },
+    {
+      "word": "read",
+      "funDefinition": "With zombies closing in at the Anfield touchline, Dr. Grant would read if it meant to look at words and understand them and saving a ferry pass."
+    },
+    {
+      "word": "smart",
+      "funDefinition": "Krusty looked smart—clever or neat in style—at the cake stand while holding a wet flipper and listening for zombies."
+    },
+    {
+      "word": "smooth",
+      "funDefinition": "At Twin Peaks, everyone called Miguel smooth because even and without bumps fit the moment and even a silver mask seemed impressed."
+    },
+    {
+      "word": "social",
+      "funDefinition": "While crossing the blanket fort, Saka stayed social—relating well with other people—as the old truck coughed back to life and a flashlight wobbled dangerously."
+    },
+    {
+      "word": "sometimes",
+      "funDefinition": "A star baker handled an oversized comic book sometimes—at certain times but not always—while escaping near the warm-up line."
+    },
+    {
+      "word": "people",
+      "funDefinition": "At the forest clearing, a runner learned that people means human beings in general when bonsai clippers slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "plan",
+      "funDefinition": "While zombies groaned near the arcade, a harbor seal remembered that plan is a set of steps for doing something just as a pair of muddy boots became the next clue."
+    },
+    {
+      "word": "player",
+      "funDefinition": "During a wild night at the old dojo office, a foil fencer saw that player means a person who takes part in a game after a piping bag showed up and the barricade started to shake."
+    },
+    {
+      "word": "realize",
+      "funDefinition": "With zombies closing in at the Old Trafford tunnel, Ralph would realize if it meant to understand clearly and saving a board sticker."
+    },
+    {
+      "word": "receive",
+      "funDefinition": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to receive—to get something given or sent—before a fish bucket vanished."
+    },
+    {
+      "word": "reduce",
+      "funDefinition": "Kreese chose to reduce, meaning to make smaller or less, while racing through the Chinatown gate and protecting a score sheet."
+    },
+    {
+      "word": "special",
+      "funDefinition": "While crossing the icy ledge, Salah stayed special—different in a meaningful way—as the rooftop ladder slipped and a fake hall pass wobbled dangerously."
+    },
+    {
+      "word": "strong",
+      "funDefinition": "With a blue grocery bag tucked under one arm, Alison Hammond seemed strong at the training hall, meaning having power or firmness."
+    },
+    {
+      "word": "sudden",
+      "funDefinition": "A vendor looked sudden—happening quickly and unexpectedly—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies."
+    },
+    {
+      "word": "soon",
+      "funDefinition": "At the Leftorium, a penguin chick answered soon, meaning in a short time, before passing over a black-and-white scarf."
+    },
+    {
+      "word": "point",
+      "funDefinition": "During a wild night at the All Valley arena, a bout judge saw that point means a sharp end, a main idea, or a score mark after a loaf tin showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "power",
+      "funDefinition": "At the St James' Park gate, Roz treated power as strength or control before grabbing a sourdough loaf and heading for safety."
+    },
+    {
+      "word": "practice",
+      "funDefinition": "At the bunting-lined counter, Mr. Burns learned that practice means repeated work to improve a skill when a tiny bell slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "reflect",
+      "funDefinition": "Chozen chose to reflect, meaning to think deeply or show an image back, while racing through Lombard Street and protecting a lame jacket."
+    },
+    {
+      "word": "relax",
+      "funDefinition": "At the bookshelf, Haaland tried to relax—to become less tense—as an alarm bell started ringing and the Guide bounced across the floor."
+    },
+    {
+      "word": "remember",
+      "funDefinition": "With zombies closing in at the practice piste, Noel Fielding would remember if it meant to keep in mind or bring back to mind and saving a pink donut box."
+    },
+    {
+      "word": "sunny",
+      "funDefinition": "A photographer looked sunny—full of sunlight or cheer—at the spaceship corridor while holding a cobra poster and listening for zombies."
+    },
+    {
+      "word": "sure",
+      "funDefinition": "At the Kwik-E-Mart roof, everyone called a tuxedo cat sure because certain fit the moment and even a blue water bottle seemed impressed."
+    },
+    {
+      "word": "surprised",
+      "funDefinition": "While crossing the school hallway, a parry expert stayed surprised—feeling unexpected wonder—as the old truck coughed back to life and a bright apron wobbled dangerously."
+    },
+    {
+      "word": "suddenly",
+      "funDefinition": "Arthur Dent handled a cable car ticket suddenly—quickly and unexpectedly—while escaping near the Etihad tunnel."
+    },
+    {
+      "word": "problem",
+      "funDefinition": "At the chocolate table, Maggie learned that problem means a difficulty that needs a solution when a ball of yarn slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "progress",
+      "funDefinition": "While zombies groaned near the Alcatraz dock, Demetri remembered that progress is movement forward or improvement over time just as a foil tip became the next clue."
+    },
+    {
+      "word": "project",
+      "funDefinition": "During a wild night at the tide pool, Pep Guardiola saw that project means a planned piece of work after a lunch pail showed up and the barricade started to shake."
+    },
+    {
+      "word": "repeat",
+      "funDefinition": "With zombies closing in at the scoring table, Prue Leith would repeat if it meant to say or do again and saving a saxophone case."
+    },
+    {
+      "word": "reply",
+      "funDefinition": "When the graveyard gate rattled by the fire hill, a ranger had to reply—to answer with words—before a wooden practice drum vanished."
+    },
+    {
+      "word": "report",
+      "funDefinition": "A tabby chose to report, meaning to tell information in an organized way, while racing through the Simpson kitchen and protecting goalkeeper gloves."
+    },
+    {
+      "word": "sweet",
+      "funDefinition": "While crossing the training deck, a left-handed fencer stayed sweet—tasting like sugar or being very kind—as the rooftop ladder slipped and a tray of scones wobbled dangerously."
+    },
+    {
+      "word": "talented",
+      "funDefinition": "With a foggy map tucked under one arm, a Wild Robot gosling seemed talented at the Tottenham stadium steps, meaning having a natural skill."
+    },
+    {
+      "word": "thankful",
+      "funDefinition": "Milhouse looked thankful—feeling grateful—at the judging table while holding a soft paw and listening for zombies."
+    },
+    {
+      "word": "surely",
+      "funDefinition": "At Crissy Field, Hawk answered surely, meaning certainly, before passing over a stopwatch."
+    },
+    {
+      "word": "purpose",
+      "funDefinition": "During a wild night at the couch cushion, Alisson saw that purpose means the reason something is done after a fossil brush showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "question",
+      "funDefinition": "At the lesson strip, Paul Hollywood treated question as words used to ask for information before grabbing a skateboard and heading for safety."
+    },
+    {
+      "word": "reason",
+      "funDefinition": "At the island cliff, a skater learned that reason means a cause or explanation when an open laptop slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "rescue",
+      "funDefinition": "A sea lion chose to rescue, meaning to save from danger, while racing through the nuclear plant hallway and protecting a referee whistle."
+    },
+    {
+      "word": "respect",
+      "funDefinition": "At the Miyagi-Do yard, a coach tried to respect—to treat with honor and care—as an alarm bell started ringing and a pastel cake stand bounced across the floor."
+    },
+    {
+      "word": "rest",
+      "funDefinition": "With zombies closing in at the Stamford Bridge bench, Piggy would rest if it meant to relax or stop working and saving a Victorian postcard."
+    },
+    {
+      "word": "thoughtful",
+      "funDefinition": "Marge looked thoughtful—showing careful thinking or kindness—at the proving drawer station while holding a shiny shell and listening for zombies."
+    },
+    {
+      "word": "tidy",
+      "funDefinition": "At the Lands End trail, everyone called Tory tidy because clean and in order fit the moment and even a tournament ribbon seemed impressed."
+    },
+    {
+      "word": "tiny",
+      "funDefinition": "While crossing the Pier 39 float, Isak stayed tiny—very small—as the old truck coughed back to life and a conch shell wobbled dangerously."
+    },
+    {
+      "word": "thoughtfully",
+      "funDefinition": "The showstopper champion handled a suspicious rake thoughtfully—in a careful or kind way—while escaping near the gym bleachers."
+    },
+    {
+      "word": "record",
+      "funDefinition": "At the Farmer Boy wagon, a tourist guide learned that record means stored information or the best result so far when blue hair spray slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "relationship",
+      "funDefinition": "While zombies groaned near the theater stage, a seal remembered that relationship is the way people or things are connected just as a corner flag became the next clue."
+    },
+    {
+      "word": "resource",
+      "funDefinition": "During a wild night at the LaRusso Auto showroom, the team captain saw that resource means something useful that can help after a rolling pin showed up and the barricade started to shake."
+    },
+    {
+      "word": "return",
+      "funDefinition": "With zombies closing in at the sideline, Lex Murphy would return if it meant to go back and saving a red lantern."
+    },
+    {
+      "word": "review",
+      "funDefinition": "When the graveyard gate rattled by the cooling rack, Homer had to review—to look over again—before a pebble vanished."
+    },
+    {
+      "word": "rise",
+      "funDefinition": "Daniel LaRusso chose to rise, meaning to move upward, while racing through Dolores Park and protecting a weapon bag."
+    },
+    {
+      "word": "tough",
+      "funDefinition": "While crossing the snow bank, Cole Palmer stayed tough—strong and hard to break or defeat—as the rooftop ladder slipped and a repair kit wobbled dangerously."
+    },
+    {
+      "word": "true",
+      "funDefinition": "With a cream pie tucked under one arm, the biscuit artist seemed true at the club locker, meaning correct and honest."
+    },
+    {
+      "word": "unusual",
+      "funDefinition": "A cable car conductor looked unusual—not common—at the visitor center while holding a trophy-case key and listening for zombies."
+    },
+    {
+      "word": "together",
+      "funDefinition": "At Moe's parking lot, a penguin answered together, meaning with each other, before passing over a captain's armband."
+    },
+    {
+      "word": "result",
+      "funDefinition": "During a wild night at the cafeteria, a beginner fencer saw that result means the final effect or outcome after a wobbling meringue tower showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "river",
+      "funDefinition": "At the Emirates training ground, a Gordon Korman hero treated river as a large stream of flowing water before grabbing a windbreaker and heading for safety."
+    },
+    {
+      "word": "rule",
+      "funDefinition": "At the Bake Off tent, Lisa learned that rule means an official direction about what is allowed when a glow-in-the-dark collar slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "save",
+      "funDefinition": "Johnny Lawrence chose to save, meaning to keep, protect, or rescue, while racing through the Ferry Building and protecting a red card."
+    },
+    {
+      "word": "search",
+      "funDefinition": "At the windowsill, Virgil van Dijk tried to search—to look carefully for—as an alarm bell started ringing and a blue towel bounced across the floor."
+    },
+    {
+      "word": "seem",
+      "funDefinition": "With zombies closing in at the medal stand, the bread week winner would seem if it meant to appear to be and saving a left-handed mug."
+    },
+    {
+      "word": "valuable",
+      "funDefinition": "A hiker looked valuable—worth a lot or very useful—at the Heart of Gold while holding car keys and listening for zombies."
+    },
+    {
+      "word": "warm",
+      "funDefinition": "At the living room, everyone called a kitten warm because giving comfortable heat fit the moment and even a red scarf seemed impressed."
+    },
+    {
+      "word": "weak",
+      "funDefinition": "While crossing the Cobra Kai dojo, the referee stayed weak—lacking strength—as the old truck coughed back to life and a biscuit dragon wobbled dangerously."
+    },
+    {
+      "word": "truly",
+      "funDefinition": "Ford Prefect handled a market tote truly—honestly or really—while escaping near the penalty box."
+    },
+    {
+      "word": "safety",
+      "funDefinition": "At the prep bench, Bart learned that safety means freedom from danger or harm when a scratched bookmark slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "school",
+      "funDefinition": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that school is a place where people learn just as a white glove became the next clue."
+    },
+    {
+      "word": "season",
+      "funDefinition": "During a wild night at the harbor rocks, Bruno Fernandes saw that season means one of the four parts of the year after a feather bundle showed up and the barricade started to shake."
+    },
+    {
+      "word": "select",
+      "funDefinition": "With zombies closing in at the finals piste, the pastry chef would select if it meant to choose carefully and saving a gold pen."
+    },
+    {
+      "word": "share",
+      "funDefinition": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to share—to use or give jointly—before a black headband vanished."
+    },
+    {
+      "word": "shine",
+      "funDefinition": "A cat chose to shine, meaning to give off light or brightness, while racing through the TV studio and protecting a match ball."
+    },
+    {
+      "word": "show",
+      "funDefinition": "At his Reseda apartment, a sabre sprinter tried to show—to let be seen—as the rooftop ladder slipped and a showstopper loaf bounced across the floor."
+    },
+    {
+      "word": "wild",
+      "funDefinition": "With a camera strap tucked under one arm, Almanzo seemed wild at the goalmouth, meaning living freely or hard to control."
+    },
+    {
+      "word": "willing",
+      "funDefinition": "Sideshow Bob looked willing—ready to do something—at pastry week while holding a salty bark and listening for zombies."
+    },
+    {
+      "word": "usually",
+      "funDefinition": "At Pier 39, Sam answered usually, meaning most of the time, before passing over a scoring cord."
+    },
+    {
+      "word": "secret",
+      "funDefinition": "During a wild night at the rooftop, Son saw that secret means something kept hidden after his cracked specs showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "sense",
+      "funDefinition": "At the strip edge, a nervous baker treated sense as good judgment or one of the body's ways of noticing before grabbing a red pacifier and heading for safety."
+    },
+    {
+      "word": "shape",
+      "funDefinition": "At the school roof, a drummer learned that shape means the form of something when a tournament medal slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "solve",
+      "funDefinition": "A rescue cat chose to solve, meaning to find an answer, while racing through the Springfield band room and protecting a strategy board."
+    },
+    {
+      "word": "speak",
+      "funDefinition": "At the batting cage, an epee captain tried to speak—to say words—as an alarm bell started ringing and a stack of macarons bounced across the floor."
+    },
+    {
+      "word": "spend",
+      "funDefinition": "With zombies closing in at the Anfield touchline, Dr. Grant would spend if it meant to use time or money and saving a ferry pass."
+    },
+    {
+      "word": "stand",
+      "funDefinition": "When the graveyard gate rattled by the cake stand, Krusty had to stand—to be upright on feet—before a wet flipper vanished."
+    },
+    {
+      "word": "wise",
+      "funDefinition": "At Twin Peaks, everyone called Miguel wise because showing good judgment fit the moment and even a silver mask seemed impressed."
+    },
+    {
+      "word": "wonderful",
+      "funDefinition": "While crossing the blanket fort, Saka stayed wonderful—extremely good—as the old truck coughed back to life and a flashlight wobbled dangerously."
+    },
+    {
+      "word": "warmly",
+      "funDefinition": "A star baker handled an oversized comic book warmly—in a friendly or warm way—while escaping near the warm-up line."
+    },
+    {
+      "word": "shelter",
+      "funDefinition": "At the forest clearing, a runner learned that shelter means a place that protects from danger or weather when bonsai clippers slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "sign",
+      "funDefinition": "While zombies groaned near the arcade, a harbor seal remembered that sign is a mark or object that gives information just as a pair of muddy boots became the next clue."
+    },
+    {
+      "word": "skill",
+      "funDefinition": "During a wild night at the old dojo office, a foil fencer saw that skill means the ability to do something well after a piping bag showed up and the barricade started to shake."
+    },
+    {
+      "word": "start",
+      "funDefinition": "With zombies closing in at the Old Trafford tunnel, Ralph would start if it meant to begin and saving a board sticker."
+    },
+    {
+      "word": "stay",
+      "funDefinition": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to stay—to remain in one place or condition—before a fish bucket vanished."
+    },
+    {
+      "word": "study",
+      "funDefinition": "Kreese chose to study, meaning to learn with focused effort, while racing through the Chinatown gate and protecting a score sheet."
+    },
+    {
+      "word": "succeed",
+      "funDefinition": "At the icy ledge, Salah tried to succeed—to do what you set out to do—as the rooftop ladder slipped and a fake hall pass bounced across the floor."
+    },
+    {
+      "word": "young",
+      "funDefinition": "With a blue grocery bag tucked under one arm, Alison Hammond seemed young at the training hall, meaning not old."
+    },
+    {
+      "word": "adorable",
+      "funDefinition": "A vendor looked adorable—very cute and lovable—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies."
+    },
+    {
+      "word": "widely",
+      "funDefinition": "At the Leftorium, a penguin chick answered widely, meaning over a large area or by many people, before passing over a black-and-white scarf."
+    },
+    {
+      "word": "solution",
+      "funDefinition": "During a wild night at the All Valley arena, a bout judge saw that solution means an answer to a problem after a loaf tin showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "spirit",
+      "funDefinition": "At the St James' Park gate, Roz treated spirit as energy, attitude, or the nonphysical part of a person before grabbing a sourdough loaf and heading for safety."
+    },
+    {
+      "word": "sport",
+      "funDefinition": "At the bunting-lined counter, Mr. Burns learned that sport means a physical game or activity when a tiny bell slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "suggest",
+      "funDefinition": "Chozen chose to suggest, meaning to offer an idea, while racing through Lombard Street and protecting a lame jacket."
+    },
+    {
+      "word": "support",
+      "funDefinition": "At the bookshelf, Haaland tried to support—to hold up or help—as an alarm bell started ringing and the Guide bounced across the floor."
+    },
+    {
+      "word": "swim",
+      "funDefinition": "With zombies closing in at the practice piste, Noel Fielding would swim if it meant to move through water and saving a pink donut box."
+    },
+    {
+      "word": "teach",
+      "funDefinition": "When the graveyard gate rattled by the spaceship corridor, a photographer had to teach—to help someone learn—before a cobra poster vanished."
+    },
+    {
+      "word": "alert",
+      "funDefinition": "At the Kwik-E-Mart roof, everyone called a tuxedo cat alert because quick to notice things fit the moment and even a blue water bottle seemed impressed."
+    },
+    {
+      "word": "alive",
+      "funDefinition": "While crossing the school hallway, a parry expert stayed alive—living; not dead—as the old truck coughed back to life and a bright apron wobbled dangerously."
+    },
+    {
+      "word": "wisely",
+      "funDefinition": "Arthur Dent handled a cable car ticket wisely—with good judgment—while escaping near the Etihad tunnel."
+    },
+    {
+      "word": "star",
+      "funDefinition": "At the chocolate table, Maggie learned that star means a giant ball of burning gas or a famous person when a ball of yarn slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "story",
+      "funDefinition": "While zombies groaned near the Alcatraz dock, Demetri remembered that story is a tale about events or people just as a foil tip became the next clue."
+    },
+    {
+      "word": "strength",
+      "funDefinition": "During a wild night at the tide pool, Pep Guardiola saw that strength means the power to stay strong or keep going after a lunch pail showed up and the barricade started to shake."
+    },
+    {
+      "word": "thank",
+      "funDefinition": "With zombies closing in at the scoring table, Prue Leith would thank if it meant to tell someone you are grateful and saving a saxophone case."
+    },
+    {
+      "word": "think",
+      "funDefinition": "When the graveyard gate rattled by the fire hill, a ranger had to think—to use the mind—before a wooden practice drum vanished."
+    },
+    {
+      "word": "travel",
+      "funDefinition": "A tabby chose to travel, meaning to go from place to place, while racing through the Simpson kitchen and protecting goalkeeper gloves."
+    },
+    {
+      "word": "trust",
+      "funDefinition": "At the training deck, a left-handed fencer tried to trust—to believe someone is honest or safe—as the rooftop ladder slipped and a tray of scones bounced across the floor."
+    },
+    {
+      "word": "bold",
+      "funDefinition": "With a foggy map tucked under one arm, a Wild Robot gosling seemed bold at the Tottenham stadium steps, meaning brave and confident."
+    },
+    {
+      "word": "bumpy",
+      "funDefinition": "Milhouse looked bumpy—not smooth; full of bumps—at the judging table while holding a soft paw and listening for zombies."
+    },
+    {
+      "word": "actually",
+      "funDefinition": "At Crissy Field, Hawk answered actually, meaning in fact, before passing over a stopwatch."
+    },
+    {
+      "word": "style",
+      "funDefinition": "During a wild night at the couch cushion, Alisson saw that style means a special way something is done or looks after a fossil brush showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "success",
+      "funDefinition": "At the lesson strip, Paul Hollywood treated success as the achievement of a goal before grabbing a skateboard and heading for safety."
+    },
+    {
+      "word": "surprise",
+      "funDefinition": "At the island cliff, a skater learned that surprise means something unexpected when an open laptop slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "try",
+      "funDefinition": "A sea lion chose to try, meaning to make an effort, while racing through the nuclear plant hallway and protecting a referee whistle."
+    },
+    {
+      "word": "understand",
+      "funDefinition": "At the Miyagi-Do yard, a coach tried to understand—to know what something means—as an alarm bell started ringing and a pastel cake stand bounced across the floor."
+    },
+    {
+      "word": "unite",
+      "funDefinition": "With zombies closing in at the Stamford Bridge bench, Piggy would unite if it meant to join together and saving a Victorian postcard."
+    },
+    {
+      "word": "use",
+      "funDefinition": "When the graveyard gate rattled by the proving drawer station, Marge had to use—to put into action—before a shiny shell vanished."
+    },
+    {
+      "word": "chilly",
+      "funDefinition": "At the Lands End trail, everyone called Tory chilly because slightly cold fit the moment and even a tournament ribbon seemed impressed."
+    },
+    {
+      "word": "creative",
+      "funDefinition": "While crossing the Pier 39 float, Isak stayed creative—able to make new ideas—as the old truck coughed back to life and a conch shell wobbled dangerously."
+    },
+    {
+      "word": "already",
+      "funDefinition": "The showstopper champion handled a suspicious rake already—before now or earlier than expected—while escaping near the gym bleachers."
+    },
+    {
+      "word": "task",
+      "funDefinition": "At the Farmer Boy wagon, a tourist guide learned that task means a piece of work to finish when blue hair spray slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "team",
+      "funDefinition": "While zombies groaned near the theater stage, a seal remembered that team is a group working together just as a corner flag became the next clue."
+    },
+    {
+      "word": "temperature",
+      "funDefinition": "During a wild night at the LaRusso Auto showroom, the team captain saw that temperature means a measure of how hot or cold something is after a rolling pin showed up and the barricade started to shake."
+    },
+    {
+      "word": "visit",
+      "funDefinition": "With zombies closing in at the sideline, Lex Murphy would visit if it meant to go see a place or person and saving a red lantern."
+    },
+    {
+      "word": "wait",
+      "funDefinition": "When the graveyard gate rattled by the cooling rack, Homer had to wait—to stay until something happens—before a pebble vanished."
+    },
+    {
+      "word": "walk",
+      "funDefinition": "Daniel LaRusso chose to walk, meaning to move on foot, while racing through Dolores Park and protecting a weapon bag."
+    },
+    {
+      "word": "want",
+      "funDefinition": "At the snow bank, Cole Palmer tried to want—to wish for or desire—as the rooftop ladder slipped and a repair kit bounced across the floor."
+    },
+    {
+      "word": "dusty",
+      "funDefinition": "With a cream pie tucked under one arm, the biscuit artist seemed dusty at the club locker, meaning covered with dust."
+    },
+    {
+      "word": "empty",
+      "funDefinition": "A cable car conductor looked empty—containing nothing—at the visitor center while holding a trophy-case key and listening for zombies."
+    },
+    {
+      "word": "fully",
+      "funDefinition": "At Moe's parking lot, a penguin answered fully, meaning completely, before passing over a captain's armband."
+    },
+    {
+      "word": "theater",
+      "funDefinition": "During a wild night at the cafeteria, a beginner fencer saw that theater means a place for plays or movies after a wobbling meringue tower showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "thought",
+      "funDefinition": "At the Emirates training ground, a Gordon Korman hero treated thought as an idea formed in the mind before grabbing a windbreaker and heading for safety."
+    },
+    {
+      "word": "time",
+      "funDefinition": "At the Bake Off tent, Lisa learned that time means the ongoing flow of moments when a glow-in-the-dark collar slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "watch",
+      "funDefinition": "Johnny Lawrence chose to watch, meaning to look at for a time, while racing through the Ferry Building and protecting a red card."
+    },
+    {
+      "word": "win",
+      "funDefinition": "At the windowsill, Virgil van Dijk tried to win—to come out first or succeed—as an alarm bell started ringing and a blue towel bounced across the floor."
+    },
+    {
+      "word": "wonder",
+      "funDefinition": "With zombies closing in at the medal stand, the bread week winner would wonder if it meant to think about with curiosity and saving a left-handed mug."
+    },
+    {
+      "word": "work",
+      "funDefinition": "When the graveyard gate rattled by the Heart of Gold, a hiker had to work—to do a job or effort—before car keys vanished."
+    },
+    {
+      "word": "fancy",
+      "funDefinition": "At the living room, everyone called a kitten fancy because special, decorative, or expensive-looking fit the moment and even a red scarf seemed impressed."
+    },
+    {
+      "word": "fresh",
+      "funDefinition": "While crossing the Cobra Kai dojo, the referee stayed fresh—new, clean, or just made—as the old truck coughed back to life and a biscuit dragon wobbled dangerously."
+    },
+    {
+      "word": "likely",
+      "funDefinition": "Ford Prefect handled a market tote likely—probably—while escaping near the penalty box."
+    },
+    {
+      "word": "tool",
+      "funDefinition": "At the prep bench, Bart learned that tool means an object used to do a job when a scratched bookmark slipped away and the graveyard fog got thicker."
+    },
+    {
+      "word": "tradition",
+      "funDefinition": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that tradition is a custom followed over time just as a white glove became the next clue."
+    },
+    {
+      "word": "trouble",
+      "funDefinition": "During a wild night at the harbor rocks, Bruno Fernandes saw that trouble means difficulty or problems after a feather bundle showed up and the barricade started to shake."
+    },
+    {
+      "word": "worry",
+      "funDefinition": "With zombies closing in at the finals piste, the pastry chef would worry if it meant to feel uneasy about and saving a gold pen."
+    },
+    {
+      "word": "write",
+      "funDefinition": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to write—to put words on a page or screen—before a black headband vanished."
+    },
+    {
+      "word": "whisper",
+      "funDefinition": "A cat chose to whisper, meaning to speak very softly, while racing through the TV studio and protecting a match ball."
+    },
+    {
+      "word": "yell",
+      "funDefinition": "At his Reseda apartment, a sabre sprinter tried to yell—to shout loudly—as the rooftop ladder slipped and a showstopper loaf bounced across the floor."
+    },
+    {
+      "word": "gigantic",
+      "funDefinition": "With a camera strap tucked under one arm, Almanzo seemed gigantic at the goalmouth, meaning extremely large."
+    },
+    {
+      "word": "humble",
+      "funDefinition": "Sideshow Bob looked humble—modest and not bragging—at pastry week while holding a salty bark and listening for zombies."
+    },
+    {
+      "word": "softly",
+      "funDefinition": "At Pier 39, Sam answered softly, meaning in a quiet or gentle way, before passing over a scoring cord."
+    },
+    {
+      "word": "truth",
+      "funDefinition": "During a wild night at the rooftop, Son saw that truth means what is real or correct after his cracked specs showed up and the moon slid behind a cloud."
+    },
+    {
+      "word": "value",
+      "funDefinition": "At the strip edge, a nervous baker treated value as how useful, important, or costly something is before grabbing a red pacifier and heading for safety."
+    },
+    {
+      "word": "victory",
+      "funDefinition": "At the school roof, a drummer learned that victory means success in a contest or struggle when a tournament medal slipped away and the gym lights blinked on and off."
+    },
+    {
+      "word": "zoom",
+      "funDefinition": "A rescue cat chose to zoom, meaning to move very fast, while racing through the Springfield band room and protecting a strategy board."
+    },
+    {
+      "word": "borrow",
+      "funDefinition": "At the batting cage, an epee captain tried to borrow—to take for a short time and return—as an alarm bell started ringing and a stack of macarons bounced across the floor."
+    },
+    {
+      "word": "carry",
+      "funDefinition": "With zombies closing in at the Anfield touchline, Dr. Grant would carry if it meant to hold and move something and saving a ferry pass."
+    },
+    {
+      "word": "fix",
+      "funDefinition": "When the graveyard gate rattled by the cake stand, Krusty had to fix—to repair or make right—before a wet flipper vanished."
+    },
+    {
+      "word": "itchy",
+      "funDefinition": "At Twin Peaks, everyone called Miguel itchy because causing a need to scratch fit the moment and even a silver mask seemed impressed."
+    },
+    {
+      "word": "messy",
+      "funDefinition": "While crossing the blanket fort, Saka stayed messy—untidy and disorganized—as the old truck coughed back to life and a flashlight wobbled dangerously."
+    },
+    {
+      "word": "openly",
+      "funDefinition": "A star baker handled an oversized comic book openly—in a way that is honest and public—while escaping near the warm-up line."
+    }
+  ]
+}

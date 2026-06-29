@@ -1,0 +1,4502 @@
+[
+  {
+    "word": "ability",
+    "pos": "n",
+    "shortDefinition": "the power or skill to do something",
+    "funSentence": "At the prep bench, Bart learned that **ability** means the power or skill to do something when a scratched bookmark slipped away and the graveyard fog got thicker.",
+    "level": 1,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "accident",
+    "pos": "n",
+    "shortDefinition": "something bad that happens unexpectedly",
+    "funSentence": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that **accident** is something bad that happens unexpectedly just as a white glove became the next clue.",
+    "level": 1,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "action",
+    "pos": "n",
+    "shortDefinition": "something done on purpose",
+    "funSentence": "During a wild night at the harbor rocks, Bruno Fernandes saw that **action** means something done on purpose after a feather bundle showed up and the barricade started to shake.",
+    "level": 1,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "adventure",
+    "pos": "n",
+    "shortDefinition": "an exciting or unusual experience",
+    "funSentence": "At the finals piste, the pastry chef treated **adventure** as an exciting or unusual experience before grabbing a gold pen and heading for safety.",
+    "level": 1,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "accept",
+    "pos": "v",
+    "shortDefinition": "to say yes to or receive",
+    "funSentence": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to **accept**—to say yes to or receive—before a black headband vanished.",
+    "level": 1,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "achieve",
+    "pos": "v",
+    "shortDefinition": "to reach a goal",
+    "funSentence": "A cat chose to **achieve**, meaning to reach a goal, while racing through the TV studio and protecting a match ball.",
+    "level": 1,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "act",
+    "pos": "v",
+    "shortDefinition": "to do something or perform",
+    "funSentence": "At his Reseda apartment, a sabre sprinter tried to **act**—to do something or perform—as the rooftop ladder slipped and a showstopper loaf bounced across the floor.",
+    "level": 1,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "active",
+    "pos": "adj",
+    "shortDefinition": "full of energy or movement",
+    "funSentence": "With a camera strap tucked under one arm, Almanzo seemed **active** at the goalmouth, meaning full of energy or movement.",
+    "level": 1,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "amazed",
+    "pos": "adj",
+    "shortDefinition": "very surprised",
+    "funSentence": "Sideshow Bob looked **amazed**—very surprised—at pastry week while holding a salty bark and listening for zombies.",
+    "level": 1,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "almost",
+    "pos": "adv",
+    "shortDefinition": "not quite",
+    "funSentence": "At Pier 39, Sam answered **almost**, meaning not quite, before passing over a scoring cord.",
+    "level": 1,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "advice",
+    "pos": "n",
+    "shortDefinition": "helpful ideas about what to do",
+    "funSentence": "During a wild night at the rooftop, Son saw that **advice** means helpful ideas about what to do after his cracked specs showed up and the moon slid behind a cloud.",
+    "level": 2,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "age",
+    "pos": "n",
+    "shortDefinition": "the number of years someone has lived",
+    "funSentence": "At the strip edge, a nervous baker treated **age** as the number of years someone has lived before grabbing a red pacifier and heading for safety.",
+    "level": 2,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "air",
+    "pos": "n",
+    "shortDefinition": "the mixture of gases we breathe",
+    "funSentence": "At the school roof, a drummer learned that **air** means the mixture of gases we breathe when a tournament medal slipped away and the gym lights blinked on and off.",
+    "level": 2,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "answer",
+    "pos": "n",
+    "shortDefinition": "a reply to a question",
+    "funSentence": "While zombies groaned near the Springfield band room, a rescue cat remembered that **answer** is a reply to a question just as a strategy board became the next clue.",
+    "level": 2,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "adapt",
+    "pos": "v",
+    "shortDefinition": "to change to fit new conditions",
+    "funSentence": "At the batting cage, an epee captain tried to **adapt**—to change to fit new conditions—as an alarm bell started ringing and a stack of macarons bounced across the floor.",
+    "level": 2,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "add",
+    "pos": "v",
+    "shortDefinition": "to put something more in",
+    "funSentence": "With zombies closing in at the Anfield touchline, Dr. Grant would **add** if it meant to put something more in and saving a ferry pass.",
+    "level": 2,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "admire",
+    "pos": "v",
+    "shortDefinition": "to respect or enjoy looking at",
+    "funSentence": "When the graveyard gate rattled by the cake stand, Krusty had to **admire**—to respect or enjoy looking at—before a wet flipper vanished.",
+    "level": 2,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "ancient",
+    "pos": "adj",
+    "shortDefinition": "very old",
+    "funSentence": "At Twin Peaks, everyone called Miguel **ancient** because very old fit the moment and even a silver mask seemed impressed.",
+    "level": 2,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "angry",
+    "pos": "adj",
+    "shortDefinition": "feeling mad",
+    "funSentence": "While crossing the blanket fort, Saka stayed **angry**—feeling mad—as the old truck coughed back to life and a flashlight wobbled dangerously.",
+    "level": 2,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "always",
+    "pos": "adv",
+    "shortDefinition": "at all times",
+    "funSentence": "A star baker handled an oversized comic book **always**—at all times—while escaping near the warm-up line.",
+    "level": 2,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "area",
+    "pos": "n",
+    "shortDefinition": "a particular place or region",
+    "funSentence": "At the forest clearing, a runner learned that **area** means a particular place or region when bonsai clippers slipped away and the graveyard fog got thicker.",
+    "level": 3,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "art",
+    "pos": "n",
+    "shortDefinition": "creative work such as drawing or music",
+    "funSentence": "While zombies groaned near the arcade, a harbor seal remembered that **art** is creative work such as drawing or music just as a pair of muddy boots became the next clue.",
+    "level": 3,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "athlete",
+    "pos": "n",
+    "shortDefinition": "a person skilled in sports",
+    "funSentence": "During a wild night at the old dojo office, a foil fencer saw that **athlete** means a person skilled in sports after a piping bag showed up and the barricade started to shake.",
+    "level": 3,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "attention",
+    "pos": "n",
+    "shortDefinition": "careful focus on something",
+    "funSentence": "At the Old Trafford tunnel, Ralph treated **attention** as careful focus on something before grabbing a board sticker and heading for safety.",
+    "level": 3,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "advise",
+    "pos": "v",
+    "shortDefinition": "to give helpful guidance",
+    "funSentence": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to **advise**—to give helpful guidance—before a fish bucket vanished.",
+    "level": 3,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "allow",
+    "pos": "v",
+    "shortDefinition": "to let something happen",
+    "funSentence": "Kreese chose to **allow**, meaning to let something happen, while racing through the Chinatown gate and protecting a score sheet.",
+    "level": 3,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "appear",
+    "pos": "v",
+    "shortDefinition": "to come into view",
+    "funSentence": "At the icy ledge, Salah tried to **appear**—to come into view—as the rooftop ladder slipped and a fake hall pass bounced across the floor.",
+    "level": 3,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "brave",
+    "pos": "adj",
+    "shortDefinition": "ready to face fear",
+    "funSentence": "With a blue grocery bag tucked under one arm, Alison Hammond seemed **brave** at the training hall, meaning ready to face fear.",
+    "level": 3,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "bright",
+    "pos": "adj",
+    "shortDefinition": "full of light or intelligence",
+    "funSentence": "A vendor looked **bright**—full of light or intelligence—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies.",
+    "level": 3,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "bravely",
+    "pos": "adv",
+    "shortDefinition": "in a courageous way",
+    "funSentence": "At the Leftorium, a penguin chick answered **bravely**, meaning in a courageous way, before passing over a black-and-white scarf.",
+    "level": 3,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "balance",
+    "pos": "n",
+    "shortDefinition": "a steady position or fair mix",
+    "funSentence": "During a wild night at the All Valley arena, a bout judge saw that **balance** means a steady position or fair mix after a loaf tin showed up and the moon slid behind a cloud.",
+    "level": 4,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "beach",
+    "pos": "n",
+    "shortDefinition": "sandy or rocky land by water",
+    "funSentence": "At the St James' Park gate, Roz treated **beach** as sandy or rocky land by water before grabbing a sourdough loaf and heading for safety.",
+    "level": 4,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "beauty",
+    "pos": "n",
+    "shortDefinition": "the quality of being pleasing to see",
+    "funSentence": "At the bunting-lined counter, Mr. Burns learned that **beauty** means the quality of being pleasing to see when a tiny bell slipped away and the gym lights blinked on and off.",
+    "level": 4,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "beginning",
+    "pos": "n",
+    "shortDefinition": "the start of something",
+    "funSentence": "While zombies groaned near Lombard Street, Chozen remembered that **beginning** is the start of something just as a lame jacket became the next clue.",
+    "level": 4,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "apply",
+    "pos": "v",
+    "shortDefinition": "to put to use or request something",
+    "funSentence": "At the bookshelf, Haaland tried to **apply**—to put to use or request something—as an alarm bell started ringing and the Guide bounced across the floor.",
+    "level": 4,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "argue",
+    "pos": "v",
+    "shortDefinition": "to speak with disagreement",
+    "funSentence": "With zombies closing in at the practice piste, Noel Fielding would **argue** if it meant to speak with disagreement and saving a pink donut box.",
+    "level": 4,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "arrange",
+    "pos": "v",
+    "shortDefinition": "to put in order or plan",
+    "funSentence": "When the graveyard gate rattled by the spaceship corridor, a photographer had to **arrange**—to put in order or plan—before a cobra poster vanished.",
+    "level": 4,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "busy",
+    "pos": "adj",
+    "shortDefinition": "full of activity",
+    "funSentence": "At the Kwik-E-Mart roof, everyone called a tuxedo cat **busy** because full of activity fit the moment and even a blue water bottle seemed impressed.",
+    "level": 4,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "calm",
+    "pos": "adj",
+    "shortDefinition": "peaceful and not upset",
+    "funSentence": "While crossing the school hallway, a parry expert stayed **calm**—peaceful and not upset—as the old truck coughed back to life and a bright apron wobbled dangerously.",
+    "level": 4,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "carefully",
+    "pos": "adv",
+    "shortDefinition": "with caution and attention",
+    "funSentence": "Arthur Dent handled a cable car ticket **carefully**—with caution and attention—while escaping near the Etihad tunnel.",
+    "level": 4,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "belief",
+    "pos": "n",
+    "shortDefinition": "an idea accepted as true",
+    "funSentence": "At the chocolate table, Maggie learned that **belief** means an idea accepted as true when a ball of yarn slipped away and the graveyard fog got thicker.",
+    "level": 5,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "book",
+    "pos": "n",
+    "shortDefinition": "pages bound together for reading",
+    "funSentence": "While zombies groaned near the Alcatraz dock, Demetri remembered that **book** is pages bound together for reading just as a foil tip became the next clue.",
+    "level": 5,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "bridge",
+    "pos": "n",
+    "shortDefinition": "a structure that crosses over something",
+    "funSentence": "During a wild night at the tide pool, Pep Guardiola saw that **bridge** means a structure that crosses over something after a lunch pail showed up and the barricade started to shake.",
+    "level": 5,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "buddy",
+    "pos": "n",
+    "shortDefinition": "a close friend",
+    "funSentence": "At the scoring table, Prue Leith treated **buddy** as a close friend before grabbing a saxophone case and heading for safety.",
+    "level": 5,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "ask",
+    "pos": "v",
+    "shortDefinition": "to say something to get an answer",
+    "funSentence": "When the graveyard gate rattled by the fire hill, a ranger had to **ask**—to say something to get an answer—before a wooden practice drum vanished.",
+    "level": 5,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "avoid",
+    "pos": "v",
+    "shortDefinition": "to stay away from",
+    "funSentence": "A tabby chose to **avoid**, meaning to stay away from, while racing through the Simpson kitchen and protecting goalkeeper gloves.",
+    "level": 5,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "believe",
+    "pos": "v",
+    "shortDefinition": "to think something is true",
+    "funSentence": "At the training deck, a left-handed fencer tried to **believe**—to think something is true—as the rooftop ladder slipped and a tray of scones bounced across the floor.",
+    "level": 5,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "careful",
+    "pos": "adj",
+    "shortDefinition": "paying close attention to avoid mistakes",
+    "funSentence": "With a foggy map tucked under one arm, a Wild Robot gosling seemed **careful** at the Tottenham stadium steps, meaning paying close attention to avoid mistakes.",
+    "level": 5,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "certain",
+    "pos": "adj",
+    "shortDefinition": "sure and without doubt",
+    "funSentence": "Milhouse looked **certain**—sure and without doubt—at the judging table while holding a soft paw and listening for zombies.",
+    "level": 5,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "certainly",
+    "pos": "adv",
+    "shortDefinition": "without doubt",
+    "funSentence": "At Crissy Field, Hawk answered **certainly**, meaning without doubt, before passing over a stopwatch.",
+    "level": 5,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "camp",
+    "pos": "n",
+    "shortDefinition": "a place where people stay outdoors",
+    "funSentence": "During a wild night at the couch cushion, Alisson saw that **camp** means a place where people stay outdoors after a fossil brush showed up and the moon slid behind a cloud.",
+    "level": 6,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "care",
+    "pos": "n",
+    "shortDefinition": "serious concern or helpful attention",
+    "funSentence": "At the lesson strip, Paul Hollywood treated **care** as serious concern or helpful attention before grabbing a skateboard and heading for safety.",
+    "level": 6,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "chance",
+    "pos": "n",
+    "shortDefinition": "an opportunity or possibility",
+    "funSentence": "At the island cliff, a skater learned that **chance** means an opportunity or possibility when an open laptop slipped away and the gym lights blinked on and off.",
+    "level": 6,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "challenge",
+    "pos": "n",
+    "shortDefinition": "a difficult task to overcome",
+    "funSentence": "While zombies groaned near the nuclear plant hallway, a sea lion remembered that **challenge** is a difficult task to overcome just as a referee whistle became the next clue.",
+    "level": 6,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "belong",
+    "pos": "v",
+    "shortDefinition": "to be a proper part of something",
+    "funSentence": "At the Miyagi-Do yard, a coach tried to **belong**—to be a proper part of something—as an alarm bell started ringing and a pastel cake stand bounced across the floor.",
+    "level": 6,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "build",
+    "pos": "v",
+    "shortDefinition": "to make by putting parts together",
+    "funSentence": "With zombies closing in at the Stamford Bridge bench, Piggy would **build** if it meant to make by putting parts together and saving a Victorian postcard.",
+    "level": 6,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "calculate",
+    "pos": "v",
+    "shortDefinition": "to work out an amount or answer",
+    "funSentence": "When the graveyard gate rattled by the proving drawer station, Marge had to **calculate**—to work out an amount or answer—before a shiny shell vanished.",
+    "level": 6,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "cheerful",
+    "pos": "adj",
+    "shortDefinition": "happy and positive",
+    "funSentence": "At the Lands End trail, everyone called Tory **cheerful** because happy and positive fit the moment and even a tournament ribbon seemed impressed.",
+    "level": 6,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "clever",
+    "pos": "adj",
+    "shortDefinition": "quick to learn or understand",
+    "funSentence": "While crossing the Pier 39 float, Isak stayed **clever**—quick to learn or understand—as the old truck coughed back to life and a conch shell wobbled dangerously.",
+    "level": 6,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "clearly",
+    "pos": "adv",
+    "shortDefinition": "in an easy-to-understand way",
+    "funSentence": "The showstopper champion handled a suspicious rake **clearly**—in an easy-to-understand way—while escaping near the gym bleachers.",
+    "level": 6,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "character",
+    "pos": "n",
+    "shortDefinition": "a person in a story or a person's nature",
+    "funSentence": "At the Farmer Boy wagon, a tourist guide learned that **character** means a person in a story or a person's nature when blue hair spray slipped away and the graveyard fog got thicker.",
+    "level": 7,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "choice",
+    "pos": "n",
+    "shortDefinition": "the act of choosing or the option picked",
+    "funSentence": "While zombies groaned near the theater stage, a seal remembered that **choice** is the act of choosing or the option picked just as a corner flag became the next clue.",
+    "level": 7,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "city",
+    "pos": "n",
+    "shortDefinition": "a large town where many people live",
+    "funSentence": "During a wild night at the LaRusso Auto showroom, the team captain saw that **city** means a large town where many people live after a rolling pin showed up and the barricade started to shake.",
+    "level": 7,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "class",
+    "pos": "n",
+    "shortDefinition": "a group lesson or school period",
+    "funSentence": "At the sideline, Lex Murphy treated **class** as a group lesson or school period before grabbing a red lantern and heading for safety.",
+    "level": 7,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "call",
+    "pos": "v",
+    "shortDefinition": "to speak or phone to someone",
+    "funSentence": "When the graveyard gate rattled by the cooling rack, Homer had to **call**—to speak or phone to someone—before a pebble vanished.",
+    "level": 7,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "celebrate",
+    "pos": "v",
+    "shortDefinition": "to honor with joy",
+    "funSentence": "Daniel LaRusso chose to **celebrate**, meaning to honor with joy, while racing through Dolores Park and protecting a weapon bag.",
+    "level": 7,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "change",
+    "pos": "v",
+    "shortDefinition": "to make or become different",
+    "funSentence": "At the snow bank, Cole Palmer tried to **change**—to make or become different—as the rooftop ladder slipped and a repair kit bounced across the floor.",
+    "level": 7,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "cloudy",
+    "pos": "adj",
+    "shortDefinition": "filled with clouds or unclear",
+    "funSentence": "With a cream pie tucked under one arm, the biscuit artist seemed **cloudy** at the club locker, meaning filled with clouds or unclear.",
+    "level": 7,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "comfortable",
+    "pos": "adj",
+    "shortDefinition": "relaxed and at ease",
+    "funSentence": "A cable car conductor looked **comfortable**—relaxed and at ease—at the visitor center while holding a trophy-case key and listening for zombies.",
+    "level": 7,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "closely",
+    "pos": "adv",
+    "shortDefinition": "in a near or careful way",
+    "funSentence": "At Moe's parking lot, a penguin answered **closely**, meaning in a near or careful way, before passing over a captain's armband.",
+    "level": 7,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "climate",
+    "pos": "n",
+    "shortDefinition": "the usual weather of a place",
+    "funSentence": "During a wild night at the cafeteria, a beginner fencer saw that **climate** means the usual weather of a place after a wobbling meringue tower showed up and the moon slid behind a cloud.",
+    "level": 8,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "cloud",
+    "pos": "n",
+    "shortDefinition": "a mass of tiny water drops in the sky",
+    "funSentence": "At the Emirates training ground, a Gordon Korman hero treated **cloud** as a mass of tiny water drops in the sky before grabbing a windbreaker and heading for safety.",
+    "level": 8,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "coach",
+    "pos": "n",
+    "shortDefinition": "a person who trains a team or player",
+    "funSentence": "At the Bake Off tent, Lisa learned that **coach** means a person who trains a team or player when a glow-in-the-dark collar slipped away and the gym lights blinked on and off.",
+    "level": 8,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "color",
+    "pos": "n",
+    "shortDefinition": "the appearance of something like red or blue",
+    "funSentence": "While zombies groaned near the Ferry Building, Johnny Lawrence remembered that **color** is the appearance of something like red or blue just as a red card became the next clue.",
+    "level": 8,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "choose",
+    "pos": "v",
+    "shortDefinition": "to pick from options",
+    "funSentence": "At the windowsill, Virgil van Dijk tried to **choose**—to pick from options—as an alarm bell started ringing and a blue towel bounced across the floor.",
+    "level": 8,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "collect",
+    "pos": "v",
+    "shortDefinition": "to gather together",
+    "funSentence": "With zombies closing in at the medal stand, the bread week winner would **collect** if it meant to gather together and saving a left-handed mug.",
+    "level": 8,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "compare",
+    "pos": "v",
+    "shortDefinition": "to look for similarities and differences",
+    "funSentence": "When the graveyard gate rattled by the Heart of Gold, a hiker had to **compare**—to look for similarities and differences—before car keys vanished.",
+    "level": 8,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "common",
+    "pos": "adj",
+    "shortDefinition": "found often; not unusual",
+    "funSentence": "At the living room, everyone called a kitten **common** because found often; not unusual fit the moment and even a red scarf seemed impressed.",
+    "level": 8,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "confident",
+    "pos": "adj",
+    "shortDefinition": "sure of yourself",
+    "funSentence": "While crossing the Cobra Kai dojo, the referee stayed **confident**—sure of yourself—as the old truck coughed back to life and a biscuit dragon wobbled dangerously.",
+    "level": 8,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "brightly",
+    "pos": "adv",
+    "shortDefinition": "with strong light or cheer",
+    "funSentence": "Ford Prefect handled a market tote **brightly**—with strong light or cheer—while escaping near the penalty box.",
+    "level": 8,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "comfort",
+    "pos": "n",
+    "shortDefinition": "a feeling of ease and relaxation",
+    "funSentence": "At the prep bench, Bart learned that **comfort** means a feeling of ease and relaxation when a scratched bookmark slipped away and the graveyard fog got thicker.",
+    "level": 9,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "community",
+    "pos": "n",
+    "shortDefinition": "a group of people living or working together",
+    "funSentence": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that **community** is a group of people living or working together just as a white glove became the next clue.",
+    "level": 9,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "contest",
+    "pos": "n",
+    "shortDefinition": "a competition to see who does best",
+    "funSentence": "During a wild night at the harbor rocks, Bruno Fernandes saw that **contest** means a competition to see who does best after a feather bundle showed up and the barricade started to shake.",
+    "level": 9,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "courage",
+    "pos": "n",
+    "shortDefinition": "the strength to face fear",
+    "funSentence": "At the finals piste, the pastry chef treated **courage** as the strength to face fear before grabbing a gold pen and heading for safety.",
+    "level": 9,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "compete",
+    "pos": "v",
+    "shortDefinition": "to try to win against others",
+    "funSentence": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to **compete**—to try to win against others—before a black headband vanished.",
+    "level": 9,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "complete",
+    "pos": "v",
+    "shortDefinition": "to finish fully",
+    "funSentence": "A cat chose to **complete**, meaning to finish fully, while racing through the TV studio and protecting a match ball.",
+    "level": 9,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "connect",
+    "pos": "v",
+    "shortDefinition": "to join together",
+    "funSentence": "At his Reseda apartment, a sabre sprinter tried to **connect**—to join together—as the rooftop ladder slipped and a showstopper loaf bounced across the floor.",
+    "level": 9,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "curious",
+    "pos": "adj",
+    "shortDefinition": "eager to know more",
+    "funSentence": "With a camera strap tucked under one arm, Almanzo seemed **curious** at the goalmouth, meaning eager to know more.",
+    "level": 9,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "daily",
+    "pos": "adj",
+    "shortDefinition": "happening every day",
+    "funSentence": "Sideshow Bob looked **daily**—happening every day—at pastry week while holding a salty bark and listening for zombies.",
+    "level": 9,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "eagerly",
+    "pos": "adv",
+    "shortDefinition": "with excitement and interest",
+    "funSentence": "At Pier 39, Sam answered **eagerly**, meaning with excitement and interest, before passing over a scoring cord.",
+    "level": 9,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "course",
+    "pos": "n",
+    "shortDefinition": "a set path or series of lessons",
+    "funSentence": "During a wild night at the rooftop, Son saw that **course** means a set path or series of lessons after his cracked specs showed up and the moon slid behind a cloud.",
+    "level": 10,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "crowd",
+    "pos": "n",
+    "shortDefinition": "a large group of people",
+    "funSentence": "At the strip edge, a nervous baker treated **crowd** as a large group of people before grabbing a red pacifier and heading for safety.",
+    "level": 10,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "culture",
+    "pos": "n",
+    "shortDefinition": "the shared beliefs, arts, and customs of a group",
+    "funSentence": "At the school roof, a drummer learned that **culture** means the shared beliefs, arts, and customs of a group when a tournament medal slipped away and the gym lights blinked on and off.",
+    "level": 10,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "danger",
+    "pos": "n",
+    "shortDefinition": "the possibility of harm",
+    "funSentence": "While zombies groaned near the Springfield band room, a rescue cat remembered that **danger** is the possibility of harm just as a strategy board became the next clue.",
+    "level": 10,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "consider",
+    "pos": "v",
+    "shortDefinition": "to think carefully about",
+    "funSentence": "At the batting cage, an epee captain tried to **consider**—to think carefully about—as an alarm bell started ringing and a stack of macarons bounced across the floor.",
+    "level": 10,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "continue",
+    "pos": "v",
+    "shortDefinition": "to keep going",
+    "funSentence": "With zombies closing in at the Anfield touchline, Dr. Grant would **continue** if it meant to keep going and saving a ferry pass.",
+    "level": 10,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "create",
+    "pos": "v",
+    "shortDefinition": "to make something new",
+    "funSentence": "When the graveyard gate rattled by the cake stand, Krusty had to **create**—to make something new—before a wet flipper vanished.",
+    "level": 10,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "dark",
+    "pos": "adj",
+    "shortDefinition": "having little light",
+    "funSentence": "At Twin Peaks, everyone called Miguel **dark** because having little light fit the moment and even a silver mask seemed impressed.",
+    "level": 10,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "different",
+    "pos": "adj",
+    "shortDefinition": "not the same",
+    "funSentence": "While crossing the blanket fort, Saka stayed **different**—not the same—as the old truck coughed back to life and a flashlight wobbled dangerously.",
+    "level": 10,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "easily",
+    "pos": "adv",
+    "shortDefinition": "without much trouble",
+    "funSentence": "A star baker handled an oversized comic book **easily**—without much trouble—while escaping near the warm-up line.",
+    "level": 10,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "day",
+    "pos": "n",
+    "shortDefinition": "a period of twenty-four hours",
+    "funSentence": "At the forest clearing, a runner learned that **day** means a period of twenty-four hours when bonsai clippers slipped away and the graveyard fog got thicker.",
+    "level": 11,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "decision",
+    "pos": "n",
+    "shortDefinition": "a choice made after thinking",
+    "funSentence": "While zombies groaned near the arcade, a harbor seal remembered that **decision** is a choice made after thinking just as a pair of muddy boots became the next clue.",
+    "level": 11,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "demand",
+    "pos": "n",
+    "shortDefinition": "a strong need or request",
+    "funSentence": "During a wild night at the old dojo office, a foil fencer saw that **demand** means a strong need or request after a piping bag showed up and the barricade started to shake.",
+    "level": 11,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "design",
+    "pos": "n",
+    "shortDefinition": "a plan or pattern for making something",
+    "funSentence": "At the Old Trafford tunnel, Ralph treated **design** as a plan or pattern for making something before grabbing a board sticker and heading for safety.",
+    "level": 11,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "decide",
+    "pos": "v",
+    "shortDefinition": "to choose after thinking",
+    "funSentence": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to **decide**—to choose after thinking—before a fish bucket vanished.",
+    "level": 11,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "defend",
+    "pos": "v",
+    "shortDefinition": "to protect against attack or criticism",
+    "funSentence": "Kreese chose to **defend**, meaning to protect against attack or criticism, while racing through the Chinatown gate and protecting a score sheet.",
+    "level": 11,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "deliver",
+    "pos": "v",
+    "shortDefinition": "to bring something to a place or person",
+    "funSentence": "At the icy ledge, Salah tried to **deliver**—to bring something to a place or person—as the rooftop ladder slipped and a fake hall pass bounced across the floor.",
+    "level": 11,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "difficult",
+    "pos": "adj",
+    "shortDefinition": "hard to do or understand",
+    "funSentence": "With a blue grocery bag tucked under one arm, Alison Hammond seemed **difficult** at the training hall, meaning hard to do or understand.",
+    "level": 11,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "direct",
+    "pos": "adj",
+    "shortDefinition": "straight and clear",
+    "funSentence": "A vendor looked **direct**—straight and clear—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies.",
+    "level": 11,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "evenly",
+    "pos": "adv",
+    "shortDefinition": "in a smooth and equal way",
+    "funSentence": "At the Leftorium, a penguin chick answered **evenly**, meaning in a smooth and equal way, before passing over a black-and-white scarf.",
+    "level": 11,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "detail",
+    "pos": "n",
+    "shortDefinition": "a small but important part",
+    "funSentence": "During a wild night at the All Valley arena, a bout judge saw that **detail** means a small but important part after a loaf tin showed up and the moon slid behind a cloud.",
+    "level": 12,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "difference",
+    "pos": "n",
+    "shortDefinition": "the way things are not the same",
+    "funSentence": "At the St James' Park gate, Roz treated **difference** as the way things are not the same before grabbing a sourdough loaf and heading for safety.",
+    "level": 12,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "direction",
+    "pos": "n",
+    "shortDefinition": "the way something points or moves",
+    "funSentence": "At the bunting-lined counter, Mr. Burns learned that **direction** means the way something points or moves when a tiny bell slipped away and the gym lights blinked on and off.",
+    "level": 12,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "discovery",
+    "pos": "n",
+    "shortDefinition": "the act of finding something new",
+    "funSentence": "While zombies groaned near Lombard Street, Chozen remembered that **discovery** is the act of finding something new just as a lame jacket became the next clue.",
+    "level": 12,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "describe",
+    "pos": "v",
+    "shortDefinition": "to tell what something is like",
+    "funSentence": "At the bookshelf, Haaland tried to **describe**—to tell what something is like—as an alarm bell started ringing and the Guide bounced across the floor.",
+    "level": 12,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "develop",
+    "pos": "v",
+    "shortDefinition": "to grow or cause to grow",
+    "funSentence": "With zombies closing in at the practice piste, Noel Fielding would **develop** if it meant to grow or cause to grow and saving a pink donut box.",
+    "level": 12,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "discover",
+    "pos": "v",
+    "shortDefinition": "to find or learn something new",
+    "funSentence": "When the graveyard gate rattled by the spaceship corridor, a photographer had to **discover**—to find or learn something new—before a cobra poster vanished.",
+    "level": 12,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "distant",
+    "pos": "adj",
+    "shortDefinition": "far away in space or time",
+    "funSentence": "At the Kwik-E-Mart roof, everyone called a tuxedo cat **distant** because far away in space or time fit the moment and even a blue water bottle seemed impressed.",
+    "level": 12,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "eager",
+    "pos": "adj",
+    "shortDefinition": "excited and ready",
+    "funSentence": "While crossing the school hallway, a parry expert stayed **eager**—excited and ready—as the old truck coughed back to life and a bright apron wobbled dangerously.",
+    "level": 12,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "finally",
+    "pos": "adv",
+    "shortDefinition": "at the end",
+    "funSentence": "Arthur Dent handled a cable car ticket **finally**—at the end—while escaping near the Etihad tunnel.",
+    "level": 12,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "discussion",
+    "pos": "n",
+    "shortDefinition": "a talk where people share ideas",
+    "funSentence": "At the chocolate table, Maggie learned that **discussion** means a talk where people share ideas when a ball of yarn slipped away and the graveyard fog got thicker.",
+    "level": 13,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "distance",
+    "pos": "n",
+    "shortDefinition": "the amount of space between things",
+    "funSentence": "While zombies groaned near the Alcatraz dock, Demetri remembered that **distance** is the amount of space between things just as a foil tip became the next clue.",
+    "level": 13,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "dream",
+    "pos": "n",
+    "shortDefinition": "thoughts and images during sleep or a big hope",
+    "funSentence": "During a wild night at the tide pool, Pep Guardiola saw that **dream** means thoughts and images during sleep or a big hope after a lunch pail showed up and the barricade started to shake.",
+    "level": 13,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "effort",
+    "pos": "n",
+    "shortDefinition": "hard work put into something",
+    "funSentence": "At the scoring table, Prue Leith treated **effort** as hard work put into something before grabbing a saxophone case and heading for safety.",
+    "level": 13,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "discuss",
+    "pos": "v",
+    "shortDefinition": "to talk about",
+    "funSentence": "When the graveyard gate rattled by the fire hill, a ranger had to **discuss**—to talk about—before a wooden practice drum vanished.",
+    "level": 13,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "divide",
+    "pos": "v",
+    "shortDefinition": "to separate into parts",
+    "funSentence": "A tabby chose to **divide**, meaning to separate into parts, while racing through the Simpson kitchen and protecting goalkeeper gloves.",
+    "level": 13,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "doubt",
+    "pos": "v",
+    "shortDefinition": "to feel unsure about",
+    "funSentence": "At the training deck, a left-handed fencer tried to **doubt**—to feel unsure about—as the rooftop ladder slipped and a tray of scones bounced across the floor.",
+    "level": 13,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "easy",
+    "pos": "adj",
+    "shortDefinition": "not hard",
+    "funSentence": "With a foggy map tucked under one arm, a Wild Robot gosling seemed **easy** at the Tottenham stadium steps, meaning not hard.",
+    "level": 13,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "fair",
+    "pos": "adj",
+    "shortDefinition": "honest and reasonable",
+    "funSentence": "Milhouse looked **fair**—honest and reasonable—at the judging table while holding a soft paw and listening for zombies.",
+    "level": 13,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "gently",
+    "pos": "adv",
+    "shortDefinition": "in a soft and careful way",
+    "funSentence": "At Crissy Field, Hawk answered **gently**, meaning in a soft and careful way, before passing over a stopwatch.",
+    "level": 13,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "energy",
+    "pos": "n",
+    "shortDefinition": "the power to move or do work",
+    "funSentence": "During a wild night at the couch cushion, Alisson saw that **energy** means the power to move or do work after a fossil brush showed up and the moon slid behind a cloud.",
+    "level": 14,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "error",
+    "pos": "n",
+    "shortDefinition": "a mistake",
+    "funSentence": "At the lesson strip, Paul Hollywood treated **error** as a mistake before grabbing a skateboard and heading for safety.",
+    "level": 14,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "event",
+    "pos": "n",
+    "shortDefinition": "something that happens, especially planned",
+    "funSentence": "At the island cliff, a skater learned that **event** means something that happens, especially planned when an open laptop slipped away and the gym lights blinked on and off.",
+    "level": 14,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "example",
+    "pos": "n",
+    "shortDefinition": "something that shows what another thing is like",
+    "funSentence": "While zombies groaned near the nuclear plant hallway, a sea lion remembered that **example** is something that shows what another thing is like just as a referee whistle became the next clue.",
+    "level": 14,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "edit",
+    "pos": "v",
+    "shortDefinition": "to change writing or media to improve it",
+    "funSentence": "At the Miyagi-Do yard, a coach tried to **edit**—to change writing or media to improve it—as an alarm bell started ringing and a pastel cake stand bounced across the floor.",
+    "level": 14,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "encourage",
+    "pos": "v",
+    "shortDefinition": "to give hope or support",
+    "funSentence": "With zombies closing in at the Stamford Bridge bench, Piggy would **encourage** if it meant to give hope or support and saving a Victorian postcard.",
+    "level": 14,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "enjoy",
+    "pos": "v",
+    "shortDefinition": "to take pleasure in",
+    "funSentence": "When the graveyard gate rattled by the proving drawer station, Marge had to **enjoy**—to take pleasure in—before a shiny shell vanished.",
+    "level": 14,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "famous",
+    "pos": "adj",
+    "shortDefinition": "known by many people",
+    "funSentence": "At the Lands End trail, everyone called Tory **famous** because known by many people fit the moment and even a tournament ribbon seemed impressed.",
+    "level": 14,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "fast",
+    "pos": "adj",
+    "shortDefinition": "moving quickly",
+    "funSentence": "While crossing the Pier 39 float, Isak stayed **fast**—moving quickly—as the old truck coughed back to life and a conch shell wobbled dangerously.",
+    "level": 14,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "gladly",
+    "pos": "adv",
+    "shortDefinition": "with pleasure",
+    "funSentence": "The showstopper champion handled a suspicious rake **gladly**—with pleasure—while escaping near the gym bleachers.",
+    "level": 14,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "fact",
+    "pos": "n",
+    "shortDefinition": "something known to be true",
+    "funSentence": "At the Farmer Boy wagon, a tourist guide learned that **fact** means something known to be true when blue hair spray slipped away and the graveyard fog got thicker.",
+    "level": 15,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "family",
+    "pos": "n",
+    "shortDefinition": "people related to each other or living together",
+    "funSentence": "While zombies groaned near the theater stage, a seal remembered that **family** is people related to each other or living together just as a corner flag became the next clue.",
+    "level": 15,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "feature",
+    "pos": "n",
+    "shortDefinition": "an important part of something",
+    "funSentence": "During a wild night at the LaRusso Auto showroom, the team captain saw that **feature** means an important part of something after a rolling pin showed up and the barricade started to shake.",
+    "level": 15,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "feeling",
+    "pos": "n",
+    "shortDefinition": "an emotion or sense inside you",
+    "funSentence": "At the sideline, Lex Murphy treated **feeling** as an emotion or sense inside you before grabbing a red lantern and heading for safety.",
+    "level": 15,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "escape",
+    "pos": "v",
+    "shortDefinition": "to get away from",
+    "funSentence": "When the graveyard gate rattled by the cooling rack, Homer had to **escape**—to get away from—before a pebble vanished.",
+    "level": 15,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "examine",
+    "pos": "v",
+    "shortDefinition": "to look at carefully",
+    "funSentence": "Daniel LaRusso chose to **examine**, meaning to look at carefully, while racing through Dolores Park and protecting a weapon bag.",
+    "level": 15,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "exist",
+    "pos": "v",
+    "shortDefinition": "to be real or present",
+    "funSentence": "At the snow bank, Cole Palmer tried to **exist**—to be real or present—as the rooftop ladder slipped and a repair kit bounced across the floor.",
+    "level": 15,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "favorite",
+    "pos": "adj",
+    "shortDefinition": "liked more than others",
+    "funSentence": "With a cream pie tucked under one arm, the biscuit artist seemed **favorite** at the club locker, meaning liked more than others.",
+    "level": 15,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "fearless",
+    "pos": "adj",
+    "shortDefinition": "not afraid",
+    "funSentence": "A cable car conductor looked **fearless**—not afraid—at the visitor center while holding a trophy-case key and listening for zombies.",
+    "level": 15,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "happily",
+    "pos": "adv",
+    "shortDefinition": "in a joyful way",
+    "funSentence": "At Moe's parking lot, a penguin answered **happily**, meaning in a joyful way, before passing over a captain's armband.",
+    "level": 15,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "field",
+    "pos": "n",
+    "shortDefinition": "open land or an area of study or play",
+    "funSentence": "During a wild night at the cafeteria, a beginner fencer saw that **field** means open land or an area of study or play after a wobbling meringue tower showed up and the moon slid behind a cloud.",
+    "level": 16,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "focus",
+    "pos": "n",
+    "shortDefinition": "special attention on one thing",
+    "funSentence": "At the Emirates training ground, a Gordon Korman hero treated **focus** as special attention on one thing before grabbing a windbreaker and heading for safety.",
+    "level": 16,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "force",
+    "pos": "n",
+    "shortDefinition": "power used to move or control something",
+    "funSentence": "At the Bake Off tent, Lisa learned that **force** means power used to move or control something when a glow-in-the-dark collar slipped away and the gym lights blinked on and off.",
+    "level": 16,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "forest",
+    "pos": "n",
+    "shortDefinition": "a large area filled with trees",
+    "funSentence": "While zombies groaned near the Ferry Building, Johnny Lawrence remembered that **forest** is a large area filled with trees just as a red card became the next clue.",
+    "level": 16,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "expand",
+    "pos": "v",
+    "shortDefinition": "to become larger",
+    "funSentence": "At the windowsill, Virgil van Dijk tried to **expand**—to become larger—as an alarm bell started ringing and a blue towel bounced across the floor.",
+    "level": 16,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "explain",
+    "pos": "v",
+    "shortDefinition": "to make clear",
+    "funSentence": "With zombies closing in at the medal stand, the bread week winner would **explain** if it meant to make clear and saving a left-handed mug.",
+    "level": 16,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "explore",
+    "pos": "v",
+    "shortDefinition": "to travel or study to learn more",
+    "funSentence": "When the graveyard gate rattled by the Heart of Gold, a hiker had to **explore**—to travel or study to learn more—before car keys vanished.",
+    "level": 16,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "final",
+    "pos": "adj",
+    "shortDefinition": "last in order",
+    "funSentence": "At the living room, everyone called a kitten **final** because last in order fit the moment and even a red scarf seemed impressed.",
+    "level": 16,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "flexible",
+    "pos": "adj",
+    "shortDefinition": "able to bend or change easily",
+    "funSentence": "While crossing the Cobra Kai dojo, the referee stayed **flexible**—able to bend or change easily—as the old truck coughed back to life and a biscuit dragon wobbled dangerously.",
+    "level": 16,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "honestly",
+    "pos": "adv",
+    "shortDefinition": "truthfully",
+    "funSentence": "Ford Prefect handled a market tote **honestly**—truthfully—while escaping near the penalty box.",
+    "level": 16,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "freedom",
+    "pos": "n",
+    "shortDefinition": "the power to act or choose without control",
+    "funSentence": "At the prep bench, Bart learned that **freedom** means the power to act or choose without control when a scratched bookmark slipped away and the graveyard fog got thicker.",
+    "level": 17,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "friend",
+    "pos": "n",
+    "shortDefinition": "a person you like and trust",
+    "funSentence": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that **friend** is a person you like and trust just as a white glove became the next clue.",
+    "level": 17,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "game",
+    "pos": "n",
+    "shortDefinition": "an activity with rules for fun or competition",
+    "funSentence": "During a wild night at the harbor rocks, Bruno Fernandes saw that **game** means an activity with rules for fun or competition after a feather bundle showed up and the barricade started to shake.",
+    "level": 17,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "garden",
+    "pos": "n",
+    "shortDefinition": "a place where plants are grown",
+    "funSentence": "At the finals piste, the pastry chef treated **garden** as a place where plants are grown before grabbing a gold pen and heading for safety.",
+    "level": 17,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "face",
+    "pos": "v",
+    "shortDefinition": "to deal with directly",
+    "funSentence": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to **face**—to deal with directly—before a black headband vanished.",
+    "level": 17,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "fail",
+    "pos": "v",
+    "shortDefinition": "to not succeed",
+    "funSentence": "A cat chose to **fail**, meaning to not succeed, while racing through the TV studio and protecting a match ball.",
+    "level": 17,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "figure",
+    "pos": "v",
+    "shortDefinition": "to understand or solve",
+    "funSentence": "At his Reseda apartment, a sabre sprinter tried to **figure**—to understand or solve—as the rooftop ladder slipped and a showstopper loaf bounced across the floor.",
+    "level": 17,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "friendly",
+    "pos": "adj",
+    "shortDefinition": "kind and easy to like",
+    "funSentence": "With a camera strap tucked under one arm, Almanzo seemed **friendly** at the goalmouth, meaning kind and easy to like.",
+    "level": 17,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "gentle",
+    "pos": "adj",
+    "shortDefinition": "calm, soft, and not rough",
+    "funSentence": "Sideshow Bob looked **gentle**—calm, soft, and not rough—at pastry week while holding a salty bark and listening for zombies.",
+    "level": 17,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "kindly",
+    "pos": "adv",
+    "shortDefinition": "in a caring way",
+    "funSentence": "At Pier 39, Sam answered **kindly**, meaning in a caring way, before passing over a scoring cord.",
+    "level": 17,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "goal",
+    "pos": "n",
+    "shortDefinition": "something you try to reach or achieve",
+    "funSentence": "During a wild night at the rooftop, Son saw that **goal** means something you try to reach or achieve after his cracked specs showed up and the moon slid behind a cloud.",
+    "level": 18,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "habit",
+    "pos": "n",
+    "shortDefinition": "something done regularly",
+    "funSentence": "At the strip edge, a nervous baker treated **habit** as something done regularly before grabbing a red pacifier and heading for safety.",
+    "level": 18,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "health",
+    "pos": "n",
+    "shortDefinition": "the condition of body and mind",
+    "funSentence": "At the school roof, a drummer learned that **health** means the condition of body and mind when a tournament medal slipped away and the gym lights blinked on and off.",
+    "level": 18,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "heart",
+    "pos": "n",
+    "shortDefinition": "the organ that pumps blood or the center of feelings",
+    "funSentence": "While zombies groaned near the Springfield band room, a rescue cat remembered that **heart** is the organ that pumps blood or the center of feelings just as a strategy board became the next clue.",
+    "level": 18,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "find",
+    "pos": "v",
+    "shortDefinition": "to locate or discover",
+    "funSentence": "At the batting cage, an epee captain tried to **find**—to locate or discover—as an alarm bell started ringing and a stack of macarons bounced across the floor.",
+    "level": 18,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "finish",
+    "pos": "v",
+    "shortDefinition": "to complete the end of",
+    "funSentence": "With zombies closing in at the Anfield touchline, Dr. Grant would **finish** if it meant to complete the end of and saving a ferry pass.",
+    "level": 18,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "follow",
+    "pos": "v",
+    "shortDefinition": "to go after or obey",
+    "funSentence": "When the graveyard gate rattled by the cake stand, Krusty had to **follow**—to go after or obey—before a wet flipper vanished.",
+    "level": 18,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "glad",
+    "pos": "adj",
+    "shortDefinition": "pleased or happy",
+    "funSentence": "At Twin Peaks, everyone called Miguel **glad** because pleased or happy fit the moment and even a silver mask seemed impressed.",
+    "level": 18,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "golden",
+    "pos": "adj",
+    "shortDefinition": "made of gold or glowing warm yellow",
+    "funSentence": "While crossing the blanket fort, Saka stayed **golden**—made of gold or glowing warm yellow—as the old truck coughed back to life and a flashlight wobbled dangerously.",
+    "level": 18,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "loudly",
+    "pos": "adv",
+    "shortDefinition": "with a lot of sound",
+    "funSentence": "A star baker handled an oversized comic book **loudly**—with a lot of sound—while escaping near the warm-up line.",
+    "level": 18,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "hero",
+    "pos": "n",
+    "shortDefinition": "a person admired for courage or action",
+    "funSentence": "At the forest clearing, a runner learned that **hero** means a person admired for courage or action when bonsai clippers slipped away and the graveyard fog got thicker.",
+    "level": 19,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "history",
+    "pos": "n",
+    "shortDefinition": "the study or story of the past",
+    "funSentence": "While zombies groaned near the arcade, a harbor seal remembered that **history** is the study or story of the past just as a pair of muddy boots became the next clue.",
+    "level": 19,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "hope",
+    "pos": "n",
+    "shortDefinition": "a feeling of wanting something good to happen",
+    "funSentence": "During a wild night at the old dojo office, a foil fencer saw that **hope** means a feeling of wanting something good to happen after a piping bag showed up and the barricade started to shake.",
+    "level": 19,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "idea",
+    "pos": "n",
+    "shortDefinition": "a thought or plan",
+    "funSentence": "At the Old Trafford tunnel, Ralph treated **idea** as a thought or plan before grabbing a board sticker and heading for safety.",
+    "level": 19,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "forgive",
+    "pos": "v",
+    "shortDefinition": "to stop being angry about a wrong",
+    "funSentence": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to **forgive**—to stop being angry about a wrong—before a fish bucket vanished.",
+    "level": 19,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "gather",
+    "pos": "v",
+    "shortDefinition": "to bring together",
+    "funSentence": "Kreese chose to **gather**, meaning to bring together, while racing through the Chinatown gate and protecting a score sheet.",
+    "level": 19,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "grow",
+    "pos": "v",
+    "shortDefinition": "to become larger or older",
+    "funSentence": "At the icy ledge, Salah tried to **grow**—to become larger or older—as the rooftop ladder slipped and a fake hall pass bounced across the floor.",
+    "level": 19,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "grateful",
+    "pos": "adj",
+    "shortDefinition": "thankful",
+    "funSentence": "With a blue grocery bag tucked under one arm, Alison Hammond seemed **grateful** at the training hall, meaning thankful.",
+    "level": 19,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "great",
+    "pos": "adj",
+    "shortDefinition": "very good or important",
+    "funSentence": "A vendor looked **great**—very good or important—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies.",
+    "level": 19,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "mostly",
+    "pos": "adv",
+    "shortDefinition": "for the biggest part",
+    "funSentence": "At the Leftorium, a penguin chick answered **mostly**, meaning for the biggest part, before passing over a black-and-white scarf.",
+    "level": 19,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "image",
+    "pos": "n",
+    "shortDefinition": "a picture or mental impression",
+    "funSentence": "During a wild night at the All Valley arena, a bout judge saw that **image** means a picture or mental impression after a loaf tin showed up and the moon slid behind a cloud.",
+    "level": 20,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "importance",
+    "pos": "n",
+    "shortDefinition": "the quality of being meaningful or valuable",
+    "funSentence": "At the St James' Park gate, Roz treated **importance** as the quality of being meaningful or valuable before grabbing a sourdough loaf and heading for safety.",
+    "level": 20,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "improvement",
+    "pos": "n",
+    "shortDefinition": "a change that makes something better",
+    "funSentence": "At the bunting-lined counter, Mr. Burns learned that **improvement** means a change that makes something better when a tiny bell slipped away and the gym lights blinked on and off.",
+    "level": 20,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "interest",
+    "pos": "n",
+    "shortDefinition": "a feeling of wanting to learn more",
+    "funSentence": "While zombies groaned near Lombard Street, Chozen remembered that **interest** is a feeling of wanting to learn more just as a lame jacket became the next clue.",
+    "level": 20,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "guard",
+    "pos": "v",
+    "shortDefinition": "to watch and protect",
+    "funSentence": "At the bookshelf, Haaland tried to **guard**—to watch and protect—as an alarm bell started ringing and the Guide bounced across the floor.",
+    "level": 20,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "guess",
+    "pos": "v",
+    "shortDefinition": "to give an answer without being sure",
+    "funSentence": "With zombies closing in at the practice piste, Noel Fielding would **guess** if it meant to give an answer without being sure and saving a pink donut box.",
+    "level": 20,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "happen",
+    "pos": "v",
+    "shortDefinition": "to take place",
+    "funSentence": "When the graveyard gate rattled by the spaceship corridor, a photographer had to **happen**—to take place—before a cobra poster vanished.",
+    "level": 20,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "happy",
+    "pos": "adj",
+    "shortDefinition": "feeling joy",
+    "funSentence": "At the Kwik-E-Mart roof, everyone called a tuxedo cat **happy** because feeling joy fit the moment and even a blue water bottle seemed impressed.",
+    "level": 20,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "healthy",
+    "pos": "adj",
+    "shortDefinition": "strong and well",
+    "funSentence": "While crossing the school hallway, a parry expert stayed **healthy**—strong and well—as the old truck coughed back to life and a bright apron wobbled dangerously.",
+    "level": 20,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "nearly",
+    "pos": "adv",
+    "shortDefinition": "almost but not completely",
+    "funSentence": "Arthur Dent handled a cable car ticket **nearly**—almost but not completely—while escaping near the Etihad tunnel.",
+    "level": 20,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "island",
+    "pos": "n",
+    "shortDefinition": "land surrounded by water",
+    "funSentence": "At the chocolate table, Maggie learned that **island** means land surrounded by water when a ball of yarn slipped away and the graveyard fog got thicker.",
+    "level": 21,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "job",
+    "pos": "n",
+    "shortDefinition": "work done for pay or a task",
+    "funSentence": "While zombies groaned near the Alcatraz dock, Demetri remembered that **job** is work done for pay or a task just as a foil tip became the next clue.",
+    "level": 21,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "journey",
+    "pos": "n",
+    "shortDefinition": "the act of traveling from one place to another",
+    "funSentence": "During a wild night at the tide pool, Pep Guardiola saw that **journey** means the act of traveling from one place to another after a lunch pail showed up and the barricade started to shake.",
+    "level": 21,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "help",
+    "pos": "v",
+    "shortDefinition": "to make something easier",
+    "funSentence": "With zombies closing in at the scoring table, Prue Leith would **help** if it meant to make something easier and saving a saxophone case.",
+    "level": 21,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "hide",
+    "pos": "v",
+    "shortDefinition": "to keep out of sight",
+    "funSentence": "When the graveyard gate rattled by the fire hill, a ranger had to **hide**—to keep out of sight—before a wooden practice drum vanished.",
+    "level": 21,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "imagine",
+    "pos": "v",
+    "shortDefinition": "to form a picture in the mind",
+    "funSentence": "A tabby chose to **imagine**, meaning to form a picture in the mind, while racing through the Simpson kitchen and protecting goalkeeper gloves.",
+    "level": 21,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "helpful",
+    "pos": "adj",
+    "shortDefinition": "willing to help",
+    "funSentence": "While crossing the training deck, a left-handed fencer stayed **helpful**—willing to help—as the rooftop ladder slipped and a tray of scones wobbled dangerously.",
+    "level": 21,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "honest",
+    "pos": "adj",
+    "shortDefinition": "truthful and fair",
+    "funSentence": "With a foggy map tucked under one arm, a Wild Robot gosling seemed **honest** at the Tottenham stadium steps, meaning truthful and fair.",
+    "level": 21,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "huge",
+    "pos": "adj",
+    "shortDefinition": "very large",
+    "funSentence": "Milhouse looked **huge**—very large—at the judging table while holding a soft paw and listening for zombies.",
+    "level": 21,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "neatly",
+    "pos": "adv",
+    "shortDefinition": "in a clean and orderly way",
+    "funSentence": "At Crissy Field, Hawk answered **neatly**, meaning in a clean and orderly way, before passing over a stopwatch.",
+    "level": 21,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "joy",
+    "pos": "n",
+    "shortDefinition": "great happiness",
+    "funSentence": "During a wild night at the couch cushion, Alisson saw that **joy** means great happiness after a fossil brush showed up and the moon slid behind a cloud.",
+    "level": 22,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "judgment",
+    "pos": "n",
+    "shortDefinition": "an opinion formed after thinking",
+    "funSentence": "At the lesson strip, Paul Hollywood treated **judgment** as an opinion formed after thinking before grabbing a skateboard and heading for safety.",
+    "level": 22,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "knowledge",
+    "pos": "n",
+    "shortDefinition": "facts and understanding learned over time",
+    "funSentence": "At the island cliff, a skater learned that **knowledge** means facts and understanding learned over time when an open laptop slipped away and the gym lights blinked on and off.",
+    "level": 22,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "improve",
+    "pos": "v",
+    "shortDefinition": "to make better",
+    "funSentence": "A sea lion chose to **improve**, meaning to make better, while racing through the nuclear plant hallway and protecting a referee whistle.",
+    "level": 22,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "include",
+    "pos": "v",
+    "shortDefinition": "to contain as a part",
+    "funSentence": "At the Miyagi-Do yard, a coach tried to **include**—to contain as a part—as an alarm bell started ringing and a pastel cake stand bounced across the floor.",
+    "level": 22,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "increase",
+    "pos": "v",
+    "shortDefinition": "to make or become greater",
+    "funSentence": "With zombies closing in at the Stamford Bridge bench, Piggy would **increase** if it meant to make or become greater and saving a Victorian postcard.",
+    "level": 22,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "important",
+    "pos": "adj",
+    "shortDefinition": "valuable or significant",
+    "funSentence": "Marge looked **important**—valuable or significant—at the proving drawer station while holding a shiny shell and listening for zombies.",
+    "level": 22,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "independent",
+    "pos": "adj",
+    "shortDefinition": "able to act on your own",
+    "funSentence": "At the Lands End trail, everyone called Tory **independent** because able to act on your own fit the moment and even a tournament ribbon seemed impressed.",
+    "level": 22,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "interesting",
+    "pos": "adj",
+    "shortDefinition": "holding attention",
+    "funSentence": "While crossing the Pier 39 float, Isak stayed **interesting**—holding attention—as the old truck coughed back to life and a conch shell wobbled dangerously.",
+    "level": 22,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "never",
+    "pos": "adv",
+    "shortDefinition": "at no time",
+    "funSentence": "The showstopper champion handled a suspicious rake **never**—at no time—while escaping near the gym bleachers.",
+    "level": 22,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "language",
+    "pos": "n",
+    "shortDefinition": "a system of words used to communicate",
+    "funSentence": "At the Farmer Boy wagon, a tourist guide learned that **language** means a system of words used to communicate when blue hair spray slipped away and the graveyard fog got thicker.",
+    "level": 23,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "leader",
+    "pos": "n",
+    "shortDefinition": "a person who guides others",
+    "funSentence": "While zombies groaned near the theater stage, a seal remembered that **leader** is a person who guides others just as a corner flag became the next clue.",
+    "level": 23,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "lesson",
+    "pos": "n",
+    "shortDefinition": "something learned or a period of teaching",
+    "funSentence": "During a wild night at the LaRusso Auto showroom, the team captain saw that **lesson** means something learned or a period of teaching after a rolling pin showed up and the barricade started to shake.",
+    "level": 23,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "influence",
+    "pos": "v",
+    "shortDefinition": "to affect how someone thinks or acts",
+    "funSentence": "With zombies closing in at the sideline, Lex Murphy would **influence** if it meant to affect how someone thinks or acts and saving a red lantern.",
+    "level": 23,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "inform",
+    "pos": "v",
+    "shortDefinition": "to give knowledge or facts",
+    "funSentence": "When the graveyard gate rattled by the cooling rack, Homer had to **inform**—to give knowledge or facts—before a pebble vanished.",
+    "level": 23,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "inspire",
+    "pos": "v",
+    "shortDefinition": "to fill with ideas or courage",
+    "funSentence": "Daniel LaRusso chose to **inspire**, meaning to fill with ideas or courage, while racing through Dolores Park and protecting a weapon bag.",
+    "level": 23,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "kind",
+    "pos": "adj",
+    "shortDefinition": "caring and helpful",
+    "funSentence": "While crossing the snow bank, Cole Palmer stayed **kind**—caring and helpful—as the rooftop ladder slipped and a repair kit wobbled dangerously.",
+    "level": 23,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "large",
+    "pos": "adj",
+    "shortDefinition": "big in size",
+    "funSentence": "With a cream pie tucked under one arm, the biscuit artist seemed **large** at the club locker, meaning big in size.",
+    "level": 23,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "late",
+    "pos": "adj",
+    "shortDefinition": "happening after the expected time",
+    "funSentence": "A cable car conductor looked **late**—happening after the expected time—at the visitor center while holding a trophy-case key and listening for zombies.",
+    "level": 23,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "often",
+    "pos": "adv",
+    "shortDefinition": "many times",
+    "funSentence": "At Moe's parking lot, a penguin answered **often**, meaning many times, before passing over a captain's armband.",
+    "level": 23,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "library",
+    "pos": "n",
+    "shortDefinition": "a place where books and media are shared",
+    "funSentence": "During a wild night at the cafeteria, a beginner fencer saw that **library** means a place where books and media are shared after a wobbling meringue tower showed up and the moon slid behind a cloud.",
+    "level": 24,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "life",
+    "pos": "n",
+    "shortDefinition": "the state of being alive",
+    "funSentence": "At the Emirates training ground, a Gordon Korman hero treated **life** as the state of being alive before grabbing a windbreaker and heading for safety.",
+    "level": 24,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "light",
+    "pos": "n",
+    "shortDefinition": "brightness that lets us see",
+    "funSentence": "At the Bake Off tent, Lisa learned that **light** means brightness that lets us see when a glow-in-the-dark collar slipped away and the gym lights blinked on and off.",
+    "level": 24,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "invite",
+    "pos": "v",
+    "shortDefinition": "to ask someone to join or come",
+    "funSentence": "Johnny Lawrence chose to **invite**, meaning to ask someone to join or come, while racing through the Ferry Building and protecting a red card.",
+    "level": 24,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "join",
+    "pos": "v",
+    "shortDefinition": "to become part of something",
+    "funSentence": "At the windowsill, Virgil van Dijk tried to **join**—to become part of something—as an alarm bell started ringing and a blue towel bounced across the floor.",
+    "level": 24,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "judge",
+    "pos": "v",
+    "shortDefinition": "to form an opinion or decide fairly",
+    "funSentence": "With zombies closing in at the medal stand, the bread week winner would **judge** if it meant to form an opinion or decide fairly and saving a left-handed mug.",
+    "level": 24,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "lively",
+    "pos": "adj",
+    "shortDefinition": "full of energy and spirit",
+    "funSentence": "A hiker looked **lively**—full of energy and spirit—at the Heart of Gold while holding car keys and listening for zombies.",
+    "level": 24,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "local",
+    "pos": "adj",
+    "shortDefinition": "nearby or from the area",
+    "funSentence": "At the living room, everyone called a kitten **local** because nearby or from the area fit the moment and even a red scarf seemed impressed.",
+    "level": 24,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "lonely",
+    "pos": "adj",
+    "shortDefinition": "feeling alone and sad",
+    "funSentence": "While crossing the Cobra Kai dojo, the referee stayed **lonely**—feeling alone and sad—as the old truck coughed back to life and a biscuit dragon wobbled dangerously.",
+    "level": 24,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "patiently",
+    "pos": "adv",
+    "shortDefinition": "in a calm waiting way",
+    "funSentence": "Ford Prefect handled a market tote **patiently**—in a calm waiting way—while escaping near the penalty box.",
+    "level": 24,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "limit",
+    "pos": "n",
+    "shortDefinition": "the farthest point allowed",
+    "funSentence": "At the prep bench, Bart learned that **limit** means the farthest point allowed when a scratched bookmark slipped away and the graveyard fog got thicker.",
+    "level": 25,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "location",
+    "pos": "n",
+    "shortDefinition": "the place where something is",
+    "funSentence": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that **location** is the place where something is just as a white glove became the next clue.",
+    "level": 25,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "luck",
+    "pos": "n",
+    "shortDefinition": "success that seems to happen by chance",
+    "funSentence": "During a wild night at the harbor rocks, Bruno Fernandes saw that **luck** means success that seems to happen by chance after a feather bundle showed up and the barricade started to shake.",
+    "level": 25,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "jump",
+    "pos": "v",
+    "shortDefinition": "to push off the ground",
+    "funSentence": "With zombies closing in at the finals piste, the pastry chef would **jump** if it meant to push off the ground and saving a gold pen.",
+    "level": 25,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "keep",
+    "pos": "v",
+    "shortDefinition": "to hold on to or continue",
+    "funSentence": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to **keep**—to hold on to or continue—before a black headband vanished.",
+    "level": 25,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "know",
+    "pos": "v",
+    "shortDefinition": "to understand or be aware of",
+    "funSentence": "A cat chose to **know**, meaning to understand or be aware of, while racing through the TV studio and protecting a match ball.",
+    "level": 25,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "loud",
+    "pos": "adj",
+    "shortDefinition": "making a strong sound",
+    "funSentence": "While crossing his Reseda apartment, a sabre sprinter stayed **loud**—making a strong sound—as the rooftop ladder slipped and a showstopper loaf wobbled dangerously.",
+    "level": 25,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "lucky",
+    "pos": "adj",
+    "shortDefinition": "having good fortune",
+    "funSentence": "With a camera strap tucked under one arm, Almanzo seemed **lucky** at the goalmouth, meaning having good fortune.",
+    "level": 25,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "modern",
+    "pos": "adj",
+    "shortDefinition": "relating to recent times",
+    "funSentence": "Sideshow Bob looked **modern**—relating to recent times—at pastry week while holding a salty bark and listening for zombies.",
+    "level": 25,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "proudly",
+    "pos": "adv",
+    "shortDefinition": "with pride",
+    "funSentence": "At Pier 39, Sam answered **proudly**, meaning with pride, before passing over a scoring cord.",
+    "level": 25,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "map",
+    "pos": "n",
+    "shortDefinition": "a drawing that shows places",
+    "funSentence": "During a wild night at the rooftop, Son saw that **map** means a drawing that shows places after his cracked specs showed up and the moon slid behind a cloud.",
+    "level": 26,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "memory",
+    "pos": "n",
+    "shortDefinition": "something remembered or the ability to remember",
+    "funSentence": "At the strip edge, a nervous baker treated **memory** as something remembered or the ability to remember before grabbing a red pacifier and heading for safety.",
+    "level": 26,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "message",
+    "pos": "n",
+    "shortDefinition": "information sent from one person to another",
+    "funSentence": "At the school roof, a drummer learned that **message** means information sent from one person to another when a tournament medal slipped away and the gym lights blinked on and off.",
+    "level": 26,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "laugh",
+    "pos": "v",
+    "shortDefinition": "to make sounds of amusement",
+    "funSentence": "A rescue cat chose to **laugh**, meaning to make sounds of amusement, while racing through the Springfield band room and protecting a strategy board.",
+    "level": 26,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "lead",
+    "pos": "v",
+    "shortDefinition": "to guide or go first",
+    "funSentence": "At the batting cage, an epee captain tried to **lead**—to guide or go first—as an alarm bell started ringing and a stack of macarons bounced across the floor.",
+    "level": 26,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "learn",
+    "pos": "v",
+    "shortDefinition": "to gain knowledge or skill",
+    "funSentence": "With zombies closing in at the Anfield touchline, Dr. Grant would **learn** if it meant to gain knowledge or skill and saving a ferry pass.",
+    "level": 26,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "natural",
+    "pos": "adj",
+    "shortDefinition": "found in nature; not made by people",
+    "funSentence": "Krusty looked **natural**—found in nature; not made by people—at the cake stand while holding a wet flipper and listening for zombies.",
+    "level": 26,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "neat",
+    "pos": "adj",
+    "shortDefinition": "clean and well organized",
+    "funSentence": "At Twin Peaks, everyone called Miguel **neat** because clean and well organized fit the moment and even a silver mask seemed impressed.",
+    "level": 26,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "nervous",
+    "pos": "adj",
+    "shortDefinition": "worried or uneasy",
+    "funSentence": "While crossing the blanket fort, Saka stayed **nervous**—worried or uneasy—as the old truck coughed back to life and a flashlight wobbled dangerously.",
+    "level": 26,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "quickly",
+    "pos": "adv",
+    "shortDefinition": "at high speed",
+    "funSentence": "A star baker handled an oversized comic book **quickly**—at high speed—while escaping near the warm-up line.",
+    "level": 26,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "method",
+    "pos": "n",
+    "shortDefinition": "a way of doing something",
+    "funSentence": "At the forest clearing, a runner learned that **method** means a way of doing something when bonsai clippers slipped away and the graveyard fog got thicker.",
+    "level": 27,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "middle",
+    "pos": "n",
+    "shortDefinition": "the center part of something",
+    "funSentence": "While zombies groaned near the arcade, a harbor seal remembered that **middle** is the center part of something just as a pair of muddy boots became the next clue.",
+    "level": 27,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "minute",
+    "pos": "n",
+    "shortDefinition": "a unit of time equal to sixty seconds",
+    "funSentence": "During a wild night at the old dojo office, a foil fencer saw that **minute** means a unit of time equal to sixty seconds after a piping bag showed up and the barricade started to shake.",
+    "level": 27,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "listen",
+    "pos": "v",
+    "shortDefinition": "to pay attention to sound",
+    "funSentence": "With zombies closing in at the Old Trafford tunnel, Ralph would **listen** if it meant to pay attention to sound and saving a board sticker.",
+    "level": 27,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "live",
+    "pos": "v",
+    "shortDefinition": "to be alive or stay somewhere",
+    "funSentence": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to **live**—to be alive or stay somewhere—before a fish bucket vanished.",
+    "level": 27,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "look",
+    "pos": "v",
+    "shortDefinition": "to use the eyes to see",
+    "funSentence": "Kreese chose to **look**, meaning to use the eyes to see, while racing through the Chinatown gate and protecting a score sheet.",
+    "level": 27,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "normal",
+    "pos": "adj",
+    "shortDefinition": "usual or expected",
+    "funSentence": "While crossing the icy ledge, Salah stayed **normal**—usual or expected—as the rooftop ladder slipped and a fake hall pass wobbled dangerously.",
+    "level": 27,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "patient",
+    "pos": "adj",
+    "shortDefinition": "able to wait calmly",
+    "funSentence": "With a blue grocery bag tucked under one arm, Alison Hammond seemed **patient** at the training hall, meaning able to wait calmly.",
+    "level": 27,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "peaceful",
+    "pos": "adj",
+    "shortDefinition": "calm and quiet",
+    "funSentence": "A vendor looked **peaceful**—calm and quiet—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies.",
+    "level": 27,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "quietly",
+    "pos": "adv",
+    "shortDefinition": "with little sound",
+    "funSentence": "At the Leftorium, a penguin chick answered **quietly**, meaning with little sound, before passing over a black-and-white scarf.",
+    "level": 27,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "mistake",
+    "pos": "n",
+    "shortDefinition": "something done incorrectly",
+    "funSentence": "During a wild night at the All Valley arena, a bout judge saw that **mistake** means something done incorrectly after a loaf tin showed up and the moon slid behind a cloud.",
+    "level": 28,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "moment",
+    "pos": "n",
+    "shortDefinition": "a very short period of time",
+    "funSentence": "At the St James' Park gate, Roz treated **moment** as a very short period of time before grabbing a sourdough loaf and heading for safety.",
+    "level": 28,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "mystery",
+    "pos": "n",
+    "shortDefinition": "something hard to explain or understand",
+    "funSentence": "At the bunting-lined counter, Mr. Burns learned that **mystery** means something hard to explain or understand when a tiny bell slipped away and the gym lights blinked on and off.",
+    "level": 28,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "love",
+    "pos": "v",
+    "shortDefinition": "to care deeply about",
+    "funSentence": "Chozen chose to **love**, meaning to care deeply about, while racing through Lombard Street and protecting a lame jacket.",
+    "level": 28,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "manage",
+    "pos": "v",
+    "shortDefinition": "to handle successfully",
+    "funSentence": "At the bookshelf, Haaland tried to **manage**—to handle successfully—as an alarm bell started ringing and the Guide bounced across the floor.",
+    "level": 28,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "measure",
+    "pos": "v",
+    "shortDefinition": "to find size, amount, or length",
+    "funSentence": "With zombies closing in at the practice piste, Noel Fielding would **measure** if it meant to find size, amount, or length and saving a pink donut box.",
+    "level": 28,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "playful",
+    "pos": "adj",
+    "shortDefinition": "full of fun and energy",
+    "funSentence": "A photographer looked **playful**—full of fun and energy—at the spaceship corridor while holding a cobra poster and listening for zombies.",
+    "level": 28,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "polite",
+    "pos": "adj",
+    "shortDefinition": "showing good manners",
+    "funSentence": "At the Kwik-E-Mart roof, everyone called a tuxedo cat **polite** because showing good manners fit the moment and even a blue water bottle seemed impressed.",
+    "level": 28,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "popular",
+    "pos": "adj",
+    "shortDefinition": "liked by many people",
+    "funSentence": "While crossing the school hallway, a parry expert stayed **popular**—liked by many people—as the old truck coughed back to life and a bright apron wobbled dangerously.",
+    "level": 28,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "really",
+    "pos": "adv",
+    "shortDefinition": "truly or very much",
+    "funSentence": "Arthur Dent handled a cable car ticket **really**—truly or very much—while escaping near the Etihad tunnel.",
+    "level": 28,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "nation",
+    "pos": "n",
+    "shortDefinition": "a country with its own government",
+    "funSentence": "At the chocolate table, Maggie learned that **nation** means a country with its own government when a ball of yarn slipped away and the graveyard fog got thicker.",
+    "level": 29,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "nature",
+    "pos": "n",
+    "shortDefinition": "the living world and outdoor environment",
+    "funSentence": "While zombies groaned near the Alcatraz dock, Demetri remembered that **nature** is the living world and outdoor environment just as a foil tip became the next clue.",
+    "level": 29,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "need",
+    "pos": "n",
+    "shortDefinition": "something required or necessary",
+    "funSentence": "During a wild night at the tide pool, Pep Guardiola saw that **need** means something required or necessary after a lunch pail showed up and the barricade started to shake.",
+    "level": 29,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "meet",
+    "pos": "v",
+    "shortDefinition": "to come together",
+    "funSentence": "With zombies closing in at the scoring table, Prue Leith would **meet** if it meant to come together and saving a saxophone case.",
+    "level": 29,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "miss",
+    "pos": "v",
+    "shortDefinition": "to fail to catch or be without",
+    "funSentence": "When the graveyard gate rattled by the fire hill, a ranger had to **miss**—to fail to catch or be without—before a wooden practice drum vanished.",
+    "level": 29,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "move",
+    "pos": "v",
+    "shortDefinition": "to change place or position",
+    "funSentence": "A tabby chose to **move**, meaning to change place or position, while racing through the Simpson kitchen and protecting goalkeeper gloves.",
+    "level": 29,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "positive",
+    "pos": "adj",
+    "shortDefinition": "hopeful or certain",
+    "funSentence": "While crossing the training deck, a left-handed fencer stayed **positive**—hopeful or certain—as the rooftop ladder slipped and a tray of scones wobbled dangerously.",
+    "level": 29,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "powerful",
+    "pos": "adj",
+    "shortDefinition": "having great strength or influence",
+    "funSentence": "With a foggy map tucked under one arm, a Wild Robot gosling seemed **powerful** at the Tottenham stadium steps, meaning having great strength or influence.",
+    "level": 29,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "proud",
+    "pos": "adj",
+    "shortDefinition": "pleased with something done well",
+    "funSentence": "Milhouse looked **proud**—pleased with something done well—at the judging table while holding a soft paw and listening for zombies.",
+    "level": 29,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "safely",
+    "pos": "adv",
+    "shortDefinition": "without danger",
+    "funSentence": "At Crissy Field, Hawk answered **safely**, meaning without danger, before passing over a stopwatch.",
+    "level": 29,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "neighbor",
+    "pos": "n",
+    "shortDefinition": "a person living nearby",
+    "funSentence": "During a wild night at the couch cushion, Alisson saw that **neighbor** means a person living nearby after a fossil brush showed up and the moon slid behind a cloud.",
+    "level": 30,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "noise",
+    "pos": "n",
+    "shortDefinition": "a sound, especially a loud unwanted one",
+    "funSentence": "At the lesson strip, Paul Hollywood treated **noise** as a sound, especially a loud unwanted one before grabbing a skateboard and heading for safety.",
+    "level": 30,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "notice",
+    "pos": "n",
+    "shortDefinition": "a sign or short written message",
+    "funSentence": "At the island cliff, a skater learned that **notice** means a sign or short written message when an open laptop slipped away and the gym lights blinked on and off.",
+    "level": 30,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "observe",
+    "pos": "v",
+    "shortDefinition": "to watch carefully",
+    "funSentence": "A sea lion chose to **observe**, meaning to watch carefully, while racing through the nuclear plant hallway and protecting a referee whistle.",
+    "level": 30,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "occur",
+    "pos": "v",
+    "shortDefinition": "to happen",
+    "funSentence": "At the Miyagi-Do yard, a coach tried to **occur**—to happen—as an alarm bell started ringing and a pastel cake stand bounced across the floor.",
+    "level": 30,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "open",
+    "pos": "v",
+    "shortDefinition": "to make not closed",
+    "funSentence": "With zombies closing in at the Stamford Bridge bench, Piggy would **open** if it meant to make not closed and saving a Victorian postcard.",
+    "level": 30,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "quick",
+    "pos": "adj",
+    "shortDefinition": "fast in action or thought",
+    "funSentence": "Marge looked **quick**—fast in action or thought—at the proving drawer station while holding a shiny shell and listening for zombies.",
+    "level": 30,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "quiet",
+    "pos": "adj",
+    "shortDefinition": "making little noise",
+    "funSentence": "At the Lands End trail, everyone called Tory **quiet** because making little noise fit the moment and even a tournament ribbon seemed impressed.",
+    "level": 30,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "ready",
+    "pos": "adj",
+    "shortDefinition": "prepared for action",
+    "funSentence": "While crossing the Pier 39 float, Isak stayed **ready**—prepared for action—as the old truck coughed back to life and a conch shell wobbled dangerously.",
+    "level": 30,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "seriously",
+    "pos": "adv",
+    "shortDefinition": "in an important or careful way",
+    "funSentence": "The showstopper champion handled a suspicious rake **seriously**—in an important or careful way—while escaping near the gym bleachers.",
+    "level": 30,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "number",
+    "pos": "n",
+    "shortDefinition": "a count or amount shown with digits",
+    "funSentence": "At the Farmer Boy wagon, a tourist guide learned that **number** means a count or amount shown with digits when blue hair spray slipped away and the graveyard fog got thicker.",
+    "level": 31,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "object",
+    "pos": "n",
+    "shortDefinition": "a thing that can be seen or touched",
+    "funSentence": "While zombies groaned near the theater stage, a seal remembered that **object** is a thing that can be seen or touched just as a corner flag became the next clue.",
+    "level": 31,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "ocean",
+    "pos": "n",
+    "shortDefinition": "the large saltwater covering most of Earth",
+    "funSentence": "During a wild night at the LaRusso Auto showroom, the team captain saw that **ocean** means the large saltwater covering most of Earth after a rolling pin showed up and the barricade started to shake.",
+    "level": 31,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "organize",
+    "pos": "v",
+    "shortDefinition": "to arrange neatly or plan",
+    "funSentence": "With zombies closing in at the sideline, Lex Murphy would **organize** if it meant to arrange neatly or plan and saving a red lantern.",
+    "level": 31,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "overcome",
+    "pos": "v",
+    "shortDefinition": "to succeed against a problem",
+    "funSentence": "When the graveyard gate rattled by the cooling rack, Homer had to **overcome**—to succeed against a problem—before a pebble vanished.",
+    "level": 31,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "participate",
+    "pos": "v",
+    "shortDefinition": "to take part",
+    "funSentence": "Daniel LaRusso chose to **participate**, meaning to take part, while racing through Dolores Park and protecting a weapon bag.",
+    "level": 31,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "real",
+    "pos": "adj",
+    "shortDefinition": "true; not imagined",
+    "funSentence": "While crossing the snow bank, Cole Palmer stayed **real**—true; not imagined—as the rooftop ladder slipped and a repair kit wobbled dangerously.",
+    "level": 31,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "reliable",
+    "pos": "adj",
+    "shortDefinition": "able to be trusted",
+    "funSentence": "With a cream pie tucked under one arm, the biscuit artist seemed **reliable** at the club locker, meaning able to be trusted.",
+    "level": 31,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "safe",
+    "pos": "adj",
+    "shortDefinition": "free from danger",
+    "funSentence": "A cable car conductor looked **safe**—free from danger—at the visitor center while holding a trophy-case key and listening for zombies.",
+    "level": 31,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "simply",
+    "pos": "adv",
+    "shortDefinition": "in an easy and plain way",
+    "funSentence": "At Moe's parking lot, a penguin answered **simply**, meaning in an easy and plain way, before passing over a captain's armband.",
+    "level": 31,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "offer",
+    "pos": "n",
+    "shortDefinition": "a chance or proposal to give something",
+    "funSentence": "During a wild night at the cafeteria, a beginner fencer saw that **offer** means a chance or proposal to give something after a wobbling meringue tower showed up and the moon slid behind a cloud.",
+    "level": 32,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "opinion",
+    "pos": "n",
+    "shortDefinition": "a belief or view that may differ",
+    "funSentence": "At the Emirates training ground, a Gordon Korman hero treated **opinion** as a belief or view that may differ before grabbing a windbreaker and heading for safety.",
+    "level": 32,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "order",
+    "pos": "n",
+    "shortDefinition": "the arrangement of things or a command",
+    "funSentence": "At the Bake Off tent, Lisa learned that **order** means the arrangement of things or a command when a glow-in-the-dark collar slipped away and the gym lights blinked on and off.",
+    "level": 32,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "pass",
+    "pos": "v",
+    "shortDefinition": "to move by or give to another",
+    "funSentence": "Johnny Lawrence chose to **pass**, meaning to move by or give to another, while racing through the Ferry Building and protecting a red card.",
+    "level": 32,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "perform",
+    "pos": "v",
+    "shortDefinition": "to do, present, or carry out",
+    "funSentence": "At the windowsill, Virgil van Dijk tried to **perform**—to do, present, or carry out—as an alarm bell started ringing and a blue towel bounced across the floor.",
+    "level": 32,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "play",
+    "pos": "v",
+    "shortDefinition": "to take part for fun or sport",
+    "funSentence": "With zombies closing in at the medal stand, the bread week winner would **play** if it meant to take part for fun or sport and saving a left-handed mug.",
+    "level": 32,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "serious",
+    "pos": "adj",
+    "shortDefinition": "thoughtful, important, or not joking",
+    "funSentence": "A hiker looked **serious**—thoughtful, important, or not joking—at the Heart of Gold while holding car keys and listening for zombies.",
+    "level": 32,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "sharp",
+    "pos": "adj",
+    "shortDefinition": "having a fine edge or quick mind",
+    "funSentence": "At the living room, everyone called a kitten **sharp** because having a fine edge or quick mind fit the moment and even a red scarf seemed impressed.",
+    "level": 32,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "shiny",
+    "pos": "adj",
+    "shortDefinition": "reflecting light",
+    "funSentence": "While crossing the Cobra Kai dojo, the referee stayed **shiny**—reflecting light—as the old truck coughed back to life and a biscuit dragon wobbled dangerously.",
+    "level": 32,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "slowly",
+    "pos": "adv",
+    "shortDefinition": "at low speed",
+    "funSentence": "Ford Prefect handled a market tote **slowly**—at low speed—while escaping near the penalty box.",
+    "level": 32,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "parent",
+    "pos": "n",
+    "shortDefinition": "a mother or father",
+    "funSentence": "At the prep bench, Bart learned that **parent** means a mother or father when a scratched bookmark slipped away and the graveyard fog got thicker.",
+    "level": 33,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "park",
+    "pos": "n",
+    "shortDefinition": "a public outdoor place for people to enjoy",
+    "funSentence": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that **park** is a public outdoor place for people to enjoy just as a white glove became the next clue.",
+    "level": 33,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "partner",
+    "pos": "n",
+    "shortDefinition": "a person who works or acts with another",
+    "funSentence": "During a wild night at the harbor rocks, Bruno Fernandes saw that **partner** means a person who works or acts with another after a feather bundle showed up and the barricade started to shake.",
+    "level": 33,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "prepare",
+    "pos": "v",
+    "shortDefinition": "to get ready",
+    "funSentence": "With zombies closing in at the finals piste, the pastry chef would **prepare** if it meant to get ready and saving a gold pen.",
+    "level": 33,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "protect",
+    "pos": "v",
+    "shortDefinition": "to keep safe from harm",
+    "funSentence": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to **protect**—to keep safe from harm—before a black headband vanished.",
+    "level": 33,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "prove",
+    "pos": "v",
+    "shortDefinition": "to show that something is true",
+    "funSentence": "A cat chose to **prove**, meaning to show that something is true, while racing through the TV studio and protecting a match ball.",
+    "level": 33,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "simple",
+    "pos": "adj",
+    "shortDefinition": "easy to understand or not fancy",
+    "funSentence": "While crossing his Reseda apartment, a sabre sprinter stayed **simple**—easy to understand or not fancy—as the rooftop ladder slipped and a showstopper loaf wobbled dangerously.",
+    "level": 33,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "skillful",
+    "pos": "adj",
+    "shortDefinition": "good at doing something",
+    "funSentence": "With a camera strap tucked under one arm, Almanzo seemed **skillful** at the goalmouth, meaning good at doing something.",
+    "level": 33,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "slow",
+    "pos": "adj",
+    "shortDefinition": "moving without speed",
+    "funSentence": "Sideshow Bob looked **slow**—moving without speed—at pastry week while holding a salty bark and listening for zombies.",
+    "level": 33,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "smoothly",
+    "pos": "adv",
+    "shortDefinition": "without problems or bumps",
+    "funSentence": "At Pier 39, Sam answered **smoothly**, meaning without problems or bumps, before passing over a scoring cord.",
+    "level": 33,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "party",
+    "pos": "n",
+    "shortDefinition": "a social gathering or group in a contest",
+    "funSentence": "During a wild night at the rooftop, Son saw that **party** means a social gathering or group in a contest after his cracked specs showed up and the moon slid behind a cloud.",
+    "level": 34,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "pattern",
+    "pos": "n",
+    "shortDefinition": "a repeated design or way things happen",
+    "funSentence": "At the strip edge, a nervous baker treated **pattern** as a repeated design or way things happen before grabbing a red pacifier and heading for safety.",
+    "level": 34,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "peace",
+    "pos": "n",
+    "shortDefinition": "a calm state without fighting",
+    "funSentence": "At the school roof, a drummer learned that **peace** means a calm state without fighting when a tournament medal slipped away and the gym lights blinked on and off.",
+    "level": 34,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "push",
+    "pos": "v",
+    "shortDefinition": "to press or move away",
+    "funSentence": "A rescue cat chose to **push**, meaning to press or move away, while racing through the Springfield band room and protecting a strategy board.",
+    "level": 34,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "reach",
+    "pos": "v",
+    "shortDefinition": "to get to or touch",
+    "funSentence": "At the batting cage, an epee captain tried to **reach**—to get to or touch—as an alarm bell started ringing and a stack of macarons bounced across the floor.",
+    "level": 34,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "read",
+    "pos": "v",
+    "shortDefinition": "to look at words and understand them",
+    "funSentence": "With zombies closing in at the Anfield touchline, Dr. Grant would **read** if it meant to look at words and understand them and saving a ferry pass.",
+    "level": 34,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "smart",
+    "pos": "adj",
+    "shortDefinition": "clever or neat in style",
+    "funSentence": "Krusty looked **smart**—clever or neat in style—at the cake stand while holding a wet flipper and listening for zombies.",
+    "level": 34,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "smooth",
+    "pos": "adj",
+    "shortDefinition": "even and without bumps",
+    "funSentence": "At Twin Peaks, everyone called Miguel **smooth** because even and without bumps fit the moment and even a silver mask seemed impressed.",
+    "level": 34,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "social",
+    "pos": "adj",
+    "shortDefinition": "relating well with other people",
+    "funSentence": "While crossing the blanket fort, Saka stayed **social**—relating well with other people—as the old truck coughed back to life and a flashlight wobbled dangerously.",
+    "level": 34,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "sometimes",
+    "pos": "adv",
+    "shortDefinition": "at certain times but not always",
+    "funSentence": "A star baker handled an oversized comic book **sometimes**—at certain times but not always—while escaping near the warm-up line.",
+    "level": 34,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "people",
+    "pos": "n",
+    "shortDefinition": "human beings in general",
+    "funSentence": "At the forest clearing, a runner learned that **people** means human beings in general when bonsai clippers slipped away and the graveyard fog got thicker.",
+    "level": 35,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "plan",
+    "pos": "n",
+    "shortDefinition": "a set of steps for doing something",
+    "funSentence": "While zombies groaned near the arcade, a harbor seal remembered that **plan** is a set of steps for doing something just as a pair of muddy boots became the next clue.",
+    "level": 35,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "player",
+    "pos": "n",
+    "shortDefinition": "a person who takes part in a game",
+    "funSentence": "During a wild night at the old dojo office, a foil fencer saw that **player** means a person who takes part in a game after a piping bag showed up and the barricade started to shake.",
+    "level": 35,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "realize",
+    "pos": "v",
+    "shortDefinition": "to understand clearly",
+    "funSentence": "With zombies closing in at the Old Trafford tunnel, Ralph would **realize** if it meant to understand clearly and saving a board sticker.",
+    "level": 35,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "receive",
+    "pos": "v",
+    "shortDefinition": "to get something given or sent",
+    "funSentence": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to **receive**—to get something given or sent—before a fish bucket vanished.",
+    "level": 35,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "reduce",
+    "pos": "v",
+    "shortDefinition": "to make smaller or less",
+    "funSentence": "Kreese chose to **reduce**, meaning to make smaller or less, while racing through the Chinatown gate and protecting a score sheet.",
+    "level": 35,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "special",
+    "pos": "adj",
+    "shortDefinition": "different in a meaningful way",
+    "funSentence": "While crossing the icy ledge, Salah stayed **special**—different in a meaningful way—as the rooftop ladder slipped and a fake hall pass wobbled dangerously.",
+    "level": 35,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "strong",
+    "pos": "adj",
+    "shortDefinition": "having power or firmness",
+    "funSentence": "With a blue grocery bag tucked under one arm, Alison Hammond seemed **strong** at the training hall, meaning having power or firmness.",
+    "level": 35,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "sudden",
+    "pos": "adj",
+    "shortDefinition": "happening quickly and unexpectedly",
+    "funSentence": "A vendor looked **sudden**—happening quickly and unexpectedly—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies.",
+    "level": 35,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "soon",
+    "pos": "adv",
+    "shortDefinition": "in a short time",
+    "funSentence": "At the Leftorium, a penguin chick answered **soon**, meaning in a short time, before passing over a black-and-white scarf.",
+    "level": 35,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "point",
+    "pos": "n",
+    "shortDefinition": "a sharp end, a main idea, or a score mark",
+    "funSentence": "During a wild night at the All Valley arena, a bout judge saw that **point** means a sharp end, a main idea, or a score mark after a loaf tin showed up and the moon slid behind a cloud.",
+    "level": 36,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "power",
+    "pos": "n",
+    "shortDefinition": "strength or control",
+    "funSentence": "At the St James' Park gate, Roz treated **power** as strength or control before grabbing a sourdough loaf and heading for safety.",
+    "level": 36,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "practice",
+    "pos": "n",
+    "shortDefinition": "repeated work to improve a skill",
+    "funSentence": "At the bunting-lined counter, Mr. Burns learned that **practice** means repeated work to improve a skill when a tiny bell slipped away and the gym lights blinked on and off.",
+    "level": 36,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "reflect",
+    "pos": "v",
+    "shortDefinition": "to think deeply or show an image back",
+    "funSentence": "Chozen chose to **reflect**, meaning to think deeply or show an image back, while racing through Lombard Street and protecting a lame jacket.",
+    "level": 36,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "relax",
+    "pos": "v",
+    "shortDefinition": "to become less tense",
+    "funSentence": "At the bookshelf, Haaland tried to **relax**—to become less tense—as an alarm bell started ringing and the Guide bounced across the floor.",
+    "level": 36,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "remember",
+    "pos": "v",
+    "shortDefinition": "to keep in mind or bring back to mind",
+    "funSentence": "With zombies closing in at the practice piste, Noel Fielding would **remember** if it meant to keep in mind or bring back to mind and saving a pink donut box.",
+    "level": 36,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "sunny",
+    "pos": "adj",
+    "shortDefinition": "full of sunlight or cheer",
+    "funSentence": "A photographer looked **sunny**—full of sunlight or cheer—at the spaceship corridor while holding a cobra poster and listening for zombies.",
+    "level": 36,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "sure",
+    "pos": "adj",
+    "shortDefinition": "certain",
+    "funSentence": "At the Kwik-E-Mart roof, everyone called a tuxedo cat **sure** because certain fit the moment and even a blue water bottle seemed impressed.",
+    "level": 36,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "surprised",
+    "pos": "adj",
+    "shortDefinition": "feeling unexpected wonder",
+    "funSentence": "While crossing the school hallway, a parry expert stayed **surprised**—feeling unexpected wonder—as the old truck coughed back to life and a bright apron wobbled dangerously.",
+    "level": 36,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "suddenly",
+    "pos": "adv",
+    "shortDefinition": "quickly and unexpectedly",
+    "funSentence": "Arthur Dent handled a cable car ticket **suddenly**—quickly and unexpectedly—while escaping near the Etihad tunnel.",
+    "level": 36,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "problem",
+    "pos": "n",
+    "shortDefinition": "a difficulty that needs a solution",
+    "funSentence": "At the chocolate table, Maggie learned that **problem** means a difficulty that needs a solution when a ball of yarn slipped away and the graveyard fog got thicker.",
+    "level": 37,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "progress",
+    "pos": "n",
+    "shortDefinition": "movement forward or improvement over time",
+    "funSentence": "While zombies groaned near the Alcatraz dock, Demetri remembered that **progress** is movement forward or improvement over time just as a foil tip became the next clue.",
+    "level": 37,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "project",
+    "pos": "n",
+    "shortDefinition": "a planned piece of work",
+    "funSentence": "During a wild night at the tide pool, Pep Guardiola saw that **project** means a planned piece of work after a lunch pail showed up and the barricade started to shake.",
+    "level": 37,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "repeat",
+    "pos": "v",
+    "shortDefinition": "to say or do again",
+    "funSentence": "With zombies closing in at the scoring table, Prue Leith would **repeat** if it meant to say or do again and saving a saxophone case.",
+    "level": 37,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "reply",
+    "pos": "v",
+    "shortDefinition": "to answer with words",
+    "funSentence": "When the graveyard gate rattled by the fire hill, a ranger had to **reply**—to answer with words—before a wooden practice drum vanished.",
+    "level": 37,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "report",
+    "pos": "v",
+    "shortDefinition": "to tell information in an organized way",
+    "funSentence": "A tabby chose to **report**, meaning to tell information in an organized way, while racing through the Simpson kitchen and protecting goalkeeper gloves.",
+    "level": 37,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "sweet",
+    "pos": "adj",
+    "shortDefinition": "tasting like sugar or being very kind",
+    "funSentence": "While crossing the training deck, a left-handed fencer stayed **sweet**—tasting like sugar or being very kind—as the rooftop ladder slipped and a tray of scones wobbled dangerously.",
+    "level": 37,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "talented",
+    "pos": "adj",
+    "shortDefinition": "having a natural skill",
+    "funSentence": "With a foggy map tucked under one arm, a Wild Robot gosling seemed **talented** at the Tottenham stadium steps, meaning having a natural skill.",
+    "level": 37,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "thankful",
+    "pos": "adj",
+    "shortDefinition": "feeling grateful",
+    "funSentence": "Milhouse looked **thankful**—feeling grateful—at the judging table while holding a soft paw and listening for zombies.",
+    "level": 37,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "surely",
+    "pos": "adv",
+    "shortDefinition": "certainly",
+    "funSentence": "At Crissy Field, Hawk answered **surely**, meaning certainly, before passing over a stopwatch.",
+    "level": 37,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "purpose",
+    "pos": "n",
+    "shortDefinition": "the reason something is done",
+    "funSentence": "During a wild night at the couch cushion, Alisson saw that **purpose** means the reason something is done after a fossil brush showed up and the moon slid behind a cloud.",
+    "level": 38,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "question",
+    "pos": "n",
+    "shortDefinition": "words used to ask for information",
+    "funSentence": "At the lesson strip, Paul Hollywood treated **question** as words used to ask for information before grabbing a skateboard and heading for safety.",
+    "level": 38,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "reason",
+    "pos": "n",
+    "shortDefinition": "a cause or explanation",
+    "funSentence": "At the island cliff, a skater learned that **reason** means a cause or explanation when an open laptop slipped away and the gym lights blinked on and off.",
+    "level": 38,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "rescue",
+    "pos": "v",
+    "shortDefinition": "to save from danger",
+    "funSentence": "A sea lion chose to **rescue**, meaning to save from danger, while racing through the nuclear plant hallway and protecting a referee whistle.",
+    "level": 38,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "respect",
+    "pos": "v",
+    "shortDefinition": "to treat with honor and care",
+    "funSentence": "At the Miyagi-Do yard, a coach tried to **respect**—to treat with honor and care—as an alarm bell started ringing and a pastel cake stand bounced across the floor.",
+    "level": 38,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "rest",
+    "pos": "v",
+    "shortDefinition": "to relax or stop working",
+    "funSentence": "With zombies closing in at the Stamford Bridge bench, Piggy would **rest** if it meant to relax or stop working and saving a Victorian postcard.",
+    "level": 38,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "thoughtful",
+    "pos": "adj",
+    "shortDefinition": "showing careful thinking or kindness",
+    "funSentence": "Marge looked **thoughtful**—showing careful thinking or kindness—at the proving drawer station while holding a shiny shell and listening for zombies.",
+    "level": 38,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "tidy",
+    "pos": "adj",
+    "shortDefinition": "clean and in order",
+    "funSentence": "At the Lands End trail, everyone called Tory **tidy** because clean and in order fit the moment and even a tournament ribbon seemed impressed.",
+    "level": 38,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "tiny",
+    "pos": "adj",
+    "shortDefinition": "very small",
+    "funSentence": "While crossing the Pier 39 float, Isak stayed **tiny**—very small—as the old truck coughed back to life and a conch shell wobbled dangerously.",
+    "level": 38,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "thoughtfully",
+    "pos": "adv",
+    "shortDefinition": "in a careful or kind way",
+    "funSentence": "The showstopper champion handled a suspicious rake **thoughtfully**—in a careful or kind way—while escaping near the gym bleachers.",
+    "level": 38,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "record",
+    "pos": "n",
+    "shortDefinition": "stored information or the best result so far",
+    "funSentence": "At the Farmer Boy wagon, a tourist guide learned that **record** means stored information or the best result so far when blue hair spray slipped away and the graveyard fog got thicker.",
+    "level": 39,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "relationship",
+    "pos": "n",
+    "shortDefinition": "the way people or things are connected",
+    "funSentence": "While zombies groaned near the theater stage, a seal remembered that **relationship** is the way people or things are connected just as a corner flag became the next clue.",
+    "level": 39,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "resource",
+    "pos": "n",
+    "shortDefinition": "something useful that can help",
+    "funSentence": "During a wild night at the LaRusso Auto showroom, the team captain saw that **resource** means something useful that can help after a rolling pin showed up and the barricade started to shake.",
+    "level": 39,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "return",
+    "pos": "v",
+    "shortDefinition": "to go back",
+    "funSentence": "With zombies closing in at the sideline, Lex Murphy would **return** if it meant to go back and saving a red lantern.",
+    "level": 39,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "review",
+    "pos": "v",
+    "shortDefinition": "to look over again",
+    "funSentence": "When the graveyard gate rattled by the cooling rack, Homer had to **review**—to look over again—before a pebble vanished.",
+    "level": 39,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "rise",
+    "pos": "v",
+    "shortDefinition": "to move upward",
+    "funSentence": "Daniel LaRusso chose to **rise**, meaning to move upward, while racing through Dolores Park and protecting a weapon bag.",
+    "level": 39,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "tough",
+    "pos": "adj",
+    "shortDefinition": "strong and hard to break or defeat",
+    "funSentence": "While crossing the snow bank, Cole Palmer stayed **tough**—strong and hard to break or defeat—as the rooftop ladder slipped and a repair kit wobbled dangerously.",
+    "level": 39,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "true",
+    "pos": "adj",
+    "shortDefinition": "correct and honest",
+    "funSentence": "With a cream pie tucked under one arm, the biscuit artist seemed **true** at the club locker, meaning correct and honest.",
+    "level": 39,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "unusual",
+    "pos": "adj",
+    "shortDefinition": "not common",
+    "funSentence": "A cable car conductor looked **unusual**—not common—at the visitor center while holding a trophy-case key and listening for zombies.",
+    "level": 39,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "together",
+    "pos": "adv",
+    "shortDefinition": "with each other",
+    "funSentence": "At Moe's parking lot, a penguin answered **together**, meaning with each other, before passing over a captain's armband.",
+    "level": 39,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "result",
+    "pos": "n",
+    "shortDefinition": "the final effect or outcome",
+    "funSentence": "During a wild night at the cafeteria, a beginner fencer saw that **result** means the final effect or outcome after a wobbling meringue tower showed up and the moon slid behind a cloud.",
+    "level": 40,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "river",
+    "pos": "n",
+    "shortDefinition": "a large stream of flowing water",
+    "funSentence": "At the Emirates training ground, a Gordon Korman hero treated **river** as a large stream of flowing water before grabbing a windbreaker and heading for safety.",
+    "level": 40,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "rule",
+    "pos": "n",
+    "shortDefinition": "an official direction about what is allowed",
+    "funSentence": "At the Bake Off tent, Lisa learned that **rule** means an official direction about what is allowed when a glow-in-the-dark collar slipped away and the gym lights blinked on and off.",
+    "level": 40,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "save",
+    "pos": "v",
+    "shortDefinition": "to keep, protect, or rescue",
+    "funSentence": "Johnny Lawrence chose to **save**, meaning to keep, protect, or rescue, while racing through the Ferry Building and protecting a red card.",
+    "level": 40,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "search",
+    "pos": "v",
+    "shortDefinition": "to look carefully for",
+    "funSentence": "At the windowsill, Virgil van Dijk tried to **search**—to look carefully for—as an alarm bell started ringing and a blue towel bounced across the floor.",
+    "level": 40,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "seem",
+    "pos": "v",
+    "shortDefinition": "to appear to be",
+    "funSentence": "With zombies closing in at the medal stand, the bread week winner would **seem** if it meant to appear to be and saving a left-handed mug.",
+    "level": 40,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "valuable",
+    "pos": "adj",
+    "shortDefinition": "worth a lot or very useful",
+    "funSentence": "A hiker looked **valuable**—worth a lot or very useful—at the Heart of Gold while holding car keys and listening for zombies.",
+    "level": 40,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "warm",
+    "pos": "adj",
+    "shortDefinition": "giving comfortable heat",
+    "funSentence": "At the living room, everyone called a kitten **warm** because giving comfortable heat fit the moment and even a red scarf seemed impressed.",
+    "level": 40,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "weak",
+    "pos": "adj",
+    "shortDefinition": "lacking strength",
+    "funSentence": "While crossing the Cobra Kai dojo, the referee stayed **weak**—lacking strength—as the old truck coughed back to life and a biscuit dragon wobbled dangerously.",
+    "level": 40,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "truly",
+    "pos": "adv",
+    "shortDefinition": "honestly or really",
+    "funSentence": "Ford Prefect handled a market tote **truly**—honestly or really—while escaping near the penalty box.",
+    "level": 40,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "safety",
+    "pos": "n",
+    "shortDefinition": "freedom from danger or harm",
+    "funSentence": "At the prep bench, Bart learned that **safety** means freedom from danger or harm when a scratched bookmark slipped away and the graveyard fog got thicker.",
+    "level": 41,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "school",
+    "pos": "n",
+    "shortDefinition": "a place where people learn",
+    "funSentence": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that **school** is a place where people learn just as a white glove became the next clue.",
+    "level": 41,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "season",
+    "pos": "n",
+    "shortDefinition": "one of the four parts of the year",
+    "funSentence": "During a wild night at the harbor rocks, Bruno Fernandes saw that **season** means one of the four parts of the year after a feather bundle showed up and the barricade started to shake.",
+    "level": 41,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "select",
+    "pos": "v",
+    "shortDefinition": "to choose carefully",
+    "funSentence": "With zombies closing in at the finals piste, the pastry chef would **select** if it meant to choose carefully and saving a gold pen.",
+    "level": 41,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "share",
+    "pos": "v",
+    "shortDefinition": "to use or give jointly",
+    "funSentence": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to **share**—to use or give jointly—before a black headband vanished.",
+    "level": 41,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "shine",
+    "pos": "v",
+    "shortDefinition": "to give off light or brightness",
+    "funSentence": "A cat chose to **shine**, meaning to give off light or brightness, while racing through the TV studio and protecting a match ball.",
+    "level": 41,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "show",
+    "pos": "v",
+    "shortDefinition": "to let be seen",
+    "funSentence": "At his Reseda apartment, a sabre sprinter tried to **show**—to let be seen—as the rooftop ladder slipped and a showstopper loaf bounced across the floor.",
+    "level": 41,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "wild",
+    "pos": "adj",
+    "shortDefinition": "living freely or hard to control",
+    "funSentence": "With a camera strap tucked under one arm, Almanzo seemed **wild** at the goalmouth, meaning living freely or hard to control.",
+    "level": 41,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "willing",
+    "pos": "adj",
+    "shortDefinition": "ready to do something",
+    "funSentence": "Sideshow Bob looked **willing**—ready to do something—at pastry week while holding a salty bark and listening for zombies.",
+    "level": 41,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "usually",
+    "pos": "adv",
+    "shortDefinition": "most of the time",
+    "funSentence": "At Pier 39, Sam answered **usually**, meaning most of the time, before passing over a scoring cord.",
+    "level": 41,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "secret",
+    "pos": "n",
+    "shortDefinition": "something kept hidden",
+    "funSentence": "During a wild night at the rooftop, Son saw that **secret** means something kept hidden after his cracked specs showed up and the moon slid behind a cloud.",
+    "level": 42,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "sense",
+    "pos": "n",
+    "shortDefinition": "good judgment or one of the body's ways of noticing",
+    "funSentence": "At the strip edge, a nervous baker treated **sense** as good judgment or one of the body's ways of noticing before grabbing a red pacifier and heading for safety.",
+    "level": 42,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "shape",
+    "pos": "n",
+    "shortDefinition": "the form of something",
+    "funSentence": "At the school roof, a drummer learned that **shape** means the form of something when a tournament medal slipped away and the gym lights blinked on and off.",
+    "level": 42,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "solve",
+    "pos": "v",
+    "shortDefinition": "to find an answer",
+    "funSentence": "A rescue cat chose to **solve**, meaning to find an answer, while racing through the Springfield band room and protecting a strategy board.",
+    "level": 42,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "speak",
+    "pos": "v",
+    "shortDefinition": "to say words",
+    "funSentence": "At the batting cage, an epee captain tried to **speak**—to say words—as an alarm bell started ringing and a stack of macarons bounced across the floor.",
+    "level": 42,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "spend",
+    "pos": "v",
+    "shortDefinition": "to use time or money",
+    "funSentence": "With zombies closing in at the Anfield touchline, Dr. Grant would **spend** if it meant to use time or money and saving a ferry pass.",
+    "level": 42,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "stand",
+    "pos": "v",
+    "shortDefinition": "to be upright on feet",
+    "funSentence": "When the graveyard gate rattled by the cake stand, Krusty had to **stand**—to be upright on feet—before a wet flipper vanished.",
+    "level": 42,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "wise",
+    "pos": "adj",
+    "shortDefinition": "showing good judgment",
+    "funSentence": "At Twin Peaks, everyone called Miguel **wise** because showing good judgment fit the moment and even a silver mask seemed impressed.",
+    "level": 42,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "wonderful",
+    "pos": "adj",
+    "shortDefinition": "extremely good",
+    "funSentence": "While crossing the blanket fort, Saka stayed **wonderful**—extremely good—as the old truck coughed back to life and a flashlight wobbled dangerously.",
+    "level": 42,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "warmly",
+    "pos": "adv",
+    "shortDefinition": "in a friendly or warm way",
+    "funSentence": "A star baker handled an oversized comic book **warmly**—in a friendly or warm way—while escaping near the warm-up line.",
+    "level": 42,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "shelter",
+    "pos": "n",
+    "shortDefinition": "a place that protects from danger or weather",
+    "funSentence": "At the forest clearing, a runner learned that **shelter** means a place that protects from danger or weather when bonsai clippers slipped away and the graveyard fog got thicker.",
+    "level": 43,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "sign",
+    "pos": "n",
+    "shortDefinition": "a mark or object that gives information",
+    "funSentence": "While zombies groaned near the arcade, a harbor seal remembered that **sign** is a mark or object that gives information just as a pair of muddy boots became the next clue.",
+    "level": 43,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "skill",
+    "pos": "n",
+    "shortDefinition": "the ability to do something well",
+    "funSentence": "During a wild night at the old dojo office, a foil fencer saw that **skill** means the ability to do something well after a piping bag showed up and the barricade started to shake.",
+    "level": 43,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "start",
+    "pos": "v",
+    "shortDefinition": "to begin",
+    "funSentence": "With zombies closing in at the Old Trafford tunnel, Ralph would **start** if it meant to begin and saving a board sticker.",
+    "level": 43,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "stay",
+    "pos": "v",
+    "shortDefinition": "to remain in one place or condition",
+    "funSentence": "When the graveyard gate rattled by the gingham altar, Ned Flanders had to **stay**—to remain in one place or condition—before a fish bucket vanished.",
+    "level": 43,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "study",
+    "pos": "v",
+    "shortDefinition": "to learn with focused effort",
+    "funSentence": "Kreese chose to **study**, meaning to learn with focused effort, while racing through the Chinatown gate and protecting a score sheet.",
+    "level": 43,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "succeed",
+    "pos": "v",
+    "shortDefinition": "to do what you set out to do",
+    "funSentence": "At the icy ledge, Salah tried to **succeed**—to do what you set out to do—as the rooftop ladder slipped and a fake hall pass bounced across the floor.",
+    "level": 43,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "young",
+    "pos": "adj",
+    "shortDefinition": "not old",
+    "funSentence": "With a blue grocery bag tucked under one arm, Alison Hammond seemed **young** at the training hall, meaning not old.",
+    "level": 43,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "adorable",
+    "pos": "adj",
+    "shortDefinition": "very cute and lovable",
+    "funSentence": "A vendor looked **adorable**—very cute and lovable—at the beach from Lord of the Flies while holding red sparring gloves and listening for zombies.",
+    "level": 43,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "widely",
+    "pos": "adv",
+    "shortDefinition": "over a large area or by many people",
+    "funSentence": "At the Leftorium, a penguin chick answered **widely**, meaning over a large area or by many people, before passing over a black-and-white scarf.",
+    "level": 43,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "solution",
+    "pos": "n",
+    "shortDefinition": "an answer to a problem",
+    "funSentence": "During a wild night at the All Valley arena, a bout judge saw that **solution** means an answer to a problem after a loaf tin showed up and the moon slid behind a cloud.",
+    "level": 44,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "spirit",
+    "pos": "n",
+    "shortDefinition": "energy, attitude, or the nonphysical part of a person",
+    "funSentence": "At the St James' Park gate, Roz treated **spirit** as energy, attitude, or the nonphysical part of a person before grabbing a sourdough loaf and heading for safety.",
+    "level": 44,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "sport",
+    "pos": "n",
+    "shortDefinition": "a physical game or activity",
+    "funSentence": "At the bunting-lined counter, Mr. Burns learned that **sport** means a physical game or activity when a tiny bell slipped away and the gym lights blinked on and off.",
+    "level": 44,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "suggest",
+    "pos": "v",
+    "shortDefinition": "to offer an idea",
+    "funSentence": "Chozen chose to **suggest**, meaning to offer an idea, while racing through Lombard Street and protecting a lame jacket.",
+    "level": 44,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "support",
+    "pos": "v",
+    "shortDefinition": "to hold up or help",
+    "funSentence": "At the bookshelf, Haaland tried to **support**—to hold up or help—as an alarm bell started ringing and the Guide bounced across the floor.",
+    "level": 44,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "swim",
+    "pos": "v",
+    "shortDefinition": "to move through water",
+    "funSentence": "With zombies closing in at the practice piste, Noel Fielding would **swim** if it meant to move through water and saving a pink donut box.",
+    "level": 44,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "teach",
+    "pos": "v",
+    "shortDefinition": "to help someone learn",
+    "funSentence": "When the graveyard gate rattled by the spaceship corridor, a photographer had to **teach**—to help someone learn—before a cobra poster vanished.",
+    "level": 44,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "alert",
+    "pos": "adj",
+    "shortDefinition": "quick to notice things",
+    "funSentence": "At the Kwik-E-Mart roof, everyone called a tuxedo cat **alert** because quick to notice things fit the moment and even a blue water bottle seemed impressed.",
+    "level": 44,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "alive",
+    "pos": "adj",
+    "shortDefinition": "living; not dead",
+    "funSentence": "While crossing the school hallway, a parry expert stayed **alive**—living; not dead—as the old truck coughed back to life and a bright apron wobbled dangerously.",
+    "level": 44,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "wisely",
+    "pos": "adv",
+    "shortDefinition": "with good judgment",
+    "funSentence": "Arthur Dent handled a cable car ticket **wisely**—with good judgment—while escaping near the Etihad tunnel.",
+    "level": 44,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "star",
+    "pos": "n",
+    "shortDefinition": "a giant ball of burning gas or a famous person",
+    "funSentence": "At the chocolate table, Maggie learned that **star** means a giant ball of burning gas or a famous person when a ball of yarn slipped away and the graveyard fog got thicker.",
+    "level": 45,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "story",
+    "pos": "n",
+    "shortDefinition": "a tale about events or people",
+    "funSentence": "While zombies groaned near the Alcatraz dock, Demetri remembered that **story** is a tale about events or people just as a foil tip became the next clue.",
+    "level": 45,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "strength",
+    "pos": "n",
+    "shortDefinition": "the power to stay strong or keep going",
+    "funSentence": "During a wild night at the tide pool, Pep Guardiola saw that **strength** means the power to stay strong or keep going after a lunch pail showed up and the barricade started to shake.",
+    "level": 45,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "thank",
+    "pos": "v",
+    "shortDefinition": "to tell someone you are grateful",
+    "funSentence": "With zombies closing in at the scoring table, Prue Leith would **thank** if it meant to tell someone you are grateful and saving a saxophone case.",
+    "level": 45,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "think",
+    "pos": "v",
+    "shortDefinition": "to use the mind",
+    "funSentence": "When the graveyard gate rattled by the fire hill, a ranger had to **think**—to use the mind—before a wooden practice drum vanished.",
+    "level": 45,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "travel",
+    "pos": "v",
+    "shortDefinition": "to go from place to place",
+    "funSentence": "A tabby chose to **travel**, meaning to go from place to place, while racing through the Simpson kitchen and protecting goalkeeper gloves.",
+    "level": 45,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "trust",
+    "pos": "v",
+    "shortDefinition": "to believe someone is honest or safe",
+    "funSentence": "At the training deck, a left-handed fencer tried to **trust**—to believe someone is honest or safe—as the rooftop ladder slipped and a tray of scones bounced across the floor.",
+    "level": 45,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "bold",
+    "pos": "adj",
+    "shortDefinition": "brave and confident",
+    "funSentence": "With a foggy map tucked under one arm, a Wild Robot gosling seemed **bold** at the Tottenham stadium steps, meaning brave and confident.",
+    "level": 45,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "bumpy",
+    "pos": "adj",
+    "shortDefinition": "not smooth; full of bumps",
+    "funSentence": "Milhouse looked **bumpy**—not smooth; full of bumps—at the judging table while holding a soft paw and listening for zombies.",
+    "level": 45,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "actually",
+    "pos": "adv",
+    "shortDefinition": "in fact",
+    "funSentence": "At Crissy Field, Hawk answered **actually**, meaning in fact, before passing over a stopwatch.",
+    "level": 45,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "style",
+    "pos": "n",
+    "shortDefinition": "a special way something is done or looks",
+    "funSentence": "During a wild night at the couch cushion, Alisson saw that **style** means a special way something is done or looks after a fossil brush showed up and the moon slid behind a cloud.",
+    "level": 46,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "success",
+    "pos": "n",
+    "shortDefinition": "the achievement of a goal",
+    "funSentence": "At the lesson strip, Paul Hollywood treated **success** as the achievement of a goal before grabbing a skateboard and heading for safety.",
+    "level": 46,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "surprise",
+    "pos": "n",
+    "shortDefinition": "something unexpected",
+    "funSentence": "At the island cliff, a skater learned that **surprise** means something unexpected when an open laptop slipped away and the gym lights blinked on and off.",
+    "level": 46,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "try",
+    "pos": "v",
+    "shortDefinition": "to make an effort",
+    "funSentence": "A sea lion chose to **try**, meaning to make an effort, while racing through the nuclear plant hallway and protecting a referee whistle.",
+    "level": 46,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "understand",
+    "pos": "v",
+    "shortDefinition": "to know what something means",
+    "funSentence": "At the Miyagi-Do yard, a coach tried to **understand**—to know what something means—as an alarm bell started ringing and a pastel cake stand bounced across the floor.",
+    "level": 46,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "unite",
+    "pos": "v",
+    "shortDefinition": "to join together",
+    "funSentence": "With zombies closing in at the Stamford Bridge bench, Piggy would **unite** if it meant to join together and saving a Victorian postcard.",
+    "level": 46,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "use",
+    "pos": "v",
+    "shortDefinition": "to put into action",
+    "funSentence": "When the graveyard gate rattled by the proving drawer station, Marge had to **use**—to put into action—before a shiny shell vanished.",
+    "level": 46,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "chilly",
+    "pos": "adj",
+    "shortDefinition": "slightly cold",
+    "funSentence": "At the Lands End trail, everyone called Tory **chilly** because slightly cold fit the moment and even a tournament ribbon seemed impressed.",
+    "level": 46,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "creative",
+    "pos": "adj",
+    "shortDefinition": "able to make new ideas",
+    "funSentence": "While crossing the Pier 39 float, Isak stayed **creative**—able to make new ideas—as the old truck coughed back to life and a conch shell wobbled dangerously.",
+    "level": 46,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "already",
+    "pos": "adv",
+    "shortDefinition": "before now or earlier than expected",
+    "funSentence": "The showstopper champion handled a suspicious rake **already**—before now or earlier than expected—while escaping near the gym bleachers.",
+    "level": 46,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "task",
+    "pos": "n",
+    "shortDefinition": "a piece of work to finish",
+    "funSentence": "At the Farmer Boy wagon, a tourist guide learned that **task** means a piece of work to finish when blue hair spray slipped away and the graveyard fog got thicker.",
+    "level": 47,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "team",
+    "pos": "n",
+    "shortDefinition": "a group working together",
+    "funSentence": "While zombies groaned near the theater stage, a seal remembered that **team** is a group working together just as a corner flag became the next clue.",
+    "level": 47,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "temperature",
+    "pos": "n",
+    "shortDefinition": "a measure of how hot or cold something is",
+    "funSentence": "During a wild night at the LaRusso Auto showroom, the team captain saw that **temperature** means a measure of how hot or cold something is after a rolling pin showed up and the barricade started to shake.",
+    "level": 47,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "visit",
+    "pos": "v",
+    "shortDefinition": "to go see a place or person",
+    "funSentence": "With zombies closing in at the sideline, Lex Murphy would **visit** if it meant to go see a place or person and saving a red lantern.",
+    "level": 47,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "wait",
+    "pos": "v",
+    "shortDefinition": "to stay until something happens",
+    "funSentence": "When the graveyard gate rattled by the cooling rack, Homer had to **wait**—to stay until something happens—before a pebble vanished.",
+    "level": 47,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "walk",
+    "pos": "v",
+    "shortDefinition": "to move on foot",
+    "funSentence": "Daniel LaRusso chose to **walk**, meaning to move on foot, while racing through Dolores Park and protecting a weapon bag.",
+    "level": 47,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "want",
+    "pos": "v",
+    "shortDefinition": "to wish for or desire",
+    "funSentence": "At the snow bank, Cole Palmer tried to **want**—to wish for or desire—as the rooftop ladder slipped and a repair kit bounced across the floor.",
+    "level": 47,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "dusty",
+    "pos": "adj",
+    "shortDefinition": "covered with dust",
+    "funSentence": "With a cream pie tucked under one arm, the biscuit artist seemed **dusty** at the club locker, meaning covered with dust.",
+    "level": 47,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "empty",
+    "pos": "adj",
+    "shortDefinition": "containing nothing",
+    "funSentence": "A cable car conductor looked **empty**—containing nothing—at the visitor center while holding a trophy-case key and listening for zombies.",
+    "level": 47,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "fully",
+    "pos": "adv",
+    "shortDefinition": "completely",
+    "funSentence": "At Moe's parking lot, a penguin answered **fully**, meaning completely, before passing over a captain's armband.",
+    "level": 47,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "theater",
+    "pos": "n",
+    "shortDefinition": "a place for plays or movies",
+    "funSentence": "During a wild night at the cafeteria, a beginner fencer saw that **theater** means a place for plays or movies after a wobbling meringue tower showed up and the moon slid behind a cloud.",
+    "level": 48,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "thought",
+    "pos": "n",
+    "shortDefinition": "an idea formed in the mind",
+    "funSentence": "At the Emirates training ground, a Gordon Korman hero treated **thought** as an idea formed in the mind before grabbing a windbreaker and heading for safety.",
+    "level": 48,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "time",
+    "pos": "n",
+    "shortDefinition": "the ongoing flow of moments",
+    "funSentence": "At the Bake Off tent, Lisa learned that **time** means the ongoing flow of moments when a glow-in-the-dark collar slipped away and the gym lights blinked on and off.",
+    "level": 48,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "watch",
+    "pos": "v",
+    "shortDefinition": "to look at for a time",
+    "funSentence": "Johnny Lawrence chose to **watch**, meaning to look at for a time, while racing through the Ferry Building and protecting a red card.",
+    "level": 48,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "win",
+    "pos": "v",
+    "shortDefinition": "to come out first or succeed",
+    "funSentence": "At the windowsill, Virgil van Dijk tried to **win**—to come out first or succeed—as an alarm bell started ringing and a blue towel bounced across the floor.",
+    "level": 48,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "wonder",
+    "pos": "v",
+    "shortDefinition": "to think about with curiosity",
+    "funSentence": "With zombies closing in at the medal stand, the bread week winner would **wonder** if it meant to think about with curiosity and saving a left-handed mug.",
+    "level": 48,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "work",
+    "pos": "v",
+    "shortDefinition": "to do a job or effort",
+    "funSentence": "When the graveyard gate rattled by the Heart of Gold, a hiker had to **work**—to do a job or effort—before car keys vanished.",
+    "level": 48,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "fancy",
+    "pos": "adj",
+    "shortDefinition": "special, decorative, or expensive-looking",
+    "funSentence": "At the living room, everyone called a kitten **fancy** because special, decorative, or expensive-looking fit the moment and even a red scarf seemed impressed.",
+    "level": 48,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "fresh",
+    "pos": "adj",
+    "shortDefinition": "new, clean, or just made",
+    "funSentence": "While crossing the Cobra Kai dojo, the referee stayed **fresh**—new, clean, or just made—as the old truck coughed back to life and a biscuit dragon wobbled dangerously.",
+    "level": 48,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "likely",
+    "pos": "adv",
+    "shortDefinition": "probably",
+    "funSentence": "Ford Prefect handled a market tote **likely**—probably—while escaping near the penalty box.",
+    "level": 48,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "tool",
+    "pos": "n",
+    "shortDefinition": "an object used to do a job",
+    "funSentence": "At the prep bench, Bart learned that **tool** means an object used to do a job when a scratched bookmark slipped away and the graveyard fog got thicker.",
+    "level": 49,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "tradition",
+    "pos": "n",
+    "shortDefinition": "a custom followed over time",
+    "funSentence": "While zombies groaned near the Painted Ladies sidewalk, Robby remembered that **tradition** is a custom followed over time just as a white glove became the next clue.",
+    "level": 49,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "trouble",
+    "pos": "n",
+    "shortDefinition": "difficulty or problems",
+    "funSentence": "During a wild night at the harbor rocks, Bruno Fernandes saw that **trouble** means difficulty or problems after a feather bundle showed up and the barricade started to shake.",
+    "level": 49,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "worry",
+    "pos": "v",
+    "shortDefinition": "to feel uneasy about",
+    "funSentence": "With zombies closing in at the finals piste, the pastry chef would **worry** if it meant to feel uneasy about and saving a gold pen.",
+    "level": 49,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "write",
+    "pos": "v",
+    "shortDefinition": "to put words on a page or screen",
+    "funSentence": "When the graveyard gate rattled by the Jurassic Park jeep, a neighbor had to **write**—to put words on a page or screen—before a black headband vanished.",
+    "level": 49,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "whisper",
+    "pos": "v",
+    "shortDefinition": "to speak very softly",
+    "funSentence": "A cat chose to **whisper**, meaning to speak very softly, while racing through the TV studio and protecting a match ball.",
+    "level": 49,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "yell",
+    "pos": "v",
+    "shortDefinition": "to shout loudly",
+    "funSentence": "At his Reseda apartment, a sabre sprinter tried to **yell**—to shout loudly—as the rooftop ladder slipped and a showstopper loaf bounced across the floor.",
+    "level": 49,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "gigantic",
+    "pos": "adj",
+    "shortDefinition": "extremely large",
+    "funSentence": "With a camera strap tucked under one arm, Almanzo seemed **gigantic** at the goalmouth, meaning extremely large.",
+    "level": 49,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "humble",
+    "pos": "adj",
+    "shortDefinition": "modest and not bragging",
+    "funSentence": "Sideshow Bob looked **humble**—modest and not bragging—at pastry week while holding a salty bark and listening for zombies.",
+    "level": 49,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "softly",
+    "pos": "adv",
+    "shortDefinition": "in a quiet or gentle way",
+    "funSentence": "At Pier 39, Sam answered **softly**, meaning in a quiet or gentle way, before passing over a scoring cord.",
+    "level": 49,
+    "levelPosition": 10,
+    "tier": 0
+  },
+  {
+    "word": "truth",
+    "pos": "n",
+    "shortDefinition": "what is real or correct",
+    "funSentence": "During a wild night at the rooftop, Son saw that **truth** means what is real or correct after his cracked specs showed up and the moon slid behind a cloud.",
+    "level": 50,
+    "levelPosition": 1,
+    "tier": 0
+  },
+  {
+    "word": "value",
+    "pos": "n",
+    "shortDefinition": "how useful, important, or costly something is",
+    "funSentence": "At the strip edge, a nervous baker treated **value** as how useful, important, or costly something is before grabbing a red pacifier and heading for safety.",
+    "level": 50,
+    "levelPosition": 2,
+    "tier": 0
+  },
+  {
+    "word": "victory",
+    "pos": "n",
+    "shortDefinition": "success in a contest or struggle",
+    "funSentence": "At the school roof, a drummer learned that **victory** means success in a contest or struggle when a tournament medal slipped away and the gym lights blinked on and off.",
+    "level": 50,
+    "levelPosition": 3,
+    "tier": 0
+  },
+  {
+    "word": "zoom",
+    "pos": "v",
+    "shortDefinition": "to move very fast",
+    "funSentence": "A rescue cat chose to **zoom**, meaning to move very fast, while racing through the Springfield band room and protecting a strategy board.",
+    "level": 50,
+    "levelPosition": 4,
+    "tier": 0
+  },
+  {
+    "word": "borrow",
+    "pos": "v",
+    "shortDefinition": "to take for a short time and return",
+    "funSentence": "At the batting cage, an epee captain tried to **borrow**—to take for a short time and return—as an alarm bell started ringing and a stack of macarons bounced across the floor.",
+    "level": 50,
+    "levelPosition": 5,
+    "tier": 0
+  },
+  {
+    "word": "carry",
+    "pos": "v",
+    "shortDefinition": "to hold and move something",
+    "funSentence": "With zombies closing in at the Anfield touchline, Dr. Grant would **carry** if it meant to hold and move something and saving a ferry pass.",
+    "level": 50,
+    "levelPosition": 6,
+    "tier": 0
+  },
+  {
+    "word": "fix",
+    "pos": "v",
+    "shortDefinition": "to repair or make right",
+    "funSentence": "When the graveyard gate rattled by the cake stand, Krusty had to **fix**—to repair or make right—before a wet flipper vanished.",
+    "level": 50,
+    "levelPosition": 7,
+    "tier": 0
+  },
+  {
+    "word": "itchy",
+    "pos": "adj",
+    "shortDefinition": "causing a need to scratch",
+    "funSentence": "At Twin Peaks, everyone called Miguel **itchy** because causing a need to scratch fit the moment and even a silver mask seemed impressed.",
+    "level": 50,
+    "levelPosition": 8,
+    "tier": 0
+  },
+  {
+    "word": "messy",
+    "pos": "adj",
+    "shortDefinition": "untidy and disorganized",
+    "funSentence": "While crossing the blanket fort, Saka stayed **messy**—untidy and disorganized—as the old truck coughed back to life and a flashlight wobbled dangerously.",
+    "level": 50,
+    "levelPosition": 9,
+    "tier": 0
+  },
+  {
+    "word": "openly",
+    "pos": "adv",
+    "shortDefinition": "in a way that is honest and public",
+    "funSentence": "A star baker handled an oversized comic book **openly**—in a way that is honest and public—while escaping near the warm-up line.",
+    "level": 50,
+    "levelPosition": 10,
+    "tier": 0
+  }
+]

@@ -18,7 +18,9 @@ final class VocabularyStore {
                 word: entry.word,
                 pos: entry.pos,
                 shortDefinition: entry.shortDefinition,
-                funDefinition: funMap[entry.word.lowercased()]
+                funDefinition: funMap[entry.word.lowercased()],
+                minLevel: entry.minLevel ?? 1,
+                bundledTier: entry.tier
             )
         }
         playableWords = allWords.filter { $0.funDefinition != nil }
@@ -30,6 +32,8 @@ final class VocabularyStore {
         let word: String
         let pos: String
         let shortDefinition: String
+        let minLevel: Int?
+        let tier: Int?
     }
 
     private struct FunDefinitionsFile: Decodable {
