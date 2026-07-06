@@ -12,9 +12,10 @@ struct Player: Codable, Identifiable, Equatable {
     var bestLevel: Int
     var bestScore: Int
     var gamesPlayed: Int
+    var hasWatchedCutscene: Bool
 
     init(id: String, name: String, createdAt: Date = Date(), lastPlayedAt: Date = Date(),
-         bestLevel: Int = 1, bestScore: Int = 0, gamesPlayed: Int = 0) {
+         bestLevel: Int = 1, bestScore: Int = 0, gamesPlayed: Int = 0, hasWatchedCutscene: Bool = false) {
         self.id = id
         self.name = name
         self.createdAt = createdAt
@@ -22,10 +23,11 @@ struct Player: Codable, Identifiable, Equatable {
         self.bestLevel = bestLevel
         self.bestScore = bestScore
         self.gamesPlayed = gamesPlayed
+        self.hasWatchedCutscene = hasWatchedCutscene
     }
 
     enum CodingKeys: String, CodingKey {
-        case id, name, createdAt, lastPlayedAt, bestLevel, bestScore, gamesPlayed
+        case id, name, createdAt, lastPlayedAt, bestLevel, bestScore, gamesPlayed, hasWatchedCutscene
     }
 
     // Decode resiliently so a player record written by an earlier version (missing a newer
@@ -39,5 +41,6 @@ struct Player: Codable, Identifiable, Equatable {
         bestLevel = try c.decodeIfPresent(Int.self, forKey: .bestLevel) ?? 1
         bestScore = try c.decodeIfPresent(Int.self, forKey: .bestScore) ?? 0
         gamesPlayed = try c.decodeIfPresent(Int.self, forKey: .gamesPlayed) ?? 0
+        hasWatchedCutscene = try c.decodeIfPresent(Bool.self, forKey: .hasWatchedCutscene) ?? false
     }
 }

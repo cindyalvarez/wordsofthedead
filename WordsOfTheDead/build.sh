@@ -35,6 +35,7 @@ printf 'APPL????' > "$APP/Contents/PkgInfo"
 cp "$ROOT/data/vocab.json" "$APP/Contents/Resources/"
 cp "$ROOT/data/fun_definitions.json" "$APP/Contents/Resources/"
 cp "$APPDIR/Resources/AppIcon.icns" "$APP/Contents/Resources/"
+cp -r "$APPDIR/Resources/Sounds" "$APP/Contents/Resources/" 2>/dev/null || true
 
 echo "==> Writing funsentences.txt"
 python3 - "$ROOT/data/fun_definitions.json" "$ROOT/data/funsentences.txt" <<'PY'
@@ -46,7 +47,11 @@ with open(sys.argv[2], "w") as f:
 PY
 cp "$ROOT/data/funsentences.txt" "$APP/Contents/Resources/"
 mkdir -p "$APP/Contents/Resources/backgrounds"
-cp "$ROOT/reference-images/backgrounds/"*.jpg "$APP/Contents/Resources/backgrounds/"
+cp "$ROOT/reference-images/backgrounds/"*.jpg "$APP/Contents/Resources/backgrounds/" 2>/dev/null || true
+cp "$ROOT/reference-images/backgrounds/"*.png "$APP/Contents/Resources/backgrounds/" 2>/dev/null || true
+# Copy cutscene-specific images
+cp "$ROOT/reference-images/accomplished.png" "$APP/Contents/Resources/" 2>/dev/null || true
+cp "$ROOT/reference-images/zombies-escape.png" "$APP/Contents/Resources/" 2>/dev/null || true
 
 echo "==> Checking for new background images"
 bash "$ROOT/tools/check-backgrounds.sh" || true

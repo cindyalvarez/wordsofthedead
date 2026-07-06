@@ -90,18 +90,28 @@ def main():
     if VOCAB_8TH_GRADE.exists():
         try:
             vocab_8th = json.loads(VOCAB_8TH_GRADE.read_text(encoding="utf-8"))
-            for entry in vocab_8th:
+            num_8th = len(vocab_8th)
+            for i, entry in enumerate(vocab_8th):
                 key = entry["word"].lower()
                 if key not in seen:
                     # Keep the minLevel from the 8th-grade vocab (should be 1)
                     if "minLevel" not in entry:
                         entry["minLevel"] = 1
+                    # Assign bundledTier: distribute tiers 0-2 across 8th-grade words
+                    if "bundledTier" not in entry:
+                        if i < num_8th // 3:
+                            entry["bundledTier"] = 0
+                        elif i < 2 * num_8th // 3:
+                            entry["bundledTier"] = 1
+                        else:
+                            entry["bundledTier"] = 2
                     entries.append(entry)
                     seen.add(key)
         except Exception as e:
             print(f"Warning: Could not load 8th-grade vocabulary: {e}", file=sys.stderr)
 
     # Then, parse original vocablist.txt (only add if not already in 8th-grade)
+    original_start_idx = len(entries)
     for raw in SRC.read_text(encoding="utf-8", errors="replace").splitlines():
         line = raw.rstrip()
         if not line:
@@ -115,6 +125,16 @@ def main():
         seen.add(key)
         # Original words start at level 51+
         entry["minLevel"] = 51
+        # Assign bundledTier: distribute tiers 1-3 across original words
+        if "bundledTier" not in entry:
+            idx_in_original = len(entries) - original_start_idx
+            num_original = len(SRC.read_text(encoding="utf-8", errors="replace").splitlines())  # rough estimate
+            if idx_in_original < num_original // 3:
+                entry["bundledTier"] = 1
+            elif idx_in_original < 2 * num_original // 3:
+                entry["bundledTier"] = 2
+            else:
+                entry["bundledTier"] = 3
         entries.append(entry)
 
     entries.sort(key=lambda e: e["word"].lower())

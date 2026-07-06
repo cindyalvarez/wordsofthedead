@@ -7,7 +7,7 @@ import SwiftUI
 final class GameEngine: ObservableObject {
 
     enum Phase {
-        case playerSelect, start, levelIntro, playing, revealing, gameOver
+        case playerSelect, cutscene, start, levelIntro, playing, revealing, gameOver
     }
 
     @Published private(set) var phase: Phase = .playerSelect
@@ -255,7 +255,8 @@ final class GameEngine: ObservableObject {
         )
         updateMetrics()
         
-        phase = .start
+       // Always route to cutscene on app launch
+       phase = .cutscene
     }
 
     private func upsert(_ player: Player) {
@@ -305,6 +306,14 @@ final class GameEngine: ObservableObject {
         refreshDailyStats()
         startTimer()
         beginLevelIntro()
+    }
+
+    func markCutsceneWatched() {
+       guard var player = currentPlayer else { return }
+       player.hasWatchedCutscene = true
+       upsert(player)
+       currentPlayer = player
+       phase = .start
     }
 
     private func refreshDailyStats() {
@@ -361,7 +370,14 @@ final class GameEngine: ObservableObject {
                 flashStreakBanner()
             }
             recordOutcome(zombie.question.word, correct: true)
-            zombies.remove(at: idx)
+            // Trigger explosion animation and sound; zombie will be removed after animation completes
+            SoundManager.shared.playExplosion()
+            zombies[idx].isExploding = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                if let removeIdx = self.zombies.firstIndex(where: { $0.id == zombie.id }) {
+                    self.zombies.remove(at: removeIdx)
+                }
+            }
             reveal(zombie.question.word)
         } else {
             streak = 0

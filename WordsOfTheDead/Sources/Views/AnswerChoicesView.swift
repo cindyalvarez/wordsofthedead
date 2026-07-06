@@ -245,9 +245,9 @@ struct RevealView: View {
     }
 
     /// Builds the fun definition with the vocabulary word (and common inflections)
-    /// styled bold + yellow.
+    /// styled bold + yellow. For 8th-grade (tier-0) words, uses only the short definition.
     private var highlightedDefinition: AttributedString {
-        let text = word.funDefinition ?? word.shortDefinition
+        let text = (word.tier == 0 ? nil : word.funDefinition) ?? word.shortDefinition
         var attributed = AttributedString(text)
 
         for range in matchRanges(of: word.word, in: text) {

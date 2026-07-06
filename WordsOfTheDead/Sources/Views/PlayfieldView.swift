@@ -19,14 +19,9 @@ struct PlayfieldView: View {
                         comboMultiplier: engine.comboMultiplier,
                         isBoss: engine.isBossLevel)
 
-                // Top: zombie attack zone, or the word reveal during the 3s freeze.
+                // Top: zombie attack zone (continues during reveal).
                 ZStack {
-                    if engine.phase == .revealing, let word = engine.revealWord {
-                        RevealView(word: word, stage: engine.revealStage)
-                            .padding()
-                    } else {
-                        AttackZoneView(engine: engine)
-                    }
+                    AttackZoneView(engine: engine)
                 }
                 .frame(maxWidth: .infinity)
                 .layoutPriority(1)
@@ -34,10 +29,10 @@ struct PlayfieldView: View {
                 Divider().background(.green.opacity(0.4))
 
                 // Bottom: the rotating ticker (definition / reverse-definition levels) or
-                // the two-word chooser (fill-in-the-blank), or "CORRECT" during the reveal.
+                // the two-word chooser (fill-in-the-blank), or the word reveal during correct answer.
                 ZStack {
-                    if engine.phase == .revealing {
-                        CorrectBannerView()
+                    if engine.phase == .revealing, let word = engine.revealWord {
+                        RevealView(word: word, stage: engine.revealStage)
                     } else if let lead = engine.leadZombie {
                         if lead.kind == .fillBlank {
                             FillBlankChoicesView(
@@ -113,7 +108,8 @@ private struct AttackZoneView: View {
                                kind: ZombieKind.allCases[zombie.variant % ZombieKind.allCases.count],
                                roundKind: zombie.kind,
                                wrong: zombie.wrong,
-                               isLead: zombie.id == leadID)
+                               isLead: zombie.id == leadID,
+                               isExploding: zombie.isExploding)
                         .position(
                             x: zombieX(zombie.lane, in: geo.size.width),
                             y: zombieY(zombie.progress, in: geo.size.height)
@@ -281,6 +277,7 @@ private struct ZombieView: View {
     var roundKind: RoundKind = .definition
     let wrong: Bool
     var isLead: Bool = true
+    let isExploding: Bool
 
     @State private var sway = false
     @State private var lurch = false
@@ -294,6 +291,19 @@ private struct ZombieView: View {
     var body: some View {
         VStack(spacing: 10) {
             ZStack {
+                // Explosion flash overlay (bright yellow/white burst)
+                if isExploding {
+                    Circle()
+                        .fill(
+                            RadialGradient(
+                                colors: [.yellow.opacity(0.8), .orange.opacity(0.4), .clear],
+                                center: .center, startRadius: 4, endRadius: 100 * scale
+                            )
+                        )
+                        .frame(width: auraSize * 1.5, height: auraSize * 1.5)
+                        .scaleEffect(isExploding ? 1.8 : 1.0)
+                }
+
                 // Sickly aura pulsing behind the zombie.
                 Circle()
                     .fill(
@@ -312,6 +322,8 @@ private struct ZombieView: View {
                     .shadow(color: .red.opacity(wrong ? 0.9 : 0.0), radius: wrong ? 18 : 0)
                     .rotationEffect(.degrees(sway ? 4 : -4), anchor: .bottom)
                     .offset(y: lurch ? -3 : 3)
+                    .scaleEffect(isExploding ? 0.1 : 1.0)
+                    .opacity(isExploding ? 0.0 : 1.0)
             }
             .frame(height: auraSize)
 
@@ -354,13 +366,16 @@ private struct ZombieView: View {
             }
         }
         .onAppear {
-            withAnimation(.easeInOut(duration: 1.1).repeatForever(autoreverses: true)) {
-                sway = true
-            }
-            withAnimation(.easeInOut(duration: 0.7).repeatForever(autoreverses: true)) {
-                lurch = true
+            if !isExploding {
+                withAnimation(.easeInOut(duration: 1.1).repeatForever(autoreverses: true)) {
+                    sway = true
+                }
+                withAnimation(.easeInOut(duration: 0.7).repeatForever(autoreverses: true)) {
+                    lurch = true
+                }
             }
         }
+        .animation(.easeOut(duration: 0.5), value: isExploding)
         .opacity(isLead ? 1 : 0.55)
     }
 }

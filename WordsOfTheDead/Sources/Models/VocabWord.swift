@@ -94,6 +94,7 @@ struct ActiveZombie: Identifiable {
     let lane: Int
     var currentChoiceIndex: Int
     var wrong: Bool = false
+    var isExploding: Bool = false
 }
 
 extension Array {

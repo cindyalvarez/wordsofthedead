@@ -181,8 +181,26 @@ The game tracks how many words are practiced each day, with a daily goal of 20 w
 The game-over screen shows final score, zombies killed, accuracy, best streak, newly mastered words, and the number of
 words to review from that run.  
 
+# Reveal display changes
+When the player answers correctly:
+- The top part of the screen (zombie attack zone) continues to show and animate, rather than being replaced
+- The bottom part of the screen shows the word, part of speech, and 'fun' definition (moved from top to bottom)
+- This allows gameplay to continue smoothly with the next zombie becoming visible immediately as the current one is defeated
+- The reveal card in the bottom section displays for 3 seconds before the next definition/word rotates in
+- The zombie fall animation keeps running during the reveal, so players see the next zombie approaching while the current word is being explained
+
 # Pause
 Pressing the P key during play pauses and resumes the game; a paused overlay is shown while paused.
+
+# Opening cutscene
+The game shows an opening cutscene when launched. The cutscene has 5 stages:
+- Scene 1: Black background with no text (3 seconds, auto-advances to Scene 2)
+- Scene 2: "accomplished.png" background with job interview narrative; shows text, then the punchline after a beat, then a "Continue" button appears
+- Scene 3: "zombies-escape.png" background with the zombie release scenario; shows initial text, then details after a beat, then "Continue" button
+- Scene 4: Black background with the challenge rules; shows text, then rules after a beat, then "Continue" button
+- Scene 5: Large glowing green "WORDS OF THE DEAD" title; tap to begin the game
+
+Scene 1 automatically advances to Scene 2 (no user interaction). Scenes 2-4 display their text content, then show a deliberate "Continue" button to proceed to the next stage. Scene 5 ends with a tap to begin gameplay.
 
 # Player profiles and saved progress
 The game remembers each player's progress under a name they choose.

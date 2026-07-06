@@ -17,6 +17,8 @@ struct GameView: View {
             switch engine.phase {
             case .playerSelect:
                 PlayerSelectView(engine: engine)
+            case .cutscene:
+                CutsceneView(engine: engine)
             case .start:
                 StartView(engine: engine)
             case .levelIntro:
