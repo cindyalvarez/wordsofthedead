@@ -383,7 +383,7 @@ private struct ZombieView: View {
 /// A small painterly zombie/ghoul/reaper drawn with Canvas: shaded skin and clothing
 /// gradients, tattered robe, reaching arms, a sunken face and glowing eyes — tuned to
 /// the muted, illustrated look of the graveyard background rather than a flat emoji.
-private struct ZombieFigure: View {
+struct ZombieFigure: View {
     let kind: ZombieKind
     let wrong: Bool
 

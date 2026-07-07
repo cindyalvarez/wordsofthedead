@@ -73,7 +73,7 @@ final class GameEngine: ObservableObject {
 
     // Saved-player roster.
     private var roster = PlayerStore.Roster()
-    private var currentPlayer: Player?
+    private(set) var currentPlayer: Player?
 
     init() {
         roster = PlayerStore.load()

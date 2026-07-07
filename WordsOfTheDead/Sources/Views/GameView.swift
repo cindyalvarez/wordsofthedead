@@ -190,137 +190,486 @@ private struct PlayerSelectView: View {
 private struct StartView: View {
     @ObservedObject var engine: GameEngine
 
+    @State private var appeared = false
+    @State private var titleGlow = false
+    @State private var zombieSway = false
+    @State private var showContent = false
+
     var body: some View {
-        VStack(spacing: 24) {
-            Text("🧟 Words of the Dead")
-                .font(.system(size: 46, weight: .heavy, design: .rounded))
-                .foregroundStyle(.green)
+        ZStack {
+            // Atmospheric fog layer.
+            RadialGradient(colors: [Color(red: 0.05, green: 0.12, blue: 0.05).opacity(0.4), .clear],
+                           center: .bottom, startRadius: 50, endRadius: 500)
+                .ignoresSafeArea()
 
-            if !engine.currentPlayerName.isEmpty {
-                HStack(spacing: 12) {
-                    Text("Player: \(engine.currentPlayerName)")
-                        .font(.headline)
-                        .foregroundStyle(.white.opacity(0.85))
-                    Button("Switch") { engine.switchPlayer() }
-                        .buttonStyle(.bordered)
-                        .tint(.gray)
-                        .controlSize(.small)
-                }
-            }
+            VStack(spacing: 0) {
+                Spacer().frame(height: 36)
 
-            DailyStreakView(engine: engine)
-
-            if engine.hasContent {
-                VStack(spacing: 14) {
-                    Button(action: { engine.startGame() }) {
-                        Text("Start Game")
-                            .font(.title2.bold())
-                            .frame(width: 220)
-                            .padding(.vertical, 14)
+                // Title block with flanking zombies.
+                ZStack {
+                    // Flanking zombie silhouettes.
+                    HStack(spacing: 0) {
+                        ZombieFigure(kind: .classic, wrong: false)
+                            .frame(width: 50, height: 75)
+                            .rotationEffect(.degrees(zombieSway ? 3 : -3))
+                            .opacity(appeared ? 0.30 : 0)
+                        Spacer()
+                        ZombieFigure(kind: .reaper, wrong: false)
+                            .frame(width: 50, height: 75)
+                            .rotationEffect(.degrees(zombieSway ? -3 : 3))
+                            .opacity(appeared ? 0.30 : 0)
                     }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.green)
+                    .padding(.horizontal, 30)
 
-                    Button(action: { engine.startGame(testMode: true) }) {
-                        Text("Test Mode")
-                            .font(.title3.bold())
-                            .frame(width: 220)
-                            .padding(.vertical, 12)
+                    VStack(spacing: 6) {
+                        Text("WORDS OF THE DEAD")
+                            .font(.system(size: 42, weight: .black, design: .rounded))
+                            .foregroundStyle(
+                                LinearGradient(colors: [Color.green, Color(red: 0.2, green: 0.65, blue: 0.2)],
+                                               startPoint: .top, endPoint: .bottom)
+                            )
+                            .shadow(color: .green.opacity(titleGlow ? 0.7 : 0.3), radius: titleGlow ? 20 : 8)
+                            .multilineTextAlignment(.center)
+
+                        // Thin decorative line.
+                        Rectangle()
+                            .fill(LinearGradient(colors: [.clear, .green.opacity(0.4), .clear],
+                                                 startPoint: .leading, endPoint: .trailing))
+                            .frame(width: 280, height: 1)
                     }
-                    .buttonStyle(.bordered)
-                    .tint(.orange)
-
-                    Text("Test Mode advances to the next level after just 1 word.")
-                        .font(.callout)
-                        .foregroundStyle(.white.opacity(0.55))
                 }
-            } else {
-                Text("⚠️ Vocabulary data could not be loaded.")
-                    .foregroundStyle(.red)
+                .scaleEffect(appeared ? 1 : 0.7)
+                .opacity(appeared ? 1 : 0)
+
+                Spacer().frame(height: 22)
+
+                // Player identity bar.
+                if !engine.currentPlayerName.isEmpty {
+                    playerBar
+                        .opacity(showContent ? 1 : 0)
+                        .offset(y: showContent ? 0 : 12)
+                }
+
+                Spacer().frame(height: 16)
+
+                // Stats overview — personal bests + mastery.
+                if engine.currentPlayer != nil {
+                    statsStrip
+                        .opacity(showContent ? 1 : 0)
+                        .offset(y: showContent ? 0 : 12)
+                }
+
+                Spacer().frame(height: 16)
+
+                // Daily streak.
+                DailyStreakView(engine: engine)
+                    .opacity(showContent ? 1 : 0)
+                    .offset(y: showContent ? 0 : 12)
+
+                Spacer().frame(height: 28)
+
+                // Action buttons.
+                if engine.hasContent {
+                    buttonsBlock
+                        .opacity(showContent ? 1 : 0)
+                        .offset(y: showContent ? 0 : 16)
+                } else {
+                    Text("⚠️ Vocabulary data could not be loaded.")
+                        .foregroundStyle(.red)
+                }
+
+                Spacer()
             }
+        }
+        .onAppear {
+            withAnimation(.spring(response: 0.55, dampingFraction: 0.7)) { appeared = true }
+            withAnimation(.easeInOut(duration: 2.0).repeatForever(autoreverses: true)) {
+                titleGlow = true
+                zombieSway = true
+            }
+            withAnimation(.easeOut(duration: 0.6).delay(0.3)) { showContent = true }
+        }
+    }
+
+    // MARK: - Sub-views
+
+    private var playerBar: some View {
+        HStack(spacing: 10) {
+            Image(systemName: "person.fill")
+                .foregroundStyle(.green.opacity(0.7))
+            Text(engine.currentPlayerName)
+                .font(.headline.bold())
+                .foregroundStyle(.white.opacity(0.9))
+            Spacer()
+            Button(action: { engine.switchPlayer() }) {
+                Text("Switch")
+                    .font(.caption.bold())
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 5)
+            }
+            .buttonStyle(.bordered)
+            .tint(.gray)
+            .controlSize(.small)
+        }
+        .padding(.horizontal, 22)
+        .padding(.vertical, 10)
+        .background(RoundedRectangle(cornerRadius: 10).fill(.white.opacity(0.06)))
+        .padding(.horizontal, 30)
+    }
+
+    private var statsStrip: some View {
+        let player = engine.currentPlayer!
+        return HStack(spacing: 0) {
+            miniStat(value: "\(player.bestLevel)", label: "Best Level", color: .green)
+            miniDivider
+            miniStat(value: "\(player.bestScore)", label: "Best Score", color: .cyan)
+            miniDivider
+            miniStat(value: "\(engine.totalWordsMastered)", label: "Mastered", color: .yellow)
+            miniDivider
+            miniStat(value: "\(engine.totalWords)", label: "Total Words", color: .white.opacity(0.6))
+        }
+        .padding(.vertical, 12)
+        .background(RoundedRectangle(cornerRadius: 12).fill(.black.opacity(0.3)))
+        .padding(.horizontal, 30)
+    }
+
+    private func miniStat(value: String, label: String, color: Color) -> some View {
+        VStack(spacing: 3) {
+            Text(value)
+                .font(.title3.bold())
+                .foregroundStyle(color)
+            Text(label)
+                .font(.caption2)
+                .foregroundStyle(.white.opacity(0.45))
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    private var miniDivider: some View {
+        Rectangle()
+            .fill(.white.opacity(0.1))
+            .frame(width: 1, height: 30)
+    }
+
+    private var buttonsBlock: some View {
+        VStack(spacing: 14) {
+            Button(action: { engine.startGame() }) {
+                HStack(spacing: 10) {
+                    Image(systemName: "bolt.fill")
+                    Text("Start Game")
+                }
+                .font(.title2.bold())
+                .frame(width: 240)
+                .padding(.vertical, 14)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.green)
+
+            Button(action: { engine.startGame(testMode: true) }) {
+                HStack(spacing: 8) {
+                    Image(systemName: "flask")
+                    Text("Test Mode")
+                }
+                .font(.title3.bold())
+                .frame(width: 240)
+                .padding(.vertical, 12)
+            }
+            .buttonStyle(.bordered)
+            .tint(.orange)
+
+            Text("Test Mode advances to the next level after just 1 word.")
+                .font(.caption)
+                .foregroundStyle(.white.opacity(0.45))
         }
     }
 }
 
-/// Daily goal + consecutive-day streak with a small 7-day activity calendar (suggestion #7).
+/// Daily goal + consecutive-day streak with a small 7-day activity calendar.
 private struct DailyStreakView: View {
     @ObservedObject var engine: GameEngine
+    @State private var flameWiggle = false
+
+    private var goalMet: Bool { engine.todayCount >= engine.dailyGoal }
+    private var progress: Double {
+        guard engine.dailyGoal > 0 else { return 0 }
+        return min(1.0, Double(engine.todayCount) / Double(engine.dailyGoal))
+    }
 
     var body: some View {
-        VStack(spacing: 10) {
-            HStack(spacing: 18) {
-                Text("🔥 Day streak: \(engine.dayStreak)")
+        VStack(spacing: 12) {
+            // Streak headline.
+            HStack(spacing: 6) {
+                Text("🔥")
+                    .font(.title2)
+                    .rotationEffect(.degrees(flameWiggle ? 6 : -6))
+                    .onAppear {
+                        withAnimation(.easeInOut(duration: 0.6).repeatForever(autoreverses: true)) {
+                            flameWiggle = true
+                        }
+                    }
+                Text("\(engine.dayStreak) day streak")
+                    .font(.headline.bold())
                     .foregroundStyle(.orange)
-                Text("Today: \(engine.todayCount) / \(engine.dailyGoal) words")
-                    .foregroundStyle(engine.todayCount >= engine.dailyGoal ? .green : .white.opacity(0.8))
-            }
-            .font(.headline.bold())
 
+                Spacer()
+
+                Text("\(engine.todayCount)/\(engine.dailyGoal)")
+                    .font(.headline.bold().monospacedDigit())
+                    .foregroundStyle(goalMet ? .green : .white.opacity(0.85))
+                Text("today")
+                    .font(.caption)
+                    .foregroundStyle(.white.opacity(0.5))
+            }
+
+            // Progress bar.
+            GeometryReader { geo in
+                ZStack(alignment: .leading) {
+                    Capsule()
+                        .fill(.white.opacity(0.1))
+                    Capsule()
+                        .fill(goalMet
+                              ? LinearGradient(colors: [.green, .green.opacity(0.7)], startPoint: .leading, endPoint: .trailing)
+                              : LinearGradient(colors: [.orange, .yellow], startPoint: .leading, endPoint: .trailing))
+                        .frame(width: geo.size.width * progress)
+                }
+            }
+            .frame(height: 6)
+
+            // 7-day calendar dots.
             HStack(spacing: 10) {
                 ForEach(engine.recentDays(7)) { day in
                     VStack(spacing: 4) {
-                        Circle()
-                            .fill(day.met ? Color.green : Color.white.opacity(0.15))
-                            .frame(width: 16, height: 16)
-                            .overlay(
-                                Circle().stroke(day.isToday ? Color.yellow : Color.clear, lineWidth: 2)
-                            )
+                        ZStack {
+                            Circle()
+                                .fill(day.met ? Color.green : Color.white.opacity(0.12))
+                                .frame(width: 18, height: 18)
+                            if day.met {
+                                Image(systemName: "checkmark")
+                                    .font(.system(size: 9, weight: .heavy))
+                                    .foregroundStyle(.black.opacity(0.6))
+                            }
+                        }
+                        .overlay(
+                            Circle().stroke(day.isToday ? Color.yellow : Color.clear, lineWidth: 2)
+                                .frame(width: 22, height: 22)
+                        )
                         Text(day.label)
-                            .font(.caption2)
-                            .foregroundStyle(.white.opacity(0.55))
+                            .font(.system(size: 9))
+                            .foregroundStyle(.white.opacity(0.45))
                     }
                 }
             }
         }
-        .padding(.vertical, 12)
+        .padding(.vertical, 14)
         .padding(.horizontal, 22)
-        .background(RoundedRectangle(cornerRadius: 12).fill(.black.opacity(0.25)))
+        .background(RoundedRectangle(cornerRadius: 12).fill(.black.opacity(0.3)))
+        .padding(.horizontal, 30)
     }
 }
 
 private struct GameOverView: View {
     @ObservedObject var engine: GameEngine
 
+    @State private var appeared = false
+    @State private var statsRevealed = false
+    @State private var zombieOffset: CGFloat = 0
+    @State private var pulseGlow = false
+    @State private var showPlayAgain = false
+
+    /// True when this run set a new personal best score.
+    private var isNewBest: Bool {
+        guard let player = engine.currentPlayer else { return false }
+        return engine.score >= player.bestScore && engine.score > 0
+    }
+
+    /// A flavour headline that reacts to how the player did.
+    private var headline: String {
+        if engine.zombiesKilled == 0 { return "DEVOURED INSTANTLY" }
+        if engine.level >= 10 { return "LEGENDARY FALL" }
+        if engine.zombiesKilled >= 20 { return "HEROIC LAST STAND" }
+        if engine.runAccuracy >= 0.9 { return "SO CLOSE…" }
+        return "DEVOURED"
+    }
+
+    private var subtitleLines: [String] {
+        var lines: [String] = []
+        if isNewBest { lines.append("🏆 NEW PERSONAL BEST!") }
+        if engine.runNewlyMastered > 0 {
+            lines.append("You permanently learned \(engine.runNewlyMastered) word\(engine.runNewlyMastered == 1 ? "" : "s") — the undead can never take that from you.")
+        }
+        if engine.runMissed > 0 {
+            lines.append("\(engine.runMissed) word\(engine.runMissed == 1 ? "" : "s") to review — they'll come back to haunt you.")
+        }
+        return lines
+    }
+
     var body: some View {
-        VStack(spacing: 20) {
-            Text("☠️ You were eaten by zombies!")
-                .font(.system(size: 42, weight: .heavy, design: .rounded))
-                .foregroundStyle(.red)
+        ZStack {
+            // Fog / vignette overlay.
+            RadialGradient(colors: [.clear, Color.black.opacity(0.7)],
+                           center: .center, startRadius: 100, endRadius: 500)
+                .ignoresSafeArea()
 
-            VStack(spacing: 12) {
-                summaryRow("Final Score", "\(engine.score)", .white)
-                summaryRow("Zombies Killed", "\(engine.zombiesKilled)", .green)
-                summaryRow("Accuracy", String(format: "%.0f%%", engine.runAccuracy * 100), .cyan)
-                summaryRow("Best Streak", "\(engine.runBestStreak)", .orange)
-                summaryRow("Newly Mastered", "\(engine.runNewlyMastered)", .yellow)
-                summaryRow("Words to Review", "\(engine.runMissed)", .red)
+            // Shambling zombie silhouettes behind the stats.
+            zombieParade
+                .opacity(appeared ? 0.35 : 0)
+
+            VStack(spacing: 0) {
+                Spacer().frame(height: 30)
+
+                // Dramatic headline.
+                Text(headline)
+                    .font(.system(size: 52, weight: .black, design: .rounded))
+                    .foregroundStyle(
+                        LinearGradient(colors: [Color.red, Color(red: 0.6, green: 0.0, blue: 0.0)],
+                                       startPoint: .top, endPoint: .bottom)
+                    )
+                    .shadow(color: .red.opacity(pulseGlow ? 0.8 : 0.3), radius: pulseGlow ? 24 : 10)
+                    .scaleEffect(appeared ? 1 : 0.3)
+                    .opacity(appeared ? 1 : 0)
+
+                // Subtitle / flavour text.
+                VStack(spacing: 6) {
+                    ForEach(Array(subtitleLines.enumerated()), id: \.offset) { _, line in
+                        Text(line)
+                            .font(.callout.bold())
+                            .foregroundStyle(line.hasPrefix("🏆") ? .yellow : .white.opacity(0.75))
+                            .multilineTextAlignment(.center)
+                    }
+                }
+                .padding(.top, 8)
+                .opacity(statsRevealed ? 1 : 0)
+
+                Spacer().frame(height: 24)
+
+                // Stats — tombstone-styled card.
+                statsCard
+                    .opacity(statsRevealed ? 1 : 0)
+                    .offset(y: statsRevealed ? 0 : 30)
+
+                Spacer().frame(height: 18)
+
+                DailyStreakView(engine: engine)
+                    .opacity(statsRevealed ? 1 : 0)
+
+                Spacer().frame(height: 22)
+
+                if showPlayAgain {
+                    Button(action: { engine.startGame() }) {
+                        HStack(spacing: 10) {
+                            Image(systemName: "arrow.counterclockwise")
+                            Text("Rise Again")
+                        }
+                        .font(.title2.bold())
+                        .padding(.horizontal, 36)
+                        .padding(.vertical, 14)
+                    }
+                    .buttonStyle(.borderedProminent)
+                    .tint(.green)
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                }
+
+                Spacer().frame(height: 20)
             }
-            .font(.title3.bold())
-            .padding(.vertical, 18)
-            .padding(.horizontal, 34)
-            .background(RoundedRectangle(cornerRadius: 14).fill(.black.opacity(0.3)))
-
-            DailyStreakView(engine: engine)
-
-            Button(action: { engine.startGame() }) {
-                Text("Play Again")
-                    .font(.title2.bold())
-                    .padding(.horizontal, 36)
-                    .padding(.vertical, 14)
+        }
+        .onAppear {
+            withAnimation(.spring(response: 0.6, dampingFraction: 0.65)) { appeared = true }
+            withAnimation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true)) { pulseGlow = true }
+            withAnimation(.easeOut(duration: 0.7).delay(0.5)) { statsRevealed = true }
+            withAnimation(.easeOut(duration: 0.5).delay(1.2)) { showPlayAgain = true }
+            // Slow shamble drift.
+            withAnimation(.linear(duration: 12).repeatForever(autoreverses: false)) {
+                zombieOffset = 1
             }
-            .buttonStyle(.borderedProminent)
-            .tint(.green)
         }
     }
 
-    private func summaryRow(_ label: String, _ value: String, _ color: Color) -> some View {
-        HStack {
-            Text(label)
-                .foregroundStyle(.white.opacity(0.75))
-            Spacer(minLength: 40)
-            Text(value)
-                .foregroundStyle(color)
+    // MARK: - Stats Card
+
+    private var statsCard: some View {
+        VStack(spacing: 0) {
+            // "R.I.P." header strip.
+            Text("R.I.P.")
+                .font(.system(size: 14, weight: .heavy, design: .serif))
+                .tracking(6)
+                .foregroundStyle(.white.opacity(0.5))
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 6)
+                .background(Color.white.opacity(0.06))
+
+            VStack(spacing: 14) {
+                // Hero stat — score.
+                VStack(spacing: 2) {
+                    Text("\(engine.score)")
+                        .font(.system(size: 48, weight: .heavy, design: .rounded))
+                        .foregroundStyle(.white)
+                    Text("FINAL SCORE")
+                        .font(.caption.bold())
+                        .tracking(2)
+                        .foregroundStyle(.white.opacity(0.45))
+                }
+                .padding(.top, 10)
+
+                Divider().background(Color.white.opacity(0.15))
+
+                // Secondary stats in a 2-column grid.
+                LazyVGrid(columns: [GridItem(.flexible()), GridItem(.flexible())], spacing: 12) {
+                    statCell("Reached Level", "\(engine.level)", .white)
+                    statCell("Zombies Killed", "\(engine.zombiesKilled)", .green)
+                    statCell("Accuracy", String(format: "%.0f%%", engine.runAccuracy * 100), .cyan)
+                    statCell("Best Streak", "\(engine.runBestStreak)", .orange)
+                    statCell("Newly Mastered", "\(engine.runNewlyMastered)", .yellow)
+                    statCell("Words to Review", "\(engine.runMissed)", .red)
+                }
+                .padding(.bottom, 10)
+            }
+            .padding(.horizontal, 22)
         }
-        .frame(width: 320)
+        .frame(width: 360)
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(Color.black.opacity(0.55))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .strokeBorder(Color.white.opacity(0.08), lineWidth: 1)
+                )
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 16))
+    }
+
+    private func statCell(_ label: String, _ value: String, _ color: Color) -> some View {
+        VStack(spacing: 3) {
+            Text(value)
+                .font(.title2.bold())
+                .foregroundStyle(color)
+            Text(label)
+                .font(.caption2)
+                .foregroundStyle(.white.opacity(0.5))
+                .multilineTextAlignment(.center)
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    // MARK: - Zombie Parade
+
+    /// A row of shambling zombie silhouettes that drift slowly across the screen.
+    private var zombieParade: some View {
+        GeometryReader { geo in
+            let count = 6
+            let spacing = geo.size.width / CGFloat(count)
+            let totalTravel = geo.size.width + spacing
+            ForEach(0..<count, id: \.self) { i in
+                let kind = ZombieKind.allCases[i % ZombieKind.allCases.count]
+                let baseX = CGFloat(i) * spacing
+                // Each zombie starts at a staggered horizontal position and drifts rightward.
+                let x = ((baseX + zombieOffset * totalTravel)
+                    .truncatingRemainder(dividingBy: totalTravel)) - spacing * 0.5
+                let y = geo.size.height * (0.55 + 0.08 * sin(Double(i) * 1.3))
+                ZombieFigure(kind: kind, wrong: false)
+                    .frame(width: 60, height: 90)
+                    .rotationEffect(.degrees(Double(i % 2 == 0 ? 4 : -4)))
+                    .position(x: x, y: y)
+            }
+        }
     }
 }

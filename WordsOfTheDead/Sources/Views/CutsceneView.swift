@@ -40,7 +40,7 @@ struct CutsceneView: View {
             ],
             delayedTextSize: 36,
             duration: 3.0,
-            delayBeforePunchline: 1.5
+            delayBeforePunchline: 2.5
         ),
         .scene3: CutsceneData(
             background: .black,
@@ -58,7 +58,7 @@ struct CutsceneView: View {
             ],
             delayedTextSize: 24,
             duration: 3.0,
-            delayBeforePunchline: 1.5
+            delayBeforePunchline: 2.5
         ),
         .scene4: CutsceneData(
             background: .black,
@@ -74,7 +74,7 @@ struct CutsceneView: View {
             ],
             delayedTextSize: 24,
             duration: 3.0,
-            delayBeforePunchline: 1.5
+            delayBeforePunchline: 2.5
         ),
         .scene5: CutsceneData(
             background: .black,
@@ -261,8 +261,8 @@ struct CutsceneView: View {
             DispatchQueue.main.asyncAfter(deadline: .now() + delayBeforePunchline) {
                 print("DEBUG: Executing delayed text at \(Date())")
                 self.delayedTexts = sceneData?.delayedTexts ?? []
-                // Show Continue button after delayed text appears (with a small delay)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                // Show Continue button after delayed text appears (with a delay)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
                     print("DEBUG: Setting showContinueButton=true at \(Date())")
                     self.showContinueButton = true
                 }
