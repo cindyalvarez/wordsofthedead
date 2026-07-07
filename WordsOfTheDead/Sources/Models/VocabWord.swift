@@ -64,20 +64,22 @@ struct VocabWord: Identifiable, Hashable {
     }
 }
 
-/// One question shown beneath a zombie. For definition and reverse-definition rounds there
-/// are four candidate choices; for fill-in-the-blank rounds there are two candidate words.
-/// `correctIndex` points at the right entry in either case.
+/// One question shown beneath a zombie. Definition and reverse-definition rounds have
+/// four candidate choices; synonym rounds have seven choices with multiple correct answers;
+/// fill-in-the-blank rounds have two candidate words.
 struct Question {
     let word: VocabWord
     let choices: [String]
     let correctIndex: Int
+    let correctIndices: Set<Int>
 }
 
-/// Which gameplay style a zombie uses. Levels rotate through the three kinds in order.
+/// Which gameplay style a zombie uses. Levels rotate through the four kinds in order.
 enum RoundKind {
     case definition         // match the word (shown) to its definition (press SPACE)
-    case fillBlank          // complete the sentence (press F or J)
+    case synonym            // click all synonyms
     case reverseDefinition  // match the definition (shown) to its word (press SPACE)
+    case fillBlank          // complete the sentence (press F or J)
 }
 
 /// A zombie currently on screen, with its own falling state and question.
@@ -93,6 +95,8 @@ struct ActiveZombie: Identifiable {
     let variant: Int
     let lane: Int
     var currentChoiceIndex: Int
+    var selectedChoiceIndices: Set<Int> = []
+    var wrongChoiceIndices: Set<Int> = []
     var wrong: Bool = false
     var isExploding: Bool = false
 }

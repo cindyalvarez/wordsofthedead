@@ -12,10 +12,11 @@ As the game progresses, the player is presented with increasingly complex things
 The goal is to teach typing fluency.  In this variation, the goal is not typing speed but learning vocabulary.
 
 # Level types
-Levels rotate through three challenge types in order (the type for a level is (level-1) mod 3):
-- Type 1 (levels 1, 4, 7, …): match the WORD to its definition — see "Word-to-definition levels".
-- Type 2 (levels 2, 5, 8, …): fill in the blank — see "Fill-in-the-blank levels".
-- Type 3 (levels 3, 6, 9, …): match the DEFINITION to its word — see "Definition-to-word levels".
+Levels rotate through four challenge types in order (the type for a level is (level-1) mod 4):
+- Type 1 (levels 1, 5, 9, …): match the WORD to its definition — see "Word-to-definition levels".
+- Type 2 (levels 2, 6, 10, …): pick all the synonyms for WORD — see "Synonym levels".
+- Type 3 (levels 3, 7, 11, …): match the DEFINITION to its word — see "Definition-to-word levels".
+- Type 4 (levels 4, 8, 12, …): fill in the blank — see "Fill-in-the-blank levels".
 
 # Word-to-definition levels (Type 1)
 Each zombie should clearly show a vocabulary word. The player must match the vocabulary word to its' definition to 
@@ -48,8 +49,14 @@ The fun definition should be left-justified, not centered, with appropriate equa
 That should stay on-screen for 3 seconds before refreshing to the next zombie falling and the next set of definitions to rotate through
 The vocabulary word within the fun definition should be bold and yellow, to make it stand out more
 
+# Synonym levels (Type 2)
+Each zombie should show one of the vocabulary words listed in `data/synonym-words.txt`.
+In the bottom part of the screen, show the associated 4 synonyms and the 3 related words that are not synonyms.
+The player must click on all of the synonyms to defeat the zombie. Clicking on a wrong choice makes the zombie fall faster. 
+Clicking on a correct choice makes it glow briefly and then dim.
+When all of the synonyms are selected, the zombie is defeated.
 
-# Fill-in-the-blank levels (Type 2)
+# Fill-in-the-blank levels (Type 4)
 Each zombie should show a sentence with a blank where one of the vocabulary words would appear.
 For example, if the word is "lucid" the sentence could be "Her explanation was so _____ that even the toddler understood" 
 because the sentence makes sense if you substitute the ____ for the word "lucid"
@@ -218,4 +225,3 @@ The game remembers each player's progress under a name they choose.
   so every subsequent new player ALWAYS starts from zero mastered words — even if the roster is later reset.
 - The start screen shows the current player's name with a "Switch" button to return to the player-select screen.
 - Best level, best score, games played, and last-played time are recorded per player at game over.
-

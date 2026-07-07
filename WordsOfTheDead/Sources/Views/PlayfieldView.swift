@@ -5,6 +5,7 @@ import AppKit
 /// While a correct answer is being revealed, the reveal card overlays the choices.
 struct PlayfieldView: View {
     @ObservedObject var engine: GameEngine
+    @State private var keyMonitor: Any?
 
     var body: some View {
         ZStack {
@@ -14,9 +15,6 @@ struct PlayfieldView: View {
                         level: engine.level,
                         mastered: engine.masteredCount,
                         totalWords: engine.totalWords,
-                        showStreak: engine.showStreakBanner,
-                        score: engine.score,
-                        comboMultiplier: engine.comboMultiplier,
                         isBoss: engine.isBossLevel)
 
                 // Top: zombie attack zone (continues during reveal).
@@ -28,13 +26,21 @@ struct PlayfieldView: View {
 
                 Divider().background(.green.opacity(0.4))
 
-                // Bottom: the rotating ticker (definition / reverse-definition levels) or
-                // the two-word chooser (fill-in-the-blank), or the word reveal during correct answer.
+                // Bottom: the four-choice ticker (definition / reverse-definition levels),
+                // the synonym grid, the two-word chooser (fill-in-the-blank), or the reveal.
                 ZStack {
                     if engine.phase == .revealing, let word = engine.revealWord {
                         RevealView(word: word, stage: engine.revealStage)
                     } else if let lead = engine.leadZombie {
-                        if lead.kind == .fillBlank {
+                        if lead.kind == .synonym {
+                            SynonymChoicesView(
+                                choices: lead.question.choices,
+                                correctIndices: lead.question.correctIndices,
+                                selectedIndices: lead.selectedChoiceIndices,
+                                wrongIndices: lead.wrongChoiceIndices,
+                                onSelect: { engine.answerSynonymChoice(at: $0) }
+                            )
+                        } else if lead.kind == .fillBlank {
                             FillBlankChoicesView(
                                 leftWord: lead.question.choices[safe: 0] ?? "",
                                 rightWord: lead.question.choices[safe: 1] ?? "",
@@ -43,18 +49,18 @@ struct PlayfieldView: View {
                             )
                         } else {
                             DefinitionTickerView(
-                                text: lead.question.choices[safe: lead.currentChoiceIndex] ?? "",
+                                choices: lead.question.choices,
+                                selectedIndex: lead.currentChoiceIndex,
                                 prompt: lead.kind == .reverseDefinition
-                                    ? "Press  SPACE  to answer or  J  to cycle through words"
-                                    : "Press  SPACE  to answer or  J  to cycle through definitions",
+                                    ? "Click a word  •  J to cycle  •  Space to confirm"
+                                    : "Click a definition  •  J to cycle  •  Space to confirm",
                                 wrong: lead.wrong,
-                                onGuess: { engine.guessCurrent() },
-                                onCycle: { engine.advanceCurrentChoice() }
+                                onGuessChoice: { i in engine.guessChoice(at: i) }
                             )
                         }
                     }
                 }
-                .frame(height: 204)
+                .frame(height: 250)
                 .padding()
             }
 
@@ -62,11 +68,78 @@ struct PlayfieldView: View {
                 PauseOverlayView()
             }
 
-            // Invisible button so the P key toggles pause anywhere on the playfield.
-            Button(action: { engine.togglePause() }) { Color.clear.frame(width: 0, height: 0) }
-                .buttonStyle(.plain)
-                .keyboardShortcut("p", modifiers: [])
+            if engine.showStreakBanner {
+                CenterStreakBannerView()
+                    .transition(.scale.combined(with: .opacity))
+            }
+
         }
+        .onAppear(perform: installPauseKeyMonitor)
+        .onDisappear(perform: removePauseKeyMonitor)
+        .animation(.spring(response: 0.3), value: engine.showStreakBanner)
+    }
+
+    private func installPauseKeyMonitor() {
+        removePauseKeyMonitor()
+        keyMonitor = NSEvent.addLocalMonitorForEvents(matching: .keyDown) { event in
+            guard let key = event.charactersIgnoringModifiers?.lowercased() else {
+                return event
+            }
+            switch key {
+            case "p":
+                engine.togglePause()
+                return nil
+            case "j":
+                if engine.phase == .playing, let lead = engine.leadZombie {
+                    if lead.kind == .fillBlank {
+                        engine.answerFillBlank(left: false)
+                    } else if lead.kind == .definition || lead.kind == .reverseDefinition {
+                        engine.advanceCurrentChoice()
+                    }
+                    return nil
+                }
+                return event
+            case "f":
+                if engine.phase == .playing, let lead = engine.leadZombie, lead.kind == .fillBlank {
+                    engine.answerFillBlank(left: true)
+                    return nil
+                }
+                return event
+            case " ":
+                if engine.phase == .playing {
+                    engine.guessCurrent()
+                    return nil
+                }
+                return event
+            default:
+                return event
+            }
+        }
+    }
+
+    private func removePauseKeyMonitor() {
+        guard let keyMonitor else { return }
+        NSEvent.removeMonitor(keyMonitor)
+        self.keyMonitor = nil
+    }
+}
+
+private struct CenterStreakBannerView: View {
+    var body: some View {
+        Text("🔥 STREAK — you got a new life!")
+            .font(.system(size: 34, weight: .heavy, design: .rounded))
+            .foregroundStyle(.yellow)
+            .padding(.horizontal, 30)
+            .padding(.vertical, 16)
+            .background(
+                RoundedRectangle(cornerRadius: 18)
+                    .fill(.black.opacity(0.75))
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 18)
+                    .stroke(.yellow.opacity(0.7), lineWidth: 2)
+            )
+            .shadow(color: .yellow.opacity(0.35), radius: 18)
     }
 }
 
@@ -112,7 +185,7 @@ private struct AttackZoneView: View {
                                isExploding: zombie.isExploding)
                         .position(
                             x: zombieX(zombie.lane, in: geo.size.width),
-                            y: zombieY(zombie.progress, in: geo.size.height)
+                            y: zombieY(zombie.progress, in: geo.size.height, roundKind: zombie.kind)
                         )
                         .animation(.linear(duration: 0.05), value: zombie.progress)
                 }
@@ -130,9 +203,11 @@ private struct AttackZoneView: View {
         }
     }
 
-    private func zombieY(_ progress: Double, in height: CGFloat) -> CGFloat {
-        let top: CGFloat = 95
-        let bottom = height - 70
+    private func zombieY(_ progress: Double, in height: CGFloat, roundKind: RoundKind) -> CGFloat {
+        // Fill-in-the-blank zombies use taller sentence cards, so give them a little more
+        // vertical runway to reduce overlap when multiple are on screen.
+        let top: CGFloat = roundKind == .fillBlank ? 60 : 95
+        let bottom = height - (roundKind == .fillBlank ? 40 : 70)
         return top + (bottom - top) * CGFloat(progress)
     }
 }
@@ -327,7 +402,7 @@ private struct ZombieView: View {
             }
             .frame(height: auraSize)
 
-            if roundKind == .definition {
+            if roundKind == .definition || roundKind == .synonym {
                 Text(prompt)
                     .font(.system(size: 30, weight: .heavy, design: .serif))
                     .tracking(1)
@@ -376,7 +451,7 @@ private struct ZombieView: View {
             }
         }
         .animation(.easeOut(duration: 0.5), value: isExploding)
-        .opacity(isLead ? 1 : 0.55)
+        .opacity(isLead ? 1.0 : 0.8)
     }
 }
 

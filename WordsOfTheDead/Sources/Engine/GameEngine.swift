@@ -123,7 +123,7 @@ final class GameEngine: ObservableObject {
     private var wordsThisLevel = 0
 
     // Tuning.
-    private let baseSpeed = 0.0009
+    private let baseSpeed = 0.001089
     private let maxSpeed = 0.04
     private let startingLives = 1
     private let streakForExtraLife = 5
@@ -136,17 +136,17 @@ final class GameEngine: ObservableObject {
     private let threeZombieLevel = 3
     private let fourZombieLevel = 5
     
-    // Second zombie spawn point: starts at 70% on level 1, then 3% earlier each level
-    private let secondZombieTrigger = 0.70
+    // Second zombie spawn point: starts at 55% on level 1, then 3% earlier each level
+    private let secondZombieTrigger = 0.55
     private let secondZombieEarlierPerLevel = 0.03
     private let secondZombieTriggerFloor = 0.2
     
-    // Third zombie spawn point: 70% on level 3, then 3% earlier each level
-    private let thirdZombieTrigger = 0.70
+    // Third zombie spawn point: 55% on level 3, then 3% earlier each level
+    private let thirdZombieTrigger = 0.55
     private let thirdZombieTriggerFloor = 0.2
     
-    // Fourth zombie spawn point: 70% on level 5, then 3% earlier each level
-    private let fourthZombieTrigger = 0.70
+    // Fourth zombie spawn point: 55% on level 5, then 3% earlier each level
+    private let fourthZombieTrigger = 0.55
     private let fourthZombieTriggerFloor = 0.2
 
     // Scoring (#8).
@@ -255,8 +255,8 @@ final class GameEngine: ObservableObject {
         )
         updateMetrics()
         
-       // Always route to cutscene on app launch
-       phase = .cutscene
+       // Show cutscene only for new players; returning players go straight to start.
+       phase = updated.hasWatchedCutscene ? .start : .cutscene
     }
 
     private func upsert(_ player: Player) {
@@ -313,7 +313,7 @@ final class GameEngine: ObservableObject {
        player.hasWatchedCutscene = true
        upsert(player)
        currentPlayer = player
-       phase = .start
+       startGame()
     }
 
     private func refreshDailyStats() {
@@ -337,8 +337,36 @@ final class GameEngine: ObservableObject {
         resolveLead(at: idx, correct: zombies[idx].currentChoiceIndex == zombies[idx].question.correctIndex)
     }
 
-    /// Fill-in-the-blank rounds (even levels): the player presses F (left word) or
-    /// J (right word) to complete the sentence.
+    /// Synonym rounds: each correct click locks in one synonym; all four must be selected.
+    func answerSynonymChoice(at choiceIndex: Int) {
+        guard phase == .playing, !isPaused, let idx = leadIndex,
+              zombies[idx].kind == .synonym else { return }
+
+        let question = zombies[idx].question
+        guard choiceIndex >= 0, choiceIndex < question.choices.count,
+              !zombies[idx].selectedChoiceIndices.contains(choiceIndex) else { return }
+
+        if question.correctIndices.contains(choiceIndex) {
+            zombies[idx].selectedChoiceIndices.insert(choiceIndex)
+            if zombies[idx].selectedChoiceIndices.isSuperset(of: question.correctIndices) {
+                resolveLead(at: idx, correct: true)
+            } else {
+                objectWillChange.send()
+            }
+        } else {
+            zombies[idx].wrong = true
+            zombies[idx].wrongChoiceIndices.insert(choiceIndex)
+            zombies[idx].progress = min(1, zombies[idx].progress + 0.08)
+            zombies[idx].speed = min(maxSpeed, zombies[idx].speed * 1.4)
+            objectWillChange.send()
+            if zombies[idx].progress >= 1 {
+                zombieReachedBottom(at: idx)
+            }
+        }
+    }
+
+    /// Fill-in-the-blank rounds: the player presses F (left word) or J (right word) to
+    /// complete the sentence.
     func answerFillBlank(left: Bool) {
         guard phase == .playing, !isPaused, let idx = leadIndex,
               zombies[idx].kind == .fillBlank else { return }
@@ -353,6 +381,16 @@ final class GameEngine: ObservableObject {
         let count = zombies[idx].question.choices.count
         guard count > 0 else { return }
         zombies[idx].currentChoiceIndex = (zombies[idx].currentChoiceIndex + 1) % count
+    }
+
+    /// Click-to-answer: jump to a specific choice and resolve immediately.
+    func guessChoice(at choiceIndex: Int) {
+        guard phase == .playing, !isPaused, let idx = leadIndex,
+              zombies[idx].kind == .definition || zombies[idx].kind == .reverseDefinition else { return }
+        let count = zombies[idx].question.choices.count
+        guard choiceIndex >= 0, choiceIndex < count else { return }
+        zombies[idx].currentChoiceIndex = choiceIndex
+        resolveLead(at: idx, correct: choiceIndex == zombies[idx].question.correctIndex)
     }
 
     private func resolveLead(at idx: Int, correct: Bool) {
@@ -377,6 +415,13 @@ final class GameEngine: ObservableObject {
                 if let removeIdx = self.zombies.firstIndex(where: { $0.id == zombie.id }) {
                     self.zombies.remove(at: removeIdx)
                 }
+            }
+            // Spawn the next zombie immediately so it starts at the top without waiting
+            // for the reveal to finish. Only spawn if the level isn't about to end and
+            // there are no other zombies already in play.
+            let isLastWordOfLevel = (wordsThisLevel + 1) >= wordsPerLevel
+            if !isLastWordOfLevel && zombies.filter({ !$0.isExploding }).count <= 1 {
+                spawnZombie()
             }
             reveal(zombie.question.word)
         } else {
@@ -447,23 +492,23 @@ final class GameEngine: ObservableObject {
         return 1
     }
 
-    /// Progress at which the second zombie spawns: 70% on level 1, then 3% earlier per
-    /// level (67% at L2, 64% at L3, ...), floored so it never spawns at the very top.
+    /// Progress at which the second zombie spawns: 55% on level 1, then 3% earlier per
+    /// level (52% at L2, 49% at L3, ...), floored so it never spawns at the very top.
     private var secondZombieTriggerForLevel: Double {
         let earlier = Double(max(0, level - twoZombieLevel)) * secondZombieEarlierPerLevel
         return max(secondZombieTriggerFloor, secondZombieTrigger - earlier)
     }
     
-    /// Progress at which the third zombie spawns: 70% on level 3, then 3% earlier per
-    /// level (67% at L4, 64% at L5, ...), floored so it never spawns at the very top.
+    /// Progress at which the third zombie spawns: 55% on level 3, then 3% earlier per
+    /// level (52% at L4, 49% at L5, ...), floored so it never spawns at the very top.
     private var thirdZombieTriggerForLevel: Double {
         guard level >= threeZombieLevel else { return Double.infinity }
         let earlier = Double(max(0, level - threeZombieLevel)) * secondZombieEarlierPerLevel
         return max(thirdZombieTriggerFloor, thirdZombieTrigger - earlier)
     }
     
-    /// Progress at which the fourth zombie spawns: 70% on level 5, then 3% earlier per
-    /// level (67% at L6, 64% at L7, ...), floored so it never spawns at the very top.
+    /// Progress at which the fourth zombie spawns: 55% on level 5, then 3% earlier per
+    /// level (52% at L6, 49% at L7, ...), floored so it never spawns at the very top.
     private var fourthZombieTriggerForLevel: Double {
         guard level >= fourZombieLevel else { return Double.infinity }
         let earlier = Double(max(0, level - fourZombieLevel)) * secondZombieEarlierPerLevel
@@ -512,12 +557,13 @@ final class GameEngine: ObservableObject {
 
     // MARK: - Spawning / resolution
 
-    /// The gameplay style for the current level, rotating through the three kinds.
+    /// The gameplay style for the current level, rotating through the four kinds.
     private var roundKindForLevel: RoundKind {
-        switch (level - 1) % 3 {
+        switch (level - 1) % 4 {
         case 0: return .definition
-        case 1: return .fillBlank
-        default: return .reverseDefinition
+        case 1: return .synonym
+        case 2: return .reverseDefinition
+        default: return .fillBlank
         }
     }
 
@@ -527,16 +573,19 @@ final class GameEngine: ObservableObject {
         switch roundKindForLevel {
         case .definition:
             return "Match the WORD to its definition — press SPACE on the correct one."
-        case .fillBlank:
-            return "Complete the sentence — press F (left) or J (right)."
+        case .synonym:
+            return "Click all 4 synonyms to defeat the zombie."
         case .reverseDefinition:
             return "Match the DEFINITION to its word — press SPACE on the correct one."
+        case .fillBlank:
+            return "Complete the sentence — click the correct word or press F / J."
         }
     }
 
     private func spawnZombie() {
-        guard let word = takeNextWord() else { return }
-        let round = buildRound(for: word)
+        let kind = roundKindForLevel
+        guard let word = takeNextWord(for: kind) else { return }
+        let round = buildRound(for: word, kind: kind)
         let q = round.question
         let zombie = ActiveZombie(
             question: q,
@@ -555,22 +604,33 @@ final class GameEngine: ObservableObject {
     /// ended are played first (see `carryOverWords`), so the word a second/third zombie was
     /// previewing is the one that actually comes next. Boss levels otherwise draw from the
     /// struggling-words pool.
-    private func takeNextWord() -> VocabWord? {
-        if !carryOverWords.isEmpty {
-            return carryOverWords.removeFirst()
+    private func takeNextWord(for kind: RoundKind) -> VocabWord? {
+        let eligible: (VocabWord) -> Bool = { [store] word in
+            switch kind {
+            case .synonym:
+                return store.synonymEntry(for: word) != nil
+            default:
+                return true
+            }
+        }
+
+        if let carryIdx = carryOverWords.firstIndex(where: eligible) {
+            return carryOverWords.remove(at: carryIdx)
         }
         if isBossLevel {
-            return scheduler.reviewWord(forLevel: level) ?? scheduler.nextWord(forLevel: level)
+            return scheduler.reviewWord(forLevel: level, eligible: eligible)
+                ?? scheduler.nextWord(forLevel: level, eligible: eligible)
         }
-        return scheduler.nextWord(forLevel: level)
+        return scheduler.nextWord(forLevel: level, eligible: eligible)
     }
 
     /// Builds the round for a word using the current level's challenge type.
-    private func buildRound(for word: VocabWord) -> Round {
-        switch roundKindForLevel {
+    private func buildRound(for word: VocabWord, kind: RoundKind) -> Round {
+        switch kind {
         case .definition:        return generator.makeDefinitionRound(for: word)
-        case .fillBlank:         return generator.makeFillBlankRound(for: word)
+        case .synonym:           return generator.makeSynonymRound(for: word)
         case .reverseDefinition: return generator.makeReverseDefinitionRound(for: word)
+        case .fillBlank:         return generator.makeFillBlankRound(for: word)
         }
     }
 
@@ -585,6 +645,7 @@ final class GameEngine: ObservableObject {
             self.revealStage = nil
             if !self.recordWordResolved() {
                 self.phase = .playing
+                // Only spawn here if no zombie was pre-spawned at kill time.
                 if self.zombies.isEmpty { self.spawnZombie() }
             }
         }

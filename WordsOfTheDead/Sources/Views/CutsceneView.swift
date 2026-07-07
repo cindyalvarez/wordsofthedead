@@ -152,6 +152,8 @@ struct CutsceneView: View {
                         
                         // Delayed text (punchline)
                         if !delayedTexts.isEmpty {
+                            Spacer()
+                                .frame(height: 18)
                             ForEach(delayedTexts.indices, id: \.self) { index in
                                 Text(delayedTexts[index])
                                     .font(.system(size: scenes[currentScene]?.delayedTextSize ?? 24, weight: .medium, design: .default))

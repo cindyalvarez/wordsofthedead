@@ -1,16 +1,12 @@
 import SwiftUI
 
-/// Top status bar (upper-left): remaining lives and zombies killed, plus a transient
-/// streak banner when the player earns a bonus life.
+/// Top status bar (upper-left): remaining lives, zombies killed, and progress stats.
 struct HUDView: View {
     let lives: Int
     let zombiesKilled: Int
     let level: Int
     let mastered: Int
     let totalWords: Int
-    let showStreak: Bool
-    let score: Int
-    let comboMultiplier: Double
     let isBoss: Bool
 
     var body: some View {
@@ -29,28 +25,6 @@ struct HUDView: View {
                 }
             }
 
-            if showStreak {
-                Text("🔥 STREAK – you got a new life!")
-                    .font(.title3.bold())
-                    .foregroundStyle(.yellow)
-                    .padding(.horizontal, 14)
-                    .padding(.vertical, 8)
-                    .background(Capsule().fill(.black.opacity(0.5)))
-                    .transition(.scale.combined(with: .opacity))
-            }
-
-            Spacer()
-
-            VStack(alignment: .center, spacing: 2) {
-                Text("Score: \(score)")
-                    .foregroundStyle(.white)
-                if comboMultiplier > 1.0 {
-                    Text(String(format: "Combo ×%.2f", comboMultiplier))
-                        .font(.headline.bold())
-                        .foregroundStyle(.orange)
-                }
-            }
-
             Spacer()
 
             VStack(alignment: .trailing, spacing: 4) {
@@ -64,7 +38,6 @@ struct HUDView: View {
         .padding(.horizontal, 20)
         .padding(.vertical, 12)
         .background(.black.opacity(0.3))
-        .animation(.spring(response: 0.3), value: showStreak)
     }
 }
 
@@ -82,66 +55,120 @@ struct CorrectBannerView: View {
     }
 }
 
-/// Shows a single definition at a time. The player presses SPACE to answer while the
-/// correct one is on screen, or J to manually cycle through the other options.
+/// Shows all answer choices simultaneously as a 2-column clickable grid.
+/// Players can click any choice directly, or use J to cycle the highlight
+/// and SPACE to confirm the highlighted choice.
 struct DefinitionTickerView: View {
-    let text: String
-    var prompt: String = "Press  SPACE  to answer or  J  to cycle"
+    let choices: [String]
+    let selectedIndex: Int
+    var prompt: String = "Click to answer  •  J to cycle  •  Space to confirm"
     let wrong: Bool
-    let onGuess: () -> Void
-    let onCycle: () -> Void
+    let onGuessChoice: (Int) -> Void
+
+    private let columns = [GridItem(.flexible(), spacing: 10), GridItem(.flexible(), spacing: 10)]
 
     var body: some View {
-        VStack(spacing: 16) {
-            Text(text)
-                .font(.system(size: 34, weight: .semibold))
-                .foregroundStyle(.white)
-                .multilineTextAlignment(.leading)
-                .lineSpacing(4)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                .padding(.horizontal, 28)
-                .padding(.vertical, 16)
-                .background(
-                    RoundedRectangle(cornerRadius: 14)
-                        .fill(.white.opacity(0.08))
-                )
-                .overlay(
-                    RoundedRectangle(cornerRadius: 14)
-                        .stroke(wrong ? Color.red.opacity(0.8) : Color.green.opacity(0.5),
-                                lineWidth: 2)
-                )
-                .id(text)
-                .transition(.opacity)
-                .animation(.easeInOut(duration: 0.15), value: text)
+        VStack(spacing: 8) {
+            Text(prompt)
+                .font(.subheadline)
+                .foregroundStyle(.white.opacity(0.5))
 
-            HStack(spacing: 16) {
-                Button(action: onCycle) {
-                    Text("J: Next")
-                        .font(.headline.bold())
-                        .foregroundStyle(.black)
-                        .padding(.horizontal, 20)
-                       .padding(.vertical, 10)
-                        .background(Capsule().fill(.orange))
+            LazyVGrid(columns: columns, spacing: 8) {
+                ForEach(Array(choices.enumerated()), id: \.offset) { i, choice in
+                    choiceCell(text: choice, index: i)
                 }
-                .buttonStyle(.plain)
-                .keyboardShortcut("j", modifiers: [])
-                
-                Button(action: onGuess) {
-                    Text("SPACE: Answer")
-                        .font(.headline.bold())
-                        .foregroundStyle(.black)
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 10)
-                        .background(Capsule().fill(.green))
-                }
-                .buttonStyle(.plain)
-                .keyboardShortcut(.space, modifiers: [])
             }
         }
     }
+
+    private func choiceCell(text: String, index: Int) -> some View {
+        let isSelected = index == selectedIndex
+        let borderColor: Color = (wrong && isSelected) ? Color.red.opacity(0.85)
+                               : isSelected            ? Color.green.opacity(0.75)
+                               :                         Color.white.opacity(0.18)
+        let bgColor: Color = isSelected ? Color.green.opacity(0.18) : Color.white.opacity(0.06)
+        return Button(action: { onGuessChoice(index) }) {
+            Text(text)
+                .font(.system(size: 19, weight: .semibold))
+                .foregroundStyle(Color.white)
+                .multilineTextAlignment(.leading)
+                .lineLimit(3)
+                .minimumScaleFactor(0.85)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 10)
+                .background(RoundedRectangle(cornerRadius: 10).fill(bgColor))
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(borderColor, lineWidth: isSelected ? 2 : 1))
+        }
+        .buttonStyle(.plain)
+        .animation(.easeInOut(duration: 0.12), value: isSelected)
+    }
 }
 
-/// Shown in the bottom area on even levels: two candidate words, chosen with the F key
+/// Shown in the bottom area for synonym levels: seven choices, four of which are correct.
+/// Correct picks stay highlighted; wrong picks are flagged red and speed the zombie up.
+struct SynonymChoicesView: View {
+    let choices: [String]
+    let correctIndices: Set<Int>
+    let selectedIndices: Set<Int>
+    let wrongIndices: Set<Int>
+    let onSelect: (Int) -> Void
+
+    private let columns = [GridItem(.flexible(), spacing: 10),
+                           GridItem(.flexible(), spacing: 10),
+                           GridItem(.flexible(), spacing: 10)]
+
+    var body: some View {
+        VStack(spacing: 10) {
+            Text("Click all the synonyms")
+                .font(.headline)
+                .foregroundStyle(.white.opacity(0.75))
+
+            LazyVGrid(columns: columns, spacing: 10) {
+                ForEach(Array(choices.enumerated()), id: \.offset) { index, choice in
+                    choiceButton(text: choice, index: index)
+                }
+            }
+        }
+    }
+
+    private func choiceButton(text: String, index: Int) -> some View {
+        let isSelected = selectedIndices.contains(index)
+        let isWrong = wrongIndices.contains(index)
+        let isCorrect = correctIndices.contains(index)
+        let bgColor: Color = isSelected && isCorrect ? .green.opacity(0.24)
+            : isWrong ? .red.opacity(0.18)
+            : .white.opacity(0.06)
+        let borderColor: Color = isWrong ? .red.opacity(0.85)
+            : isSelected ? .green.opacity(0.85)
+            : .white.opacity(0.18)
+
+        return Button(action: { onSelect(index) }) {
+            Text(text)
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundStyle(.white)
+                .multilineTextAlignment(.center)
+                .lineLimit(2)
+                .minimumScaleFactor(0.8)
+                .frame(maxWidth: .infinity, minHeight: 58)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 8)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(bgColor)
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(borderColor, lineWidth: isSelected ? 2 : 1)
+                )
+                .shadow(color: isSelected && isCorrect ? .green.opacity(0.45) : .clear, radius: 10)
+        }
+        .buttonStyle(.plain)
+        .animation(.easeInOut(duration: 0.12), value: isSelected)
+    }
+}
+
+/// Shown in the bottom area on Type 4 levels: two candidate words, chosen with the F key
 /// (left word) or the J key (right word).
 struct FillBlankChoicesView: View {
     let leftWord: String
@@ -188,7 +215,6 @@ struct FillBlankChoicesView: View {
             )
         }
         .buttonStyle(.plain)
-        .keyboardShortcut(KeyEquivalent(Character(key.lowercased())), modifiers: [])
     }
 }
 

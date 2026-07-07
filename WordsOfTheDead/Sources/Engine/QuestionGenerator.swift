@@ -8,23 +8,56 @@ struct Round {
     let prompt: String
 }
 
-/// Builds rounds for both gameplay styles:
+/// Builds rounds for all four gameplay styles:
 ///
-/// - Definition rounds (odd levels): one correct definition, two plausible distractors
-///   (same part of speech), and one obviously-wrong distractor (different part of speech).
-/// - Fill-in-the-blank rounds (even levels): the word's fun definition with the word
-///   blanked out, plus two candidate words (the correct one and a plausible distractor).
+/// - Definition rounds: one correct definition, two plausible distractors (same part of
+///   speech), and one obviously-wrong distractor (different part of speech).
+/// - Synonym rounds: four correct synonyms and three related-but-wrong words.
+/// - Reverse-definition rounds: the definition is shown, and the player chooses the word.
+/// - Fill-in-the-blank rounds: the word's fun definition with the word blanked out, plus
+///   two candidate words (the correct one and a plausible distractor).
 struct QuestionGenerator {
     let store: VocabularyStore
 
-    // MARK: - Definition rounds (odd levels)
+    // MARK: - Definition rounds (Type 1)
 
     func makeDefinitionRound(for word: VocabWord) -> Round {
         let question = makeQuestion(for: word)
         return Round(question: question, kind: .definition, prompt: question.word.word)
     }
 
-    // MARK: - Reverse-definition rounds (definition shown, pick the word)
+    // MARK: - Synonym rounds
+
+    /// The zombie displays a vocabulary word; the player must click all four true synonyms
+    /// from a seven-choice grid (four synonyms, three related distractors).
+    func makeSynonymRound(for word: VocabWord) -> Round {
+        guard let entry = store.synonymEntry(for: word),
+              entry.synonyms.count >= 4,
+              entry.related.count >= 3
+        else {
+            return makeDefinitionRound(for: word)
+        }
+
+        var choices = Array(entry.synonyms.prefix(4)) + Array(entry.related.prefix(3))
+        choices.shuffle()
+
+        let correctIndices = Set(choices.enumerated().compactMap { idx, choice in
+            entry.synonyms.contains(choice) ? idx : nil
+        })
+        guard correctIndices.count == 4 else {
+            return makeDefinitionRound(for: word)
+        }
+
+        let question = Question(
+            word: word,
+            choices: choices,
+            correctIndex: correctIndices.sorted().first ?? 0,
+            correctIndices: correctIndices
+        )
+        return Round(question: question, kind: .synonym, prompt: word.word)
+    }
+
+    // MARK: - Reverse-definition rounds (Type 3)
 
     /// The zombie displays the short definition; the bottom ticker cycles four candidate
     /// WORDS (the correct one plus three distractors, preferring the same part of speech).
@@ -54,7 +87,7 @@ struct QuestionGenerator {
 
         options.shuffle()
         let correctIndex = options.firstIndex(of: correct) ?? 0
-        let question = Question(word: word, choices: options, correctIndex: correctIndex)
+        let question = Question(word: word, choices: options, correctIndex: correctIndex, correctIndices: [correctIndex])
         return Round(question: question, kind: .reverseDefinition, prompt: word.shortDefinition)
     }
 
@@ -87,10 +120,10 @@ struct QuestionGenerator {
 
         options.shuffle()
         let correctIndex = options.firstIndex(of: correct) ?? 0
-        return Question(word: word, choices: options, correctIndex: correctIndex)
+        return Question(word: word, choices: options, correctIndex: correctIndex, correctIndices: [correctIndex])
     }
 
-    // MARK: - Fill-in-the-blank rounds (even levels)
+    // MARK: - Fill-in-the-blank rounds (Type 4)
 
     func makeFillBlankRound(for word: VocabWord) -> Round {
         // Blank the word out of its fun definition; fall back to a definition round if
@@ -108,7 +141,7 @@ struct QuestionGenerator {
         var options = [correct, distractor]
         options.shuffle()
         let correctIndex = options.firstIndex(of: correct) ?? 0
-        let question = Question(word: word, choices: options, correctIndex: correctIndex)
+        let question = Question(word: word, choices: options, correctIndex: correctIndex, correctIndices: [correctIndex])
         return Round(question: question, kind: .fillBlank, prompt: blanked.sentence)
     }
 

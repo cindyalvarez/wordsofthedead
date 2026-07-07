@@ -34,6 +34,7 @@ cp "$APPDIR/Resources/Info.plist" "$APP/Contents/Info.plist"
 printf 'APPL????' > "$APP/Contents/PkgInfo"
 cp "$ROOT/data/vocab.json" "$APP/Contents/Resources/"
 cp "$ROOT/data/fun_definitions.json" "$APP/Contents/Resources/"
+cp "$ROOT/data/synonym-words.txt" "$APP/Contents/Resources/"
 cp "$APPDIR/Resources/AppIcon.icns" "$APP/Contents/Resources/"
 cp -r "$APPDIR/Resources/Sounds" "$APP/Contents/Resources/" 2>/dev/null || true
 

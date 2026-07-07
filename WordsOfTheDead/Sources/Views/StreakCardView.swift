@@ -6,22 +6,32 @@ struct StreakCardView: View {
     let showMessage: Bool
     let onReplay: (() -> Void)? = nil
     
+    private var showDayStreak: Bool { metrics.currentStreak >= 2 }
+    
     var body: some View {
         VStack(spacing: 16) {
             // Flame + Streak Number
             VStack(spacing: 8) {
-                Text(metrics.streakEmoji)
-                    .font(.system(size: 64))
-                    .scaleEffect(metrics.isBroken ? 0.8 : 1.0)
-                    .opacity(metrics.isBroken ? 0.6 : 1.0)
-                
-                Text("\(metrics.currentStreak)")
-                    .font(.system(size: 72, weight: .heavy, design: .rounded))
-                    .foregroundStyle(streakColor)
-                
-                Text("DAY STREAK")
-                    .font(.caption.bold())
-                    .foregroundStyle(.secondary)
+                if showDayStreak {
+                    Text(metrics.streakEmoji)
+                        .font(.system(size: 64))
+                        .scaleEffect(metrics.isBroken ? 0.8 : 1.0)
+                        .opacity(metrics.isBroken ? 0.6 : 1.0)
+                    
+                    Text("\(metrics.currentStreak)")
+                        .font(.system(size: 72, weight: .heavy, design: .rounded))
+                        .foregroundStyle(streakColor)
+                    
+                    Text("DAY STREAK")
+                        .font(.caption.bold())
+                        .foregroundStyle(.secondary)
+                } else {
+                    Text("🎯")
+                        .font(.system(size: 58))
+                    Text("Build your streak")
+                        .font(.headline.bold())
+                        .foregroundStyle(.white)
+                }
             }
             
             // Motivational Message

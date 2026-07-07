@@ -113,10 +113,10 @@ private struct LastSessionView: View {
             
             HStack(spacing: 20) {
                 StatItem(
-                    label: "Score",
-                    value: String(stats.score),
-                    icon: "star.fill",
-                    color: .yellow
+                    label: "Zombies",
+                    value: String(stats.wordsLearned),
+                    icon: "figure.walk",
+                    color: .green
                 )
                 
                 StatItem(

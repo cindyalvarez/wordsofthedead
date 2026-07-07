@@ -76,7 +76,9 @@ enum DailyChallengeGenerator {
                 DailyChallenge(
                     id: "extend-streak",
                     title: "Keep Your Streak Alive",
-                    description: "You're on a \(streakLength)-day streak!",
+                    description: streakLength >= 2
+                        ? "You're on a \(streakLength)-day streak!"
+                        : "Meet your daily goal to start your streak.",
                     reward: "+Streak"
                 ),
                 DailyChallenge(
