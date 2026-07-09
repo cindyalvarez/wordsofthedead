@@ -21,9 +21,14 @@ final class SoundManager: ObservableObject {
     func playExplosion() {
         playSound(named: "explosion")
     }
+
+    /// Play the exaggerated KABOOM when a zombie bomb detonates.
+    func playKaboom() {
+        playSound(named: "kaboom", volume: 1.0)
+    }
     
     /// Play a named sound effect from the app bundle.
-    private func playSound(named soundName: String) {
+    private func playSound(named soundName: String, volume: Float = 0.7) {
         guard soundEffectsEnabled else { return }
         
         guard let soundURL = Bundle.main.url(forResource: soundName, withExtension: "wav", subdirectory: "Sounds") else {
@@ -33,7 +38,7 @@ final class SoundManager: ObservableObject {
         
         do {
             let player = try AVAudioPlayer(contentsOf: soundURL)
-            player.volume = 0.7
+            player.volume = volume
             player.play()
             
             // Keep player in array to prevent deallocation while playing

@@ -42,6 +42,8 @@ final class GameEngine: ObservableObject {
     @Published private(set) var zombieBombs: Int = 0
     /// True during the levelIntro phase when a bomb was earned in the previous level.
     @Published private(set) var bombEarnedThisLevel: Bool = false
+    /// Triggers the full-screen bomb explosion animation.
+    @Published private(set) var showBombExplosion: Bool = false
 
     // Saved-player progress: the active player's display name (empty until one is chosen).
     @Published private(set) var currentPlayerName: String = ""
@@ -785,11 +787,18 @@ final class GameEngine: ObservableObject {
     func useBomb() {
         guard zombieBombs > 0, phase == .playing || phase == .revealing, !isPaused else { return }
         zombieBombs -= 1
+        SoundManager.shared.playKaboom()
+        showBombExplosion = true
+        // Clear zombies immediately so the animation plays over empty lanes.
         zombies.removeAll()
         objectWillChange.send()
-        // If no reveal is pending, spawn the next zombie after a brief pause.
+        // Hide the explosion overlay after the animation completes.
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.6) { [weak self] in
+            self?.showBombExplosion = false
+        }
+        // Spawn next zombie after explosion clears.
         if phase == .playing {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.8) { [weak self] in
                 guard let self, self.phase == .playing else { return }
                 if self.zombies.isEmpty { self.spawnZombie() }
             }

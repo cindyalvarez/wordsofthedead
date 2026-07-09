@@ -48,10 +48,17 @@ struct PlayfieldView: View {
                     .transition(.scale.combined(with: .opacity))
             }
 
+            if engine.showBombExplosion {
+                BombExplosionView()
+                    .transition(.opacity)
+                    .ignoresSafeArea()
+            }
+
         }
         .onAppear(perform: installPauseKeyMonitor)
         .onDisappear(perform: removePauseKeyMonitor)
         .animation(.spring(response: 0.3), value: engine.showStreakBanner)
+        .animation(.easeInOut(duration: 0.15), value: engine.showBombExplosion)
     }
 
     private func revealX(lane: Int, width: CGFloat) -> CGFloat {
@@ -143,6 +150,90 @@ private struct PauseOverlayView: View {
                     .foregroundStyle(.white.opacity(0.8))
             }
         }
+    }
+}
+
+/// Full-screen explosion animation shown when the player uses a zombie bomb.
+private struct BombExplosionView: View {
+    @State private var animate = false
+
+    // Rings radiate out from center at staggered delays.
+    private let rings: [(delay: Double, color: Color)] = [
+        (0.00, .yellow),
+        (0.08, .orange),
+        (0.16, .red),
+        (0.26, Color(red: 1, green: 0.55, blue: 0)),
+        (0.38, .yellow),
+    ]
+    // Sparks scattered at fixed angles.
+    private let sparkAngles: [Double] = stride(from: 0, to: 360, by: 36).map { $0 }
+
+    var body: some View {
+        GeometryReader { geo in
+            let cx = geo.size.width / 2
+            let cy = geo.size.height / 2
+            let maxR = max(geo.size.width, geo.size.height) * 0.85
+
+            ZStack {
+                // White flash
+                Color.white.opacity(animate ? 0 : 0.95)
+                    .ignoresSafeArea()
+                    .animation(.easeOut(duration: 0.55), value: animate)
+
+                // Expanding rings
+                ForEach(rings.indices, id: \.self) { i in
+                    let ring = rings[i]
+                    Circle()
+                        .stroke(ring.color, lineWidth: animate ? 6 : 60)
+                        .frame(
+                            width: animate ? maxR * 2 : 20,
+                            height: animate ? maxR * 2 : 20
+                        )
+                        .opacity(animate ? 0 : 1)
+                        .position(x: cx, y: cy)
+                        .animation(
+                            .easeOut(duration: 1.1).delay(ring.delay),
+                            value: animate
+                        )
+                }
+
+                // Spark streaks radiating outward
+                ForEach(sparkAngles.indices, id: \.self) { i in
+                    let angle = sparkAngles[i] * .pi / 180
+                    let reach = animate ? maxR * 0.72 : 10.0
+                    let sparkX = cx + reach * cos(angle)
+                    let sparkY = cy + reach * sin(angle)
+                    Capsule()
+                        .fill(i % 2 == 0 ? Color.yellow : Color.orange)
+                        .frame(width: 6, height: 28)
+                        .rotationEffect(.degrees(sparkAngles[i] + 90))
+                        .position(x: sparkX, y: sparkY)
+                        .opacity(animate ? 0 : 1)
+                        .animation(
+                            .easeOut(duration: 0.9).delay(Double(i) * 0.012),
+                            value: animate
+                        )
+                }
+
+                // KABOOM text
+                Text("💥 KABOOM! 💥")
+                    .font(.system(size: animate ? 88 : 10, weight: .heavy, design: .rounded))
+                    .foregroundStyle(
+                        LinearGradient(colors: [.yellow, .orange, .red],
+                                       startPoint: .top, endPoint: .bottom)
+                    )
+                    .shadow(color: .orange, radius: 24)
+                    .shadow(color: .red.opacity(0.6), radius: 48)
+                    .opacity(animate ? (animate ? 1 : 0) : 0)
+                    .scaleEffect(animate ? 1 : 0.1)
+                    .position(x: cx, y: cy)
+                    .animation(.spring(response: 0.35, dampingFraction: 0.5).delay(0.05), value: animate)
+                    // Fade out late in animation
+                    .opacity(animate ? 1 : 0)
+            }
+        }
+        .ignoresSafeArea()
+        .onAppear { animate = true }
     }
 }
 
