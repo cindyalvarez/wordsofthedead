@@ -71,28 +71,17 @@ lipo -info "$APP/Contents/MacOS/WordsOfTheDead"
 # Code signing (optional, for distribution)
 if [ "${SIGN_FOR_DISTRIBUTION:-}" = "1" ]; then
     echo "==> Code Signing for Distribution"
-    CERT_ID=$(security find-identity -v -p codesigning | grep "Developer ID" | head -1 | awk '{print $2}')
-    if [ -n "$CERT_ID" ]; then
-        echo "    Signing with certificate: $CERT_ID"
-        codesign --deep --force --verify --verbose --sign "$CERT_ID" \
-            --options runtime --timestamp "$APP"
-        echo "✓ Signing complete"
-        # Verify signing
-        codesign -dv "$APP/Contents/MacOS/WordsOfTheDead" | grep -i "authority" || true
-        
-        # Preserve notarization ticket from deploy folder if it exists
-        DEPLOY_APP="$ROOT/deploy/beta-1.0.0/WordsOfTheDead.app"
-        if [ -d "$DEPLOY_APP/Contents/_CodeSignature" ]; then
-            echo "==> Preserving notarization ticket"
-            cp -r "$DEPLOY_APP/Contents/_CodeSignature" "$APP/Contents/" 2>/dev/null || true
-            if codesign -dvvv "$APP" 2>&1 | grep -q "Notarization"; then
-                echo "✓ Notarization ticket restored"
-            fi
-        fi
-    else
-        echo "⚠️  No Developer ID certificate found"
-        echo "    For distribution, follow Phase 2 in BETA_DEPLOYMENT_GUIDE.md"
-    fi
+    SIGN_ID="Developer ID Application: CYNTHIA LYNN ALVAREZ (5393XLUVZ7)"
+    ENTITLEMENTS="$APPDIR/Resources/WordsOfTheDead.entitlements"
+    echo "    Signing with: $SIGN_ID"
+    codesign --deep --force --verify --verbose \
+        --sign "$SIGN_ID" \
+        --options runtime \
+        --timestamp \
+        --entitlements "$ENTITLEMENTS" \
+        "$APP"
+    echo "✓ Signing complete"
+    codesign -dv --verbose=4 "$APP" 2>&1 | grep -E "Authority|TeamIdentifier|Identifier" || true
 else
     echo "    (Code signing skipped. Use: SIGN_FOR_DISTRIBUTION=1 ./build.sh)"
 fi
