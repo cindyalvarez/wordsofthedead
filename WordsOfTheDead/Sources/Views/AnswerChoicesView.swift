@@ -251,9 +251,9 @@ struct RevealView: View {
             Text(highlightedDefinition)
                 .font(.system(size: 23))
                 .foregroundStyle(.white)
-                .multilineTextAlignment(.leading)
+                .multilineTextAlignment(.center)
                 .lineSpacing(4)
-                .frame(maxWidth: 660, alignment: .leading)
+                .frame(maxWidth: 660, alignment: .center)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .background(
