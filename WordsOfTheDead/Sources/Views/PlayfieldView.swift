@@ -177,8 +177,9 @@ private struct AttackZoneView: View {
     }
 
     private func zombieX(_ lane: Int, in width: CGFloat) -> CGFloat {
-        // Keep zombies clear of the window edges in each lane.
-        let margin = min(width * 0.22, 200)
+        // Side lanes must be far enough from the edge that choice columns don't clip.
+        // Definition composite half-width ≈ 240pt; synonym ≈ 220pt. Use 260pt floor.
+        let margin = max(width * 0.22, 260)
         switch lane {
         case 0: return margin
         case 2: return width - margin
@@ -494,10 +495,9 @@ private struct ZombieView: View {
     }
 
     private func definitionChoiceButton(text: String, index: Int) -> some View {
-        let isSelected = (index == currentChoiceIndex)
-        let isWrong = (wrong && isSelected)
-        let border: Color = isWrong ? .red.opacity(0.85) : isSelected ? kind.auraColor : .white.opacity(0.20)
-        let bg: Color    = isWrong ? .red.opacity(0.12) : isSelected ? kind.auraColor.opacity(0.18) : .white.opacity(0.07)
+        let isWrong = (wrong && index == currentChoiceIndex)
+        let border: Color = isWrong ? .red.opacity(0.85) : .white.opacity(0.20)
+        let bg: Color    = isWrong ? .red.opacity(0.12) : .white.opacity(0.07)
         return Button { onGuessChoice?(index) } label: {
             Text(text)
                 .font(.system(size: 15, weight: .semibold))
@@ -509,10 +509,10 @@ private struct ZombieView: View {
                 .padding(.horizontal, 10)
                 .padding(.vertical, 8)
                 .background(RoundedRectangle(cornerRadius: 8).fill(bg))
-                .overlay(RoundedRectangle(cornerRadius: 8).stroke(border, lineWidth: isSelected ? 2 : 1))
+                .overlay(RoundedRectangle(cornerRadius: 8).stroke(border, lineWidth: 1))
         }
         .buttonStyle(.plain)
-        .animation(.easeInOut(duration: 0.12), value: isSelected)
+        .animation(.easeInOut(duration: 0.12), value: isWrong)
     }
 
     // MARK: - Synonym choice columns
@@ -553,33 +553,27 @@ private struct ZombieView: View {
     // MARK: - Fill-in-the-blank buttons
 
     private var fillBlankButtons: some View {
-        HStack(spacing: 20) {
-            fillWordButton(key: "F", word: choices[safe: 0] ?? "", isLeft: true)
-            fillWordButton(key: "J", word: choices[safe: 1] ?? "", isLeft: false)
+        HStack(spacing: 12) {
+            fillWordButton(word: choices[safe: 0] ?? "", isLeft: true)
+            fillWordButton(word: choices[safe: 1] ?? "", isLeft: false)
         }
+        .frame(width: 344)
     }
 
-    private func fillWordButton(key: String, word: String, isLeft: Bool) -> some View {
-        Button { onFillBlank?(isLeft) } label: {
-            VStack(spacing: 8) {
-                Text(key)
-                    .font(.system(size: 20, weight: .heavy, design: .rounded))
-                    .foregroundStyle(.black)
-                    .frame(width: 36, height: 36)
-                    .background(Circle().fill(.green))
-                Text(word)
-                    .font(.system(size: 28, weight: .bold))
-                    .foregroundStyle(.white)
-                    .multilineTextAlignment(.center)
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 16)
-            .padding(.horizontal, 14)
-            .background(RoundedRectangle(cornerRadius: 12).fill(.white.opacity(0.08)))
-            .overlay(
-                RoundedRectangle(cornerRadius: 12)
-                    .stroke(wrong ? Color.red.opacity(0.8) : Color.green.opacity(0.5), lineWidth: 2)
-            )
+    private func fillWordButton(word: String, isLeft: Bool) -> some View {
+        let isWrong = wrong
+        let border: Color = isWrong ? .red.opacity(0.85) : .white.opacity(0.20)
+        let bg: Color    = isWrong ? .red.opacity(0.12) : .white.opacity(0.07)
+        return Button { onFillBlank?(isLeft) } label: {
+            Text(word)
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(.white)
+                .multilineTextAlignment(.center)
+                .frame(maxWidth: .infinity, minHeight: 60)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 8)
+                .background(RoundedRectangle(cornerRadius: 8).fill(bg))
+                .overlay(RoundedRectangle(cornerRadius: 8).stroke(border, lineWidth: 1))
         }
         .buttonStyle(.plain)
     }
