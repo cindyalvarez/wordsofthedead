@@ -10,11 +10,21 @@ final class SoundManager: ObservableObject {
     }
     
     private var audioPlayers: [AVAudioPlayer] = []
+    // Pre-loaded kaboom player — ready to fire with zero latency.
+    private var kaboomPlayer: AVAudioPlayer?
     
     private init() {
         self.soundEffectsEnabled = UserDefaults.standard.object(forKey: "sound_effects_enabled") == nil
-            ? true // Default to enabled
+            ? true
             : UserDefaults.standard.bool(forKey: "sound_effects_enabled")
+        preloadKaboom()
+    }
+
+    private func preloadKaboom() {
+        guard let url = Bundle.main.url(forResource: "kaboom", withExtension: "wav", subdirectory: "Sounds") else { return }
+        kaboomPlayer = try? AVAudioPlayer(contentsOf: url)
+        kaboomPlayer?.volume = 1.0
+        kaboomPlayer?.prepareToPlay()
     }
     
     /// Play explosion sound effect when a zombie is defeated.
@@ -24,7 +34,17 @@ final class SoundManager: ObservableObject {
 
     /// Play the exaggerated KABOOM when a zombie bomb detonates.
     func playKaboom() {
-        playSound(named: "kaboom", volume: 1.0)
+        guard soundEffectsEnabled else { return }
+        if let player = kaboomPlayer {
+            player.currentTime = 0
+            player.play()
+            // Requeue a fresh pre-loaded player for the next use.
+            DispatchQueue.main.asyncAfter(deadline: .now() + player.duration + 0.1) { [weak self] in
+                self?.preloadKaboom()
+            }
+        } else {
+            playSound(named: "kaboom", volume: 1.0)
+        }
     }
     
     /// Play a named sound effect from the app bundle.
@@ -39,12 +59,10 @@ final class SoundManager: ObservableObject {
         do {
             let player = try AVAudioPlayer(contentsOf: soundURL)
             player.volume = volume
+            player.prepareToPlay()
             player.play()
             
-            // Keep player in array to prevent deallocation while playing
             audioPlayers.append(player)
-            
-            // Remove from array after playback completes
             let duration = player.duration
             DispatchQueue.main.asyncAfter(deadline: .now() + duration + 0.1) {
                 self.audioPlayers.removeAll { $0 === player }
