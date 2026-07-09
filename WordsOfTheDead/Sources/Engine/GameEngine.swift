@@ -696,19 +696,21 @@ final class GameEngine: ObservableObject {
     }
 
     private func advance() {
-        guard phase == .playing, !isPaused else { return }
+        guard phase == .playing || phase == .revealing, !isPaused else { return }
 
         // Move every zombie; the first to reach the bottom costs a life.
         for i in zombies.indices {
             zombies[i].progress += zombies[i].speed
         }
-        // Explicitly notify observers of changes to zombie positions
         objectWillChange.send()
-        
+
         if let hit = zombies.firstIndex(where: { $0.progress >= 1 }) {
             zombieReachedBottom(at: hit)
             return
         }
+
+        // Spawn / rotation logic only runs during active play, not while a reveal card is showing.
+        guard phase == .playing else { return }
 
         // Spawn new zombies when the lead zombie reaches the trigger point for each tier.
         // The trigger point moves 3% earlier each level within that tier.
@@ -722,9 +724,6 @@ final class GameEngine: ObservableObject {
                 spawnZombie()
             }
         }
-
-        // Auto-rotation disabled: definitions now only change when player presses J (advanceCurrentChoice)
-        // rotateLeadChoice()
     }
 
     private func rotateLeadChoice() {

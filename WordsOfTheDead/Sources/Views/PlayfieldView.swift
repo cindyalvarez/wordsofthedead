@@ -417,9 +417,34 @@ private struct ZombieView: View {
 
     private var coreView: some View {
         VStack(spacing: 6) {
+            if showChoices && roundKind == .synonym {
+                synonymCountdownBadge
+            }
             zombieArtStack
             promptLabel
         }
+        .frame(width: 180)  // fixed width so the HStack composite is predictable
+    }
+
+    private var synonymCountdownBadge: some View {
+        let remaining = 3 - selectedChoiceIndices.count
+        return HStack(spacing: 6) {
+            ForEach(0..<3, id: \.self) { i in
+                let filled = i < selectedChoiceIndices.count
+                Text(filled ? "✓" : "\(3 - i)")
+                    .font(.system(size: 13, weight: .heavy, design: .rounded))
+                    .foregroundStyle(filled ? .green : .white.opacity(0.9))
+                    .frame(width: 26, height: 26)
+                    .background(Circle().fill(
+                        filled ? Color.green.opacity(0.25) : Color.white.opacity(0.12)
+                    ))
+                    .overlay(Circle().stroke(
+                        filled ? Color.green.opacity(0.7) : Color.white.opacity(0.30),
+                        lineWidth: 1.5
+                    ))
+            }
+        }
+        .animation(.easeInOut(duration: 0.15), value: selectedChoiceIndices.count)
     }
 
     private var zombieArtStack: some View {
