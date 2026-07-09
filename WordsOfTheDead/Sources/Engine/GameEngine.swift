@@ -337,7 +337,7 @@ final class GameEngine: ObservableObject {
         resolveLead(at: idx, correct: zombies[idx].currentChoiceIndex == zombies[idx].question.correctIndex)
     }
 
-    /// Synonym rounds: each correct click locks in one synonym; all four must be selected.
+    /// Synonym rounds: each correct click locks in one synonym; all three must be selected.
     func answerSynonymChoice(at choiceIndex: Int) {
         guard phase == .playing, !isPaused, let idx = leadIndex,
               zombies[idx].kind == .synonym else { return }
@@ -574,7 +574,7 @@ final class GameEngine: ObservableObject {
         case .definition:
             return "Match the WORD to its definition — press SPACE on the correct one."
         case .synonym:
-            return "Click all 4 synonyms to defeat the zombie."
+            return "Click all 3 synonyms to defeat the zombie."
         case .reverseDefinition:
             return "Match the DEFINITION to its word — press SPACE on the correct one."
         case .fillBlank:

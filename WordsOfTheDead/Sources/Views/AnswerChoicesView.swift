@@ -105,7 +105,7 @@ struct DefinitionTickerView: View {
     }
 }
 
-/// Shown in the bottom area for synonym levels: seven choices, four of which are correct.
+/// Shown in the bottom area for synonym levels: six choices, three of which are correct.
 /// Correct picks stay highlighted; wrong picks are flagged red and speed the zombie up.
 struct SynonymChoicesView: View {
     let choices: [String]

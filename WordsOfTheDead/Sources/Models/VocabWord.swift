@@ -65,7 +65,7 @@ struct VocabWord: Identifiable, Hashable {
 }
 
 /// One question shown beneath a zombie. Definition and reverse-definition rounds have
-/// four candidate choices; synonym rounds have seven choices with multiple correct answers;
+/// four candidate choices; synonym rounds have six choices with multiple correct answers;
 /// fill-in-the-blank rounds have two candidate words.
 struct Question {
     let word: VocabWord

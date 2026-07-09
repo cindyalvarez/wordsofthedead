@@ -12,7 +12,7 @@ struct Round {
 ///
 /// - Definition rounds: one correct definition, two plausible distractors (same part of
 ///   speech), and one obviously-wrong distractor (different part of speech).
-/// - Synonym rounds: four correct synonyms and three related-but-wrong words.
+/// - Synonym rounds: three correct synonyms and three related-but-wrong words.
 /// - Reverse-definition rounds: the definition is shown, and the player chooses the word.
 /// - Fill-in-the-blank rounds: the word's fun definition with the word blanked out, plus
 ///   two candidate words (the correct one and a plausible distractor).
@@ -28,23 +28,23 @@ struct QuestionGenerator {
 
     // MARK: - Synonym rounds
 
-    /// The zombie displays a vocabulary word; the player must click all four true synonyms
-    /// from a seven-choice grid (four synonyms, three related distractors).
+    /// The zombie displays a vocabulary word; the player must click all three true synonyms
+    /// from a six-choice grid (three synonyms, three related distractors).
     func makeSynonymRound(for word: VocabWord) -> Round {
         guard let entry = store.synonymEntry(for: word),
-              entry.synonyms.count >= 4,
+              entry.synonyms.count >= 3,
               entry.related.count >= 3
         else {
             return makeDefinitionRound(for: word)
         }
 
-        var choices = Array(entry.synonyms.prefix(4)) + Array(entry.related.prefix(3))
+        var choices = Array(entry.synonyms.prefix(3)) + Array(entry.related.prefix(3))
         choices.shuffle()
 
         let correctIndices = Set(choices.enumerated().compactMap { idx, choice in
             entry.synonyms.contains(choice) ? idx : nil
         })
-        guard correctIndices.count == 4 else {
+        guard correctIndices.count == 3 else {
             return makeDefinitionRound(for: word)
         }
 

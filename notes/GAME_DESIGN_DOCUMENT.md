@@ -76,7 +76,7 @@
 - **Source:** `data/vocab.json` (merged 8th + 9th grade, ~800+ words)
 - **Each entry:** `word`, `pos` (n/v/adj/adv), `shortDefinition`, optional `minLevel`, optional `tier` (0–3)
 - Only words that have a `funDefinition` in `fun_definitions.json` are **playable** (used for actual zombie questions). All words are available as distractor choices.
-- **Synonym data:** `data/synonym-words.txt`, pipe-delimited: `word | syn1 | syn2 | syn3 | syn4 || related1 | related2 | related3`
+- **Synonym data:** `data/synonym-words.txt`, pipe-delimited: `word | syn1 | syn2 | syn3 || related1 | related2 | related3`
 
 ### Fun Definitions
 - `data/fun_definitions.json` — hand-authored definitions referencing pop-culture (The Simpsons, Cobra Kai, Premier League, Great British Bake-Off, San Francisco landmarks, cat/penguin/seal humor, fencing, Jurassic Park, Lord of the Flies, Hitchhiker's Guide, Gordon Korman, Farmer Boy)
@@ -230,7 +230,7 @@ Green semi-transparent horizontal line.
 ### 4. Answer Area (bottom, fixed 250pt height)
 Changes based on the current lead zombie's challenge type:
 - **Definition or Reverse-Definition:** `DefinitionTickerView` — 2-column grid of 4 choice buttons
-- **Synonym:** `SynonymChoicesView` — 3-column grid of 7 buttons (4 correct, 3 distractors)
+- **Synonym:** `SynonymChoicesView` — 3-column grid of 6 buttons (3 correct, 3 distractors)
 - **Fill-in-the-blank:** `FillBlankChoicesView` — 2 large buttons with F/J key labels
 - **Reveal phase:** `RevealView` — word + part of speech + fun definition
 
@@ -313,9 +313,9 @@ Note: Boss levels (multiples of 5) override word selection but **not** the chall
 
 **Zombie shows:** The vocabulary WORD (same serif label)
 
-**Answer area:** 3-column grid of 7 buttons — 4 true synonyms (from `synonym-words.txt`) and 3 related-but-wrong words, shuffled.
+**Answer area:** 3-column grid of 6 buttons — 3 true synonyms (from `synonym-words.txt`) and 3 related-but-wrong words, shuffled.
 
-**Goal:** Click all 4 synonyms. They may be clicked in any order.
+**Goal:** Click all 3 synonyms. They may be clicked in any order.
 
 **On correct click:** Button turns green (stays highlighted), glowing green shadow.
 
@@ -323,7 +323,7 @@ Note: Boss levels (multiples of 5) override word selection but **not** the chall
 
 **On all 4 selected:** Zombie defeated (same explode + reveal sequence).
 
-**Fallback:** If a word has no synonym entry with ≥4 synonyms and ≥3 related words, a definition round is used instead.
+**Fallback:** If a word has no synonym entry with ≥3 synonyms and ≥3 related words, a definition round is used instead.
 
 ---
 
