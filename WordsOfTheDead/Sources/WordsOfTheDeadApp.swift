@@ -16,7 +16,7 @@ struct WordsOfTheDeadApp: App {
                         .frame(minWidth: 900, minHeight: 700)
                 } else {
                     GameView(engine: engine)
-                        .frame(minWidth: 1000, minHeight: 900)
+                        .frame(minWidth: 1200, minHeight: 900)
                 }
             }
             .onAppear {
@@ -24,7 +24,7 @@ struct WordsOfTheDeadApp: App {
                 NSApplication.shared.activate(ignoringOtherApps: true)
             }
         }
-        .defaultSize(width: 1100, height: 1000)
+        .defaultSize(width: 1320, height: 1000)
         .windowResizability(.contentMinSize)
     }
 }
