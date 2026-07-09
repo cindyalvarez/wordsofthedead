@@ -81,7 +81,7 @@ private struct LevelIntroView: View {
                     Text("💣 ZOMBIE BOMB EARNED!")
                         .font(.system(size: 22, weight: .heavy, design: .rounded))
                         .foregroundStyle(.orange)
-                    Text("Click the 💣 in the HUD to blast all zombies off the screen — one time only!")
+                    Text("Click the 💣 in the top header to blast all zombies off the screen — one time only!")
                         .font(.callout)
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.white.opacity(0.8))
