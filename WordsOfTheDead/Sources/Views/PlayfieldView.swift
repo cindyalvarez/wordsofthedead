@@ -15,7 +15,9 @@ struct PlayfieldView: View {
                         level: engine.level,
                         mastered: engine.masteredCount,
                         totalWords: engine.totalWords,
-                        isBoss: engine.isBossLevel)
+                        isBoss: engine.isBossLevel,
+                        zombieBombs: engine.zombieBombs,
+                        onUseBomb: { engine.useBomb() })
 
                 // Full remaining height: zombies fall with choices embedded around them.
                 // After a correct kill the reveal card floats at the zombie's last position.
@@ -46,10 +48,16 @@ struct PlayfieldView: View {
                     .transition(.scale.combined(with: .opacity))
             }
 
+            if engine.showBombBanner {
+                CenterBombBannerView()
+                    .transition(.scale.combined(with: .opacity))
+            }
+
         }
         .onAppear(perform: installPauseKeyMonitor)
         .onDisappear(perform: removePauseKeyMonitor)
         .animation(.spring(response: 0.3), value: engine.showStreakBanner)
+        .animation(.spring(response: 0.3), value: engine.showBombBanner)
     }
 
     private func revealX(lane: Int, width: CGFloat) -> CGFloat {
@@ -125,6 +133,25 @@ private struct CenterStreakBannerView: View {
                     .stroke(.yellow.opacity(0.7), lineWidth: 2)
             )
             .shadow(color: .yellow.opacity(0.35), radius: 18)
+    }
+}
+
+private struct CenterBombBannerView: View {
+    var body: some View {
+        Text("💣 ZOMBIE BOMB EARNED!")
+            .font(.system(size: 34, weight: .heavy, design: .rounded))
+            .foregroundStyle(.orange)
+            .padding(.horizontal, 30)
+            .padding(.vertical, 16)
+            .background(
+                RoundedRectangle(cornerRadius: 18)
+                    .fill(.black.opacity(0.75))
+            )
+            .overlay(
+                RoundedRectangle(cornerRadius: 18)
+                    .stroke(.orange.opacity(0.7), lineWidth: 2)
+            )
+            .shadow(color: .orange.opacity(0.35), radius: 18)
     }
 }
 
@@ -380,17 +407,19 @@ private struct ZombieView: View {
                 switch roundKind {
                 case .definition, .reverseDefinition:
                     // 2 choice columns flanking the zombie.
+                    // Column width 130pt: at minWidth 1200, gap to adjacent zombie = ~20pt.
                     HStack(alignment: .center, spacing: 12) {
-                        choiceColumn(indices: [0, 1], width: 172)
+                        choiceColumn(indices: [0, 1], width: 130)
                         coreView
-                        choiceColumn(indices: [2, 3], width: 172)
+                        choiceColumn(indices: [2, 3], width: 130)
                     }
                 case .synonym:
                     // 3 choice columns on each side.
+                    // Column width 110pt: single words fit easily; leaves clear gap to neighbours.
                     HStack(alignment: .center, spacing: 12) {
-                        synonymColumn(indices: [0, 1, 2], width: 152)
+                        synonymColumn(indices: [0, 1, 2], width: 110)
                         coreView
-                        synonymColumn(indices: [3, 4, 5], width: 152)
+                        synonymColumn(indices: [3, 4, 5], width: 110)
                     }
                 case .fillBlank:
                     // Zombie above, two word-choice buttons directly below.
@@ -597,7 +626,7 @@ private struct ZombieView: View {
             fillWordButton(word: choices[safe: 0] ?? "", isLeft: true)
             fillWordButton(word: choices[safe: 1] ?? "", isLeft: false)
         }
-        .frame(width: 344)
+        .frame(width: 272)  // 2 * 130pt columns + 12pt gap
     }
 
     private func fillWordButton(word: String, isLeft: Bool) -> some View {

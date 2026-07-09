@@ -39,6 +39,8 @@ final class GameEngine: ObservableObject {
     // Pause (suggestion #17) and boss rounds (suggestion #13).
     @Published private(set) var isPaused: Bool = false
     @Published private(set) var isBossLevel: Bool = false
+    @Published private(set) var zombieBombs: Int = 0
+    @Published private(set) var showBombBanner: Bool = false
 
     // Saved-player progress: the active player's display name (empty until one is chosen).
     @Published private(set) var currentPlayerName: String = ""
@@ -137,6 +139,10 @@ final class GameEngine: ObservableObject {
     private let maxSpeed = 0.04
     private let startingLives = 1
     private let streakForExtraLife = 5
+    private var livesEarnedForBomb = 0
+    private let livesPerBomb = 5
+    private let maxBombs = 3
+    private var bombBannerTask: DispatchWorkItem?
     private let revealDuration = 3.0
     private let levelIntroDuration = 1.8
     private let standardWordsPerLevel = 10
@@ -415,7 +421,14 @@ final class GameEngine: ObservableObject {
             score += Int(Double(basePoints + speedBonus) * comboMultiplier)
             if streak % streakForExtraLife == 0 {
                 lives += 1
-                flashStreakBanner()
+                livesEarnedForBomb += 1
+                if livesEarnedForBomb >= livesPerBomb && zombieBombs < maxBombs {
+                    zombieBombs += 1
+                    livesEarnedForBomb = 0
+                    flashBombBanner()
+                } else {
+                    flashStreakBanner()
+                }
             }
             recordOutcome(zombie.question.word, correct: true)
             // Trigger explosion animation and sound; zombie will be removed after animation completes
@@ -755,6 +768,29 @@ final class GameEngine: ObservableObject {
         let task = DispatchWorkItem { [weak self] in self?.showStreakBanner = false }
         streakBannerTask = task
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.8, execute: task)
+    }
+
+    private func flashBombBanner() {
+        bombBannerTask?.cancel()
+        showBombBanner = true
+        let task = DispatchWorkItem { [weak self] in self?.showBombBanner = false }
+        bombBannerTask = task
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: task)
+    }
+
+    /// Drop a zombie bomb: clears all zombies without awarding credit. Max 3 held at once.
+    func useBomb() {
+        guard zombieBombs > 0, phase == .playing || phase == .revealing, !isPaused else { return }
+        zombieBombs -= 1
+        zombies.removeAll()
+        objectWillChange.send()
+        // If no reveal is pending, spawn the next zombie after a brief pause.
+        if phase == .playing {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) { [weak self] in
+                guard let self, self.phase == .playing else { return }
+                if self.zombies.isEmpty { self.spawnZombie() }
+            }
+        }
     }
 
     private func stopTimers() {

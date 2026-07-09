@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Top status bar (upper-left): remaining lives, zombies killed, and progress stats.
+/// Top status bar: left = kills/level, center = zombie bombs, right = lives/mastered.
 struct HUDView: View {
     let lives: Int
     let zombiesKilled: Int
@@ -8,6 +8,8 @@ struct HUDView: View {
     let mastered: Int
     let totalWords: Int
     let isBoss: Bool
+    let zombieBombs: Int
+    let onUseBomb: () -> Void
 
     var body: some View {
         HStack(alignment: .top) {
@@ -23,6 +25,23 @@ struct HUDView: View {
                             .foregroundStyle(.red)
                     }
                 }
+            }
+
+            Spacer()
+
+            // Zombie bombs — tap any icon to activate one.
+            if zombieBombs > 0 {
+                HStack(spacing: 6) {
+                    ForEach(0..<zombieBombs, id: \.self) { _ in
+                        Button(action: onUseBomb) {
+                            Text("💣")
+                                .font(.system(size: 28))
+                        }
+                        .buttonStyle(.plain)
+                        .help("Zombie Bomb — clears all zombies!")
+                    }
+                }
+                .padding(.horizontal, 12)
             }
 
             Spacer()
