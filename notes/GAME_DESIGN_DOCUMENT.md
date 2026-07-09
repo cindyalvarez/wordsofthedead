@@ -211,37 +211,23 @@ At each level intro, the scheduler's `unlockedTier` is updated: `min(3, (level -
 
 ## Playfield Layout
 
-The playfield occupies the full window and is split into three vertical zones:
+The playfield occupies the full window and is split into two vertical zones:
 
 ### 1. HUD (top bar)
 Thin bar with semi-transparent black background, two columns:
 - **Left:** "Zombies Killed: N" (green) / "Level: N" (cyan) + "☠️ BOSS" badge if boss level
 - **Right:** "Lives: N" (red) / "Mastered: N / Total" (yellow)
 
-### 2. Attack Zone (upper portion, flexible height)
-- **Background:** Level-assigned background image (scaled-to-fill), with a dark top-to-bottom gradient overlay (black 30% → black 62%) to keep zombie text legible. Plain black if no image assigned.
-- **Danger line:** 4px red bar at the very bottom of the zone — crossing it costs a life
-- **Zombies:** Falling animated figures. When correct, a bright yellow/orange burst explosion plays over the zombie before it disappears.
-
-**Zombie positioning:**
-- Three horizontal **lanes** (left, center, right), calculated from window width with margins
-- Vertical position maps `zombie.progress` (0.0–1.0) to a top-to-bottom range within the attack zone
-  - Definition/synonym/reverse-definition: top = 95pt from top, bottom = height − 70pt
-  - Fill-in-the-blank: top = 60pt (more runway for taller sentence cards)
-
-### 3. Divider
-Green semi-transparent horizontal line.
-
-### 4. Answer Area (bottom, fixed 250pt height)
-Changes based on the current lead zombie's challenge type:
-- **Definition or Reverse-Definition:** `DefinitionTickerView` — 2-column grid of 4 choice buttons
-- **Synonym:** `SynonymChoicesView` — 3-column grid of 6 buttons (3 correct, 3 distractors)
-- **Fill-in-the-blank:** `FillBlankChoicesView` — 2 large buttons with F/J key labels
-- **Reveal phase:** `RevealView` — word + part of speech + fun definition
+### 2. Attack Zone (all remaining height)
+Full-screen playfield where all interaction happens. Contains:
+- **Background:** Level-assigned background image (scaled-to-fill) with a dark top-to-bottom gradient overlay (black 30% → black 62%). Plain black if no image assigned.
+- **Danger line:** 4px red bar at the very bottom — zombies reaching it cost a life
+- **Zombies:** Falling animated figures with their prompt and answer choices embedded directly around them
+- **Reveal card:** After a correct kill, slides up from the bottom of the attack zone as a full-width card with a dark background (black 80%), showing the word, part of speech, mastery badge, and fun definition for 3 seconds. Other zombies continue falling behind it.
 
 ### Overlays
-- **Pause overlay:** "⏸ Paused" + "Press P to resume" on black 65% opacity full screen overlay
-- **Streak banner:** "🔥 STREAK — you got a new life!" centered pop-up with yellow text, black card, yellow border, shown for 1.8 seconds
+- **Pause overlay:** Full-screen black 65% + "⏸ Paused" + "Press P to resume"
+- **Streak banner:** "🔥 STREAK — you got a new life!" centered pop-up, shown for 1.8 seconds
 
 ---
 

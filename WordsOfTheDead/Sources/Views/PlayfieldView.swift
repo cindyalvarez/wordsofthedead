@@ -1,8 +1,8 @@
 import SwiftUI
 import AppKit
 
-/// The active playfield: HUD, the zombie attack zone on top, and the answer choices below.
-/// While a correct answer is being revealed, the reveal card overlays the choices.
+/// The active playfield: HUD at the top; the full remaining height is the attack zone
+/// where zombies fall with their answer choices embedded around them.
 struct PlayfieldView: View {
     @ObservedObject var engine: GameEngine
     @State private var keyMonitor: Any?
@@ -17,51 +17,21 @@ struct PlayfieldView: View {
                         totalWords: engine.totalWords,
                         isBoss: engine.isBossLevel)
 
-                // Top: zombie attack zone (continues during reveal).
-                ZStack {
+                // Full remaining height: zombies fall with choices embedded around them.
+                // The reveal card slides up from the bottom after a correct kill.
+                ZStack(alignment: .bottom) {
                     AttackZoneView(engine: engine)
-                }
-                .frame(maxWidth: .infinity)
-                .layoutPriority(1)
 
-                Divider().background(.green.opacity(0.4))
-
-                // Bottom: the four-choice ticker (definition / reverse-definition levels),
-                // the synonym grid, the two-word chooser (fill-in-the-blank), or the reveal.
-                ZStack {
                     if engine.phase == .revealing, let word = engine.revealWord {
                         RevealView(word: word, stage: engine.revealStage)
-                    } else if let lead = engine.leadZombie {
-                        if lead.kind == .synonym {
-                            SynonymChoicesView(
-                                choices: lead.question.choices,
-                                correctIndices: lead.question.correctIndices,
-                                selectedIndices: lead.selectedChoiceIndices,
-                                wrongIndices: lead.wrongChoiceIndices,
-                                onSelect: { engine.answerSynonymChoice(at: $0) }
-                            )
-                        } else if lead.kind == .fillBlank {
-                            FillBlankChoicesView(
-                                leftWord: lead.question.choices[safe: 0] ?? "",
-                                rightWord: lead.question.choices[safe: 1] ?? "",
-                                wrong: lead.wrong,
-                                onAnswer: { isLeft in engine.answerFillBlank(left: isLeft) }
-                            )
-                        } else {
-                            DefinitionTickerView(
-                                choices: lead.question.choices,
-                                selectedIndex: lead.currentChoiceIndex,
-                                prompt: lead.kind == .reverseDefinition
-                                    ? "Click a word  •  J to cycle  •  Space to confirm"
-                                    : "Click a definition  •  J to cycle  •  Space to confirm",
-                                wrong: lead.wrong,
-                                onGuessChoice: { i in engine.guessChoice(at: i) }
-                            )
-                        }
+                            .padding(14)
+                            .frame(maxWidth: .infinity)
+                            .background(.black.opacity(0.80))
+                            .transition(.move(edge: .bottom).combined(with: .opacity))
                     }
                 }
-                .frame(height: 250)
-                .padding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .animation(.easeInOut(duration: 0.25), value: engine.phase == .revealing)
             }
 
             if engine.isPaused {
@@ -177,17 +147,30 @@ private struct AttackZoneView: View {
 
                 let leadID = engine.leadZombie?.id
                 ForEach(engine.zombies) { zombie in
-                    ZombieView(prompt: zombie.prompt,
-                               kind: ZombieKind.allCases[zombie.variant % ZombieKind.allCases.count],
-                               roundKind: zombie.kind,
-                               wrong: zombie.wrong,
-                               isLead: zombie.id == leadID,
-                               isExploding: zombie.isExploding)
-                        .position(
-                            x: zombieX(zombie.lane, in: geo.size.width),
-                            y: zombieY(zombie.progress, in: geo.size.height, roundKind: zombie.kind)
-                        )
-                        .animation(.linear(duration: 0.05), value: zombie.progress)
+                    let isLead = zombie.id == leadID
+                    // Only show choices on the lead zombie during active play.
+                    let showChoices = isLead && engine.phase == .playing
+                    ZombieView(
+                        prompt: zombie.prompt,
+                        kind: ZombieKind.allCases[zombie.variant % ZombieKind.allCases.count],
+                        roundKind: zombie.kind,
+                        wrong: zombie.wrong,
+                        isLead: isLead,
+                        isExploding: zombie.isExploding,
+                        choices: showChoices ? zombie.question.choices : [],
+                        currentChoiceIndex: zombie.currentChoiceIndex,
+                        correctIndices: zombie.question.correctIndices,
+                        selectedChoiceIndices: zombie.selectedChoiceIndices,
+                        wrongChoiceIndices: zombie.wrongChoiceIndices,
+                        onGuessChoice: showChoices ? { i in engine.guessChoice(at: i) } : nil,
+                        onSelectSynonym: showChoices ? { i in engine.answerSynonymChoice(at: i) } : nil,
+                        onFillBlank: showChoices ? { isLeft in engine.answerFillBlank(left: isLeft) } : nil
+                    )
+                    .position(
+                        x: zombieX(zombie.lane, in: geo.size.width),
+                        y: zombieY(zombie.progress, in: geo.size.height, roundKind: zombie.kind)
+                    )
+                    .animation(.linear(duration: 0.05), value: zombie.progress)
                 }
             }
         }
@@ -354,61 +337,118 @@ private struct ZombieView: View {
     var isLead: Bool = true
     let isExploding: Bool
 
+    // Choice data — only populated for the lead zombie during active play.
+    var choices: [String] = []
+    var currentChoiceIndex: Int = 0
+    var correctIndices: Set<Int> = []
+    var selectedChoiceIndices: Set<Int> = []
+    var wrongChoiceIndices: Set<Int> = []
+    var onGuessChoice: ((Int) -> Void)? = nil
+    var onSelectSynonym: ((Int) -> Void)? = nil
+    var onFillBlank: ((Bool) -> Void)? = nil
+
     @State private var sway = false
     @State private var lurch = false
 
-    // Art is scaled to 75% of the original size; the word label is unaffected.
+    // Art is scaled to 75% of the original size.
     private let scale: CGFloat = 0.75
     private var auraSize: CGFloat { 150 * scale }
     private var figureW: CGFloat { 120 * scale }
     private var figureH: CGFloat { 150 * scale }
 
+    private var showChoices: Bool { isLead && !choices.isEmpty && !isExploding }
+
     var body: some View {
-        VStack(spacing: 10) {
-            ZStack {
-                // Explosion flash overlay (bright yellow/white burst)
-                if isExploding {
-                    Circle()
-                        .fill(
-                            RadialGradient(
-                                colors: [.yellow.opacity(0.8), .orange.opacity(0.4), .clear],
-                                center: .center, startRadius: 4, endRadius: 100 * scale
-                            )
-                        )
-                        .frame(width: auraSize * 1.5, height: auraSize * 1.5)
-                        .scaleEffect(isExploding ? 1.8 : 1.0)
+        Group {
+            if showChoices {
+                switch roundKind {
+                case .definition, .reverseDefinition:
+                    // 2 choice columns flanking the zombie.
+                    HStack(alignment: .center, spacing: 12) {
+                        choiceColumn(indices: [0, 1], width: 172)
+                        coreView
+                        choiceColumn(indices: [2, 3], width: 172)
+                    }
+                case .synonym:
+                    // 3 choice columns on each side.
+                    HStack(alignment: .center, spacing: 12) {
+                        synonymColumn(indices: [0, 1, 2], width: 152)
+                        coreView
+                        synonymColumn(indices: [3, 4, 5], width: 152)
+                    }
+                case .fillBlank:
+                    // Zombie above, two word-choice buttons directly below.
+                    VStack(spacing: 10) {
+                        coreView
+                        fillBlankButtons
+                    }
                 }
-
-                // Sickly aura pulsing behind the zombie.
-                Circle()
-                    .fill(
-                        RadialGradient(
-                            colors: [kind.auraColor.opacity(0.40), .clear],
-                            center: .center, startRadius: 4, endRadius: 70 * scale
-                        )
-                    )
-                    .frame(width: auraSize, height: auraSize)
-                    .scaleEffect(lurch ? 1.08 : 0.92)
-                    .blur(radius: 6)
-
-                ZombieFigure(kind: kind, wrong: wrong)
-                    .frame(width: figureW, height: figureH)
-                    .shadow(color: kind.auraColor.opacity(0.7), radius: 10)
-                    .shadow(color: .red.opacity(wrong ? 0.9 : 0.0), radius: wrong ? 18 : 0)
-                    .rotationEffect(.degrees(sway ? 4 : -4), anchor: .bottom)
-                    .offset(y: lurch ? -3 : 3)
-                    .scaleEffect(isExploding ? 0.1 : 1.0)
-                    .opacity(isExploding ? 0.0 : 1.0)
+            } else {
+                coreView
             }
-            .frame(height: auraSize)
+        }
+        .onAppear {
+            if !isExploding {
+                withAnimation(.easeInOut(duration: 1.1).repeatForever(autoreverses: true)) { sway = true }
+                withAnimation(.easeInOut(duration: 0.7).repeatForever(autoreverses: true)) { lurch = true }
+            }
+        }
+        .animation(.easeOut(duration: 0.5), value: isExploding)
+        .opacity(isLead ? 1.0 : 0.8)
+    }
 
+    // MARK: - Core zombie (figure + prompt label)
+
+    private var coreView: some View {
+        VStack(spacing: 6) {
+            zombieArtStack
+            promptLabel
+        }
+    }
+
+    private var zombieArtStack: some View {
+        ZStack {
+            // Explosion burst.
+            if isExploding {
+                Circle()
+                    .fill(RadialGradient(
+                        colors: [.yellow.opacity(0.8), .orange.opacity(0.4), .clear],
+                        center: .center, startRadius: 4, endRadius: 100 * scale
+                    ))
+                    .frame(width: auraSize * 1.5, height: auraSize * 1.5)
+                    .scaleEffect(1.8)
+            }
+            // Sickly aura pulsing behind the zombie.
+            Circle()
+                .fill(RadialGradient(
+                    colors: [kind.auraColor.opacity(0.40), .clear],
+                    center: .center, startRadius: 4, endRadius: 70 * scale
+                ))
+                .frame(width: auraSize, height: auraSize)
+                .scaleEffect(lurch ? 1.08 : 0.92)
+                .blur(radius: 6)
+
+            ZombieFigure(kind: kind, wrong: wrong)
+                .frame(width: figureW, height: figureH)
+                .shadow(color: kind.auraColor.opacity(0.7), radius: 10)
+                .shadow(color: .red.opacity(wrong ? 0.9 : 0.0), radius: wrong ? 18 : 0)
+                .rotationEffect(.degrees(sway ? 4 : -4), anchor: .bottom)
+                .offset(y: lurch ? -3 : 3)
+                .scaleEffect(isExploding ? 0.1 : 1.0)
+                .opacity(isExploding ? 0.0 : 1.0)
+        }
+        .frame(height: auraSize)
+    }
+
+    private var promptLabel: some View {
+        Group {
             if roundKind == .definition || roundKind == .synonym {
                 Text(prompt)
-                    .font(.system(size: 30, weight: .heavy, design: .serif))
+                    .font(.system(size: 28, weight: .heavy, design: .serif))
                     .tracking(1)
                     .foregroundStyle(.white)
-                    .padding(.horizontal, 18)
-                    .padding(.vertical, 9)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 7)
                     .background(
                         RoundedRectangle(cornerRadius: 8)
                             .fill(Color(red: 0.08, green: 0.10, blue: 0.08).opacity(0.92))
@@ -419,16 +459,15 @@ private struct ZombieView: View {
                     )
                     .shadow(color: .black.opacity(0.6), radius: 4, y: 2)
             } else {
-                // Fill-in-the-blank sentences and reverse-definition prompts: smaller,
-                // wrapped, readable serif text.
+                // Fill-in-the-blank sentence or short definition — smaller, wrapped.
                 Text(prompt)
-                    .font(.system(size: 21, weight: .semibold, design: .serif))
+                    .font(.system(size: 19, weight: .semibold, design: .serif))
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
                     .lineSpacing(3)
-                    .frame(maxWidth: 380)
-                    .padding(.horizontal, 18)
-                    .padding(.vertical, 12)
+                    .frame(maxWidth: 320)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 10)
                     .background(
                         RoundedRectangle(cornerRadius: 8)
                             .fill(Color(red: 0.08, green: 0.10, blue: 0.08).opacity(0.92))
@@ -440,18 +479,109 @@ private struct ZombieView: View {
                     .shadow(color: .black.opacity(0.6), radius: 4, y: 2)
             }
         }
-        .onAppear {
-            if !isExploding {
-                withAnimation(.easeInOut(duration: 1.1).repeatForever(autoreverses: true)) {
-                    sway = true
-                }
-                withAnimation(.easeInOut(duration: 0.7).repeatForever(autoreverses: true)) {
-                    lurch = true
-                }
+    }
+
+    // MARK: - Definition / reverse-definition choice columns
+
+    private func choiceColumn(indices: [Int], width: CGFloat) -> some View {
+        VStack(spacing: 8) {
+            ForEach(indices, id: \.self) { i in
+                definitionChoiceButton(text: choices[safe: i] ?? "", index: i)
+                    .frame(height: 72)
             }
         }
-        .animation(.easeOut(duration: 0.5), value: isExploding)
-        .opacity(isLead ? 1.0 : 0.8)
+        .frame(width: width)
+    }
+
+    private func definitionChoiceButton(text: String, index: Int) -> some View {
+        let isSelected = (index == currentChoiceIndex)
+        let isWrong = (wrong && isSelected)
+        let border: Color = isWrong ? .red.opacity(0.85) : isSelected ? kind.auraColor : .white.opacity(0.20)
+        let bg: Color    = isWrong ? .red.opacity(0.12) : isSelected ? kind.auraColor.opacity(0.18) : .white.opacity(0.07)
+        return Button { onGuessChoice?(index) } label: {
+            Text(text)
+                .font(.system(size: 15, weight: .semibold))
+                .foregroundStyle(.white)
+                .multilineTextAlignment(.leading)
+                .lineLimit(4)
+                .minimumScaleFactor(0.75)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                .padding(.horizontal, 10)
+                .padding(.vertical, 8)
+                .background(RoundedRectangle(cornerRadius: 8).fill(bg))
+                .overlay(RoundedRectangle(cornerRadius: 8).stroke(border, lineWidth: isSelected ? 2 : 1))
+        }
+        .buttonStyle(.plain)
+        .animation(.easeInOut(duration: 0.12), value: isSelected)
+    }
+
+    // MARK: - Synonym choice columns
+
+    private func synonymColumn(indices: [Int], width: CGFloat) -> some View {
+        VStack(spacing: 8) {
+            ForEach(indices, id: \.self) { i in
+                synonymChoiceButton(text: choices[safe: i] ?? "", index: i)
+                    .frame(height: 60)
+            }
+        }
+        .frame(width: width)
+    }
+
+    private func synonymChoiceButton(text: String, index: Int) -> some View {
+        let isSelected = selectedChoiceIndices.contains(index)
+        let isWrong    = wrongChoiceIndices.contains(index)
+        let bg: Color     = isSelected ? .green.opacity(0.24) : isWrong ? .red.opacity(0.18) : .white.opacity(0.07)
+        let border: Color = isWrong ? .red.opacity(0.85) : isSelected ? .green.opacity(0.85) : .white.opacity(0.20)
+        return Button { onSelectSynonym?(index) } label: {
+            Text(text)
+                .font(.system(size: 16, weight: .semibold))
+                .foregroundStyle(.white)
+                .multilineTextAlignment(.center)
+                .lineLimit(2)
+                .minimumScaleFactor(0.8)
+                .frame(maxWidth: .infinity, minHeight: 44)
+                .padding(.horizontal, 8)
+                .padding(.vertical, 6)
+                .background(RoundedRectangle(cornerRadius: 8).fill(bg))
+                .overlay(RoundedRectangle(cornerRadius: 8).stroke(border, lineWidth: isSelected ? 2 : 1))
+                .shadow(color: isSelected ? .green.opacity(0.45) : .clear, radius: 10)
+        }
+        .buttonStyle(.plain)
+        .animation(.easeInOut(duration: 0.12), value: isSelected)
+    }
+
+    // MARK: - Fill-in-the-blank buttons
+
+    private var fillBlankButtons: some View {
+        HStack(spacing: 20) {
+            fillWordButton(key: "F", word: choices[safe: 0] ?? "", isLeft: true)
+            fillWordButton(key: "J", word: choices[safe: 1] ?? "", isLeft: false)
+        }
+    }
+
+    private func fillWordButton(key: String, word: String, isLeft: Bool) -> some View {
+        Button { onFillBlank?(isLeft) } label: {
+            VStack(spacing: 8) {
+                Text(key)
+                    .font(.system(size: 20, weight: .heavy, design: .rounded))
+                    .foregroundStyle(.black)
+                    .frame(width: 36, height: 36)
+                    .background(Circle().fill(.green))
+                Text(word)
+                    .font(.system(size: 28, weight: .bold))
+                    .foregroundStyle(.white)
+                    .multilineTextAlignment(.center)
+            }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 16)
+            .padding(.horizontal, 14)
+            .background(RoundedRectangle(cornerRadius: 12).fill(.white.opacity(0.08)))
+            .overlay(
+                RoundedRectangle(cornerRadius: 12)
+                    .stroke(wrong ? Color.red.opacity(0.8) : Color.green.opacity(0.5), lineWidth: 2)
+            )
+        }
+        .buttonStyle(.plain)
     }
 }
 
