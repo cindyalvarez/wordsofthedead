@@ -163,8 +163,8 @@ private struct AttackZoneView: View {
                 let leadID = engine.leadZombie?.id
                 ForEach(engine.zombies) { zombie in
                     let isLead = zombie.id == leadID
-                    // Only show choices on the lead zombie during active play.
-                    let showChoices = isLead && engine.phase == .playing
+                    // Show choices on the lead zombie during play and reveal phases.
+                    let showChoices = isLead && (engine.phase == .playing || engine.phase == .revealing)
                     ZombieView(
                         prompt: zombie.prompt,
                         kind: ZombieKind.allCases[zombie.variant % ZombieKind.allCases.count],

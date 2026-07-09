@@ -349,7 +349,7 @@ final class GameEngine: ObservableObject {
 
     /// Synonym rounds: each correct click locks in one synonym; all three must be selected.
     func answerSynonymChoice(at choiceIndex: Int) {
-        guard phase == .playing, !isPaused, let idx = leadIndex,
+        guard phase == .playing || phase == .revealing, !isPaused, let idx = leadIndex,
               zombies[idx].kind == .synonym else { return }
 
         let question = zombies[idx].question
@@ -378,7 +378,7 @@ final class GameEngine: ObservableObject {
     /// Fill-in-the-blank rounds: the player presses F (left word) or J (right word) to
     /// complete the sentence.
     func answerFillBlank(left: Bool) {
-        guard phase == .playing, !isPaused, let idx = leadIndex,
+        guard phase == .playing || phase == .revealing, !isPaused, let idx = leadIndex,
               zombies[idx].kind == .fillBlank else { return }
         let chosenIndex = left ? 0 : 1
         resolveLead(at: idx, correct: chosenIndex == zombies[idx].question.correctIndex)
@@ -395,7 +395,7 @@ final class GameEngine: ObservableObject {
 
     /// Click-to-answer: jump to a specific choice and resolve immediately.
     func guessChoice(at choiceIndex: Int) {
-        guard phase == .playing, !isPaused, let idx = leadIndex,
+        guard phase == .playing || phase == .revealing, !isPaused, let idx = leadIndex,
               zombies[idx].kind == .definition || zombies[idx].kind == .reverseDefinition else { return }
         let count = zombies[idx].question.choices.count
         guard choiceIndex >= 0, choiceIndex < count else { return }
