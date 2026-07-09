@@ -110,7 +110,7 @@ final class VocabularyStore {
             let right = parts.dropFirst().first ?? ""
 
             let leftParts = left.split(separator: "|").map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
-            guard let word = leftParts.first, leftParts.count >= 5 else { continue }
+            guard let word = leftParts.first, leftParts.count >= 4 else { continue }
 
             let synonyms = Array(leftParts.dropFirst())
             let related = right.split(separator: "|").map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
