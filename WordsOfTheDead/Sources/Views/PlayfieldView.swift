@@ -48,16 +48,10 @@ struct PlayfieldView: View {
                     .transition(.scale.combined(with: .opacity))
             }
 
-            if engine.showBombBanner {
-                CenterBombBannerView()
-                    .transition(.scale.combined(with: .opacity))
-            }
-
         }
         .onAppear(perform: installPauseKeyMonitor)
         .onDisappear(perform: removePauseKeyMonitor)
         .animation(.spring(response: 0.3), value: engine.showStreakBanner)
-        .animation(.spring(response: 0.3), value: engine.showBombBanner)
     }
 
     private func revealX(lane: Int, width: CGFloat) -> CGFloat {
@@ -133,25 +127,6 @@ private struct CenterStreakBannerView: View {
                     .stroke(.yellow.opacity(0.7), lineWidth: 2)
             )
             .shadow(color: .yellow.opacity(0.35), radius: 18)
-    }
-}
-
-private struct CenterBombBannerView: View {
-    var body: some View {
-        Text("💣 ZOMBIE BOMB EARNED!")
-            .font(.system(size: 34, weight: .heavy, design: .rounded))
-            .foregroundStyle(.orange)
-            .padding(.horizontal, 30)
-            .padding(.vertical, 16)
-            .background(
-                RoundedRectangle(cornerRadius: 18)
-                    .fill(.black.opacity(0.75))
-            )
-            .overlay(
-                RoundedRectangle(cornerRadius: 18)
-                    .stroke(.orange.opacity(0.7), lineWidth: 2)
-            )
-            .shadow(color: .orange.opacity(0.35), radius: 18)
     }
 }
 

@@ -24,7 +24,8 @@ struct GameView: View {
             case .levelIntro:
                 LevelIntroView(level: engine.level,
                                isBoss: engine.isBossLevel,
-                               instruction: engine.levelInstruction)
+                               instruction: engine.levelInstruction,
+                               bombEarned: engine.bombEarnedThisLevel)
             case .playing, .revealing:
                 PlayfieldView(engine: engine)
             case .gameOver:
@@ -41,6 +42,7 @@ private struct LevelIntroView: View {
     let level: Int
     var isBoss: Bool = false
     var instruction: String = ""
+    var bombEarned: Bool = false
 
     @State private var appeared = false
 
@@ -72,6 +74,30 @@ private struct LevelIntroView: View {
                 Text("A wrong guess speeds the zombie up.  Press P to pause.")
                     .font(.callout)
                     .foregroundStyle(.white.opacity(0.55))
+            }
+
+            if bombEarned {
+                VStack(spacing: 6) {
+                    Text("💣 ZOMBIE BOMB EARNED!")
+                        .font(.system(size: 22, weight: .heavy, design: .rounded))
+                        .foregroundStyle(.orange)
+                    Text("Click the 💣 in the HUD to blast all zombies off the screen — one time only!")
+                        .font(.callout)
+                        .multilineTextAlignment(.center)
+                        .foregroundStyle(.white.opacity(0.8))
+                }
+                .padding(.horizontal, 28)
+                .padding(.vertical, 14)
+                .background(
+                    RoundedRectangle(cornerRadius: 16)
+                        .fill(.black.opacity(0.6))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 16)
+                        .stroke(.orange.opacity(0.65), lineWidth: 1.5)
+                )
+                .shadow(color: .orange.opacity(0.3), radius: 12)
+                .padding(.top, 8)
             }
         }
         .scaleEffect(appeared ? 1 : 0.6)

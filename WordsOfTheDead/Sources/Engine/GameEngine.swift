@@ -40,7 +40,8 @@ final class GameEngine: ObservableObject {
     @Published private(set) var isPaused: Bool = false
     @Published private(set) var isBossLevel: Bool = false
     @Published private(set) var zombieBombs: Int = 0
-    @Published private(set) var showBombBanner: Bool = false
+    /// True during the levelIntro phase when a bomb was earned in the previous level.
+    @Published private(set) var bombEarnedThisLevel: Bool = false
 
     // Saved-player progress: the active player's display name (empty until one is chosen).
     @Published private(set) var currentPlayerName: String = ""
@@ -142,7 +143,7 @@ final class GameEngine: ObservableObject {
     private var livesEarnedForBomb = 0
     private let livesPerBomb = 5
     private let maxBombs = 3
-    private var bombBannerTask: DispatchWorkItem?
+    private var pendingBombNotification = false
     private let revealDuration = 3.0
     private let levelIntroDuration = 1.8
     private let standardWordsPerLevel = 10
@@ -425,7 +426,7 @@ final class GameEngine: ObservableObject {
                 if livesEarnedForBomb >= livesPerBomb && zombieBombs < maxBombs {
                     zombieBombs += 1
                     livesEarnedForBomb = 0
-                    flashBombBanner()
+                    pendingBombNotification = true
                 } else {
                     flashStreakBanner()
                 }
@@ -433,7 +434,7 @@ final class GameEngine: ObservableObject {
             // In test mode, award a bomb on the first correct answer so it can be tested immediately.
             if testMode && zombieBombs == 0 {
                 zombieBombs = 1
-                flashBombBanner()
+                pendingBombNotification = true
             }
             recordOutcome(zombie.question.word, correct: true)
             // Trigger explosion animation and sound; zombie will be removed after animation completes
@@ -549,6 +550,10 @@ final class GameEngine: ObservableObject {
         zombies = []
         revealTask?.cancel()
         revealWord = nil
+
+        // Promote any pending bomb notification to show on this level intro screen.
+        bombEarnedThisLevel = pendingBombNotification
+        pendingBombNotification = false
 
         // Unlock harder word tiers as the player climbs (#11): tier 0 at L1-2, then one
         // more tier every two levels.
@@ -775,13 +780,6 @@ final class GameEngine: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.8, execute: task)
     }
 
-    private func flashBombBanner() {
-        bombBannerTask?.cancel()
-        showBombBanner = true
-        let task = DispatchWorkItem { [weak self] in self?.showBombBanner = false }
-        bombBannerTask = task
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0, execute: task)
-    }
 
     /// Drop a zombie bomb: clears all zombies without awarding credit. Max 3 held at once.
     func useBomb() {
