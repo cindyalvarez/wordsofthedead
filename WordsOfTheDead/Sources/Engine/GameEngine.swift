@@ -580,13 +580,13 @@ final class GameEngine: ObservableObject {
     var levelInstruction: String {
         switch roundKindForLevel {
         case .definition:
-            return "Match the WORD to its definition — press SPACE on the correct one."
+            return "Match the WORD to its definition — click the correct one."
         case .synonym:
             return "Click all 3 synonyms to defeat the zombie."
         case .reverseDefinition:
-            return "Match the DEFINITION to its word — press SPACE on the correct one."
+            return "Match the DEFINITION to its word — click the correct one."
         case .fillBlank:
-            return "Complete the sentence — click the correct word or press F / J."
+            return "Complete the sentence — click the correct word."
         }
     }
 
