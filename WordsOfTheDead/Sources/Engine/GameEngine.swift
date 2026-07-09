@@ -603,11 +603,23 @@ final class GameEngine: ObservableObject {
             prompt: round.prompt,
             speed: levelSpeed(),
             variant: Int.random(in: 0..<ZombieKind.allCases.count),
-            lane: Int.random(in: 0...2),
+            lane: nextLane(),
             currentChoiceIndex: Int.random(in: 0..<q.choices.count)
         )
         zombies.append(zombie)
         ticksSinceRotation = 0
+    }
+
+    /// Picks a lane not already occupied by a live zombie. When all three lanes are taken
+    /// (only possible at level 5+ with 4 concurrent zombies), picks the lane whose occupant
+    /// is furthest from the bottom so the new zombie starts as far away as possible.
+    private func nextLane() -> Int {
+        let live = zombies.filter { !$0.isExploding }
+        let occupied = Set(live.map { $0.lane })
+        let free = Set(0...2).subtracting(occupied)
+        if let lane = free.randomElement() { return lane }
+        // All lanes full: reuse the lane whose zombie has the least progress.
+        return live.min(by: { $0.progress < $1.progress })?.lane ?? Int.random(in: 0...2)
     }
 
     /// The next word to show. Words from zombies that were still on screen when the level
