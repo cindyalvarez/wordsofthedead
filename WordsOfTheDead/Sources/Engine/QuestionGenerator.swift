@@ -126,23 +126,18 @@ struct QuestionGenerator {
     // MARK: - Fill-in-the-blank rounds (Type 4)
 
     func makeFillBlankRound(for word: VocabWord) -> Round {
-        // Blank the word out of its fun definition; fall back to a definition round if
-        // (rarely) the word cannot be located in its sentence.
-        guard let fun = word.funDefinition,
-              let blanked = Self.blankOut(word.word, in: fun),
-              let distractor = distractorWord(for: word, excluding: blanked.surface)
+        guard let distractor = distractorWord(for: word, excluding: word.word)
         else {
             return makeDefinitionRound(for: word)
         }
 
-        // The correct choice must match the exact form used in the sentence (e.g. the
-        // sentence may say "abetted" even though the listed word is "abet").
-        let correct = blanked.surface
+        let prompt = "_____ means \(word.shortDefinition)"
+        let correct = word.word
         var options = [correct, distractor]
         options.shuffle()
         let correctIndex = options.firstIndex(of: correct) ?? 0
         let question = Question(word: word, choices: options, correctIndex: correctIndex, correctIndices: [correctIndex])
-        return Round(question: question, kind: .fillBlank, prompt: blanked.sentence)
+        return Round(question: question, kind: .fillBlank, prompt: prompt)
     }
 
     /// Picks a plausible but incorrect word, preferring the same part of speech. Kept as a
