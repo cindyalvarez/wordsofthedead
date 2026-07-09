@@ -86,6 +86,14 @@ final class GameEngine: ObservableObject {
             roster.legacyMigrated = true
             PlayerStore.save(roster)
         }
+        // Skip the player-select screen on launch: if a last-used player exists, activate
+        // them immediately (they land on the start screen or cutscene as appropriate).
+        // Brand-new users land on the start screen where they can enter their name.
+        if let last = lastPlayer {
+            activate(last)
+        } else {
+            phase = .start
+        }
     }
 
     /// Saved players, most recently played first.

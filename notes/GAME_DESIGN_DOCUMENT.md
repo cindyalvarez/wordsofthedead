@@ -99,10 +99,10 @@
 ## Player Profiles and Persistence
 
 ### First Launch
-If no players exist, the game shows a name-entry screen. The entered name (case/punctuation-insensitive) becomes the player's ID (slug). The first player ever created inherits any pre-player "legacy" progress.
+On first launch (no saved players), the app goes directly to the **Start Screen** (see below), which shows an inline name-entry form in place of the buttons. After the player enters their name and clicks "Begin", the cutscene plays (once), then gameplay starts.
 
 ### Returning Launch
-The player-select screen shows all saved players (most-recently-played first), each displaying their best level. The player can "Continue as [Name]" or create a "New Player."
+The last-used player is automatically activated on launch, skipping the player-select screen entirely. The app goes straight to the **Start Screen** (or cutscene if, somehow, that player hasn't watched it). The "Switch" button on the start screen opens the player-select screen for changing accounts.
 
 ### Player Data Model (`Player.swift`)
 | Field | Description |
@@ -165,15 +165,20 @@ A synthesized corporate C-E-G major-chord jingle (2 seconds, PCM WAV generated a
 The start screen is shown after player selection and after the cutscene for returning players.
 
 ### Layout (top to bottom)
-1. **Background:** Dark gradient (near-black top to near-black slightly greenish bottom) with 6 shambling zombie silhouettes drifting slowly across screen at ~28% opacity
+1. **Background:** Dark gradient with 6 shambling zombie silhouettes drifting slowly across screen at ~28% opacity
 2. **Title:** "WORDS OF THE DEAD" (52pt black rounded font, green gradient, pulsing glow). Subtitle: "SURVIVE THE VOCABULARY ONSLAUGHT" (small, spaced tracking, low opacity)
-3. **Player bar:** Current player name with person icon and a "Switch" button (returns to player-select)
-4. **Stats strip:** Best Level (green) / Mastered word count (yellow) / Total Words (white dim) in a 3-column card
-5. **Daily streak block:** Flame or target icon, day streak count, today's progress `N/20`, orange/yellow progress bar, 7-day activity calendar (green dots for met days, yellow ring for today)
-6. **Action buttons:**
-   - **Start Game** (green, prominent) — starts at level 1
-   - **Test Mode** (orange, bordered) — 1 word per level to quickly advance through levels
-   - Caption: "Press P to pause the game at any time."
+3. **If no player exists yet — Name Entry form:**
+   - "Welcome! What's your name?" label
+   - Text field (auto-focused)
+   - "Begin" button (green, prominent) — calls `createPlayer(named:)`, leads to cutscene
+4. **If a player is active:**
+   - **Player bar:** Current player name with person icon and a "Switch" button (opens player-select screen)
+   - **Stats strip:** Best Level (green) / Mastered word count (yellow) / Total Words (white dim) in a 3-column card
+   - **Daily streak block:** Flame or target icon, day streak count, today's progress `N/20`, orange/yellow progress bar, 7-day activity calendar (green dots for met days, yellow ring for today)
+   - **Action buttons:**
+     - **Start Game** (green, prominent) — starts at level 1
+     - **Test Mode** (orange, bordered) — 1 word per level to quickly advance through levels
+     - Caption: "Press P to pause the game at any time."
 
 ### Zombie Parade
 Six `ZombieFigure` instances (cycling through all three ZombieKind variants) positioned at staggered heights, slowly drifting rightward (12-second loop, looping). They sway slightly left-right.

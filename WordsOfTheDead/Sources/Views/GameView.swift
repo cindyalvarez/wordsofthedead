@@ -194,6 +194,8 @@ private struct StartView: View {
     @State private var pulseGlow = false
     @State private var zombieOffset: CGFloat = 0
     @State private var showContent = false
+    @State private var newName: String = ""
+    @FocusState private var nameFieldFocused: Bool
 
     var body: some View {
         ZStack {
@@ -228,39 +230,46 @@ private struct StartView: View {
 
                 Spacer().frame(height: 18)
 
-                // Player identity bar.
-                if !engine.currentPlayerName.isEmpty {
-                    playerBar
-                        .opacity(showContent ? 1 : 0)
-                        .offset(y: showContent ? 0 : 12)
-                }
-
-                Spacer().frame(height: 16)
-
-                // Stats overview — personal bests + mastery.
-                if engine.currentPlayer != nil {
-                    statsStrip
-                        .opacity(showContent ? 1 : 0)
-                        .offset(y: showContent ? 0 : 12)
-                }
-
-                Spacer().frame(height: 16)
-
-                // Daily streak.
-                DailyStreakView(engine: engine)
-                    .opacity(showContent ? 1 : 0)
-                    .offset(y: showContent ? 0 : 12)
-
-                Spacer().frame(height: 20)
-
-                // Action buttons.
-                if engine.hasContent {
-                    buttonsBlock
+                if engine.currentPlayer == nil {
+                    // No player yet — show an inline name-entry form.
+                    nameEntryBlock
                         .opacity(showContent ? 1 : 0)
                         .offset(y: showContent ? 0 : 16)
                 } else {
-                    Text("⚠️ Vocabulary data could not be loaded.")
-                        .foregroundStyle(.red)
+                    // Returning player — show identity bar, stats, streak, and start button.
+
+                    // Player identity bar.
+                    if !engine.currentPlayerName.isEmpty {
+                        playerBar
+                            .opacity(showContent ? 1 : 0)
+                            .offset(y: showContent ? 0 : 12)
+                    }
+
+                    Spacer().frame(height: 16)
+
+                    // Stats overview — personal bests + mastery.
+                    statsStrip
+                        .opacity(showContent ? 1 : 0)
+                        .offset(y: showContent ? 0 : 12)
+
+                    Spacer().frame(height: 16)
+
+                    // Daily streak.
+                    DailyStreakView(engine: engine)
+                        .opacity(showContent ? 1 : 0)
+                        .offset(y: showContent ? 0 : 12)
+
+                    Spacer().frame(height: 20)
+
+                    // Action buttons.
+                    if engine.hasContent {
+                        buttonsBlock
+                            .opacity(showContent ? 1 : 0)
+                            .offset(y: showContent ? 0 : 16)
+                    } else {
+                        Text("⚠️ Vocabulary data could not be loaded.")
+                            .foregroundStyle(.red)
+                    }
                 }
 
                 Spacer()
@@ -270,11 +279,61 @@ private struct StartView: View {
             withAnimation(.spring(response: 0.55, dampingFraction: 0.7)) { appeared = true }
             withAnimation(.easeInOut(duration: 1.5).repeatForever(autoreverses: true)) { pulseGlow = true }
             withAnimation(.linear(duration: 12).repeatForever(autoreverses: false)) { zombieOffset = 1 }
-            withAnimation(.easeOut(duration: 0.6).delay(0.3)) { showContent = true }
+            withAnimation(.easeOut(duration: 0.6).delay(0.3)) {
+                showContent = true
+                if engine.currentPlayer == nil { nameFieldFocused = true }
+            }
         }
     }
 
     // MARK: - Sub-views
+
+    /// Shown when no player has been created yet. Styled to sit comfortably over the
+    /// animated start-screen background.
+    private var nameEntryBlock: some View {
+        VStack(spacing: 16) {
+            Text("Welcome! What's your name?")
+                .font(.title2.bold())
+                .foregroundStyle(.white.opacity(0.9))
+
+            TextField("Enter your name", text: $newName)
+                .textFieldStyle(.roundedBorder)
+                .font(.title3)
+                .frame(width: 320)
+                .focused($nameFieldFocused)
+                .onSubmit(createPlayer)
+
+            Button(action: createPlayer) {
+                HStack(spacing: 10) {
+                    Image(systemName: "bolt.fill")
+                    Text("Begin")
+                }
+                .font(.title2.bold())
+                .frame(width: 240)
+                .padding(.vertical, 14)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(.green)
+            .disabled(newName.trimmingCharacters(in: .whitespaces).isEmpty)
+        }
+        .padding(.vertical, 20)
+        .padding(.horizontal, 24)
+        .background(
+            RoundedRectangle(cornerRadius: 14)
+                .fill(Color.black.opacity(0.48))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 14)
+                        .strokeBorder(Color.white.opacity(0.08), lineWidth: 1)
+                )
+        )
+        .padding(.horizontal, 30)
+    }
+
+    private func createPlayer() {
+        let name = newName.trimmingCharacters(in: .whitespaces)
+        guard !name.isEmpty else { return }
+        engine.createPlayer(named: name)
+    }
 
     private var playerBar: some View {
         HStack(spacing: 10) {
