@@ -292,10 +292,11 @@ struct RevealView: View {
         }
     }
 
-    /// Builds the fun definition with the vocabulary word (and common inflections)
-    /// styled bold + yellow. For 8th-grade (tier-0) words, uses only the short definition.
+    /// Builds the definition text for the reveal card, stripped of any "zombie handbook"
+    /// framing. Falls back to shortDefinition for tier-0 words.
     private var highlightedDefinition: AttributedString {
-        let text = (word.tier == 0 ? nil : word.funDefinition) ?? word.shortDefinition
+        let raw = (word.tier == 0 ? nil : word.funDefinition) ?? word.shortDefinition
+        let text = Self.stripHandbookPrefix(raw)
         var attributed = AttributedString(text)
 
         for range in matchRanges(of: word.word, in: text) {
@@ -306,6 +307,19 @@ struct RevealView: View {
             }
         }
         return attributed
+    }
+
+    /// Removes "In the zombie handbook, …", "The zombie handbook says …",
+    /// "According to the zombie handbook, …" and similar preambles, leaving
+    /// just the core definition sentence.
+    private static func stripHandbookPrefix(_ text: String) -> String {
+        let pattern = #"^(?:In the zombie handbook,|The zombie handbook says|According to the zombie handbook,)\s*"#
+        guard let regex = try? NSRegularExpression(pattern: pattern, options: .caseInsensitive) else { return text }
+        let range = NSRange(text.startIndex..., in: text)
+        let stripped = regex.stringByReplacingMatches(in: text, range: range, withTemplate: "")
+        // Capitalise the first letter after stripping.
+        guard let first = stripped.first else { return stripped }
+        return first.uppercased() + stripped.dropFirst()
     }
 
     private func matchRanges(of word: String, in text: String) -> [Range<String.Index>] {
