@@ -7,7 +7,7 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 APP_PATH="$ROOT/build/WordsOfTheDead.app"
-DMG_NAME="WordsOfTheDead-1.0.0-beta.1.dmg"
+DMG_NAME="WordsOfTheDead-1.0.1-beta.1.dmg"
 TEMP_DIR="/tmp/wotd_dmg_$$"
 
 # Verify app exists
