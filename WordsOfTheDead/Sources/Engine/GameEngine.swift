@@ -430,6 +430,11 @@ final class GameEngine: ObservableObject {
                     flashStreakBanner()
                 }
             }
+            // In test mode, award a bomb on the first correct answer so it can be tested immediately.
+            if testMode && zombieBombs == 0 {
+                zombieBombs = 1
+                flashBombBanner()
+            }
             recordOutcome(zombie.question.word, correct: true)
             // Trigger explosion animation and sound; zombie will be removed after animation completes
             SoundManager.shared.playExplosion()
