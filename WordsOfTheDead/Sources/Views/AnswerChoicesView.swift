@@ -226,39 +226,42 @@ struct RevealView: View {
     var stage: MasteryStage? = nil
 
     var body: some View {
-        VStack(spacing: 22) {
-            HStack(alignment: .firstTextBaseline, spacing: 12) {
+        VStack(spacing: 14) {
+            HStack(alignment: .firstTextBaseline, spacing: 10) {
                 Text(word.word)
-                    .font(.system(size: 52, weight: .heavy, design: .rounded))
+                    .font(.system(size: 36, weight: .heavy, design: .rounded))
                     .foregroundStyle(.green)
                 Text("(\(word.displayPos))")
-                    .font(.title.italic())
+                    .font(.title3.italic())
                     .foregroundStyle(.white.opacity(0.7))
                 if let stage {
                     Text(stage.label)
-                        .font(.headline.bold())
+                        .font(.subheadline.bold())
                         .foregroundStyle(stageColor(stage))
-                        .padding(.horizontal, 12)
-                        .padding(.vertical, 5)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 4)
                         .background(Capsule().fill(stageColor(stage).opacity(0.18)))
                         .overlay(Capsule().stroke(stageColor(stage).opacity(0.6), lineWidth: 1))
                 }
             }
 
-            // Fun definition: left-justified, wrapped to a comfortable ~50-75 char reading
-            // width. The fixed-width block is centered, giving equal left/right margins.
-            // The vocabulary word itself is highlighted bold + yellow.
             Text(highlightedDefinition)
-                .font(.system(size: 23))
+                .font(.system(size: 17))
                 .foregroundStyle(.white)
                 .multilineTextAlignment(.center)
-                .lineSpacing(4)
-                .frame(maxWidth: 660, alignment: .center)
+                .lineSpacing(3)
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding(.horizontal, 20)
+        .padding(.vertical, 16)
+        .frame(maxWidth: 420)
         .background(
-            RoundedRectangle(cornerRadius: 14)
-                .fill(.black.opacity(0.35))
+            RoundedRectangle(cornerRadius: 16)
+                .fill(.black.opacity(0.82))
+                .shadow(color: .green.opacity(0.25), radius: 18, x: 0, y: 4)
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 16)
+                .stroke(.green.opacity(0.35), lineWidth: 1)
         )
     }
 

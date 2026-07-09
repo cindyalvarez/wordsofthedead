@@ -18,20 +18,23 @@ struct PlayfieldView: View {
                         isBoss: engine.isBossLevel)
 
                 // Full remaining height: zombies fall with choices embedded around them.
-                // The reveal card slides up from the bottom after a correct kill.
-                ZStack(alignment: .bottom) {
-                    AttackZoneView(engine: engine)
+                // After a correct kill the reveal card floats at the zombie's last position.
+                GeometryReader { attackGeo in
+                    ZStack {
+                        AttackZoneView(engine: engine)
 
-                    if engine.phase == .revealing, let word = engine.revealWord {
-                        RevealView(word: word, stage: engine.revealStage)
-                            .padding(14)
-                            .frame(maxWidth: .infinity)
-                            .background(.black.opacity(0.80))
-                            .transition(.move(edge: .bottom).combined(with: .opacity))
+                        if engine.phase == .revealing, let word = engine.revealWord {
+                            RevealView(word: word, stage: engine.revealStage)
+                                .position(
+                                    x: revealX(lane: engine.revealLane, width: attackGeo.size.width),
+                                    y: revealY(progress: engine.revealProgress, height: attackGeo.size.height)
+                                )
+                                .transition(.scale(scale: 0.85).combined(with: .opacity))
+                                .animation(.easeInOut(duration: 0.2), value: engine.phase == .revealing)
+                        }
                     }
                 }
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .animation(.easeInOut(duration: 0.25), value: engine.phase == .revealing)
             }
 
             if engine.isPaused {
@@ -47,6 +50,18 @@ struct PlayfieldView: View {
         .onAppear(perform: installPauseKeyMonitor)
         .onDisappear(perform: removePauseKeyMonitor)
         .animation(.spring(response: 0.3), value: engine.showStreakBanner)
+    }
+
+    private func revealX(lane: Int, width: CGFloat) -> CGFloat {
+        let margin = max(width * 0.22, 260)
+        let raw: CGFloat = lane == 0 ? margin : lane == 2 ? width - margin : width / 2
+        return min(max(raw, 210), width - 210)
+    }
+
+    private func revealY(progress: Double, height: CGFloat) -> CGFloat {
+        let top: CGFloat = 95, bottom = height - 70
+        let y = top + (bottom - top) * CGFloat(progress)
+        return min(max(y, 130), height - 130)
     }
 
     private func installPauseKeyMonitor() {

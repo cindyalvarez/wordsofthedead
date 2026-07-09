@@ -17,6 +17,8 @@ final class GameEngine: ObservableObject {
     @Published private(set) var level: Int = 1
     @Published private(set) var revealWord: VocabWord?
     @Published private(set) var revealStage: MasteryStage?
+    @Published private(set) var revealLane: Int = 1
+    @Published private(set) var revealProgress: Double = 0.5
     @Published private(set) var showStreakBanner: Bool = false
     @Published private(set) var masteredCount: Int = 0
 
@@ -431,7 +433,7 @@ final class GameEngine: ObservableObject {
             if !isLastWordOfLevel && zombies.filter({ !$0.isExploding }).count <= 1 {
                 spawnZombie()
             }
-            reveal(zombie.question.word)
+            reveal(zombie.question.word, lane: zombie.lane, progress: zombie.progress)
         } else {
             streak = 0
             comboMultiplier = 1.0
@@ -642,10 +644,12 @@ final class GameEngine: ObservableObject {
         }
     }
 
-    private func reveal(_ word: VocabWord) {
+    private func reveal(_ word: VocabWord, lane: Int = 1, progress: Double = 0.5) {
         phase = .revealing
         revealWord = word
         revealStage = scheduler.stage(for: word)
+        revealLane = lane
+        revealProgress = progress
 
         let task = DispatchWorkItem { [weak self] in
             guard let self else { return }
