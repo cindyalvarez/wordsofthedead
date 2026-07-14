@@ -16,6 +16,12 @@ final class WordScheduler {
     /// Words missed this session, with a countdown of spawns until they reappear.
     private var requeue: [(id: String, countdown: Int)] = []
     private var lastServedID: String?
+    /// Minimum number of served words before the same word can be shown again.
+    private let repeatCooldownSpawns = 6
+    /// Monotonically increasing count of words actually served.
+    private var servedCount = 0
+    /// The last served count for each word, used to enforce a soft repeat cooldown.
+    private var lastServedAtCount: [String: Int] = [:]
 
     /// Probability of introducing a new word when reviews are also available.
     private let newWordChance = 0.35
@@ -32,6 +38,22 @@ final class WordScheduler {
 
     private func progress(for word: VocabWord) -> WordProgress {
         profile[word.key] ?? WordProgress()
+    }
+
+    private func isCoolingDown(_ word: VocabWord) -> Bool {
+        guard let lastServed = lastServedAtCount[word.key] else { return false }
+        return servedCount - lastServed < repeatCooldownSpawns
+    }
+
+    private func serve(_ word: VocabWord) {
+        servedCount += 1
+        lastServedAtCount[word.key] = servedCount
+        lastServedID = word.key
+    }
+
+    private func preferNonCooling(_ words: [VocabWord]) -> [VocabWord] {
+        let available = words.filter { !isCoolingDown($0) }
+        return available.isEmpty ? words : available
     }
 
     // MARK: - Selection
@@ -65,13 +87,15 @@ final class WordScheduler {
             .sorted { (profile[$0.key]?.dueAt ?? now) < (profile[$1.key]?.dueAt ?? now) }
 
         let chosen: VocabWord
-        if !due.isEmpty && (unseen.isEmpty || Double.random(in: 0..<1) >= newWordChance) {
+        let dueCandidates = preferNonCooling(due)
+        let unseenCandidates = preferNonCooling(unseen)
+        if !dueCandidates.isEmpty && (unseenCandidates.isEmpty || Double.random(in: 0..<1) >= newWordChance) {
             // Prefer the most-overdue review, with a little randomness among the oldest few.
-            let head = Array(due.prefix(5))
-            chosen = head.randomElement() ?? due[0]
-        } else if let fresh = easiestUnseen(from: unseen) {
+            let head = Array(dueCandidates.prefix(5))
+            chosen = head.randomElement() ?? dueCandidates[0]
+        } else if let fresh = easiestUnseen(from: unseenCandidates) {
             chosen = fresh
-        } else if let soonest = eligibleWords
+        } else if let soonest = preferNonCooling(eligibleWords)
             .filter({ $0.key != lastServedID && $0.minLevel <= level })
             .min(by: { progress(for: $0).dueAt < progress(for: $1).dueAt }) {
             chosen = soonest
@@ -79,7 +103,7 @@ final class WordScheduler {
             chosen = eligibleWords.filter({ $0.minLevel <= level }).randomElement()!
         }
 
-        lastServedID = chosen.key
+        serve(chosen)
         return chosen
     }
 
@@ -100,9 +124,9 @@ final class WordScheduler {
             return (p.stage != .known || p.wrong > 0) && w.minLevel <= level
         }
         guard !pool.isEmpty else { return nil }
-        let sorted = pool.sorted { (profile[$0.key]?.dueAt ?? now) < (profile[$1.key]?.dueAt ?? now) }
+        let sorted = preferNonCooling(pool).sorted { (profile[$0.key]?.dueAt ?? now) < (profile[$1.key]?.dueAt ?? now) }
         let chosen = Array(sorted.prefix(6)).randomElement() ?? sorted[0]
-        lastServedID = chosen.key
+        serve(chosen)
         return chosen
     }
 
@@ -125,11 +149,11 @@ final class WordScheduler {
         LearningStore.save(profile)
     }
 
-    /// Marks that the player just answered this word wrong, so it reappears 2–3 spawns
+    /// Marks that the player just answered this word wrong, so it reappears 4–6 spawns
     /// later within the session (in-session reinforcement). Enqueues at most once.
     func requeueSoon(_ word: VocabWord) {
         guard !requeue.contains(where: { $0.id == word.key }) else { return }
-        requeue.append((id: word.key, countdown: Int.random(in: 2...3)))
+        requeue.append((id: word.key, countdown: Int.random(in: 4...6)))
     }
 
     // MARK: - Stats

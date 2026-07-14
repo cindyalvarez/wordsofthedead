@@ -471,10 +471,12 @@ Mastery stage is shown on the reveal card badge and counted in the HUD/game-over
 
 ### Word Selection Priority
 Each call to `nextWord()`:
-1. **In-session re-queue:** A recently-missed word whose countdown (2–3 spawns) has elapsed
+1. **In-session re-queue:** A recently-missed word whose countdown (4–6 spawns) has elapsed
 2. **Due review:** Most-overdue word (pick from top 5 oldest, with randomness)
 3. **New word:** Introduced 35% of the time when reviews are also available; always from the easiest tier available; easiest words within that tier preferred
 4. **Fallback:** Soonest-due word (so play never stalls)
+
+To keep repetition from feeling too immediate, the scheduler also applies a soft repeat cooldown: once a word is served, it will usually not be shown again for at least 6 more served words unless the pool is exhausted.
 
 ### Tier Gating
 Words are assigned a difficulty tier (0–3) based on word length + estimated syllable count (or bundled `tier` value from `vocab.json`):
@@ -486,7 +488,7 @@ Words are assigned a difficulty tier (0–3) based on word length + estimated sy
 Only tier 0 words can appear as **new introductions** at levels 1–2. Each two levels, one more tier unlocks. Overdue review words of any tier can still appear regardless of unlock.
 
 ### In-Session Re-queue
-When the player gets a word wrong (wrong guess or timeout), it is added to an in-session re-queue with a countdown of 2–3 spawns. When the countdown hits zero, that word reappears for immediate reinforcement. Each word is only re-queued at most once per session.
+When the player gets a word wrong (wrong guess or timeout), it is added to an in-session re-queue with a countdown of 4–6 spawns. When the countdown hits zero, that word reappears for immediate reinforcement. Each word is only re-queued at most once per session. The scheduler also keeps a short soft cooldown between any two appearances of the same word.
 
 ### Persistence
 Learning profiles saved to `players/<id>/learning_profile.json` — a dictionary keyed by lowercased word. Automatically loaded/saved on each outcome.

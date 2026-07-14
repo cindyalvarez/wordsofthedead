@@ -167,12 +167,12 @@ log_info "ZIP package created"
 # Summary
 log_section "Deployment Summary"
 
-DMG_SIZE=$(du -h "$ROOT/WordsOfTheDead-1.0.0-beta.1.dmg" 2>/dev/null | cut -f1 || echo "N/A")
+DMG_SIZE=$(du -h "$ROOT/WordsOfTheDead-1.0.2-beta.1.dmg" 2>/dev/null | cut -f1 || echo "N/A")
 ZIP_SIZE=$(du -h "$ROOT/deploy/WordsOfTheDead-beta-1.0.0.zip" 2>/dev/null | cut -f1 || echo "N/A")
 
 echo "📦 Distribution Packages Ready:"
 echo "   ZIP:   $ROOT/deploy/WordsOfTheDead-beta-1.0.0.zip ($ZIP_SIZE)"
-echo "   DMG:   $ROOT/WordsOfTheDead-1.0.0-beta.1.dmg ($DMG_SIZE)"
+echo "   DMG:   $ROOT/WordsOfTheDead-1.0.2-beta.1.dmg ($DMG_SIZE)"
 echo ""
 echo "📝 Documentation:"
 echo "   Release Notes: $ROOT/notes/BETA_RELEASE_NOTES.md"

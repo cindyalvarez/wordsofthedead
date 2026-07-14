@@ -1,13 +1,13 @@
 #!/bin/bash
 # Creates a professional DMG installer for Words of the Dead
 # Usage: ./tools/create-dmg.sh
-# Output: WordsOfTheDead-1.0.0-beta.1.dmg
+# Output: WordsOfTheDead-1.0.2-beta.1.dmg
 
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 APP_PATH="$ROOT/build/WordsOfTheDead.app"
-DMG_NAME="WordsOfTheDead-1.0.1-beta.1.dmg"
+DMG_NAME="WordsOfTheDead-1.0.2-beta.1.dmg"
 TEMP_DIR="/tmp/wotd_dmg_$$"
 
 # Verify app exists
@@ -42,6 +42,13 @@ hdiutil create -volname "Words of the Dead" \
     -ov -format UDZO \
     -imagekey zlib-level=9 \
     "$ROOT/$DMG_NAME"
+
+# Sign the DMG itself when a distribution certificate is available.
+SIGN_ID="Developer ID Application: CYNTHIA LYNN ALVAREZ (5393XLUVZ7)"
+if [ -f "$ROOT/$DMG_NAME" ]; then
+    echo "   Signing disk image..."
+    codesign --force --sign "$SIGN_ID" --timestamp "$ROOT/$DMG_NAME"
+fi
 
 # Verify DMG was created
 if [ -f "$ROOT/$DMG_NAME" ]; then
