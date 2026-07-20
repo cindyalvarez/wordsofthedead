@@ -5,7 +5,8 @@
 # Usage:
 #   ./tools/deploy-beta.sh              # Complete deployment flow
 #   ./tools/deploy-beta.sh --quick      # Skip manual testing prompts
-#   ./tools/deploy-beta.sh --sign       # Enable code signing
+#   ./tools/deploy-beta.sh --sign       # Enable code signing + notarization
+#   ./tools/deploy-beta.sh --notarize    # Force notarization flow if credentials are set
 #   ./tools/deploy-beta.sh --dmg-only   # Only create DMG (app already built)
 #
 # Requirements:
@@ -46,6 +47,7 @@ log_error() {
 # Parse command line arguments
 ENABLE_SIGNING=0
 DMG_ONLY=0
+ENABLE_NOTARIZATION=0
 
 for arg in "$@"; do
     case "$arg" in
@@ -54,6 +56,9 @@ for arg in "$@"; do
             ;;
         --dmg-only)
             DMG_ONLY=1
+            ;;
+        --notarize)
+            ENABLE_NOTARIZATION=1
             ;;
         --quick)
             QUICK_MODE=1
@@ -70,7 +75,11 @@ else
     log_section "Phase 1: Building Application"
     
     echo "Building for arm64 and x86_64..."
-    WOTD_NO_OPEN=1 ./WordsOfTheDead/build.sh > /dev/null
+    if [ $ENABLE_SIGNING -eq 1 ] || [ $ENABLE_NOTARIZATION -eq 1 ]; then
+        SIGN_FOR_DISTRIBUTION=1 NOTARIZE_FOR_DISTRIBUTION=1 WOTD_NO_OPEN=1 ./WordsOfTheDead/build.sh > /dev/null
+    else
+        WOTD_NO_OPEN=1 ./WordsOfTheDead/build.sh > /dev/null
+    fi
     
     if [ -d "$ROOT/build/WordsOfTheDead.app" ]; then
         log_info "Build successful"
@@ -119,25 +128,11 @@ else
         fi
     fi
 
-    # Phase 4: Code Signing (optional)
-    if [ $ENABLE_SIGNING -eq 1 ]; then
-        log_section "Phase 4: Code Signing"
-        
-        CERT_ID=$(security find-identity -v -p codesigning | grep "Developer ID" | head -1 | awk '{print $2}' || true)
-        
-        if [ -n "$CERT_ID" ]; then
-            echo "Signing with certificate: $CERT_ID"
-            SIGN_FOR_DISTRIBUTION=1 "$ROOT/WordsOfTheDead/build.sh" > /dev/null 2>&1 || {
-                log_warn "Code signing step had issues (continuing anyway)"
-            }
-            log_info "Code signing complete"
-        else
-            log_warn "No Developer ID certificate found"
-            echo "To enable code signing:"
-            echo "  1. Get a certificate from Apple Developer"
-            echo "  2. Import to Keychain"
-            echo "  3. Run: SIGN_FOR_DISTRIBUTION=1 ./tools/deploy-beta.sh"
-        fi
+    # Phase 4: Code Signing / Notarization
+    if [ $ENABLE_SIGNING -eq 1 ] || [ $ENABLE_NOTARIZATION -eq 1 ]; then
+        log_section "Phase 4: Code Signing / Notarization"
+        log_info "Build completed with distribution signing enabled"
+        log_info "If Apple credentials are configured, the app was notarized and stapled"
     fi
 fi
 
@@ -147,7 +142,11 @@ log_section "Phase 5: Creating Distribution Package"
 # Create DMG
 echo "Creating DMG installer..."
 chmod +x "$ROOT/tools/create-dmg.sh"
-"$ROOT/tools/create-dmg.sh"
+if [ $ENABLE_SIGNING -eq 1 ] || [ $ENABLE_NOTARIZATION -eq 1 ]; then
+    SIGN_FOR_DISTRIBUTION=1 NOTARIZE_FOR_DISTRIBUTION=1 "$ROOT/tools/create-dmg.sh"
+else
+    "$ROOT/tools/create-dmg.sh"
+fi
 
 # Create ZIP package
 echo "Creating ZIP package..."
@@ -167,12 +166,12 @@ log_info "ZIP package created"
 # Summary
 log_section "Deployment Summary"
 
-DMG_SIZE=$(du -h "$ROOT/WordsOfTheDead-1.0.2-beta.1.dmg" 2>/dev/null | cut -f1 || echo "N/A")
+DMG_SIZE=$(du -h "$ROOT/WordsOfTheDead-1.0.2-beta.2.dmg" 2>/dev/null | cut -f1 || echo "N/A")
 ZIP_SIZE=$(du -h "$ROOT/deploy/WordsOfTheDead-beta-1.0.0.zip" 2>/dev/null | cut -f1 || echo "N/A")
 
 echo "📦 Distribution Packages Ready:"
 echo "   ZIP:   $ROOT/deploy/WordsOfTheDead-beta-1.0.0.zip ($ZIP_SIZE)"
-echo "   DMG:   $ROOT/WordsOfTheDead-1.0.2-beta.1.dmg ($DMG_SIZE)"
+echo "   DMG:   $ROOT/WordsOfTheDead-1.0.2-beta.2.dmg ($DMG_SIZE)"
 echo ""
 echo "📝 Documentation:"
 echo "   Release Notes: $ROOT/notes/BETA_RELEASE_NOTES.md"

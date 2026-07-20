@@ -1,20 +1,32 @@
 #!/bin/bash
 # Creates a professional DMG installer for Words of the Dead
 # Usage: ./tools/create-dmg.sh
-# Output: WordsOfTheDead-1.0.2-beta.1.dmg
+# Output: WordsOfTheDead-1.0.2-beta.2.dmg
 
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 APP_PATH="$ROOT/build/WordsOfTheDead.app"
-DMG_NAME="WordsOfTheDead-1.0.2-beta.1.dmg"
+DMG_NAME="WordsOfTheDead-1.0.2-beta.2.dmg"
 TEMP_DIR="/tmp/wotd_dmg_$$"
+
+find_signing_identity() {
+    security find-identity -v -p codesigning 2>/dev/null \
+        | grep "Developer ID Application" \
+        | head -1 \
+        | awk '{print $2}'
+}
 
 # Verify app exists
 if [ ! -d "$APP_PATH" ]; then
     echo "❌ Error: App not found at $APP_PATH"
     echo "   Please build first: ./WordsOfTheDead/build.sh"
     exit 1
+fi
+
+if [ "${NOTARIZE_FOR_DISTRIBUTION:-}" = "1" ]; then
+    echo "==> Notarizing app bundle before packaging"
+    bash "$ROOT/tools/notarize-app.sh" "$APP_PATH"
 fi
 
 echo "📦 Creating DMG installer..."
@@ -44,10 +56,21 @@ hdiutil create -volname "Words of the Dead" \
     "$ROOT/$DMG_NAME"
 
 # Sign the DMG itself when a distribution certificate is available.
-SIGN_ID="Developer ID Application: CYNTHIA LYNN ALVAREZ (5393XLUVZ7)"
-if [ -f "$ROOT/$DMG_NAME" ]; then
-    echo "   Signing disk image..."
+SIGN_ID="${SIGN_ID:-}"
+if [ -z "$SIGN_ID" ]; then
+    SIGN_ID="$(find_signing_identity || true)"
+fi
+
+if [ -f "$ROOT/$DMG_NAME" ] && [ -n "$SIGN_ID" ]; then
+    echo "   Signing disk image with: $SIGN_ID"
     codesign --force --sign "$SIGN_ID" --timestamp "$ROOT/$DMG_NAME"
+    codesign --verify --verbose=4 "$ROOT/$DMG_NAME"
+elif [ -f "$ROOT/$DMG_NAME" ]; then
+    if [ "${SIGN_FOR_DISTRIBUTION:-}" = "1" ]; then
+        echo "❌ Error: SIGN_FOR_DISTRIBUTION=1 but no Developer ID signing identity was found"
+        exit 1
+    fi
+    echo "   ⚠ No Developer ID signing identity found; DMG created unsigned"
 fi
 
 # Verify DMG was created

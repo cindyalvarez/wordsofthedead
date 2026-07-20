@@ -136,6 +136,7 @@ codesign -dv build/WordsOfTheDead.app/Contents/MacOS/WordsOfTheDead
 ### 2.4 Apple Notarization (For distribution outside App Store)
 
 Notarization ensures macOS Gatekeeper won't block the app.
+The build and DMG scripts now support this automatically when you set `NOTARIZE_FOR_DISTRIBUTION=1` and provide either `NOTARY_PROFILE` or `APPLE_ID` + `APPLE_APP_SPECIFIC_PASSWORD` + `APPLE_TEAM_ID`.
 
 **Step 1: Create App-Specific Password**
 
@@ -197,6 +198,11 @@ fi
 Usage:
 ```bash
 SIGN_FOR_DISTRIBUTION=1 ./WordsOfTheDead/build.sh
+```
+
+For a full distribution build that signs and notarizes the app before packaging:
+```bash
+SIGN_FOR_DISTRIBUTION=1 NOTARIZE_FOR_DISTRIBUTION=1 ./tools/deploy-beta.sh --sign
 ```
 
 ## Phase 3: Create Distribution Package (20 min)
@@ -341,12 +347,20 @@ For easier updates:
 ### 4.3 TestFlight (If Using App Store Connect)
 
 ```bash
-# Upload IPA to App Store Connect
-# Add testers via email
-# They receive TestFlight invitation
-# One-tap install
+# 1) Export a macOS App Store provisioning profile path:
+export APPSTORE_PROVISIONING_PROFILE=~/Downloads/WordsOfTheDead_AppStore.provisionprofile
 
-# Note: Requires Apple Developer account ($99/year)
+# 2) Package a signed .pkg for TestFlight:
+./tools/package-testflight.sh
+
+# Output:
+# deploy/testflight/WordsOfTheDead-<version>-<build>-macos.pkg
+
+# 3) (Optional) Upload in one step:
+export ASC_KEY_ID=YOUR_API_KEY_ID
+export ASC_ISSUER_ID=YOUR_API_ISSUER_ID
+export ASC_PRIVATE_KEY_PATH=~/AuthKey_XXXXXX.p8
+./tools/package-testflight.sh --upload
 ```
 
 ### 4.4 Email Template for Beta Testers

@@ -331,6 +331,8 @@ final class GameEngine: ObservableObject {
        guard var player = currentPlayer else { return }
        player.hasWatchedCutscene = true
        upsert(player)
+       roster.lastPlayerID = player.id
+       PlayerStore.save(roster)
        currentPlayer = player
        startGame()
     }

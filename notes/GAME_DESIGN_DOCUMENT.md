@@ -45,6 +45,8 @@
 - **Entry point:** `WordsOfTheDead/Sources/WordsOfTheDeadApp.swift`
 - **Build:** `./WordsOfTheDead/build.sh` (set `WOTD_NO_OPEN=1` to skip auto-launch)
 - **QA mode:** `open WordsOfTheDead.app --args --qa`
+- **Distribution:** `./tools/deploy-beta.sh` orchestrates build/sign/package, and `./tools/create-dmg.sh` signs the DMG when a Developer ID identity is available
+- **TestFlight packaging:** `./tools/package-testflight.sh` builds/signs an App Store `.pkg` (and can upload via `--upload`); installer cert discovery uses keychain `basic` identities (`Mac Installer Distribution`), beta-style versions are normalized to App Store-compliant numeric values, profile `application-identifier`/team entitlements are injected into the app signature, and quarantine xattrs are stripped before packaging
 - **Persistence root:** `~/Library/Application Support/WordsOfTheDead/`
 
 ### Key source files
@@ -126,6 +128,11 @@ The last-used player is automatically activated on launch, skipping the player-s
   fun_overrides.json                    ← QA-corrected fun definitions
 ```
 
+### Write Semantics
+All JSON persistence writes (roster, learning profile, daily goal, backgrounds, QA overrides) use a temp-file + rename flow. On first save (when the destination file does not yet exist), the write proceeds directly without requiring a pre-existing target file.
+
+Profile decoding is backward-compatible: `WordProgress` uses resilient decoding (`decodeIfPresent` + defaults, with `dueAt` fallback parsing) so profiles written by older builds still load instead of being discarded.
+
 ### Slug Identity
 Names map to IDs via: lowercase → non-alphanumeric-to-hyphen → collapse hyphens. A "new" player whose name matches an existing slug continues that existing profile.
 
@@ -148,7 +155,7 @@ The cutscene plays **once per player** the first time they start. Returning play
 | **Scene 4** | Black | Initial text (size 36): zombie's challenge quote. Delayed text after 2.5s (size 24): "The applicant with the highest zombie count earns the position. Second place gets— Just kidding - there IS no second place." | Continue button |
 | **Scene 5** | Black | Giant zombie emoji (120pt), glowing green "WORDS OF THE DEAD" title (72pt bold), "Tap to begin..." | Tap anywhere |
 
-### Scene 5 ends and calls `engine.markCutsceneWatched()` which sets `hasWatchedCutscene = true` and starts the game.
+### Scene 5 ends and calls `engine.markCutsceneWatched()` which sets `hasWatchedCutscene = true`, saves the roster immediately, and starts the game.
 
 ### Audio
 A synthesized corporate C-E-G major-chord jingle (2 seconds, PCM WAV generated at runtime, volume 0.3) plays when the cutscene begins.

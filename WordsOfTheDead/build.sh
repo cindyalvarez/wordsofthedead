@@ -8,6 +8,13 @@ BUILD="$ROOT/build"
 APP="$BUILD/WordsOfTheDead.app"
 DEPLOY_TARGET="13.0"
 
+find_signing_identity() {
+    security find-identity -v -p codesigning 2>/dev/null \
+        | grep "Developer ID Application" \
+        | head -1 \
+        | awk '{print $2}'
+}
+
 echo "==> Regenerating vocabulary data"
 python3 "$ROOT/tools/parse_vocab.py"
 
@@ -71,8 +78,15 @@ lipo -info "$APP/Contents/MacOS/WordsOfTheDead"
 # Code signing (optional, for distribution)
 if [ "${SIGN_FOR_DISTRIBUTION:-}" = "1" ]; then
     echo "==> Code Signing for Distribution"
-    SIGN_ID="Developer ID Application: CYNTHIA LYNN ALVAREZ (5393XLUVZ7)"
+    SIGN_ID="${SIGN_ID:-}"
+    if [ -z "$SIGN_ID" ]; then
+        SIGN_ID="$(find_signing_identity || true)"
+    fi
     ENTITLEMENTS="$APPDIR/Resources/WordsOfTheDead.entitlements"
+    if [ -z "$SIGN_ID" ]; then
+        echo "❌ Error: SIGN_FOR_DISTRIBUTION=1 but no Developer ID signing identity was found"
+        exit 1
+    fi
     echo "    Signing with: $SIGN_ID"
     codesign --deep --force --verify --verbose \
         --sign "$SIGN_ID" \
@@ -82,6 +96,10 @@ if [ "${SIGN_FOR_DISTRIBUTION:-}" = "1" ]; then
         "$APP"
     echo "✓ Signing complete"
     codesign -dv --verbose=4 "$APP" 2>&1 | grep -E "Authority|TeamIdentifier|Identifier" || true
+    if [ "${NOTARIZE_FOR_DISTRIBUTION:-}" = "1" ]; then
+        echo "==> Notarizing app"
+        bash "$ROOT/tools/notarize-app.sh" "$APP"
+    fi
 else
     echo "    (Code signing skipped. Use: SIGN_FOR_DISTRIBUTION=1 ./build.sh)"
 fi

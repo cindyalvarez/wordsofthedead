@@ -26,8 +26,8 @@ All prerequisites for beta distribution have been completed.
   ```
 
 ### Notarization Status
-- ℹ️ Skipped for this beta (recommended for internal testing)
-- 📋 For public distribution: Follow Phase 2 in `BETA_DEPLOYMENT_GUIDE.md`
+- ✅ Supported by the build and DMG scripts when `NOTARIZE_FOR_DISTRIBUTION=1`
+- 📋 For public distribution: set Apple notarization credentials and run the signed deployment flow
 
 ---
 

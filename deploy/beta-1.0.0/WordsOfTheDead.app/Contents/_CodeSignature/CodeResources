@@ -6,7 +6,23 @@
 	<dict>
 		<key>Resources/AppIcon.icns</key>
 		<data>
-		tScbFCnjtsx99hnOTXKsOa+0jbI=
+		qMIG6SMr6+ftGoU6E4EV33IL8J0=
+		</data>
+		<key>Resources/Sounds/explosion.wav</key>
+		<data>
+		SwgyNLSF1cB020SCiWh/x9ibWBU=
+		</data>
+		<key>Resources/Sounds/kaboom.wav</key>
+		<data>
+		tDJVk8xFaaJ1AclV6GhRCg9WjhQ=
+		</data>
+		<key>Resources/accomplished.png</key>
+		<data>
+		VX1rfmd9fZ4QfGjUs3SZdRaGFNM=
+		</data>
+		<key>Resources/backgrounds/accomplished.png</key>
+		<data>
+		XBxLqvog1DkX2JE44MK1g8+6dJ0=
 		</data>
 		<key>Resources/backgrounds/alley.jpg</key>
 		<data>
@@ -296,17 +312,29 @@
 		<data>
 		3nG4TaW0IHieXM9oMqQcxdOjcmc=
 		</data>
+		<key>Resources/backgrounds/zombies-escape.png</key>
+		<data>
+		sD5Jc3ig9/DRwcDJo9LXGFxmm88=
+		</data>
 		<key>Resources/fun_definitions.json</key>
 		<data>
-		qE0amgHTuQDNhD1orNIDfM0fe7k=
+		Ai8NRkAZEKumSI8fNMx1DVRcnbo=
 		</data>
 		<key>Resources/funsentences.txt</key>
 		<data>
-		pQo3JL7enBEGbyVIqJXBk+ohpck=
+		7dUUxKZcQCP/e4iKCEXdThXiBgY=
+		</data>
+		<key>Resources/synonym-words.txt</key>
+		<data>
+		vFssuhMI+ZZj+mIjuZEEZOa00sA=
 		</data>
 		<key>Resources/vocab.json</key>
 		<data>
-		EjMWIgugGjc+JnGy9jEcLieo0kI=
+		ZnxR4rOXE3yIxFq1i1nojcLqEjs=
+		</data>
+		<key>Resources/zombies-escape.png</key>
+		<data>
+		VfrrAxo7L6UqyI1O4tgdu5j5MFU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -315,7 +343,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8sqiPVhQHt6M3UKyEunfkpgMQaJ6pGHdmIP2kR0vSRA=
+			oX8uftsJxHizVEepARgPUpvW9yy67FOWehVNMpK6guo=
+			</data>
+		</dict>
+		<key>Resources/Sounds/explosion.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+az5ez/Vmh7DYlTIq8Pd0SAfwAkgSRf4Gnv9meZuhOQ=
+			</data>
+		</dict>
+		<key>Resources/Sounds/kaboom.wav</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Kt6PEALixHSWQLudzXVx4z4JIG6q6cAwJ/754rkGNT0=
+			</data>
+		</dict>
+		<key>Resources/accomplished.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			x0kUWL3QR5BLmRsut0ytuY6CZ6NYORC3uu7MwDr+rEs=
+			</data>
+		</dict>
+		<key>Resources/backgrounds/accomplished.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Hef67cyrY1V0Oa94hmrMuk5hmzILBP4sJQzpApayhzI=
 			</data>
 		</dict>
 		<key>Resources/backgrounds/alley.jpg</key>
@@ -822,25 +878,46 @@
 			FuT5QC9rNa7UHDZqPZixvCA+mOpOT9hgC1dXZ3LK4jc=
 			</data>
 		</dict>
+		<key>Resources/backgrounds/zombies-escape.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			W5u2aoBYzVb8qdhu2pI2YUHI8t1fwiCRaO0wK/oPfyQ=
+			</data>
+		</dict>
 		<key>Resources/fun_definitions.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			skXMgSs1yClptdENdsmzsWNVnjexp3u1QMMyOxPJXag=
+			paPTfQoSiJuNlvu1pp61f9jWXCvIkEzXlqjjH18GaNI=
 			</data>
 		</dict>
 		<key>Resources/funsentences.txt</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			b/K/gQ0a+dLC2zg5HTKahpAZ29dc5H0jftiFFgb3meA=
+			JpDGaM7G+GGKRmjRx2WwastszzPWJQvfuid2ya27eks=
+			</data>
+		</dict>
+		<key>Resources/synonym-words.txt</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WSxgRHK6J+/6n6ayuUWAgSX9bkcO3WH222Kg1apI498=
 			</data>
 		</dict>
 		<key>Resources/vocab.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TZrPfRRHiAGKh9aZSiBQweLymmn/IipP3aZ0zx2IEp4=
+			+pEe1kzt9it5HaFT+b+dBWpNx1spdRx5K3wHpWiOwPU=
+			</data>
+		</dict>
+		<key>Resources/zombies-escape.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			o+kYg8f5wNDtBmXArsHq6Kg6veoYN7ztNPBCqOfKGMM=
 			</data>
 		</dict>
 	</dict>

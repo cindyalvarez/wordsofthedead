@@ -27,6 +27,10 @@ struct WordProgress: Codable {
     var dueAt: Date = .distantPast
     var lastSeen: Date?
 
+    enum CodingKeys: String, CodingKey {
+        case box, correct, wrong, streak, dueAt, lastSeen
+    }
+
     /// Box at or above which a word counts as "known".
     static let masteredBox = 4
     static let maxBox = 5
@@ -54,6 +58,35 @@ struct WordProgress: Codable {
     private func interval(for box: Int) -> TimeInterval {
         let clamped = max(0, min(box, WordProgress.intervals.count - 1))
         return WordProgress.intervals[clamped]
+    }
+
+    init(box: Int = 0, correct: Int = 0, wrong: Int = 0, streak: Int = 0, dueAt: Date = .distantPast, lastSeen: Date? = nil) {
+        self.box = box
+        self.correct = correct
+        self.wrong = wrong
+        self.streak = streak
+        self.dueAt = dueAt
+        self.lastSeen = lastSeen
+    }
+
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        box = try c.decodeIfPresent(Int.self, forKey: .box) ?? 0
+        correct = try c.decodeIfPresent(Int.self, forKey: .correct) ?? 0
+        wrong = try c.decodeIfPresent(Int.self, forKey: .wrong) ?? 0
+        streak = try c.decodeIfPresent(Int.self, forKey: .streak) ?? 0
+        lastSeen = try c.decodeIfPresent(Date.self, forKey: .lastSeen)
+
+        if let date = try c.decodeIfPresent(Date.self, forKey: .dueAt) {
+            dueAt = date
+        } else if let seconds = try c.decodeIfPresent(Double.self, forKey: .dueAt) {
+            dueAt = Date(timeIntervalSinceReferenceDate: seconds)
+        } else if let iso8601 = try c.decodeIfPresent(String.self, forKey: .dueAt),
+                  let parsed = ISO8601DateFormatter().date(from: iso8601) {
+            dueAt = parsed
+        } else {
+            dueAt = .distantPast
+        }
     }
 
     /// Records an answer and reschedules: a correct answer promotes the box (longer

@@ -67,7 +67,9 @@ enum FileUtilities {
             try data.write(to: tempURL, options: [.atomic])
             
             // Atomic rename (POSIX move)
-            try FileManager.default.removeItem(at: fileURL) // Remove target if exists
+            if FileManager.default.fileExists(atPath: fileURL.path) {
+                try FileManager.default.removeItem(at: fileURL) // Remove target if exists
+            }
             try FileManager.default.moveItem(at: tempURL, to: fileURL)
             
             log("Saved \(fileURL.lastPathComponent) (\(data.count) bytes)", category: "save")
